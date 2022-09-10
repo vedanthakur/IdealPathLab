@@ -27,22 +27,22 @@ Partial Class AddBranch
         Me.SaveToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.FlowLayoutPanel2 = New System.Windows.Forms.FlowLayoutPanel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.StatusCkBox = New System.Windows.Forms.CheckBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.ContactPersonTBox = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.ImageL = New System.Windows.Forms.Label()
+        Me.ImageButton = New System.Windows.Forms.Button()
+        Me.EmailTBox = New System.Windows.Forms.TextBox()
+        Me.AddressTBox = New System.Windows.Forms.TextBox()
+        Me.BranchNameTBox = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.PhoneNoTBox = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
-        Me.TextBox10 = New System.Windows.Forms.TextBox()
-        Me.TextBox11 = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label16 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.ToolStrip.SuspendLayout()
         Me.FlowLayoutPanel2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
@@ -81,18 +81,18 @@ Partial Class AddBranch
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.Button2)
-        Me.GroupBox1.Controls.Add(Me.CheckBox1)
+        Me.GroupBox1.Controls.Add(Me.StatusCkBox)
         Me.GroupBox1.Controls.Add(Me.Label7)
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
+        Me.GroupBox1.Controls.Add(Me.ContactPersonTBox)
         Me.GroupBox1.Controls.Add(Me.Label6)
-        Me.GroupBox1.Controls.Add(Me.Label16)
-        Me.GroupBox1.Controls.Add(Me.Button1)
-        Me.GroupBox1.Controls.Add(Me.TextBox11)
-        Me.GroupBox1.Controls.Add(Me.TextBox10)
-        Me.GroupBox1.Controls.Add(Me.TextBox9)
+        Me.GroupBox1.Controls.Add(Me.ImageL)
+        Me.GroupBox1.Controls.Add(Me.ImageButton)
+        Me.GroupBox1.Controls.Add(Me.EmailTBox)
+        Me.GroupBox1.Controls.Add(Me.AddressTBox)
+        Me.GroupBox1.Controls.Add(Me.BranchNameTBox)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
+        Me.GroupBox1.Controls.Add(Me.PhoneNoTBox)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.Label3)
@@ -104,6 +104,89 @@ Partial Class AddBranch
         Me.GroupBox1.TabIndex = 25
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Create Branch"
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(19, 395)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(94, 29)
+        Me.Button2.TabIndex = 33
+        Me.Button2.Text = "Save"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'StatusCkBox
+        '
+        Me.StatusCkBox.AutoSize = True
+        Me.StatusCkBox.Location = New System.Drawing.Point(140, 327)
+        Me.StatusCkBox.Name = "StatusCkBox"
+        Me.StatusCkBox.Size = New System.Drawing.Size(78, 24)
+        Me.StatusCkBox.TabIndex = 32
+        Me.StatusCkBox.Text = "Publish"
+        Me.StatusCkBox.UseVisualStyleBackColor = True
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(19, 331)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(49, 20)
+        Me.Label7.TabIndex = 31
+        Me.Label7.Text = "Status"
+        '
+        'ContactPersonTBox
+        '
+        Me.ContactPersonTBox.Location = New System.Drawing.Point(140, 279)
+        Me.ContactPersonTBox.Name = "ContactPersonTBox"
+        Me.ContactPersonTBox.Size = New System.Drawing.Size(125, 27)
+        Me.ContactPersonTBox.TabIndex = 30
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(18, 286)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(107, 20)
+        Me.Label6.TabIndex = 29
+        Me.Label6.Text = "Contact Person"
+        '
+        'ImageL
+        '
+        Me.ImageL.AutoSize = True
+        Me.ImageL.Location = New System.Drawing.Point(238, 236)
+        Me.ImageL.Name = "ImageL"
+        Me.ImageL.Size = New System.Drawing.Size(104, 20)
+        Me.ImageL.TabIndex = 28
+        Me.ImageL.Text = "No file chosen"
+        '
+        'ImageButton
+        '
+        Me.ImageButton.Location = New System.Drawing.Point(140, 230)
+        Me.ImageButton.Name = "ImageButton"
+        Me.ImageButton.Size = New System.Drawing.Size(94, 29)
+        Me.ImageButton.TabIndex = 27
+        Me.ImageButton.Text = "Upload"
+        Me.ImageButton.UseVisualStyleBackColor = True
+        '
+        'EmailTBox
+        '
+        Me.EmailTBox.Location = New System.Drawing.Point(140, 177)
+        Me.EmailTBox.Name = "EmailTBox"
+        Me.EmailTBox.Size = New System.Drawing.Size(125, 27)
+        Me.EmailTBox.TabIndex = 26
+        '
+        'AddressTBox
+        '
+        Me.AddressTBox.Location = New System.Drawing.Point(140, 86)
+        Me.AddressTBox.Name = "AddressTBox"
+        Me.AddressTBox.Size = New System.Drawing.Size(125, 27)
+        Me.AddressTBox.TabIndex = 25
+        '
+        'BranchNameTBox
+        '
+        Me.BranchNameTBox.Location = New System.Drawing.Point(140, 34)
+        Me.BranchNameTBox.Name = "BranchNameTBox"
+        Me.BranchNameTBox.Size = New System.Drawing.Size(125, 27)
+        Me.BranchNameTBox.TabIndex = 24
         '
         'Label5
         '
@@ -123,12 +206,12 @@ Partial Class AddBranch
         Me.Label2.TabIndex = 20
         Me.Label2.Text = "Email"
         '
-        'TextBox1
+        'PhoneNoTBox
         '
-        Me.TextBox1.Location = New System.Drawing.Point(140, 130)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(125, 27)
-        Me.TextBox1.TabIndex = 19
+        Me.PhoneNoTBox.Location = New System.Drawing.Point(140, 130)
+        Me.PhoneNoTBox.Name = "PhoneNoTBox"
+        Me.PhoneNoTBox.Size = New System.Drawing.Size(125, 27)
+        Me.PhoneNoTBox.TabIndex = 19
         '
         'Label1
         '
@@ -157,89 +240,6 @@ Partial Class AddBranch
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Address"
         '
-        'TextBox9
-        '
-        Me.TextBox9.Location = New System.Drawing.Point(140, 34)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(125, 27)
-        Me.TextBox9.TabIndex = 24
-        '
-        'TextBox10
-        '
-        Me.TextBox10.Location = New System.Drawing.Point(140, 86)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(125, 27)
-        Me.TextBox10.TabIndex = 25
-        '
-        'TextBox11
-        '
-        Me.TextBox11.Location = New System.Drawing.Point(140, 177)
-        Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.Size = New System.Drawing.Size(125, 27)
-        Me.TextBox11.TabIndex = 26
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(140, 230)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(94, 29)
-        Me.Button1.TabIndex = 27
-        Me.Button1.Text = "Upload"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Label16
-        '
-        Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(238, 236)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(104, 20)
-        Me.Label16.TabIndex = 28
-        Me.Label16.Text = "No file chosen"
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(140, 279)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(125, 27)
-        Me.TextBox2.TabIndex = 30
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(18, 286)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(107, 20)
-        Me.Label6.TabIndex = 29
-        Me.Label6.Text = "Contact Person"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(19, 331)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(49, 20)
-        Me.Label7.TabIndex = 31
-        Me.Label7.Text = "Status"
-        '
-        'CheckBox1
-        '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(140, 327)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(78, 24)
-        Me.CheckBox1.TabIndex = 32
-        Me.CheckBox1.Text = "Publish"
-        Me.CheckBox1.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(19, 395)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(94, 29)
-        Me.Button2.TabIndex = 33
-        Me.Button2.Text = "Save"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
         'AddBranch
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
@@ -265,18 +265,18 @@ Partial Class AddBranch
     Friend WithEvents FlowLayoutPanel2 As FlowLayoutPanel
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Button2 As Button
-    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents StatusCkBox As CheckBox
     Friend WithEvents Label7 As Label
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents ContactPersonTBox As TextBox
     Friend WithEvents Label6 As Label
-    Friend WithEvents Label16 As Label
-    Friend WithEvents Button1 As Button
-    Friend WithEvents TextBox11 As TextBox
-    Friend WithEvents TextBox10 As TextBox
-    Friend WithEvents TextBox9 As TextBox
+    Friend WithEvents ImageL As Label
+    Friend WithEvents ImageButton As Button
+    Friend WithEvents EmailTBox As TextBox
+    Friend WithEvents AddressTBox As TextBox
+    Friend WithEvents BranchNameTBox As TextBox
     Friend WithEvents Label5 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents PhoneNoTBox As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
