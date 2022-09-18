@@ -26,6 +26,7 @@ Partial Class AddUser
         Me.FlowLayoutPanel2 = New System.Windows.Forms.FlowLayoutPanel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.status = New System.Windows.Forms.CheckBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.showUserWiseData = New System.Windows.Forms.CheckBox()
         Me.Label10 = New System.Windows.Forms.Label()
@@ -35,7 +36,6 @@ Partial Class AddUser
         Me.password = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.roll = New System.Windows.Forms.ComboBox()
-        Me.Label16 = New System.Windows.Forms.Label()
         Me.imgUpload = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
@@ -53,6 +53,7 @@ Partial Class AddUser
         Me.SaveToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.FlowLayoutPanel2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ToolStrip.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -71,6 +72,7 @@ Partial Class AddUser
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.status)
+        Me.GroupBox1.Controls.Add(Me.PictureBox1)
         Me.GroupBox1.Controls.Add(Me.Label11)
         Me.GroupBox1.Controls.Add(Me.showUserWiseData)
         Me.GroupBox1.Controls.Add(Me.Label10)
@@ -80,7 +82,6 @@ Partial Class AddUser
         Me.GroupBox1.Controls.Add(Me.password)
         Me.GroupBox1.Controls.Add(Me.Label8)
         Me.GroupBox1.Controls.Add(Me.roll)
-        Me.GroupBox1.Controls.Add(Me.Label16)
         Me.GroupBox1.Controls.Add(Me.imgUpload)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.Button2)
@@ -112,6 +113,17 @@ Partial Class AddUser
         Me.status.TabIndex = 43
         Me.status.Text = "Publish"
         Me.status.UseVisualStyleBackColor = True
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Location = New System.Drawing.Point(275, 443)
+        Me.PictureBox1.MaximumSize = New System.Drawing.Size(130, 0)
+        Me.PictureBox1.MinimumSize = New System.Drawing.Size(0, 100)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(100, 100)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 26
+        Me.PictureBox1.TabStop = False
         '
         'Label11
         '
@@ -162,7 +174,7 @@ Partial Class AddUser
         'branch
         '
         Me.branch.FormattingEnabled = True
-        Me.branch.Location = New System.Drawing.Point(140, 331)
+        Me.branch.Location = New System.Drawing.Point(145, 331)
         Me.branch.Name = "branch"
         Me.branch.Size = New System.Drawing.Size(151, 28)
         Me.branch.TabIndex = 37
@@ -170,10 +182,10 @@ Partial Class AddUser
         '
         'password
         '
-        Me.password.Location = New System.Drawing.Point(140, 276)
+        Me.password.Location = New System.Drawing.Point(145, 276)
         Me.password.Name = "password"
         Me.password.PlaceholderText = "Enter Password"
-        Me.password.Size = New System.Drawing.Size(125, 27)
+        Me.password.Size = New System.Drawing.Size(151, 27)
         Me.password.TabIndex = 36
         '
         'Label8
@@ -187,22 +199,12 @@ Partial Class AddUser
         '
         'roll
         '
-        Me.roll.FormattingEnabled = True
         Me.roll.Items.AddRange(New Object() {"Doctor", "Lab Technician", "Human Resource"})
-        Me.roll.Location = New System.Drawing.Point(140, 81)
+        Me.roll.Location = New System.Drawing.Point(145, 81)
         Me.roll.Name = "roll"
         Me.roll.Size = New System.Drawing.Size(151, 28)
         Me.roll.TabIndex = 34
         Me.roll.Text = "Select"
-        '
-        'Label16
-        '
-        Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(240, 491)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(104, 20)
-        Me.Label16.TabIndex = 28
-        Me.Label16.Text = "No file chosen"
         '
         'imgUpload
         '
@@ -242,10 +244,10 @@ Partial Class AddUser
         '
         'mobile
         '
-        Me.mobile.Location = New System.Drawing.Point(140, 229)
+        Me.mobile.Location = New System.Drawing.Point(145, 229)
         Me.mobile.Name = "mobile"
         Me.mobile.PlaceholderText = "Enter Mobile"
-        Me.mobile.Size = New System.Drawing.Size(125, 27)
+        Me.mobile.Size = New System.Drawing.Size(151, 27)
         Me.mobile.TabIndex = 30
         '
         'Label6
@@ -259,18 +261,18 @@ Partial Class AddUser
         '
         'address
         '
-        Me.address.Location = New System.Drawing.Point(140, 177)
+        Me.address.Location = New System.Drawing.Point(145, 177)
         Me.address.Name = "address"
         Me.address.PlaceholderText = "Enter Address"
-        Me.address.Size = New System.Drawing.Size(125, 27)
+        Me.address.Size = New System.Drawing.Size(151, 27)
         Me.address.TabIndex = 26
         '
         'nameL
         '
-        Me.nameL.Location = New System.Drawing.Point(140, 34)
+        Me.nameL.Location = New System.Drawing.Point(145, 34)
         Me.nameL.Name = "nameL"
         Me.nameL.PlaceholderText = "Enter Name"
-        Me.nameL.Size = New System.Drawing.Size(125, 27)
+        Me.nameL.Size = New System.Drawing.Size(151, 27)
         Me.nameL.TabIndex = 24
         '
         'Label2
@@ -284,10 +286,10 @@ Partial Class AddUser
         '
         'email
         '
-        Me.email.Location = New System.Drawing.Point(140, 130)
+        Me.email.Location = New System.Drawing.Point(145, 130)
         Me.email.Name = "email"
         Me.email.PlaceholderText = "Enter Email"
-        Me.email.Size = New System.Drawing.Size(125, 27)
+        Me.email.Size = New System.Drawing.Size(151, 27)
         Me.email.TabIndex = 19
         '
         'Label1
@@ -347,6 +349,7 @@ Partial Class AddUser
         Me.FlowLayoutPanel2.ResumeLayout(False)
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ToolStrip.ResumeLayout(False)
         Me.ToolStrip.PerformLayout()
         Me.ResumeLayout(False)
@@ -358,7 +361,6 @@ Partial Class AddUser
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Label8 As Label
     Friend WithEvents roll As ComboBox
-    Friend WithEvents Label16 As Label
     Friend WithEvents imgUpload As Button
     Friend WithEvents Label5 As Label
     Friend WithEvents Button2 As Button
@@ -382,4 +384,5 @@ Partial Class AddUser
     Friend WithEvents Label9 As Label
     Friend WithEvents branch As ComboBox
     Friend WithEvents password As TextBox
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
