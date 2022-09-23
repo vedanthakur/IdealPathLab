@@ -26,52 +26,54 @@ Partial Class AddHumanResource
         Me.ToolStrip = New System.Windows.Forms.ToolStrip()
         Me.SaveToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.FlowLayoutPanel2 = New System.Windows.Forms.FlowLayoutPanel()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label17 = New System.Windows.Forms.Label()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Label18 = New System.Windows.Forms.Label()
-        Me.Label19 = New System.Windows.Forms.Label()
-        Me.TextBox11 = New System.Windows.Forms.TextBox()
-        Me.Label20 = New System.Windows.Forms.Label()
-        Me.TextBox12 = New System.Windows.Forms.TextBox()
-        Me.Label21 = New System.Windows.Forms.Label()
-        Me.TextBox13 = New System.Windows.Forms.TextBox()
-        Me.Label22 = New System.Windows.Forms.Label()
-        Me.TextBox14 = New System.Windows.Forms.TextBox()
-        Me.Label16 = New System.Windows.Forms.Label()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.TextBox10 = New System.Windows.Forms.TextBox()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.TextBox9 = New System.Windows.Forms.TextBox()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
+        Me.Address = New System.Windows.Forms.TextBox()
         Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.TextBox13 = New System.Windows.Forms.TextBox()
+        Me.Label22 = New System.Windows.Forms.Label()
+        Me.TextBox14 = New System.Windows.Forms.TextBox()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.TextBox11 = New System.Windows.Forms.TextBox()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.TextBox12 = New System.Windows.Forms.TextBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.ToolStrip.SuspendLayout()
         Me.FlowLayoutPanel2.SuspendLayout()
+        Me.GroupBox3.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
-        Me.GroupBox3.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ToolStrip
@@ -80,7 +82,7 @@ Partial Class AddHumanResource
         Me.ToolStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SaveToolStripButton})
         Me.ToolStrip.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip.Name = "ToolStrip"
-        Me.ToolStrip.Size = New System.Drawing.Size(935, 27)
+        Me.ToolStrip.Size = New System.Drawing.Size(900, 27)
         Me.ToolStrip.TabIndex = 30
         Me.ToolStrip.Text = "ToolStrip"
         '
@@ -100,107 +102,23 @@ Partial Class AddHumanResource
         Me.FlowLayoutPanel2.Controls.Add(Me.GroupBox1)
         Me.FlowLayoutPanel2.Controls.Add(Me.GroupBox4)
         Me.FlowLayoutPanel2.Controls.Add(Me.GroupBox2)
-        Me.FlowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.FlowLayoutPanel2.Location = New System.Drawing.Point(0, 0)
         Me.FlowLayoutPanel2.MinimumSize = New System.Drawing.Size(450, 0)
         Me.FlowLayoutPanel2.Name = "FlowLayoutPanel2"
-        Me.FlowLayoutPanel2.Padding = New System.Windows.Forms.Padding(0, 30, 0, 30)
-        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(935, 580)
+        Me.FlowLayoutPanel2.Padding = New System.Windows.Forms.Padding(0, 30, 0, 0)
+        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(900, 550)
         Me.FlowLayoutPanel2.TabIndex = 29
-        '
-        'GroupBox1
-        '
-        Me.GroupBox1.AutoSize = True
-        Me.GroupBox1.Controls.Add(Me.Label17)
-        Me.GroupBox1.Controls.Add(Me.Button4)
-        Me.GroupBox1.Controls.Add(Me.Label18)
-        Me.GroupBox1.Controls.Add(Me.Label11)
-        Me.GroupBox1.Controls.Add(Me.TextBox7)
-        Me.GroupBox1.Controls.Add(Me.TextBox6)
-        Me.GroupBox1.Controls.Add(Me.Label10)
-        Me.GroupBox1.Controls.Add(Me.ComboBox1)
-        Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
-        Me.GroupBox1.Location = New System.Drawing.Point(451, 33)
-        Me.GroupBox1.MinimumSize = New System.Drawing.Size(442, 187)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(442, 288)
-        Me.GroupBox1.TabIndex = 25
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "HR Info"
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(18, 41)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(156, 20)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Human Resource Type"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(20, 41)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(55, 20)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Name*"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(91, 34)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.PlaceholderText = "Enter Name"
-        Me.TextBox1.Size = New System.Drawing.Size(125, 27)
-        Me.TextBox1.TabIndex = 10
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(22, 85)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(67, 20)
-        Me.Label3.TabIndex = 2
-        Me.Label3.Text = "Position*"
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(197, 78)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.PlaceholderText = "Enter Address"
-        Me.TextBox2.Size = New System.Drawing.Size(151, 27)
-        Me.TextBox2.TabIndex = 11
-        '
-        'GroupBox4
-        '
-        Me.GroupBox4.Controls.Add(Me.Label21)
-        Me.GroupBox4.Controls.Add(Me.TextBox13)
-        Me.GroupBox4.Controls.Add(Me.Label22)
-        Me.GroupBox4.Controls.Add(Me.TextBox14)
-        Me.GroupBox4.Controls.Add(Me.Label19)
-        Me.GroupBox4.Controls.Add(Me.TextBox11)
-        Me.GroupBox4.Controls.Add(Me.Label20)
-        Me.GroupBox4.Controls.Add(Me.TextBox12)
-        Me.GroupBox4.Location = New System.Drawing.Point(3, 327)
-        Me.GroupBox4.MinimumSize = New System.Drawing.Size(442, 150)
-        Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(442, 219)
-        Me.GroupBox4.TabIndex = 26
-        Me.GroupBox4.TabStop = False
-        Me.GroupBox4.Text = "Social Networks"
         '
         'GroupBox3
         '
-        Me.GroupBox3.Controls.Add(Me.Label16)
+        Me.GroupBox3.Controls.Add(Me.PictureBox2)
         Me.GroupBox3.Controls.Add(Me.Button3)
         Me.GroupBox3.Controls.Add(Me.Label15)
         Me.GroupBox3.Controls.Add(Me.TextBox10)
         Me.GroupBox3.Controls.Add(Me.Label14)
         Me.GroupBox3.Controls.Add(Me.Label13)
         Me.GroupBox3.Controls.Add(Me.TextBox9)
-        Me.GroupBox3.Controls.Add(Me.TextBox8)
+        Me.GroupBox3.Controls.Add(Me.Address)
         Me.GroupBox3.Controls.Add(Me.Label12)
         Me.GroupBox3.Controls.Add(Me.Label2)
         Me.GroupBox3.Controls.Add(Me.TextBox1)
@@ -212,156 +130,12 @@ Partial Class AddHumanResource
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Personal Details"
         '
-        'ComboBox1
-        '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(197, 33)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(151, 28)
-        Me.ComboBox1.TabIndex = 13
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(22, 134)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(169, 20)
-        Me.Label10.TabIndex = 14
-        Me.Label10.Text = "Council Registration No."
-        '
-        'TextBox6
-        '
-        Me.TextBox6.Location = New System.Drawing.Point(197, 127)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(125, 27)
-        Me.TextBox6.TabIndex = 15
-        '
-        'TextBox7
-        '
-        Me.TextBox7.Location = New System.Drawing.Point(197, 181)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(125, 27)
-        Me.TextBox7.TabIndex = 16
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(22, 189)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(47, 20)
-        Me.Label11.TabIndex = 17
-        Me.Label11.Text = "Rank*"
-        '
-        'Label17
-        '
-        Me.Label17.AutoSize = True
-        Me.Label17.Location = New System.Drawing.Point(227, 242)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(104, 20)
-        Me.Label17.TabIndex = 34
-        Me.Label17.Text = "No file chosen"
-        '
-        'Button4
-        '
-        Me.Button4.Location = New System.Drawing.Point(127, 233)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(94, 29)
-        Me.Button4.TabIndex = 33
-        Me.Button4.Text = "Upload"
-        Me.Button4.UseVisualStyleBackColor = True
-        '
-        'Label18
-        '
-        Me.Label18.AutoSize = True
-        Me.Label18.Location = New System.Drawing.Point(22, 242)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(99, 20)
-        Me.Label18.TabIndex = 32
-        Me.Label18.Text = "Signature File"
-        '
-        'Label19
-        '
-        Me.Label19.AutoSize = True
-        Me.Label19.Location = New System.Drawing.Point(20, 41)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(72, 20)
-        Me.Label19.TabIndex = 12
-        Me.Label19.Text = "Facebook"
-        '
-        'TextBox11
-        '
-        Me.TextBox11.Location = New System.Drawing.Point(112, 34)
-        Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.PlaceholderText = "Enter Facebook URL"
-        Me.TextBox11.Size = New System.Drawing.Size(213, 27)
-        Me.TextBox11.TabIndex = 14
-        '
-        'Label20
-        '
-        Me.Label20.AutoSize = True
-        Me.Label20.Location = New System.Drawing.Point(20, 80)
-        Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(54, 20)
-        Me.Label20.TabIndex = 13
-        Me.Label20.Text = "Twitter"
-        '
-        'TextBox12
-        '
-        Me.TextBox12.Location = New System.Drawing.Point(112, 73)
-        Me.TextBox12.Name = "TextBox12"
-        Me.TextBox12.PlaceholderText = "Enter Twitter URL"
-        Me.TextBox12.Size = New System.Drawing.Size(213, 27)
-        Me.TextBox12.TabIndex = 15
-        '
-        'Label21
-        '
-        Me.Label21.AutoSize = True
-        Me.Label21.Location = New System.Drawing.Point(27, 125)
-        Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(75, 20)
-        Me.Label21.TabIndex = 16
-        Me.Label21.Text = "Instagram"
-        '
-        'TextBox13
-        '
-        Me.TextBox13.Location = New System.Drawing.Point(112, 118)
-        Me.TextBox13.Name = "TextBox13"
-        Me.TextBox13.PlaceholderText = "Enter Instagram URL"
-        Me.TextBox13.Size = New System.Drawing.Size(213, 27)
-        Me.TextBox13.TabIndex = 18
-        '
-        'Label22
-        '
-        Me.Label22.AutoSize = True
-        Me.Label22.Location = New System.Drawing.Point(27, 164)
-        Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(66, 20)
-        Me.Label22.TabIndex = 17
-        Me.Label22.Text = "YouTube"
-        '
-        'TextBox14
-        '
-        Me.TextBox14.Location = New System.Drawing.Point(112, 161)
-        Me.TextBox14.Name = "TextBox14"
-        Me.TextBox14.PlaceholderText = "Enter YouTube URL"
-        Me.TextBox14.Size = New System.Drawing.Size(213, 27)
-        Me.TextBox14.TabIndex = 19
-        '
-        'Label16
-        '
-        Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(191, 238)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(104, 20)
-        Me.Label16.TabIndex = 40
-        Me.Label16.Text = "No file chosen"
-        '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(91, 229)
+        Me.Button3.Location = New System.Drawing.Point(112, 234)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(94, 29)
-        Me.Button3.TabIndex = 39
+        Me.Button3.Size = New System.Drawing.Size(151, 29)
+        Me.Button3.TabIndex = 4
         Me.Button3.Text = "Upload"
         Me.Button3.UseVisualStyleBackColor = True
         '
@@ -376,10 +150,11 @@ Partial Class AddHumanResource
         '
         'TextBox10
         '
-        Me.TextBox10.Location = New System.Drawing.Point(91, 181)
+        Me.TextBox10.Location = New System.Drawing.Point(112, 185)
         Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(125, 27)
-        Me.TextBox10.TabIndex = 37
+        Me.TextBox10.PlaceholderText = "Enter Phone No."
+        Me.TextBox10.Size = New System.Drawing.Size(151, 27)
+        Me.TextBox10.TabIndex = 3
         '
         'Label14
         '
@@ -401,17 +176,19 @@ Partial Class AddHumanResource
         '
         'TextBox9
         '
-        Me.TextBox9.Location = New System.Drawing.Point(91, 132)
+        Me.TextBox9.Location = New System.Drawing.Point(112, 136)
         Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(125, 27)
-        Me.TextBox9.TabIndex = 34
+        Me.TextBox9.PlaceholderText = "Enter Email"
+        Me.TextBox9.Size = New System.Drawing.Size(151, 27)
+        Me.TextBox9.TabIndex = 2
         '
-        'TextBox8
+        'Address
         '
-        Me.TextBox8.Location = New System.Drawing.Point(91, 83)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(125, 27)
-        Me.TextBox8.TabIndex = 33
+        Me.Address.Location = New System.Drawing.Point(112, 87)
+        Me.Address.Name = "Address"
+        Me.Address.PlaceholderText = "Enter Address"
+        Me.Address.Size = New System.Drawing.Size(151, 27)
+        Me.Address.TabIndex = 1
         '
         'Label12
         '
@@ -422,6 +199,218 @@ Partial Class AddHumanResource
         Me.Label12.TabIndex = 32
         Me.Label12.Text = "Address*"
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(20, 41)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(55, 20)
+        Me.Label2.TabIndex = 1
+        Me.Label2.Text = "Name*"
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(112, 38)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.PlaceholderText = "Enter Name"
+        Me.TextBox1.Size = New System.Drawing.Size(151, 27)
+        Me.TextBox1.TabIndex = 0
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.AutoSize = True
+        Me.GroupBox1.Controls.Add(Me.PictureBox1)
+        Me.GroupBox1.Controls.Add(Me.Button4)
+        Me.GroupBox1.Controls.Add(Me.Label18)
+        Me.GroupBox1.Controls.Add(Me.Label11)
+        Me.GroupBox1.Controls.Add(Me.TextBox7)
+        Me.GroupBox1.Controls.Add(Me.TextBox6)
+        Me.GroupBox1.Controls.Add(Me.Label10)
+        Me.GroupBox1.Controls.Add(Me.ComboBox1)
+        Me.GroupBox1.Controls.Add(Me.Label1)
+        Me.GroupBox1.Controls.Add(Me.Label3)
+        Me.GroupBox1.Controls.Add(Me.TextBox2)
+        Me.GroupBox1.Location = New System.Drawing.Point(451, 33)
+        Me.GroupBox1.MinimumSize = New System.Drawing.Size(442, 187)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(442, 289)
+        Me.GroupBox1.TabIndex = 25
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "HR Info"
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(197, 234)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(151, 29)
+        Me.Button4.TabIndex = 13
+        Me.Button4.Text = "Upload"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Location = New System.Drawing.Point(22, 240)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(99, 20)
+        Me.Label18.TabIndex = 32
+        Me.Label18.Text = "Signature File"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(22, 189)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(47, 20)
+        Me.Label11.TabIndex = 17
+        Me.Label11.Text = "Rank*"
+        '
+        'TextBox7
+        '
+        Me.TextBox7.Location = New System.Drawing.Point(197, 186)
+        Me.TextBox7.Name = "TextBox7"
+        Me.TextBox7.PlaceholderText = "Enter Rank"
+        Me.TextBox7.Size = New System.Drawing.Size(151, 27)
+        Me.TextBox7.TabIndex = 12
+        '
+        'TextBox6
+        '
+        Me.TextBox6.Location = New System.Drawing.Point(197, 127)
+        Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.PlaceholderText = "Enter Council Reg. No."
+        Me.TextBox6.Size = New System.Drawing.Size(151, 27)
+        Me.TextBox6.TabIndex = 11
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(22, 134)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(169, 20)
+        Me.Label10.TabIndex = 14
+        Me.Label10.Text = "Council Registration No."
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(197, 33)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(151, 28)
+        Me.ComboBox1.TabIndex = 9
+        Me.ComboBox1.Text = "Select"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(18, 41)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(156, 20)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Human Resource Type"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(22, 85)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(67, 20)
+        Me.Label3.TabIndex = 2
+        Me.Label3.Text = "Position*"
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(197, 78)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.PlaceholderText = "Enter Address"
+        Me.TextBox2.Size = New System.Drawing.Size(151, 27)
+        Me.TextBox2.TabIndex = 10
+        '
+        'GroupBox4
+        '
+        Me.GroupBox4.Controls.Add(Me.Label21)
+        Me.GroupBox4.Controls.Add(Me.TextBox13)
+        Me.GroupBox4.Controls.Add(Me.Label22)
+        Me.GroupBox4.Controls.Add(Me.TextBox14)
+        Me.GroupBox4.Controls.Add(Me.Label19)
+        Me.GroupBox4.Controls.Add(Me.TextBox11)
+        Me.GroupBox4.Controls.Add(Me.Label20)
+        Me.GroupBox4.Controls.Add(Me.TextBox12)
+        Me.GroupBox4.Location = New System.Drawing.Point(3, 328)
+        Me.GroupBox4.MinimumSize = New System.Drawing.Size(442, 150)
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.Size = New System.Drawing.Size(442, 219)
+        Me.GroupBox4.TabIndex = 26
+        Me.GroupBox4.TabStop = False
+        Me.GroupBox4.Text = "Social Networks"
+        '
+        'Label21
+        '
+        Me.Label21.AutoSize = True
+        Me.Label21.Location = New System.Drawing.Point(27, 125)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(75, 20)
+        Me.Label21.TabIndex = 16
+        Me.Label21.Text = "Instagram"
+        '
+        'TextBox13
+        '
+        Me.TextBox13.Location = New System.Drawing.Point(112, 118)
+        Me.TextBox13.Name = "TextBox13"
+        Me.TextBox13.PlaceholderText = "Enter Instagram URL"
+        Me.TextBox13.Size = New System.Drawing.Size(213, 27)
+        Me.TextBox13.TabIndex = 7
+        '
+        'Label22
+        '
+        Me.Label22.AutoSize = True
+        Me.Label22.Location = New System.Drawing.Point(27, 164)
+        Me.Label22.Name = "Label22"
+        Me.Label22.Size = New System.Drawing.Size(66, 20)
+        Me.Label22.TabIndex = 17
+        Me.Label22.Text = "YouTube"
+        '
+        'TextBox14
+        '
+        Me.TextBox14.Location = New System.Drawing.Point(112, 161)
+        Me.TextBox14.Name = "TextBox14"
+        Me.TextBox14.PlaceholderText = "Enter YouTube URL"
+        Me.TextBox14.Size = New System.Drawing.Size(213, 27)
+        Me.TextBox14.TabIndex = 8
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.Location = New System.Drawing.Point(20, 41)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(72, 20)
+        Me.Label19.TabIndex = 12
+        Me.Label19.Text = "Facebook"
+        '
+        'TextBox11
+        '
+        Me.TextBox11.Location = New System.Drawing.Point(112, 34)
+        Me.TextBox11.Name = "TextBox11"
+        Me.TextBox11.PlaceholderText = "Enter Facebook URL"
+        Me.TextBox11.Size = New System.Drawing.Size(213, 27)
+        Me.TextBox11.TabIndex = 5
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.Location = New System.Drawing.Point(20, 80)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(54, 20)
+        Me.Label20.TabIndex = 13
+        Me.Label20.Text = "Twitter"
+        '
+        'TextBox12
+        '
+        Me.TextBox12.Location = New System.Drawing.Point(112, 73)
+        Me.TextBox12.Name = "TextBox12"
+        Me.TextBox12.PlaceholderText = "Enter Twitter URL"
+        Me.TextBox12.Size = New System.Drawing.Size(213, 27)
+        Me.TextBox12.TabIndex = 6
+        '
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.CheckBox2)
@@ -430,7 +419,7 @@ Partial Class AddHumanResource
         Me.GroupBox2.Controls.Add(Me.Label4)
         Me.GroupBox2.Controls.Add(Me.Label6)
         Me.GroupBox2.Controls.Add(Me.Label7)
-        Me.GroupBox2.Location = New System.Drawing.Point(451, 327)
+        Me.GroupBox2.Location = New System.Drawing.Point(451, 328)
         Me.GroupBox2.Margin = New System.Windows.Forms.Padding(3, 3, 3, 30)
         Me.GroupBox2.MinimumSize = New System.Drawing.Size(442, 150)
         Me.GroupBox2.Name = "GroupBox2"
@@ -438,6 +427,34 @@ Partial Class AddHumanResource
         Me.GroupBox2.TabIndex = 27
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "More"
+        '
+        'CheckBox2
+        '
+        Me.CheckBox2.AutoSize = True
+        Me.CheckBox2.Location = New System.Drawing.Point(197, 40)
+        Me.CheckBox2.Name = "CheckBox2"
+        Me.CheckBox2.Size = New System.Drawing.Size(55, 24)
+        Me.CheckBox2.TabIndex = 14
+        Me.CheckBox2.Text = "Use"
+        Me.CheckBox2.UseVisualStyleBackColor = True
+        '
+        'CheckBox1
+        '
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Location = New System.Drawing.Point(197, 79)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(78, 24)
+        Me.CheckBox1.TabIndex = 15
+        Me.CheckBox1.Text = "Publish"
+        Me.CheckBox1.UseVisualStyleBackColor = True
+        '
+        'TextBox3
+        '
+        Me.TextBox3.Location = New System.Drawing.Point(197, 118)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.PlaceholderText = "Enter Speciqlization"
+        Me.TextBox3.Size = New System.Drawing.Size(151, 27)
+        Me.TextBox3.TabIndex = 15
         '
         'Label4
         '
@@ -466,55 +483,53 @@ Partial Class AddHumanResource
         Me.Label7.TabIndex = 13
         Me.Label7.Text = "Status"
         '
-        'TextBox3
+        'PictureBox1
         '
-        Me.TextBox3.Location = New System.Drawing.Point(149, 118)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(125, 27)
-        Me.TextBox3.TabIndex = 35
+        Me.PictureBox1.Location = New System.Drawing.Point(354, 163)
+        Me.PictureBox1.MaximumSize = New System.Drawing.Size(130, 0)
+        Me.PictureBox1.MinimumSize = New System.Drawing.Size(0, 100)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(80, 100)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 34
+        Me.PictureBox1.TabStop = False
         '
-        'CheckBox1
+        'PictureBox2
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(149, 76)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(78, 24)
-        Me.CheckBox1.TabIndex = 36
-        Me.CheckBox1.Text = "Publish"
-        Me.CheckBox1.UseVisualStyleBackColor = True
-        '
-        'CheckBox2
-        '
-        Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Location = New System.Drawing.Point(149, 37)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(55, 24)
-        Me.CheckBox2.TabIndex = 37
-        Me.CheckBox2.Text = "Use"
-        Me.CheckBox2.UseVisualStyleBackColor = True
+        Me.PictureBox2.Location = New System.Drawing.Point(297, 26)
+        Me.PictureBox2.MaximumSize = New System.Drawing.Size(130, 0)
+        Me.PictureBox2.MinimumSize = New System.Drawing.Size(0, 100)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(127, 133)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox2.TabIndex = 40
+        Me.PictureBox2.TabStop = False
         '
         'AddHumanResource
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(935, 580)
+        Me.ClientSize = New System.Drawing.Size(900, 550)
         Me.Controls.Add(Me.ToolStrip)
         Me.Controls.Add(Me.FlowLayoutPanel2)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MinimumSize = New System.Drawing.Size(918, 597)
         Me.Name = "AddHumanResource"
         Me.Text = "Add Human Resource"
         Me.ToolStrip.ResumeLayout(False)
         Me.ToolStrip.PerformLayout()
         Me.FlowLayoutPanel2.ResumeLayout(False)
         Me.FlowLayoutPanel2.PerformLayout()
+        Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox3.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox4.ResumeLayout(False)
         Me.GroupBox4.PerformLayout()
-        Me.GroupBox3.ResumeLayout(False)
-        Me.GroupBox3.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -536,16 +551,14 @@ Partial Class AddHumanResource
     Friend WithEvents TextBox6 As TextBox
     Friend WithEvents Label10 As Label
     Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents Label16 As Label
     Friend WithEvents Button3 As Button
     Friend WithEvents Label15 As Label
     Friend WithEvents TextBox10 As TextBox
     Friend WithEvents Label14 As Label
     Friend WithEvents Label13 As Label
     Friend WithEvents TextBox9 As TextBox
-    Friend WithEvents TextBox8 As TextBox
+    Friend WithEvents Address As TextBox
     Friend WithEvents Label12 As Label
-    Friend WithEvents Label17 As Label
     Friend WithEvents Button4 As Button
     Friend WithEvents Label18 As Label
     Friend WithEvents Label21 As Label
@@ -563,4 +576,6 @@ Partial Class AddHumanResource
     Friend WithEvents Label4 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

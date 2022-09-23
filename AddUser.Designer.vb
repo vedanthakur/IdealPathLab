@@ -38,7 +38,6 @@ Partial Class AddUser
         Me.roll = New System.Windows.Forms.ComboBox()
         Me.imgUpload = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.mobile = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -65,8 +64,8 @@ Partial Class AddUser
         Me.FlowLayoutPanel2.Location = New System.Drawing.Point(0, 27)
         Me.FlowLayoutPanel2.MinimumSize = New System.Drawing.Size(450, 0)
         Me.FlowLayoutPanel2.Name = "FlowLayoutPanel2"
-        Me.FlowLayoutPanel2.Padding = New System.Windows.Forms.Padding(0, 30, 0, 0)
-        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(499, 726)
+        Me.FlowLayoutPanel2.Padding = New System.Windows.Forms.Padding(0, 10, 0, 0)
+        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(450, 589)
         Me.FlowLayoutPanel2.TabIndex = 34
         '
         'GroupBox1
@@ -84,7 +83,6 @@ Partial Class AddUser
         Me.GroupBox1.Controls.Add(Me.roll)
         Me.GroupBox1.Controls.Add(Me.imgUpload)
         Me.GroupBox1.Controls.Add(Me.Label5)
-        Me.GroupBox1.Controls.Add(Me.Button2)
         Me.GroupBox1.Controls.Add(Me.Label7)
         Me.GroupBox1.Controls.Add(Me.mobile)
         Me.GroupBox1.Controls.Add(Me.Label6)
@@ -95,11 +93,10 @@ Partial Class AddUser
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Location = New System.Drawing.Point(3, 33)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(3, 3, 3, 30)
+        Me.GroupBox1.Location = New System.Drawing.Point(3, 13)
         Me.GroupBox1.MinimumSize = New System.Drawing.Size(442, 0)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(442, 655)
+        Me.GroupBox1.Size = New System.Drawing.Size(442, 574)
         Me.GroupBox1.TabIndex = 25
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Create User"
@@ -110,7 +107,7 @@ Partial Class AddUser
         Me.status.Location = New System.Drawing.Point(140, 533)
         Me.status.Name = "status"
         Me.status.Size = New System.Drawing.Size(78, 24)
-        Me.status.TabIndex = 43
+        Me.status.TabIndex = 10
         Me.status.Text = "Publish"
         Me.status.UseVisualStyleBackColor = True
         '
@@ -140,7 +137,7 @@ Partial Class AddUser
         Me.showUserWiseData.Location = New System.Drawing.Point(193, 442)
         Me.showUserWiseData.Name = "showUserWiseData"
         Me.showUserWiseData.Size = New System.Drawing.Size(52, 24)
-        Me.showUserWiseData.TabIndex = 41
+        Me.showUserWiseData.TabIndex = 8
         Me.showUserWiseData.Text = "Yes"
         Me.showUserWiseData.UseVisualStyleBackColor = True
         '
@@ -159,7 +156,7 @@ Partial Class AddUser
         Me.humanResource.Location = New System.Drawing.Point(145, 378)
         Me.humanResource.Name = "humanResource"
         Me.humanResource.Size = New System.Drawing.Size(151, 28)
-        Me.humanResource.TabIndex = 39
+        Me.humanResource.TabIndex = 7
         Me.humanResource.Text = "Select"
         '
         'Label9
@@ -177,7 +174,7 @@ Partial Class AddUser
         Me.branch.Location = New System.Drawing.Point(145, 331)
         Me.branch.Name = "branch"
         Me.branch.Size = New System.Drawing.Size(151, 28)
-        Me.branch.TabIndex = 37
+        Me.branch.TabIndex = 6
         Me.branch.Text = "Select"
         '
         'password
@@ -186,7 +183,7 @@ Partial Class AddUser
         Me.password.Name = "password"
         Me.password.PlaceholderText = "Enter Password"
         Me.password.Size = New System.Drawing.Size(151, 27)
-        Me.password.TabIndex = 36
+        Me.password.TabIndex = 5
         '
         'Label8
         '
@@ -203,7 +200,7 @@ Partial Class AddUser
         Me.roll.Location = New System.Drawing.Point(145, 81)
         Me.roll.Name = "roll"
         Me.roll.Size = New System.Drawing.Size(151, 28)
-        Me.roll.TabIndex = 34
+        Me.roll.TabIndex = 1
         Me.roll.Text = "Select"
         '
         'imgUpload
@@ -211,7 +208,7 @@ Partial Class AddUser
         Me.imgUpload.Location = New System.Drawing.Point(140, 482)
         Me.imgUpload.Name = "imgUpload"
         Me.imgUpload.Size = New System.Drawing.Size(94, 29)
-        Me.imgUpload.TabIndex = 27
+        Me.imgUpload.TabIndex = 9
         Me.imgUpload.Text = "Upload"
         Me.imgUpload.UseVisualStyleBackColor = True
         '
@@ -223,15 +220,6 @@ Partial Class AddUser
         Me.Label5.Size = New System.Drawing.Size(51, 20)
         Me.Label5.TabIndex = 22
         Me.Label5.Text = "Image"
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(18, 584)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(94, 29)
-        Me.Button2.TabIndex = 33
-        Me.Button2.Text = "Save"
-        Me.Button2.UseVisualStyleBackColor = True
         '
         'Label7
         '
@@ -248,7 +236,7 @@ Partial Class AddUser
         Me.mobile.Name = "mobile"
         Me.mobile.PlaceholderText = "Enter Mobile"
         Me.mobile.Size = New System.Drawing.Size(151, 27)
-        Me.mobile.TabIndex = 30
+        Me.mobile.TabIndex = 4
         '
         'Label6
         '
@@ -265,7 +253,7 @@ Partial Class AddUser
         Me.address.Name = "address"
         Me.address.PlaceholderText = "Enter Address"
         Me.address.Size = New System.Drawing.Size(151, 27)
-        Me.address.TabIndex = 26
+        Me.address.TabIndex = 3
         '
         'nameL
         '
@@ -273,7 +261,7 @@ Partial Class AddUser
         Me.nameL.Name = "nameL"
         Me.nameL.PlaceholderText = "Enter Name"
         Me.nameL.Size = New System.Drawing.Size(151, 27)
-        Me.nameL.TabIndex = 24
+        Me.nameL.TabIndex = 0
         '
         'Label2
         '
@@ -290,7 +278,7 @@ Partial Class AddUser
         Me.email.Name = "email"
         Me.email.PlaceholderText = "Enter Email"
         Me.email.Size = New System.Drawing.Size(151, 27)
-        Me.email.TabIndex = 19
+        Me.email.TabIndex = 2
         '
         'Label1
         '
@@ -325,7 +313,7 @@ Partial Class AddUser
         Me.ToolStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SaveToolStripButton})
         Me.ToolStrip.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip.Name = "ToolStrip"
-        Me.ToolStrip.Size = New System.Drawing.Size(499, 27)
+        Me.ToolStrip.Size = New System.Drawing.Size(448, 27)
         Me.ToolStrip.TabIndex = 33
         Me.ToolStrip.Text = "ToolStrip"
         '
@@ -341,9 +329,11 @@ Partial Class AddUser
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(499, 753)
+        Me.ClientSize = New System.Drawing.Size(448, 616)
         Me.Controls.Add(Me.FlowLayoutPanel2)
         Me.Controls.Add(Me.ToolStrip)
+        Me.MaximumSize = New System.Drawing.Size(466, 663)
+        Me.MinimumSize = New System.Drawing.Size(466, 663)
         Me.Name = "AddUser"
         Me.Text = "AddUser"
         Me.FlowLayoutPanel2.ResumeLayout(False)
@@ -363,7 +353,6 @@ Partial Class AddUser
     Friend WithEvents roll As ComboBox
     Friend WithEvents imgUpload As Button
     Friend WithEvents Label5 As Label
-    Friend WithEvents Button2 As Button
     Friend WithEvents Label7 As Label
     Friend WithEvents mobile As TextBox
     Friend WithEvents Label6 As Label

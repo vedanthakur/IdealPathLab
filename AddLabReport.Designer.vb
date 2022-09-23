@@ -49,9 +49,9 @@ Partial Class AddLabReport
         Me.CheckedListBox4 = New System.Windows.Forms.CheckedListBox()
         Me.FlowLayoutPanel2 = New System.Windows.Forms.FlowLayoutPanel()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox9 = New System.Windows.Forms.GroupBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
@@ -70,6 +70,7 @@ Partial Class AddLabReport
         Me.GroupBox6.SuspendLayout()
         Me.FlowLayoutPanel2.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox9.SuspendLayout()
         Me.ToolStrip.SuspendLayout()
         Me.SuspendLayout()
@@ -84,6 +85,7 @@ Partial Class AddLabReport
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.TextBox2)
         Me.GroupBox1.Location = New System.Drawing.Point(3, 33)
+        Me.GroupBox1.MaximumSize = New System.Drawing.Size(442, 187)
         Me.GroupBox1.MinimumSize = New System.Drawing.Size(442, 187)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(442, 187)
@@ -93,53 +95,65 @@ Partial Class AddLabReport
         '
         'DateTimePicker1
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(143, 36)
+        Me.DateTimePicker1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(153, 95)
         Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(250, 27)
-        Me.DateTimePicker1.TabIndex = 12
+        Me.DateTimePicker1.Size = New System.Drawing.Size(239, 27)
+        Me.DateTimePicker1.TabIndex = 0
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(18, 41)
+        Me.Label1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label1.Location = New System.Drawing.Point(3, 89)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(3)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(120, 20)
+        Me.Label1.Padding = New System.Windows.Forms.Padding(3, 10, 3, 3)
+        Me.Label1.Size = New System.Drawing.Size(126, 33)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Invoice Number*"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(18, 98)
+        Me.Label2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label2.Location = New System.Drawing.Point(3, 56)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(3)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(104, 20)
-        Me.Label2.TabIndex = 1
+        Me.Label2.Padding = New System.Windows.Forms.Padding(3, 10, 3, 3)
+        Me.Label2.Size = New System.Drawing.Size(110, 33)
+        Me.Label2.TabIndex = 0
         Me.Label2.Text = "Patient Name*"
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(143, 91)
+        Me.TextBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TextBox1.Location = New System.Drawing.Point(153, 29)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.PlaceholderText = "Enter Name"
-        Me.TextBox1.Size = New System.Drawing.Size(125, 27)
-        Me.TextBox1.TabIndex = 10
+        Me.TextBox1.Size = New System.Drawing.Size(147, 27)
+        Me.TextBox1.TabIndex = 1
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(18, 137)
+        Me.Label3.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label3.Location = New System.Drawing.Point(3, 23)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(3)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(108, 20)
+        Me.Label3.Padding = New System.Windows.Forms.Padding(3, 10, 3, 3)
+        Me.Label3.Size = New System.Drawing.Size(114, 33)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Billing Address"
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(143, 134)
+        Me.TextBox2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TextBox2.Location = New System.Drawing.Point(153, 62)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.PlaceholderText = "Enter Address"
-        Me.TextBox2.Size = New System.Drawing.Size(125, 27)
-        Me.TextBox2.TabIndex = 11
+        Me.TextBox2.Size = New System.Drawing.Size(147, 27)
+        Me.TextBox2.TabIndex = 2
         '
         'GroupBox8
         '
@@ -169,14 +183,14 @@ Partial Class AddLabReport
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.PlaceholderText = "Enter TSH"
         Me.TextBox5.Size = New System.Drawing.Size(125, 27)
-        Me.TextBox5.TabIndex = 14
+        Me.TextBox5.TabIndex = 5
         '
         'Button1
         '
         Me.Button1.Location = New System.Drawing.Point(272, 75)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(94, 29)
-        Me.Button1.TabIndex = 20
+        Me.Button1.TabIndex = 6
         Me.Button1.Text = "Save"
         Me.Button1.UseVisualStyleBackColor = True
         '
@@ -208,7 +222,7 @@ Partial Class AddLabReport
         Me.DateTimePicker2.Location = New System.Drawing.Point(131, 23)
         Me.DateTimePicker2.Name = "DateTimePicker2"
         Me.DateTimePicker2.Size = New System.Drawing.Size(250, 27)
-        Me.DateTimePicker2.TabIndex = 29
+        Me.DateTimePicker2.TabIndex = 11
         '
         'TextBox4
         '
@@ -216,7 +230,7 @@ Partial Class AddLabReport
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.PlaceholderText = "Enter Lab no."
         Me.TextBox4.Size = New System.Drawing.Size(125, 27)
-        Me.TextBox4.TabIndex = 13
+        Me.TextBox4.TabIndex = 12
         '
         'Label5
         '
@@ -245,7 +259,7 @@ Partial Class AddLabReport
         Me.CheckedListBox1.Location = New System.Drawing.Point(6, 26)
         Me.CheckedListBox1.Name = "CheckedListBox1"
         Me.CheckedListBox1.Size = New System.Drawing.Size(341, 114)
-        Me.CheckedListBox1.TabIndex = 22
+        Me.CheckedListBox1.TabIndex = 3
         '
         'GroupBox4
         '
@@ -265,7 +279,7 @@ Partial Class AddLabReport
         Me.CheckedListBox3.Location = New System.Drawing.Point(6, 26)
         Me.CheckedListBox3.Name = "CheckedListBox3"
         Me.CheckedListBox3.Size = New System.Drawing.Size(341, 114)
-        Me.CheckedListBox3.TabIndex = 22
+        Me.CheckedListBox3.TabIndex = 9
         '
         'GroupBox5
         '
@@ -286,7 +300,7 @@ Partial Class AddLabReport
         Me.CheckedListBox2.Location = New System.Drawing.Point(6, 26)
         Me.CheckedListBox2.Name = "CheckedListBox2"
         Me.CheckedListBox2.Size = New System.Drawing.Size(341, 114)
-        Me.CheckedListBox2.TabIndex = 22
+        Me.CheckedListBox2.TabIndex = 10
         '
         'GroupBox6
         '
@@ -306,12 +320,13 @@ Partial Class AddLabReport
         Me.CheckedListBox4.Location = New System.Drawing.Point(6, 26)
         Me.CheckedListBox4.Name = "CheckedListBox4"
         Me.CheckedListBox4.Size = New System.Drawing.Size(341, 114)
-        Me.CheckedListBox4.TabIndex = 22
+        Me.CheckedListBox4.TabIndex = 4
         '
         'FlowLayoutPanel2
         '
         Me.FlowLayoutPanel2.AutoScroll = True
         Me.FlowLayoutPanel2.AutoScrollMargin = New System.Drawing.Size(0, 30)
+        Me.FlowLayoutPanel2.AutoSize = True
         Me.FlowLayoutPanel2.Controls.Add(Me.GroupBox1)
         Me.FlowLayoutPanel2.Controls.Add(Me.GroupBox4)
         Me.FlowLayoutPanel2.Controls.Add(Me.GroupBox3)
@@ -323,17 +338,16 @@ Partial Class AddLabReport
         Me.FlowLayoutPanel2.Controls.Add(Me.GroupBox9)
         Me.FlowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.FlowLayoutPanel2.Location = New System.Drawing.Point(0, 0)
-        Me.FlowLayoutPanel2.MinimumSize = New System.Drawing.Size(450, 0)
         Me.FlowLayoutPanel2.Name = "FlowLayoutPanel2"
-        Me.FlowLayoutPanel2.Padding = New System.Windows.Forms.Padding(0, 30, 0, 30)
-        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(964, 920)
+        Me.FlowLayoutPanel2.Padding = New System.Windows.Forms.Padding(0, 30, 0, 3)
+        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(897, 908)
         Me.FlowLayoutPanel2.TabIndex = 27
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.TextBox3)
         Me.GroupBox2.Controls.Add(Me.Label7)
         Me.GroupBox2.Controls.Add(Me.Button2)
+        Me.GroupBox2.Controls.Add(Me.PictureBox1)
         Me.GroupBox2.Location = New System.Drawing.Point(451, 554)
         Me.GroupBox2.MinimumSize = New System.Drawing.Size(442, 130)
         Me.GroupBox2.Name = "GroupBox2"
@@ -341,14 +355,6 @@ Partial Class AddLabReport
         Me.GroupBox2.TabIndex = 32
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Report file"
-        '
-        'TextBox3
-        '
-        Me.TextBox3.Location = New System.Drawing.Point(123, 35)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.PlaceholderText = "Select Image"
-        Me.TextBox3.Size = New System.Drawing.Size(125, 27)
-        Me.TextBox3.TabIndex = 21
         '
         'Label7
         '
@@ -361,12 +367,23 @@ Partial Class AddLabReport
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(140, 75)
+        Me.Button2.Location = New System.Drawing.Point(131, 32)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(94, 29)
-        Me.Button2.TabIndex = 20
+        Me.Button2.TabIndex = 13
         Me.Button2.Text = "Upload"
         Me.Button2.UseVisualStyleBackColor = True
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Location = New System.Drawing.Point(281, 21)
+        Me.PictureBox1.MaximumSize = New System.Drawing.Size(130, 0)
+        Me.PictureBox1.MinimumSize = New System.Drawing.Size(0, 100)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(100, 100)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 34
+        Me.PictureBox1.TabStop = False
         '
         'GroupBox9
         '
@@ -375,7 +392,6 @@ Partial Class AddLabReport
         Me.GroupBox9.Controls.Add(Me.CheckBox1)
         Me.GroupBox9.Controls.Add(Me.Label8)
         Me.GroupBox9.Location = New System.Drawing.Point(3, 690)
-        Me.GroupBox9.Margin = New System.Windows.Forms.Padding(3, 3, 3, 50)
         Me.GroupBox9.MinimumSize = New System.Drawing.Size(442, 0)
         Me.GroupBox9.Name = "GroupBox9"
         Me.GroupBox9.Size = New System.Drawing.Size(442, 206)
@@ -397,7 +413,7 @@ Partial Class AddLabReport
         Me.RichTextBox1.Location = New System.Drawing.Point(13, 102)
         Me.RichTextBox1.Name = "RichTextBox1"
         Me.RichTextBox1.Size = New System.Drawing.Size(406, 84)
-        Me.RichTextBox1.TabIndex = 22
+        Me.RichTextBox1.TabIndex = 8
         Me.RichTextBox1.Text = ""
         '
         'CheckBox1
@@ -406,7 +422,7 @@ Partial Class AddLabReport
         Me.CheckBox1.Location = New System.Drawing.Point(119, 36)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(95, 24)
-        Me.CheckBox1.TabIndex = 21
+        Me.CheckBox1.TabIndex = 7
         Me.CheckBox1.Text = "Delivered"
         Me.CheckBox1.UseVisualStyleBackColor = True
         '
@@ -435,7 +451,7 @@ Partial Class AddLabReport
         Me.ToolStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SaveToolStripButton})
         Me.ToolStrip.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip.Name = "ToolStrip"
-        Me.ToolStrip.Size = New System.Drawing.Size(964, 27)
+        Me.ToolStrip.Size = New System.Drawing.Size(897, 27)
         Me.ToolStrip.TabIndex = 28
         Me.ToolStrip.Text = "ToolStrip"
         '
@@ -453,11 +469,11 @@ Partial Class AddLabReport
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(964, 920)
+        Me.ClientSize = New System.Drawing.Size(897, 908)
         Me.Controls.Add(Me.ToolStrip)
         Me.Controls.Add(Me.FlowLayoutPanel2)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.MinimumSize = New System.Drawing.Size(500, 0)
+        Me.MinimumSize = New System.Drawing.Size(915, 955)
         Me.Name = "AddLabReport"
         Me.Text = "Add Lab Report"
         Me.GroupBox1.ResumeLayout(False)
@@ -474,6 +490,7 @@ Partial Class AddLabReport
         Me.FlowLayoutPanel2.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox9.ResumeLayout(False)
         Me.GroupBox9.PerformLayout()
         Me.ToolStrip.ResumeLayout(False)
@@ -509,7 +526,6 @@ Partial Class AddLabReport
     Friend WithEvents GroupBox6 As GroupBox
     Friend WithEvents CheckedListBox4 As CheckedListBox
     Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents TextBox3 As TextBox
     Friend WithEvents Label7 As Label
     Friend WithEvents Button2 As Button
     Friend WithEvents GroupBox9 As GroupBox
@@ -521,4 +537,5 @@ Partial Class AddLabReport
     Friend WithEvents SaveAllToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ToolStrip As ToolStrip
     Friend WithEvents SaveToolStripButton As ToolStripButton
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

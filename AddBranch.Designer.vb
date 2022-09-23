@@ -27,25 +27,25 @@ Partial Class AddBranch
         Me.SaveToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.FlowLayoutPanel2 = New System.Windows.Forms.FlowLayoutPanel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.StatusCkBox = New System.Windows.Forms.CheckBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.ContactPersonTBox = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.ImageL = New System.Windows.Forms.Label()
         Me.ImageButton = New System.Windows.Forms.Button()
         Me.EmailTBox = New System.Windows.Forms.TextBox()
-        Me.AddressTBox = New System.Windows.Forms.TextBox()
-        Me.BranchNameTBox = New System.Windows.Forms.TextBox()
+        Me.Phone = New System.Windows.Forms.TextBox()
+        Me.Address = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.PhoneNoTBox = New System.Windows.Forms.TextBox()
+        Me.BName = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.ToolStrip.SuspendLayout()
         Me.FlowLayoutPanel2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ToolStrip
@@ -54,7 +54,7 @@ Partial Class AddBranch
         Me.ToolStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SaveToolStripButton})
         Me.ToolStrip.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip.Name = "ToolStrip"
-        Me.ToolStrip.Size = New System.Drawing.Size(464, 27)
+        Me.ToolStrip.Size = New System.Drawing.Size(448, 27)
         Me.ToolStrip.TabIndex = 31
         Me.ToolStrip.Text = "ToolStrip"
         '
@@ -74,45 +74,45 @@ Partial Class AddBranch
         Me.FlowLayoutPanel2.Location = New System.Drawing.Point(0, 27)
         Me.FlowLayoutPanel2.MinimumSize = New System.Drawing.Size(450, 0)
         Me.FlowLayoutPanel2.Name = "FlowLayoutPanel2"
-        Me.FlowLayoutPanel2.Padding = New System.Windows.Forms.Padding(0, 30, 0, 0)
-        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(464, 538)
+        Me.FlowLayoutPanel2.Padding = New System.Windows.Forms.Padding(0, 10, 0, 0)
+        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(450, 390)
         Me.FlowLayoutPanel2.TabIndex = 32
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.Button2)
+        Me.GroupBox1.Controls.Add(Me.PictureBox1)
         Me.GroupBox1.Controls.Add(Me.StatusCkBox)
         Me.GroupBox1.Controls.Add(Me.Label7)
         Me.GroupBox1.Controls.Add(Me.ContactPersonTBox)
         Me.GroupBox1.Controls.Add(Me.Label6)
-        Me.GroupBox1.Controls.Add(Me.ImageL)
         Me.GroupBox1.Controls.Add(Me.ImageButton)
         Me.GroupBox1.Controls.Add(Me.EmailTBox)
-        Me.GroupBox1.Controls.Add(Me.AddressTBox)
-        Me.GroupBox1.Controls.Add(Me.BranchNameTBox)
+        Me.GroupBox1.Controls.Add(Me.Phone)
+        Me.GroupBox1.Controls.Add(Me.Address)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Controls.Add(Me.PhoneNoTBox)
+        Me.GroupBox1.Controls.Add(Me.BName)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Location = New System.Drawing.Point(3, 33)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(3, 3, 3, 30)
+        Me.GroupBox1.Location = New System.Drawing.Point(3, 13)
         Me.GroupBox1.MinimumSize = New System.Drawing.Size(442, 0)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(442, 454)
+        Me.GroupBox1.Size = New System.Drawing.Size(442, 374)
         Me.GroupBox1.TabIndex = 25
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Create Branch"
         '
-        'Button2
+        'PictureBox1
         '
-        Me.Button2.Location = New System.Drawing.Point(19, 395)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(94, 29)
-        Me.Button2.TabIndex = 33
-        Me.Button2.Text = "Save"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.PictureBox1.Location = New System.Drawing.Point(321, 195)
+        Me.PictureBox1.MaximumSize = New System.Drawing.Size(130, 0)
+        Me.PictureBox1.MinimumSize = New System.Drawing.Size(0, 100)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(100, 100)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 33
+        Me.PictureBox1.TabStop = False
         '
         'StatusCkBox
         '
@@ -137,7 +137,8 @@ Partial Class AddBranch
         '
         Me.ContactPersonTBox.Location = New System.Drawing.Point(140, 279)
         Me.ContactPersonTBox.Name = "ContactPersonTBox"
-        Me.ContactPersonTBox.Size = New System.Drawing.Size(125, 27)
+        Me.ContactPersonTBox.PlaceholderText = "Enter Contact name"
+        Me.ContactPersonTBox.Size = New System.Drawing.Size(151, 27)
         Me.ContactPersonTBox.TabIndex = 30
         '
         'Label6
@@ -148,15 +149,6 @@ Partial Class AddBranch
         Me.Label6.Size = New System.Drawing.Size(107, 20)
         Me.Label6.TabIndex = 29
         Me.Label6.Text = "Contact Person"
-        '
-        'ImageL
-        '
-        Me.ImageL.AutoSize = True
-        Me.ImageL.Location = New System.Drawing.Point(238, 236)
-        Me.ImageL.Name = "ImageL"
-        Me.ImageL.Size = New System.Drawing.Size(104, 20)
-        Me.ImageL.TabIndex = 28
-        Me.ImageL.Text = "No file chosen"
         '
         'ImageButton
         '
@@ -171,22 +163,25 @@ Partial Class AddBranch
         '
         Me.EmailTBox.Location = New System.Drawing.Point(140, 177)
         Me.EmailTBox.Name = "EmailTBox"
-        Me.EmailTBox.Size = New System.Drawing.Size(125, 27)
+        Me.EmailTBox.PlaceholderText = "Enter Email"
+        Me.EmailTBox.Size = New System.Drawing.Size(151, 27)
         Me.EmailTBox.TabIndex = 26
         '
-        'AddressTBox
+        'Phone
         '
-        Me.AddressTBox.Location = New System.Drawing.Point(140, 86)
-        Me.AddressTBox.Name = "AddressTBox"
-        Me.AddressTBox.Size = New System.Drawing.Size(125, 27)
-        Me.AddressTBox.TabIndex = 25
+        Me.Phone.Location = New System.Drawing.Point(140, 130)
+        Me.Phone.Name = "Phone"
+        Me.Phone.PlaceholderText = "Enter Phone No."
+        Me.Phone.Size = New System.Drawing.Size(151, 27)
+        Me.Phone.TabIndex = 25
         '
-        'BranchNameTBox
+        'Address
         '
-        Me.BranchNameTBox.Location = New System.Drawing.Point(140, 34)
-        Me.BranchNameTBox.Name = "BranchNameTBox"
-        Me.BranchNameTBox.Size = New System.Drawing.Size(125, 27)
-        Me.BranchNameTBox.TabIndex = 24
+        Me.Address.Location = New System.Drawing.Point(140, 86)
+        Me.Address.Name = "Address"
+        Me.Address.PlaceholderText = "Enter Address"
+        Me.Address.Size = New System.Drawing.Size(151, 27)
+        Me.Address.TabIndex = 24
         '
         'Label5
         '
@@ -206,12 +201,13 @@ Partial Class AddBranch
         Me.Label2.TabIndex = 20
         Me.Label2.Text = "Email"
         '
-        'PhoneNoTBox
+        'BName
         '
-        Me.PhoneNoTBox.Location = New System.Drawing.Point(140, 130)
-        Me.PhoneNoTBox.Name = "PhoneNoTBox"
-        Me.PhoneNoTBox.Size = New System.Drawing.Size(125, 27)
-        Me.PhoneNoTBox.TabIndex = 19
+        Me.BName.Location = New System.Drawing.Point(140, 38)
+        Me.BName.Name = "BName"
+        Me.BName.PlaceholderText = "Enter Branch Name"
+        Me.BName.Size = New System.Drawing.Size(151, 27)
+        Me.BName.TabIndex = 19
         '
         'Label1
         '
@@ -244,10 +240,11 @@ Partial Class AddBranch
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(464, 565)
+        Me.ClientSize = New System.Drawing.Size(448, 417)
         Me.Controls.Add(Me.FlowLayoutPanel2)
         Me.Controls.Add(Me.ToolStrip)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MinimumSize = New System.Drawing.Size(466, 464)
         Me.Name = "AddBranch"
         Me.Text = "AddBranch"
         Me.ToolStrip.ResumeLayout(False)
@@ -255,6 +252,7 @@ Partial Class AddBranch
         Me.FlowLayoutPanel2.ResumeLayout(False)
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -264,7 +262,6 @@ Partial Class AddBranch
     Friend WithEvents SaveToolStripButton As ToolStripButton
     Friend WithEvents FlowLayoutPanel2 As FlowLayoutPanel
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents Button2 As Button
     Friend WithEvents StatusCkBox As CheckBox
     Friend WithEvents Label7 As Label
     Friend WithEvents ContactPersonTBox As TextBox
@@ -272,12 +269,13 @@ Partial Class AddBranch
     Friend WithEvents ImageL As Label
     Friend WithEvents ImageButton As Button
     Friend WithEvents EmailTBox As TextBox
-    Friend WithEvents AddressTBox As TextBox
-    Friend WithEvents BranchNameTBox As TextBox
+    Friend WithEvents Phone As TextBox
+    Friend WithEvents Address As TextBox
     Friend WithEvents Label5 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents PhoneNoTBox As TextBox
+    Friend WithEvents BName As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

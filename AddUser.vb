@@ -9,7 +9,7 @@ Public Class AddUser
 
     Dim imgpath As String
     Dim arrimage() As Byte
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs)
         Try
             Dim sql As String
             Dim i As Integer
@@ -59,6 +59,5 @@ Public Class AddUser
             PictureBox1.ImageLocation = imgpath
         End If
     End Sub
-
 
 End Class

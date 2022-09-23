@@ -157,4 +157,11 @@ Public Class MDIParent1
         LoginForm1.Show()
 
     End Sub
+
+    Private Sub ToolStripMenuItem21_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem21.Click
+        AddPatient.MdiParent = Me
+        AddPatient.Show()
+        AddPatient.Left = 0
+        AddPatient.Top = 0
+    End Sub
 End Class

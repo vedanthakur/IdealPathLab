@@ -129,13 +129,13 @@ Partial Class MDIParent1
         'ListToolStripMenuItem1
         '
         Me.ListToolStripMenuItem1.Name = "ListToolStripMenuItem1"
-        Me.ListToolStripMenuItem1.Size = New System.Drawing.Size(169, 26)
+        Me.ListToolStripMenuItem1.Size = New System.Drawing.Size(224, 26)
         Me.ListToolStripMenuItem1.Text = "&List"
         '
         'ParentDataToolStripMenuItem1
         '
         Me.ParentDataToolStripMenuItem1.Name = "ParentDataToolStripMenuItem1"
-        Me.ParentDataToolStripMenuItem1.Size = New System.Drawing.Size(169, 26)
+        Me.ParentDataToolStripMenuItem1.Size = New System.Drawing.Size(224, 26)
         Me.ParentDataToolStripMenuItem1.Text = "&Parent Data"
         '
         'ToolStripMenuItem17
@@ -148,18 +148,18 @@ Partial Class MDIParent1
         'ToolStripMenuItem14
         '
         Me.ToolStripMenuItem14.Name = "ToolStripMenuItem14"
-        Me.ToolStripMenuItem14.Size = New System.Drawing.Size(135, 26)
+        Me.ToolStripMenuItem14.Size = New System.Drawing.Size(224, 26)
         Me.ToolStripMenuItem14.Text = "&List"
         '
         'ToolStripMenuItem16
         '
         Me.ToolStripMenuItem16.Name = "ToolStripMenuItem16"
-        Me.ToolStripMenuItem16.Size = New System.Drawing.Size(135, 26)
+        Me.ToolStripMenuItem16.Size = New System.Drawing.Size(224, 26)
         Me.ToolStripMenuItem16.Text = "&Create"
         '
         'ToolStripMenuItem20
         '
-        Me.ToolStripMenuItem20.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem21, Me.ListToolStripMenuItem})
+        Me.ToolStripMenuItem20.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ListToolStripMenuItem, Me.ToolStripMenuItem21})
         Me.ToolStripMenuItem20.Name = "ToolStripMenuItem20"
         Me.ToolStripMenuItem20.Size = New System.Drawing.Size(68, 24)
         Me.ToolStripMenuItem20.Text = "&Patient"
@@ -167,18 +167,18 @@ Partial Class MDIParent1
         'ToolStripMenuItem21
         '
         Me.ToolStripMenuItem21.Name = "ToolStripMenuItem21"
-        Me.ToolStripMenuItem21.Size = New System.Drawing.Size(135, 26)
+        Me.ToolStripMenuItem21.Size = New System.Drawing.Size(224, 26)
         Me.ToolStripMenuItem21.Text = "&Create"
         '
         'ListToolStripMenuItem
         '
         Me.ListToolStripMenuItem.Name = "ListToolStripMenuItem"
-        Me.ListToolStripMenuItem.Size = New System.Drawing.Size(135, 26)
+        Me.ListToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.ListToolStripMenuItem.Text = "&List"
         '
         'ToolStripMenuItem22
         '
-        Me.ToolStripMenuItem22.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem23, Me.ToolStripMenuItem24})
+        Me.ToolStripMenuItem22.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem24, Me.ToolStripMenuItem23})
         Me.ToolStripMenuItem22.Name = "ToolStripMenuItem22"
         Me.ToolStripMenuItem22.Size = New System.Drawing.Size(70, 24)
         Me.ToolStripMenuItem22.Text = "&Invoice"
@@ -205,13 +205,13 @@ Partial Class MDIParent1
         'ToolStripMenuItem2
         '
         Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
-        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(135, 26)
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(224, 26)
         Me.ToolStripMenuItem2.Text = "&List"
         '
         'ToolStripMenuItem3
         '
         Me.ToolStripMenuItem3.Name = "ToolStripMenuItem3"
-        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(135, 26)
+        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(224, 26)
         Me.ToolStripMenuItem3.Text = "&Create"
         '
         'LabResultToolStripMenuItem
@@ -224,13 +224,13 @@ Partial Class MDIParent1
         'ToolStripMenuItem4
         '
         Me.ToolStripMenuItem4.Name = "ToolStripMenuItem4"
-        Me.ToolStripMenuItem4.Size = New System.Drawing.Size(135, 26)
+        Me.ToolStripMenuItem4.Size = New System.Drawing.Size(224, 26)
         Me.ToolStripMenuItem4.Text = "&List"
         '
         'ToolStripMenuItem5
         '
         Me.ToolStripMenuItem5.Name = "ToolStripMenuItem5"
-        Me.ToolStripMenuItem5.Size = New System.Drawing.Size(135, 26)
+        Me.ToolStripMenuItem5.Size = New System.Drawing.Size(224, 26)
         Me.ToolStripMenuItem5.Text = "&Create"
         '
         'HumanResourceToolStripMenuItem
@@ -243,13 +243,13 @@ Partial Class MDIParent1
         'ToolStripMenuItem6
         '
         Me.ToolStripMenuItem6.Name = "ToolStripMenuItem6"
-        Me.ToolStripMenuItem6.Size = New System.Drawing.Size(135, 26)
+        Me.ToolStripMenuItem6.Size = New System.Drawing.Size(224, 26)
         Me.ToolStripMenuItem6.Text = "&List"
         '
         'ToolStripMenuItem8
         '
         Me.ToolStripMenuItem8.Name = "ToolStripMenuItem8"
-        Me.ToolStripMenuItem8.Size = New System.Drawing.Size(135, 26)
+        Me.ToolStripMenuItem8.Size = New System.Drawing.Size(224, 26)
         Me.ToolStripMenuItem8.Text = "&Create"
         '
         'ServicesToolStripMenuItem
@@ -287,13 +287,13 @@ Partial Class MDIParent1
         'ToolStripMenuItem7
         '
         Me.ToolStripMenuItem7.Name = "ToolStripMenuItem7"
-        Me.ToolStripMenuItem7.Size = New System.Drawing.Size(135, 26)
+        Me.ToolStripMenuItem7.Size = New System.Drawing.Size(224, 26)
         Me.ToolStripMenuItem7.Text = "&List"
         '
         'ToolStripMenuItem13
         '
         Me.ToolStripMenuItem13.Name = "ToolStripMenuItem13"
-        Me.ToolStripMenuItem13.Size = New System.Drawing.Size(135, 26)
+        Me.ToolStripMenuItem13.Size = New System.Drawing.Size(224, 26)
         Me.ToolStripMenuItem13.Text = "&Create"
         '
         'UserToolStripMenuItem
@@ -306,13 +306,13 @@ Partial Class MDIParent1
         'ToolStripMenuItem9
         '
         Me.ToolStripMenuItem9.Name = "ToolStripMenuItem9"
-        Me.ToolStripMenuItem9.Size = New System.Drawing.Size(135, 26)
+        Me.ToolStripMenuItem9.Size = New System.Drawing.Size(224, 26)
         Me.ToolStripMenuItem9.Text = "&List"
         '
         'ToolStripMenuItem15
         '
         Me.ToolStripMenuItem15.Name = "ToolStripMenuItem15"
-        Me.ToolStripMenuItem15.Size = New System.Drawing.Size(135, 26)
+        Me.ToolStripMenuItem15.Size = New System.Drawing.Size(224, 26)
         Me.ToolStripMenuItem15.Text = "&Create"
         '
         'ParentDataToolStripMenuItem
@@ -326,7 +326,7 @@ Partial Class MDIParent1
         '
         Me.LabSideToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.HumanResTYpeToolStripMenuItem, Me.ReferralTYpeToolStripMenuItem, Me.SpecializationToolStripMenuItem, Me.SampleTypeToolStripMenuItem, Me.UnitToolStripMenuItem, Me.DepartmentToolStripMenuItem})
         Me.LabSideToolStripMenuItem.Name = "LabSideToolStripMenuItem"
-        Me.LabSideToolStripMenuItem.Size = New System.Drawing.Size(149, 26)
+        Me.LabSideToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.LabSideToolStripMenuItem.Text = "Lab Side"
         '
         'HumanResTYpeToolStripMenuItem
@@ -375,7 +375,7 @@ Partial Class MDIParent1
         'CompanyProfileToolStripMenuItem
         '
         Me.CompanyProfileToolStripMenuItem.Name = "CompanyProfileToolStripMenuItem"
-        Me.CompanyProfileToolStripMenuItem.Size = New System.Drawing.Size(202, 26)
+        Me.CompanyProfileToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.CompanyProfileToolStripMenuItem.Text = "Company &Profile"
         '
         'LogoutToolStripMenuItem
