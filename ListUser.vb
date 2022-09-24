@@ -1,10 +1,5 @@
-﻿Imports System.Reflection
-Imports System.Reflection.Emit
-Imports System.Windows.Forms.VisualStyles.VisualStyleElement
-Imports System.Windows.Forms.VisualStyles.VisualStyleElement.TreeView
-Imports IdealPathLab.dbconfig
+﻿Imports IdealPathLab.dbconfig
 Imports MySql.Data.MySqlClient
-Imports Mysqlx
 
 Public Class ListUser
     Private Sub ListUser_Load(sender As Object, e As EventArgs) Handles MyBase.Load

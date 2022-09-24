@@ -24,25 +24,25 @@ Partial Class AddReferral
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AddReferral))
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.DiscountKeyCkBox = New System.Windows.Forms.CheckBox()
-        Me.StatusCkBox = New System.Windows.Forms.CheckBox()
+        Me.DiscountKey = New System.Windows.Forms.CheckBox()
+        Me.Status = New System.Windows.Forms.CheckBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.AddressTBox = New System.Windows.Forms.TextBox()
-        Me.PhoneTBox = New System.Windows.Forms.TextBox()
-        Me.SharingPersantageTBox = New System.Windows.Forms.TextBox()
-        Me.EmailTBox = New System.Windows.Forms.TextBox()
+        Me.Address = New System.Windows.Forms.TextBox()
+        Me.Phone = New System.Windows.Forms.TextBox()
+        Me.SharingPersantage = New System.Windows.Forms.TextBox()
+        Me.Email = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Type = New System.Windows.Forms.ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.ReferralNameTBox = New System.Windows.Forms.TextBox()
+        Me.ReferralName = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.RContactPersonTBox = New System.Windows.Forms.TextBox()
+        Me.RContactPerson = New System.Windows.Forms.TextBox()
         Me.ToolStrip = New System.Windows.Forms.ToolStrip()
         Me.SaveToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
@@ -54,18 +54,18 @@ Partial Class AddReferral
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.DiscountKeyCkBox)
-        Me.GroupBox2.Controls.Add(Me.StatusCkBox)
+        Me.GroupBox2.Controls.Add(Me.DiscountKey)
+        Me.GroupBox2.Controls.Add(Me.Status)
         Me.GroupBox2.Controls.Add(Me.Label5)
         Me.GroupBox2.Controls.Add(Me.Label4)
         Me.GroupBox2.Controls.Add(Me.Label6)
         Me.GroupBox2.Controls.Add(Me.Label7)
         Me.GroupBox2.Controls.Add(Me.Label8)
         Me.GroupBox2.Controls.Add(Me.Label9)
-        Me.GroupBox2.Controls.Add(Me.AddressTBox)
-        Me.GroupBox2.Controls.Add(Me.PhoneTBox)
-        Me.GroupBox2.Controls.Add(Me.SharingPersantageTBox)
-        Me.GroupBox2.Controls.Add(Me.EmailTBox)
+        Me.GroupBox2.Controls.Add(Me.Address)
+        Me.GroupBox2.Controls.Add(Me.Phone)
+        Me.GroupBox2.Controls.Add(Me.SharingPersantage)
+        Me.GroupBox2.Controls.Add(Me.Email)
         Me.GroupBox2.Location = New System.Drawing.Point(3, 3)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(404, 311)
@@ -73,25 +73,25 @@ Partial Class AddReferral
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Contact Information"
         '
-        'DiscountKeyCkBox
+        'DiscountKey
         '
-        Me.DiscountKeyCkBox.AutoSize = True
-        Me.DiscountKeyCkBox.Location = New System.Drawing.Point(220, 229)
-        Me.DiscountKeyCkBox.Name = "DiscountKeyCkBox"
-        Me.DiscountKeyCkBox.Size = New System.Drawing.Size(52, 24)
-        Me.DiscountKeyCkBox.TabIndex = 8
-        Me.DiscountKeyCkBox.Text = "Yes"
-        Me.DiscountKeyCkBox.UseVisualStyleBackColor = True
+        Me.DiscountKey.AutoSize = True
+        Me.DiscountKey.Location = New System.Drawing.Point(220, 229)
+        Me.DiscountKey.Name = "DiscountKey"
+        Me.DiscountKey.Size = New System.Drawing.Size(52, 24)
+        Me.DiscountKey.TabIndex = 8
+        Me.DiscountKey.Text = "Yes"
+        Me.DiscountKey.UseVisualStyleBackColor = True
         '
-        'StatusCkBox
+        'Status
         '
-        Me.StatusCkBox.AutoSize = True
-        Me.StatusCkBox.Location = New System.Drawing.Point(220, 273)
-        Me.StatusCkBox.Name = "StatusCkBox"
-        Me.StatusCkBox.Size = New System.Drawing.Size(78, 24)
-        Me.StatusCkBox.TabIndex = 9
-        Me.StatusCkBox.Text = "Publish"
-        Me.StatusCkBox.UseVisualStyleBackColor = True
+        Me.Status.AutoSize = True
+        Me.Status.Location = New System.Drawing.Point(220, 273)
+        Me.Status.Name = "Status"
+        Me.Status.Size = New System.Drawing.Size(78, 24)
+        Me.Status.TabIndex = 9
+        Me.Status.Text = "Publish"
+        Me.Status.UseVisualStyleBackColor = True
         '
         'Label5
         '
@@ -147,46 +147,46 @@ Partial Class AddReferral
         Me.Label9.TabIndex = 8
         Me.Label9.Text = "Status"
         '
-        'AddressTBox
+        'Address
         '
-        Me.AddressTBox.Location = New System.Drawing.Point(220, 41)
-        Me.AddressTBox.Name = "AddressTBox"
-        Me.AddressTBox.PlaceholderText = "Enter Address"
-        Me.AddressTBox.Size = New System.Drawing.Size(151, 27)
-        Me.AddressTBox.TabIndex = 3
+        Me.Address.Location = New System.Drawing.Point(220, 41)
+        Me.Address.Name = "Address"
+        Me.Address.PlaceholderText = "Enter Address"
+        Me.Address.Size = New System.Drawing.Size(151, 27)
+        Me.Address.TabIndex = 3
         '
-        'PhoneTBox
+        'Phone
         '
-        Me.PhoneTBox.Location = New System.Drawing.Point(220, 88)
-        Me.PhoneTBox.Name = "PhoneTBox"
-        Me.PhoneTBox.PlaceholderText = "Enter Phone no."
-        Me.PhoneTBox.Size = New System.Drawing.Size(151, 27)
-        Me.PhoneTBox.TabIndex = 4
+        Me.Phone.Location = New System.Drawing.Point(220, 88)
+        Me.Phone.Name = "Phone"
+        Me.Phone.PlaceholderText = "Enter Phone no."
+        Me.Phone.Size = New System.Drawing.Size(151, 27)
+        Me.Phone.TabIndex = 4
         '
-        'SharingPersantageTBox
+        'SharingPersantage
         '
-        Me.SharingPersantageTBox.Location = New System.Drawing.Point(220, 182)
-        Me.SharingPersantageTBox.Name = "SharingPersantageTBox"
-        Me.SharingPersantageTBox.PlaceholderText = "Enter Benifit sharing"
-        Me.SharingPersantageTBox.Size = New System.Drawing.Size(151, 27)
-        Me.SharingPersantageTBox.TabIndex = 6
+        Me.SharingPersantage.Location = New System.Drawing.Point(220, 182)
+        Me.SharingPersantage.Name = "SharingPersantage"
+        Me.SharingPersantage.PlaceholderText = "Enter Benifit sharing"
+        Me.SharingPersantage.Size = New System.Drawing.Size(151, 27)
+        Me.SharingPersantage.TabIndex = 6
         '
-        'EmailTBox
+        'Email
         '
-        Me.EmailTBox.Location = New System.Drawing.Point(220, 135)
-        Me.EmailTBox.Name = "EmailTBox"
-        Me.EmailTBox.PlaceholderText = "Enter email address"
-        Me.EmailTBox.Size = New System.Drawing.Size(151, 27)
-        Me.EmailTBox.TabIndex = 5
+        Me.Email.Location = New System.Drawing.Point(220, 135)
+        Me.Email.Name = "Email"
+        Me.Email.PlaceholderText = "Enter email address"
+        Me.Email.Size = New System.Drawing.Size(151, 27)
+        Me.Email.TabIndex = 5
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.ComboBox1)
+        Me.GroupBox1.Controls.Add(Me.Type)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Controls.Add(Me.ReferralNameTBox)
+        Me.GroupBox1.Controls.Add(Me.ReferralName)
         Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Controls.Add(Me.RContactPersonTBox)
+        Me.GroupBox1.Controls.Add(Me.RContactPerson)
         Me.GroupBox1.Location = New System.Drawing.Point(3, 320)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(404, 179)
@@ -194,14 +194,14 @@ Partial Class AddReferral
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Referral Basic Information"
         '
-        'ComboBox1
+        'Type
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(220, 37)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(151, 28)
-        Me.ComboBox1.TabIndex = 10
-        Me.ComboBox1.Text = "Select"
+        Me.Type.FormattingEnabled = True
+        Me.Type.Location = New System.Drawing.Point(220, 37)
+        Me.Type.Name = "Type"
+        Me.Type.Size = New System.Drawing.Size(151, 28)
+        Me.Type.TabIndex = 10
+        Me.Type.Text = "Select"
         '
         'Label1
         '
@@ -225,13 +225,13 @@ Partial Class AddReferral
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Referral Name*"
         '
-        'ReferralNameTBox
+        'ReferralName
         '
-        Me.ReferralNameTBox.Location = New System.Drawing.Point(220, 83)
-        Me.ReferralNameTBox.Name = "ReferralNameTBox"
-        Me.ReferralNameTBox.PlaceholderText = "Enter Ref. Name"
-        Me.ReferralNameTBox.Size = New System.Drawing.Size(151, 27)
-        Me.ReferralNameTBox.TabIndex = 11
+        Me.ReferralName.Location = New System.Drawing.Point(220, 83)
+        Me.ReferralName.Name = "ReferralName"
+        Me.ReferralName.PlaceholderText = "Enter Ref. Name"
+        Me.ReferralName.Size = New System.Drawing.Size(151, 27)
+        Me.ReferralName.TabIndex = 11
         '
         'Label3
         '
@@ -244,13 +244,13 @@ Partial Class AddReferral
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Referral Contact Person"
         '
-        'RContactPersonTBox
+        'RContactPerson
         '
-        Me.RContactPersonTBox.Location = New System.Drawing.Point(220, 128)
-        Me.RContactPersonTBox.Name = "RContactPersonTBox"
-        Me.RContactPersonTBox.PlaceholderText = "Enter Ref. Person"
-        Me.RContactPersonTBox.Size = New System.Drawing.Size(151, 27)
-        Me.RContactPersonTBox.TabIndex = 12
+        Me.RContactPerson.Location = New System.Drawing.Point(220, 128)
+        Me.RContactPerson.Name = "RContactPerson"
+        Me.RContactPerson.PlaceholderText = "Enter Ref. Person"
+        Me.RContactPerson.Size = New System.Drawing.Size(151, 27)
+        Me.RContactPerson.TabIndex = 12
         '
         'ToolStrip
         '
@@ -311,19 +311,19 @@ Partial Class AddReferral
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
-    Friend WithEvents AddressTBox As TextBox
-    Friend WithEvents PhoneTBox As TextBox
-    Friend WithEvents SharingPersantageTBox As TextBox
-    Friend WithEvents EmailTBox As TextBox
+    Friend WithEvents Address As TextBox
+    Friend WithEvents Phone As TextBox
+    Friend WithEvents SharingPersantage As TextBox
+    Friend WithEvents Email As TextBox
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents ReferralNameTBox As TextBox
+    Friend WithEvents ReferralName As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents RContactPersonTBox As TextBox
-    Friend WithEvents DiscountKeyCkBox As CheckBox
-    Friend WithEvents StatusCkBox As CheckBox
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents RContactPerson As TextBox
+    Friend WithEvents DiscountKey As CheckBox
+    Friend WithEvents Status As CheckBox
+    Friend WithEvents Type As ComboBox
     Friend WithEvents ToolStrip As ToolStrip
     Friend WithEvents SaveToolStripButton As ToolStripButton
     Friend WithEvents FlowLayoutPanel1 As FlowLayoutPanel

@@ -1,10 +1,27 @@
 ﻿Imports MySql.Data.MySqlClient
 Imports IdealPathLab.dbconfig
+Imports System.IO
+
 Public Class AddBranch
-    Private Sub Button2_Click(sender As Object, e As EventArgs)
+    Dim statusC As Boolean
+    Dim showUserWiseDataC As Boolean
+
+    Dim imgpath As String
+    Dim arrimage() As Byte
+
+    Private Sub SaveToolStripButton_Click(sender As Object, e As EventArgs) Handles SaveToolStripButton.Click
         Try
             Dim sql As String
             Dim i As Integer
+
+
+            Dim memstr As New MemoryStream()
+            PictureBox1.Image.Save(memstr, Imaging.ImageFormat.Jpeg)
+            arrimage = memstr.GetBuffer()
+            Dim filesize As UInt32
+            filesize = memstr.Length
+            memstr.Close()
+
             con.Open()
             sql = "INSERT INTO branch values ('" & Address.Text & "', '" & Phone.Text & "','" & BName.Text & "','" & EmailTBox.Text & "','" & ImageL.Text & "','" & ContactPersonTBox.Text & "','" & StatusCkBox.Text & "');"
             Dim mysc As New MySqlCommand(sql, con)
@@ -22,4 +39,14 @@ Public Class AddBranch
             con.Close()
         End Try
     End Sub
+
+    Private Sub ImageButton_Click(sender As Object, e As EventArgs) Handles ImageButton.Click
+        Dim openfiledialog1 As New OpenFileDialog()
+        openfiledialog1.Filter = "Image file|*.jpg;*.png;*.gif;*.bmp"
+        If openfiledialog1.ShowDialog = Windows.Forms.DialogResult.OK Then
+            imgpath = openfiledialog1.FileName
+            PictureBox1.ImageLocation = imgpath
+        End If
+    End Sub
+
 End Class
