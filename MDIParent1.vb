@@ -167,4 +167,11 @@ Public Class MDIParent1
         AddInvoice.Left = 0
         AddInvoice.Top = 0
     End Sub
+
+    Private Sub ToolStripMenuItem9_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem9.Click
+        ListUser.MdiParent = Me
+        ListUser.Show()
+        ListUser.Left = 0
+        ListUser.Top = 0
+    End Sub
 End Class
