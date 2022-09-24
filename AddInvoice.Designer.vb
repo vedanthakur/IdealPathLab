@@ -132,14 +132,14 @@ Partial Class AddInvoice
         Me.GroupBox1.Location = New System.Drawing.Point(3, 13)
         Me.GroupBox1.MinimumSize = New System.Drawing.Size(442, 0)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(442, 280)
+        Me.GroupBox1.Size = New System.Drawing.Size(442, 277)
         Me.GroupBox1.TabIndex = 25
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Create Invoice"
         '
         'Address
         '
-        Me.Address.Location = New System.Drawing.Point(140, 90)
+        Me.Address.Location = New System.Drawing.Point(140, 85)
         Me.Address.Name = "Address"
         Me.Address.PlaceholderText = "Ente Address"
         Me.Address.Size = New System.Drawing.Size(151, 27)
@@ -148,7 +148,7 @@ Partial Class AddInvoice
         'Test
         '
         Me.Test.FormattingEnabled = True
-        Me.Test.Location = New System.Drawing.Point(140, 226)
+        Me.Test.Location = New System.Drawing.Point(140, 223)
         Me.Test.Name = "Test"
         Me.Test.Size = New System.Drawing.Size(151, 28)
         Me.Test.TabIndex = 4
@@ -165,7 +165,7 @@ Partial Class AddInvoice
         '
         'DateTimePicker1
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(140, 179)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(140, 177)
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.Size = New System.Drawing.Size(250, 27)
         Me.DateTimePicker1.TabIndex = 3
@@ -173,7 +173,7 @@ Partial Class AddInvoice
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(18, 184)
+        Me.Label2.Location = New System.Drawing.Point(18, 182)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(98, 20)
         Me.Label2.TabIndex = 20
@@ -181,7 +181,7 @@ Partial Class AddInvoice
         '
         'InvoiceNo
         '
-        Me.InvoiceNo.Location = New System.Drawing.Point(140, 135)
+        Me.InvoiceNo.Location = New System.Drawing.Point(140, 131)
         Me.InvoiceNo.Name = "InvoiceNo"
         Me.InvoiceNo.PlaceholderText = "Enter Invoice No."
         Me.InvoiceNo.Size = New System.Drawing.Size(151, 27)
@@ -190,7 +190,7 @@ Partial Class AddInvoice
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(18, 138)
+        Me.Label1.Location = New System.Drawing.Point(18, 135)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(114, 20)
         Me.Label1.TabIndex = 18
@@ -217,7 +217,7 @@ Partial Class AddInvoice
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(18, 93)
+        Me.Label3.Location = New System.Drawing.Point(18, 88)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(108, 20)
         Me.Label3.TabIndex = 2
@@ -433,7 +433,7 @@ Partial Class AddInvoice
         'Paid
         '
         Me.Paid.AutoSize = True
-        Me.Paid.Location = New System.Drawing.Point(140, 89)
+        Me.Paid.Location = New System.Drawing.Point(139, 88)
         Me.Paid.Name = "Paid"
         Me.Paid.Size = New System.Drawing.Size(59, 24)
         Me.Paid.TabIndex = 8
@@ -443,7 +443,7 @@ Partial Class AddInvoice
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(18, 41)
+        Me.Label9.Location = New System.Drawing.Point(17, 41)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(114, 20)
         Me.Label9.TabIndex = 17
@@ -452,7 +452,7 @@ Partial Class AddInvoice
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(17, 90)
+        Me.Label10.Location = New System.Drawing.Point(18, 88)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(115, 20)
         Me.Label10.TabIndex = 2

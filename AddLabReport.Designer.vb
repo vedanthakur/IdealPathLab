@@ -89,23 +89,22 @@ Partial Class AddLabReport
         Me.GroupBox1.MinimumSize = New System.Drawing.Size(442, 187)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(442, 187)
-        Me.GroupBox1.TabIndex = 25
+        Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Patient Details"
         '
         'DateTimePicker1
         '
         Me.DateTimePicker1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.DateTimePicker1.Location = New System.Drawing.Point(153, 95)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(153, 133)
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.Size = New System.Drawing.Size(239, 27)
-        Me.DateTimePicker1.TabIndex = 0
+        Me.DateTimePicker1.TabIndex = 2
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Label1.Location = New System.Drawing.Point(3, 89)
+        Me.Label1.Location = New System.Drawing.Point(9, 128)
         Me.Label1.Margin = New System.Windows.Forms.Padding(3)
         Me.Label1.Name = "Label1"
         Me.Label1.Padding = New System.Windows.Forms.Padding(3, 10, 3, 3)
@@ -116,8 +115,7 @@ Partial Class AddLabReport
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Label2.Location = New System.Drawing.Point(3, 56)
+        Me.Label2.Location = New System.Drawing.Point(9, 26)
         Me.Label2.Margin = New System.Windows.Forms.Padding(3)
         Me.Label2.Name = "Label2"
         Me.Label2.Padding = New System.Windows.Forms.Padding(3, 10, 3, 3)
@@ -132,13 +130,12 @@ Partial Class AddLabReport
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.PlaceholderText = "Enter Name"
         Me.TextBox1.Size = New System.Drawing.Size(147, 27)
-        Me.TextBox1.TabIndex = 1
+        Me.TextBox1.TabIndex = 0
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Label3.Location = New System.Drawing.Point(3, 23)
+        Me.Label3.Location = New System.Drawing.Point(9, 77)
         Me.Label3.Margin = New System.Windows.Forms.Padding(3)
         Me.Label3.Name = "Label3"
         Me.Label3.Padding = New System.Windows.Forms.Padding(3, 10, 3, 3)
@@ -149,11 +146,11 @@ Partial Class AddLabReport
         'TextBox2
         '
         Me.TextBox2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox2.Location = New System.Drawing.Point(153, 62)
+        Me.TextBox2.Location = New System.Drawing.Point(153, 81)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.PlaceholderText = "Enter Address"
         Me.TextBox2.Size = New System.Drawing.Size(147, 27)
-        Me.TextBox2.TabIndex = 2
+        Me.TextBox2.TabIndex = 1
         '
         'GroupBox8
         '
@@ -164,14 +161,14 @@ Partial Class AddLabReport
         Me.GroupBox8.MinimumSize = New System.Drawing.Size(442, 130)
         Me.GroupBox8.Name = "GroupBox8"
         Me.GroupBox8.Size = New System.Drawing.Size(442, 130)
-        Me.GroupBox8.TabIndex = 31
+        Me.GroupBox8.TabIndex = 6
         Me.GroupBox8.TabStop = False
         Me.GroupBox8.Text = "TSH*"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(6, 36)
+        Me.Label6.Location = New System.Drawing.Point(9, 36)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(247, 20)
         Me.Label6.TabIndex = 5
@@ -179,7 +176,7 @@ Partial Class AddLabReport
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(256, 33)
+        Me.TextBox5.Location = New System.Drawing.Point(262, 33)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.PlaceholderText = "Enter TSH"
         Me.TextBox5.Size = New System.Drawing.Size(125, 27)
@@ -187,9 +184,9 @@ Partial Class AddLabReport
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(272, 75)
+        Me.Button1.Location = New System.Drawing.Point(262, 75)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(94, 29)
+        Me.Button1.Size = New System.Drawing.Size(125, 29)
         Me.Button1.TabIndex = 6
         Me.Button1.Text = "Save"
         Me.Button1.UseVisualStyleBackColor = True
@@ -204,7 +201,7 @@ Partial Class AddLabReport
         Me.GroupBox7.MinimumSize = New System.Drawing.Size(442, 150)
         Me.GroupBox7.Name = "GroupBox7"
         Me.GroupBox7.Size = New System.Drawing.Size(442, 150)
-        Me.GroupBox7.TabIndex = 30
+        Me.GroupBox7.TabIndex = 5
         Me.GroupBox7.TabStop = False
         Me.GroupBox7.Text = "Info"
         '
@@ -226,7 +223,7 @@ Partial Class AddLabReport
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(103, 63)
+        Me.TextBox4.Location = New System.Drawing.Point(131, 76)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.PlaceholderText = "Enter Lab no."
         Me.TextBox4.Size = New System.Drawing.Size(125, 27)
@@ -235,7 +232,7 @@ Partial Class AddLabReport
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(6, 66)
+        Me.Label5.Location = New System.Drawing.Point(6, 83)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(91, 20)
         Me.Label5.TabIndex = 4
@@ -248,7 +245,7 @@ Partial Class AddLabReport
         Me.GroupBox3.MinimumSize = New System.Drawing.Size(442, 150)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(442, 150)
-        Me.GroupBox3.TabIndex = 25
+        Me.GroupBox3.TabIndex = 2
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Lab Technician*"
         '
@@ -268,7 +265,7 @@ Partial Class AddLabReport
         Me.GroupBox4.MinimumSize = New System.Drawing.Size(442, 150)
         Me.GroupBox4.Name = "GroupBox4"
         Me.GroupBox4.Size = New System.Drawing.Size(442, 187)
-        Me.GroupBox4.TabIndex = 26
+        Me.GroupBox4.TabIndex = 1
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Doctor*"
         '
@@ -289,7 +286,7 @@ Partial Class AddLabReport
         Me.GroupBox5.MinimumSize = New System.Drawing.Size(442, 150)
         Me.GroupBox5.Name = "GroupBox5"
         Me.GroupBox5.Size = New System.Drawing.Size(442, 166)
-        Me.GroupBox5.TabIndex = 27
+        Me.GroupBox5.TabIndex = 3
         Me.GroupBox5.TabStop = False
         Me.GroupBox5.Text = "Test Performed By"
         '
@@ -309,7 +306,7 @@ Partial Class AddLabReport
         Me.GroupBox6.MinimumSize = New System.Drawing.Size(442, 150)
         Me.GroupBox6.Name = "GroupBox6"
         Me.GroupBox6.Size = New System.Drawing.Size(442, 150)
-        Me.GroupBox6.TabIndex = 28
+        Me.GroupBox6.TabIndex = 4
         Me.GroupBox6.TabStop = False
         Me.GroupBox6.Text = "Verified By"
         '
@@ -352,7 +349,7 @@ Partial Class AddLabReport
         Me.GroupBox2.MinimumSize = New System.Drawing.Size(442, 130)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(442, 130)
-        Me.GroupBox2.TabIndex = 32
+        Me.GroupBox2.TabIndex = 7
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Report file"
         '
@@ -369,7 +366,7 @@ Partial Class AddLabReport
         '
         Me.Button2.Location = New System.Drawing.Point(131, 32)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(94, 29)
+        Me.Button2.Size = New System.Drawing.Size(125, 29)
         Me.Button2.TabIndex = 13
         Me.Button2.Text = "Upload"
         Me.Button2.UseVisualStyleBackColor = True
@@ -395,7 +392,7 @@ Partial Class AddLabReport
         Me.GroupBox9.MinimumSize = New System.Drawing.Size(442, 0)
         Me.GroupBox9.Name = "GroupBox9"
         Me.GroupBox9.Size = New System.Drawing.Size(442, 206)
-        Me.GroupBox9.TabIndex = 33
+        Me.GroupBox9.TabIndex = 8
         Me.GroupBox9.TabStop = False
         Me.GroupBox9.Text = "Report Related Information"
         '

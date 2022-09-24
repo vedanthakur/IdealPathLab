@@ -104,7 +104,7 @@ Partial Class AddUser
         'status
         '
         Me.status.AutoSize = True
-        Me.status.Location = New System.Drawing.Point(140, 533)
+        Me.status.Location = New System.Drawing.Point(140, 526)
         Me.status.Name = "status"
         Me.status.Size = New System.Drawing.Size(78, 24)
         Me.status.TabIndex = 10
@@ -125,7 +125,7 @@ Partial Class AddUser
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(18, 533)
+        Me.Label11.Location = New System.Drawing.Point(18, 531)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(49, 20)
         Me.Label11.TabIndex = 42
@@ -134,7 +134,7 @@ Partial Class AddUser
         'showUserWiseData
         '
         Me.showUserWiseData.AutoSize = True
-        Me.showUserWiseData.Location = New System.Drawing.Point(193, 442)
+        Me.showUserWiseData.Location = New System.Drawing.Point(193, 429)
         Me.showUserWiseData.Name = "showUserWiseData"
         Me.showUserWiseData.Size = New System.Drawing.Size(52, 24)
         Me.showUserWiseData.TabIndex = 8
@@ -144,7 +144,7 @@ Partial Class AddUser
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(18, 443)
+        Me.Label10.Location = New System.Drawing.Point(18, 433)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(156, 20)
         Me.Label10.TabIndex = 40
@@ -153,7 +153,7 @@ Partial Class AddUser
         'humanResource
         '
         Me.humanResource.FormattingEnabled = True
-        Me.humanResource.Location = New System.Drawing.Point(145, 378)
+        Me.humanResource.Location = New System.Drawing.Point(145, 379)
         Me.humanResource.Name = "humanResource"
         Me.humanResource.Size = New System.Drawing.Size(151, 28)
         Me.humanResource.TabIndex = 7
@@ -162,7 +162,7 @@ Partial Class AddUser
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(18, 386)
+        Me.Label9.Location = New System.Drawing.Point(18, 384)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(121, 20)
         Me.Label9.TabIndex = 38
@@ -171,7 +171,7 @@ Partial Class AddUser
         'branch
         '
         Me.branch.FormattingEnabled = True
-        Me.branch.Location = New System.Drawing.Point(145, 331)
+        Me.branch.Location = New System.Drawing.Point(145, 329)
         Me.branch.Name = "branch"
         Me.branch.Size = New System.Drawing.Size(151, 28)
         Me.branch.TabIndex = 6
@@ -179,7 +179,7 @@ Partial Class AddUser
         '
         'password
         '
-        Me.password.Location = New System.Drawing.Point(145, 276)
+        Me.password.Location = New System.Drawing.Point(145, 280)
         Me.password.Name = "password"
         Me.password.PlaceholderText = "Enter Password"
         Me.password.Size = New System.Drawing.Size(151, 27)
@@ -188,7 +188,7 @@ Partial Class AddUser
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(18, 283)
+        Me.Label8.Location = New System.Drawing.Point(18, 286)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(76, 20)
         Me.Label8.TabIndex = 35
@@ -197,7 +197,7 @@ Partial Class AddUser
         'roll
         '
         Me.roll.Items.AddRange(New Object() {"Doctor", "Lab Technician", "Human Resource"})
-        Me.roll.Location = New System.Drawing.Point(145, 81)
+        Me.roll.Location = New System.Drawing.Point(145, 83)
         Me.roll.Name = "roll"
         Me.roll.Size = New System.Drawing.Size(151, 28)
         Me.roll.TabIndex = 1
@@ -205,7 +205,7 @@ Partial Class AddUser
         '
         'imgUpload
         '
-        Me.imgUpload.Location = New System.Drawing.Point(140, 482)
+        Me.imgUpload.Location = New System.Drawing.Point(145, 473)
         Me.imgUpload.Name = "imgUpload"
         Me.imgUpload.Size = New System.Drawing.Size(94, 29)
         Me.imgUpload.TabIndex = 9
@@ -215,7 +215,7 @@ Partial Class AddUser
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(18, 486)
+        Me.Label5.Location = New System.Drawing.Point(18, 482)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(51, 20)
         Me.Label5.TabIndex = 22
@@ -224,7 +224,7 @@ Partial Class AddUser
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(18, 339)
+        Me.Label7.Location = New System.Drawing.Point(18, 335)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(54, 20)
         Me.Label7.TabIndex = 31
@@ -232,7 +232,7 @@ Partial Class AddUser
         '
         'mobile
         '
-        Me.mobile.Location = New System.Drawing.Point(145, 229)
+        Me.mobile.Location = New System.Drawing.Point(145, 231)
         Me.mobile.Name = "mobile"
         Me.mobile.PlaceholderText = "Enter Mobile"
         Me.mobile.Size = New System.Drawing.Size(151, 27)
@@ -241,7 +241,7 @@ Partial Class AddUser
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(18, 236)
+        Me.Label6.Location = New System.Drawing.Point(18, 237)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(62, 20)
         Me.Label6.TabIndex = 29
@@ -249,7 +249,7 @@ Partial Class AddUser
         '
         'address
         '
-        Me.address.Location = New System.Drawing.Point(145, 177)
+        Me.address.Location = New System.Drawing.Point(145, 182)
         Me.address.Name = "address"
         Me.address.PlaceholderText = "Enter Address"
         Me.address.Size = New System.Drawing.Size(151, 27)
@@ -266,7 +266,7 @@ Partial Class AddUser
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(18, 184)
+        Me.Label2.Location = New System.Drawing.Point(18, 188)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(62, 20)
         Me.Label2.TabIndex = 20
@@ -274,7 +274,7 @@ Partial Class AddUser
         '
         'email
         '
-        Me.email.Location = New System.Drawing.Point(145, 130)
+        Me.email.Location = New System.Drawing.Point(145, 133)
         Me.email.Name = "email"
         Me.email.PlaceholderText = "Enter Email"
         Me.email.Size = New System.Drawing.Size(151, 27)
@@ -283,7 +283,7 @@ Partial Class AddUser
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(18, 133)
+        Me.Label1.Location = New System.Drawing.Point(18, 139)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(46, 20)
         Me.Label1.TabIndex = 18
@@ -301,7 +301,7 @@ Partial Class AddUser
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(18, 89)
+        Me.Label3.Location = New System.Drawing.Point(18, 90)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(41, 20)
         Me.Label3.TabIndex = 2

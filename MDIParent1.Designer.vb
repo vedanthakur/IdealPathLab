@@ -38,11 +38,8 @@ Partial Class MDIParent1
         Me.ToolStripMenuItem14 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem16 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem20 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem21 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ListToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem22 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem23 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem24 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem21 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem29 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
@@ -73,6 +70,9 @@ Partial Class MDIParent1
         Me.ConFigurationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CompanyProfileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LogoutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.InvoiceToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ListToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CreateToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.StatusStrip.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -84,7 +84,7 @@ Partial Class MDIParent1
         Me.StatusStrip.Location = New System.Drawing.Point(0, 671)
         Me.StatusStrip.Name = "StatusStrip"
         Me.StatusStrip.Padding = New System.Windows.Forms.Padding(1, 0, 19, 0)
-        Me.StatusStrip.Size = New System.Drawing.Size(1284, 26)
+        Me.StatusStrip.Size = New System.Drawing.Size(1355, 26)
         Me.StatusStrip.TabIndex = 7
         Me.StatusStrip.Text = "StatusStrip"
         '
@@ -103,12 +103,11 @@ Partial Class MDIParent1
         'MenuStrip1
         '
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1, Me.ToolStripMenuItem10, Me.ToolStripMenuItem17, Me.ToolStripMenuItem20, Me.ToolStripMenuItem22, Me.ToolStripMenuItem29, Me.LabResultToolStripMenuItem, Me.HumanResourceToolStripMenuItem, Me.ServicesToolStripMenuItem, Me.BranchToolStripMenuItem, Me.UserToolStripMenuItem, Me.ParentDataToolStripMenuItem, Me.ConFigurationToolStripMenuItem, Me.LogoutToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1, Me.ToolStripMenuItem10, Me.ToolStripMenuItem17, Me.ToolStripMenuItem20, Me.InvoiceToolStripMenuItem, Me.ToolStripMenuItem29, Me.LabResultToolStripMenuItem, Me.HumanResourceToolStripMenuItem, Me.ServicesToolStripMenuItem, Me.BranchToolStripMenuItem, Me.UserToolStripMenuItem, Me.ParentDataToolStripMenuItem, Me.ConFigurationToolStripMenuItem, Me.LogoutToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
-        Me.MenuStrip1.MdiWindowListItem = Me.ToolStripMenuItem22
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(8, 3, 0, 3)
-        Me.MenuStrip1.Size = New System.Drawing.Size(1284, 30)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1355, 30)
         Me.MenuStrip1.TabIndex = 10
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -148,13 +147,13 @@ Partial Class MDIParent1
         'ToolStripMenuItem14
         '
         Me.ToolStripMenuItem14.Name = "ToolStripMenuItem14"
-        Me.ToolStripMenuItem14.Size = New System.Drawing.Size(224, 26)
+        Me.ToolStripMenuItem14.Size = New System.Drawing.Size(135, 26)
         Me.ToolStripMenuItem14.Text = "&List"
         '
         'ToolStripMenuItem16
         '
         Me.ToolStripMenuItem16.Name = "ToolStripMenuItem16"
-        Me.ToolStripMenuItem16.Size = New System.Drawing.Size(224, 26)
+        Me.ToolStripMenuItem16.Size = New System.Drawing.Size(135, 26)
         Me.ToolStripMenuItem16.Text = "&Create"
         '
         'ToolStripMenuItem20
@@ -164,36 +163,17 @@ Partial Class MDIParent1
         Me.ToolStripMenuItem20.Size = New System.Drawing.Size(68, 24)
         Me.ToolStripMenuItem20.Text = "&Patient"
         '
-        'ToolStripMenuItem21
-        '
-        Me.ToolStripMenuItem21.Name = "ToolStripMenuItem21"
-        Me.ToolStripMenuItem21.Size = New System.Drawing.Size(224, 26)
-        Me.ToolStripMenuItem21.Text = "&Create"
-        '
         'ListToolStripMenuItem
         '
         Me.ListToolStripMenuItem.Name = "ListToolStripMenuItem"
-        Me.ListToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.ListToolStripMenuItem.Size = New System.Drawing.Size(135, 26)
         Me.ListToolStripMenuItem.Text = "&List"
         '
-        'ToolStripMenuItem22
+        'ToolStripMenuItem21
         '
-        Me.ToolStripMenuItem22.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem24, Me.ToolStripMenuItem23})
-        Me.ToolStripMenuItem22.Name = "ToolStripMenuItem22"
-        Me.ToolStripMenuItem22.Size = New System.Drawing.Size(70, 24)
-        Me.ToolStripMenuItem22.Text = "&Invoice"
-        '
-        'ToolStripMenuItem23
-        '
-        Me.ToolStripMenuItem23.Name = "ToolStripMenuItem23"
-        Me.ToolStripMenuItem23.Size = New System.Drawing.Size(135, 26)
-        Me.ToolStripMenuItem23.Text = "&Create"
-        '
-        'ToolStripMenuItem24
-        '
-        Me.ToolStripMenuItem24.Name = "ToolStripMenuItem24"
-        Me.ToolStripMenuItem24.Size = New System.Drawing.Size(135, 26)
-        Me.ToolStripMenuItem24.Text = "&List"
+        Me.ToolStripMenuItem21.Name = "ToolStripMenuItem21"
+        Me.ToolStripMenuItem21.Size = New System.Drawing.Size(135, 26)
+        Me.ToolStripMenuItem21.Text = "&Create"
         '
         'ToolStripMenuItem29
         '
@@ -224,13 +204,13 @@ Partial Class MDIParent1
         'ToolStripMenuItem4
         '
         Me.ToolStripMenuItem4.Name = "ToolStripMenuItem4"
-        Me.ToolStripMenuItem4.Size = New System.Drawing.Size(224, 26)
+        Me.ToolStripMenuItem4.Size = New System.Drawing.Size(135, 26)
         Me.ToolStripMenuItem4.Text = "&List"
         '
         'ToolStripMenuItem5
         '
         Me.ToolStripMenuItem5.Name = "ToolStripMenuItem5"
-        Me.ToolStripMenuItem5.Size = New System.Drawing.Size(224, 26)
+        Me.ToolStripMenuItem5.Size = New System.Drawing.Size(135, 26)
         Me.ToolStripMenuItem5.Text = "&Create"
         '
         'HumanResourceToolStripMenuItem
@@ -243,13 +223,13 @@ Partial Class MDIParent1
         'ToolStripMenuItem6
         '
         Me.ToolStripMenuItem6.Name = "ToolStripMenuItem6"
-        Me.ToolStripMenuItem6.Size = New System.Drawing.Size(224, 26)
+        Me.ToolStripMenuItem6.Size = New System.Drawing.Size(135, 26)
         Me.ToolStripMenuItem6.Text = "&List"
         '
         'ToolStripMenuItem8
         '
         Me.ToolStripMenuItem8.Name = "ToolStripMenuItem8"
-        Me.ToolStripMenuItem8.Size = New System.Drawing.Size(224, 26)
+        Me.ToolStripMenuItem8.Size = New System.Drawing.Size(135, 26)
         Me.ToolStripMenuItem8.Text = "&Create"
         '
         'ServicesToolStripMenuItem
@@ -287,13 +267,13 @@ Partial Class MDIParent1
         'ToolStripMenuItem7
         '
         Me.ToolStripMenuItem7.Name = "ToolStripMenuItem7"
-        Me.ToolStripMenuItem7.Size = New System.Drawing.Size(224, 26)
+        Me.ToolStripMenuItem7.Size = New System.Drawing.Size(135, 26)
         Me.ToolStripMenuItem7.Text = "&List"
         '
         'ToolStripMenuItem13
         '
         Me.ToolStripMenuItem13.Name = "ToolStripMenuItem13"
-        Me.ToolStripMenuItem13.Size = New System.Drawing.Size(224, 26)
+        Me.ToolStripMenuItem13.Size = New System.Drawing.Size(135, 26)
         Me.ToolStripMenuItem13.Text = "&Create"
         '
         'UserToolStripMenuItem
@@ -306,13 +286,13 @@ Partial Class MDIParent1
         'ToolStripMenuItem9
         '
         Me.ToolStripMenuItem9.Name = "ToolStripMenuItem9"
-        Me.ToolStripMenuItem9.Size = New System.Drawing.Size(224, 26)
+        Me.ToolStripMenuItem9.Size = New System.Drawing.Size(135, 26)
         Me.ToolStripMenuItem9.Text = "&List"
         '
         'ToolStripMenuItem15
         '
         Me.ToolStripMenuItem15.Name = "ToolStripMenuItem15"
-        Me.ToolStripMenuItem15.Size = New System.Drawing.Size(224, 26)
+        Me.ToolStripMenuItem15.Size = New System.Drawing.Size(135, 26)
         Me.ToolStripMenuItem15.Text = "&Create"
         '
         'ParentDataToolStripMenuItem
@@ -326,7 +306,7 @@ Partial Class MDIParent1
         '
         Me.LabSideToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.HumanResTYpeToolStripMenuItem, Me.ReferralTYpeToolStripMenuItem, Me.SpecializationToolStripMenuItem, Me.SampleTypeToolStripMenuItem, Me.UnitToolStripMenuItem, Me.DepartmentToolStripMenuItem})
         Me.LabSideToolStripMenuItem.Name = "LabSideToolStripMenuItem"
-        Me.LabSideToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.LabSideToolStripMenuItem.Size = New System.Drawing.Size(149, 26)
         Me.LabSideToolStripMenuItem.Text = "Lab Side"
         '
         'HumanResTYpeToolStripMenuItem
@@ -375,7 +355,7 @@ Partial Class MDIParent1
         'CompanyProfileToolStripMenuItem
         '
         Me.CompanyProfileToolStripMenuItem.Name = "CompanyProfileToolStripMenuItem"
-        Me.CompanyProfileToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.CompanyProfileToolStripMenuItem.Size = New System.Drawing.Size(202, 26)
         Me.CompanyProfileToolStripMenuItem.Text = "Company &Profile"
         '
         'LogoutToolStripMenuItem
@@ -384,11 +364,30 @@ Partial Class MDIParent1
         Me.LogoutToolStripMenuItem.Size = New System.Drawing.Size(74, 24)
         Me.LogoutToolStripMenuItem.Text = "Log &out"
         '
+        'InvoiceToolStripMenuItem
+        '
+        Me.InvoiceToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ListToolStripMenuItem2, Me.CreateToolStripMenuItem})
+        Me.InvoiceToolStripMenuItem.Name = "InvoiceToolStripMenuItem"
+        Me.InvoiceToolStripMenuItem.Size = New System.Drawing.Size(70, 24)
+        Me.InvoiceToolStripMenuItem.Text = "&Invoice"
+        '
+        'ListToolStripMenuItem2
+        '
+        Me.ListToolStripMenuItem2.Name = "ListToolStripMenuItem2"
+        Me.ListToolStripMenuItem2.Size = New System.Drawing.Size(224, 26)
+        Me.ListToolStripMenuItem2.Text = "&List"
+        '
+        'CreateToolStripMenuItem
+        '
+        Me.CreateToolStripMenuItem.Name = "CreateToolStripMenuItem"
+        Me.CreateToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.CreateToolStripMenuItem.Text = "&Create"
+        '
         'MDIParent1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1284, 697)
+        Me.ClientSize = New System.Drawing.Size(1355, 697)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.StatusStrip)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
@@ -417,9 +416,6 @@ Partial Class MDIParent1
     Friend WithEvents ToolStripMenuItem20 As ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem21 As ToolStripMenuItem
     Friend WithEvents ListToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem22 As ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem23 As ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem24 As ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem29 As ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem2 As ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem3 As ToolStripMenuItem
@@ -455,4 +451,7 @@ Partial Class MDIParent1
     Friend WithEvents ToolStripMenuItem14 As ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem16 As ToolStripMenuItem
     Friend WithEvents welcomeName As ToolStripStatusLabel
+    Friend WithEvents InvoiceToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ListToolStripMenuItem2 As ToolStripMenuItem
+    Friend WithEvents CreateToolStripMenuItem As ToolStripMenuItem
 End Class

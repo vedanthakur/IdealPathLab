@@ -117,7 +117,7 @@ Partial Class AddBranch
         'StatusCkBox
         '
         Me.StatusCkBox.AutoSize = True
-        Me.StatusCkBox.Location = New System.Drawing.Point(140, 327)
+        Me.StatusCkBox.Location = New System.Drawing.Point(140, 322)
         Me.StatusCkBox.Name = "StatusCkBox"
         Me.StatusCkBox.Size = New System.Drawing.Size(78, 24)
         Me.StatusCkBox.TabIndex = 32
@@ -127,7 +127,7 @@ Partial Class AddBranch
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(19, 331)
+        Me.Label7.Location = New System.Drawing.Point(18, 323)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(49, 20)
         Me.Label7.TabIndex = 31
@@ -135,7 +135,7 @@ Partial Class AddBranch
         '
         'ContactPersonTBox
         '
-        Me.ContactPersonTBox.Location = New System.Drawing.Point(140, 279)
+        Me.ContactPersonTBox.Location = New System.Drawing.Point(140, 275)
         Me.ContactPersonTBox.Name = "ContactPersonTBox"
         Me.ContactPersonTBox.PlaceholderText = "Enter Contact name"
         Me.ContactPersonTBox.Size = New System.Drawing.Size(151, 27)
@@ -144,7 +144,7 @@ Partial Class AddBranch
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(18, 286)
+        Me.Label6.Location = New System.Drawing.Point(18, 276)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(107, 20)
         Me.Label6.TabIndex = 29
@@ -152,7 +152,7 @@ Partial Class AddBranch
         '
         'ImageButton
         '
-        Me.ImageButton.Location = New System.Drawing.Point(140, 230)
+        Me.ImageButton.Location = New System.Drawing.Point(140, 226)
         Me.ImageButton.Name = "ImageButton"
         Me.ImageButton.Size = New System.Drawing.Size(94, 29)
         Me.ImageButton.TabIndex = 27
@@ -161,7 +161,7 @@ Partial Class AddBranch
         '
         'EmailTBox
         '
-        Me.EmailTBox.Location = New System.Drawing.Point(140, 177)
+        Me.EmailTBox.Location = New System.Drawing.Point(140, 179)
         Me.EmailTBox.Name = "EmailTBox"
         Me.EmailTBox.PlaceholderText = "Enter Email"
         Me.EmailTBox.Size = New System.Drawing.Size(151, 27)
@@ -169,7 +169,7 @@ Partial Class AddBranch
         '
         'Phone
         '
-        Me.Phone.Location = New System.Drawing.Point(140, 130)
+        Me.Phone.Location = New System.Drawing.Point(140, 132)
         Me.Phone.Name = "Phone"
         Me.Phone.PlaceholderText = "Enter Phone No."
         Me.Phone.Size = New System.Drawing.Size(151, 27)
@@ -177,7 +177,7 @@ Partial Class AddBranch
         '
         'Address
         '
-        Me.Address.Location = New System.Drawing.Point(140, 86)
+        Me.Address.Location = New System.Drawing.Point(140, 85)
         Me.Address.Name = "Address"
         Me.Address.PlaceholderText = "Enter Address"
         Me.Address.Size = New System.Drawing.Size(151, 27)
@@ -186,7 +186,7 @@ Partial Class AddBranch
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(18, 234)
+        Me.Label5.Location = New System.Drawing.Point(18, 229)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(51, 20)
         Me.Label5.TabIndex = 22
@@ -195,7 +195,7 @@ Partial Class AddBranch
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(18, 184)
+        Me.Label2.Location = New System.Drawing.Point(18, 182)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(46, 20)
         Me.Label2.TabIndex = 20
@@ -212,7 +212,7 @@ Partial Class AddBranch
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(18, 133)
+        Me.Label1.Location = New System.Drawing.Point(18, 135)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(108, 20)
         Me.Label1.TabIndex = 18
@@ -230,7 +230,7 @@ Partial Class AddBranch
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(18, 89)
+        Me.Label3.Location = New System.Drawing.Point(18, 88)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(62, 20)
         Me.Label3.TabIndex = 2

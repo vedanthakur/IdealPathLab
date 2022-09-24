@@ -5,12 +5,12 @@ Public Class AddReferral
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
         Try
             Dim sql As String
             Dim i As Integer
             con.Open()
-            sql = "INSERT INTO referral values ('" & ReferralTypeCBox.Text & "', '" & ReferralNameTBox.Text & "','" & RContactPersonTBox.Text & "','" & AddressTBox.Text & "','" & PhoneTBox.Text & "','" & EmailTBox.Text & "','" & SharingPersantageTBox.Text & "');"
+            'sql = "INSERT INTO referral values ('" & ReferralTypeCBox.Text & "', '" & ReferralNameTBox.Text & "','" & RContactPersonTBox.Text & "','" & AddressTBox.Text & "','" & PhoneTBox.Text & "','" & EmailTBox.Text & "','" & SharingPersantageTBox.Text & "');"
             Dim mysc As New MySqlCommand(sql, con)
             i = mysc.ExecuteNonQuery()
 
@@ -25,5 +25,17 @@ Public Class AddReferral
         Finally
             con.Close()
         End Try
+    End Sub
+
+    Private Sub SharingPersantageTBox_TextChanged(sender As Object, e As EventArgs) Handles SharingPersantageTBox.TextChanged
+
+    End Sub
+
+    Private Sub AddressTBox_TextChanged(sender As Object, e As EventArgs) Handles AddressTBox.TextChanged
+
+    End Sub
+
+    Private Sub PhoneTBox_TextChanged(sender As Object, e As EventArgs) Handles PhoneTBox.TextChanged
+
     End Sub
 End Class

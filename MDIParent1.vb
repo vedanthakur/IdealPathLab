@@ -106,7 +106,7 @@ Public Class MDIParent1
         AddLabReport.Left = 0
     End Sub
 
-    Private Sub ToolStripMenuItem23_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem23.Click
+    Private Sub ToolStripMenuItem23_Click(sender As Object, e As EventArgs)
         AddInvoice.MdiParent = Me
         AddInvoice.Show()
         AddInvoice.Left = 0
@@ -148,10 +148,6 @@ Public Class MDIParent1
         AddHumanResource.Top = 0
     End Sub
 
-    Private Sub MDIParent1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
     Private Sub LogoutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LogoutToolStripMenuItem.Click
         Me.Hide()
         LoginForm1.Show()
@@ -163,5 +159,12 @@ Public Class MDIParent1
         AddPatient.Show()
         AddPatient.Left = 0
         AddPatient.Top = 0
+    End Sub
+
+    Private Sub CreateToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CreateToolStripMenuItem.Click
+        AddInvoice.MdiParent = Me
+        AddInvoice.Show()
+        AddInvoice.Left = 0
+        AddInvoice.Top = 0
     End Sub
 End Class
