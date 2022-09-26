@@ -27,14 +27,14 @@ Partial Class AddPatient
         Me.SaveToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.FlowLayoutPanel2 = New System.Windows.Forms.FlowLayoutPanel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.RLab = New System.Windows.Forms.ComboBox()
+        Me.Referral = New System.Windows.Forms.ComboBox()
+        Me.Age = New System.Windows.Forms.TextBox()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Mobile = New System.Windows.Forms.TextBox()
+        Me.Address = New System.Windows.Forms.TextBox()
+        Me.Gender = New System.Windows.Forms.ComboBox()
+        Me.PName = New System.Windows.Forms.TextBox()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
@@ -44,24 +44,24 @@ Partial Class AddPatient
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.ComboBox5 = New System.Windows.Forms.ComboBox()
+        Me.UploadBtn = New System.Windows.Forms.Button()
+        Me.MaritalStatus = New System.Windows.Forms.ComboBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label24 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.Phone = New System.Windows.Forms.TextBox()
         Me.Label13 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.Email = New System.Windows.Forms.TextBox()
         Me.Label14 = New System.Windows.Forms.Label()
-        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
+        Me.Nationality = New System.Windows.Forms.ComboBox()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.ComboBox7 = New System.Windows.Forms.ComboBox()
-        Me.DateTimePicker3 = New System.Windows.Forms.DateTimePicker()
-        Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.ComboBox6 = New System.Windows.Forms.ComboBox()
+        Me.CitizenshipNo = New System.Windows.Forms.TextBox()
+        Me.PIssuedDistrict = New System.Windows.Forms.ComboBox()
+        Me.PassportExpiredDate = New System.Windows.Forms.DateTimePicker()
+        Me.PassportIssuedDate = New System.Windows.Forms.DateTimePicker()
+        Me.PassportNo = New System.Windows.Forms.TextBox()
+        Me.Country = New System.Windows.Forms.ComboBox()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -69,9 +69,9 @@ Partial Class AddPatient
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
-        Me.TextBox11 = New System.Windows.Forms.TextBox()
-        Me.TextBox10 = New System.Windows.Forms.TextBox()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
+        Me.CPPhone = New System.Windows.Forms.TextBox()
+        Me.CPRelation = New System.Windows.Forms.TextBox()
+        Me.CPerson = New System.Windows.Forms.TextBox()
         Me.Label21 = New System.Windows.Forms.Label()
         Me.Label22 = New System.Windows.Forms.Label()
         Me.Label23 = New System.Windows.Forms.Label()
@@ -122,14 +122,14 @@ Partial Class AddPatient
         '
         Me.GroupBox1.AutoSize = True
         Me.GroupBox1.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.GroupBox1.Controls.Add(Me.ComboBox3)
-        Me.GroupBox1.Controls.Add(Me.ComboBox2)
-        Me.GroupBox1.Controls.Add(Me.TextBox4)
+        Me.GroupBox1.Controls.Add(Me.RLab)
+        Me.GroupBox1.Controls.Add(Me.Referral)
+        Me.GroupBox1.Controls.Add(Me.Age)
         Me.GroupBox1.Controls.Add(Me.DateTimePicker1)
-        Me.GroupBox1.Controls.Add(Me.TextBox3)
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
-        Me.GroupBox1.Controls.Add(Me.ComboBox1)
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
+        Me.GroupBox1.Controls.Add(Me.Mobile)
+        Me.GroupBox1.Controls.Add(Me.Address)
+        Me.GroupBox1.Controls.Add(Me.Gender)
+        Me.GroupBox1.Controls.Add(Me.PName)
         Me.GroupBox1.Controls.Add(Me.Label12)
         Me.GroupBox1.Controls.Add(Me.Label11)
         Me.GroupBox1.Controls.Add(Me.Label10)
@@ -146,31 +146,31 @@ Partial Class AddPatient
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Add Patient"
         '
-        'ComboBox3
+        'RLab
         '
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Location = New System.Drawing.Point(278, 341)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(151, 28)
-        Me.ComboBox3.TabIndex = 35
-        Me.ComboBox3.Text = "Select"
+        Me.RLab.FormattingEnabled = True
+        Me.RLab.Location = New System.Drawing.Point(278, 341)
+        Me.RLab.Name = "RLab"
+        Me.RLab.Size = New System.Drawing.Size(151, 28)
+        Me.RLab.TabIndex = 35
+        Me.RLab.Text = "Select"
         '
-        'ComboBox2
+        'Referral
         '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(278, 297)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(151, 28)
-        Me.ComboBox2.TabIndex = 34
-        Me.ComboBox2.Text = "Select"
+        Me.Referral.FormattingEnabled = True
+        Me.Referral.Location = New System.Drawing.Point(278, 297)
+        Me.Referral.Name = "Referral"
+        Me.Referral.Size = New System.Drawing.Size(151, 28)
+        Me.Referral.TabIndex = 34
+        Me.Referral.Text = "Select"
         '
-        'TextBox4
+        'Age
         '
-        Me.TextBox4.Location = New System.Drawing.Point(278, 254)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.PlaceholderText = "Enter Age"
-        Me.TextBox4.Size = New System.Drawing.Size(151, 27)
-        Me.TextBox4.TabIndex = 33
+        Me.Age.Location = New System.Drawing.Point(278, 254)
+        Me.Age.Name = "Age"
+        Me.Age.PlaceholderText = "Enter Age"
+        Me.Age.Size = New System.Drawing.Size(151, 27)
+        Me.Age.TabIndex = 33
         '
         'DateTimePicker1
         '
@@ -179,39 +179,39 @@ Partial Class AddPatient
         Me.DateTimePicker1.Size = New System.Drawing.Size(250, 27)
         Me.DateTimePicker1.TabIndex = 32
         '
-        'TextBox3
+        'Mobile
         '
-        Me.TextBox3.Location = New System.Drawing.Point(278, 168)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.PlaceholderText = "Enter Mobile No."
-        Me.TextBox3.Size = New System.Drawing.Size(151, 27)
-        Me.TextBox3.TabIndex = 31
+        Me.Mobile.Location = New System.Drawing.Point(278, 168)
+        Me.Mobile.Name = "Mobile"
+        Me.Mobile.PlaceholderText = "Enter Mobile No."
+        Me.Mobile.Size = New System.Drawing.Size(151, 27)
+        Me.Mobile.TabIndex = 31
         '
-        'TextBox2
+        'Address
         '
-        Me.TextBox2.Location = New System.Drawing.Point(278, 125)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.PlaceholderText = "Enter Address"
-        Me.TextBox2.Size = New System.Drawing.Size(151, 27)
-        Me.TextBox2.TabIndex = 30
+        Me.Address.Location = New System.Drawing.Point(278, 125)
+        Me.Address.Name = "Address"
+        Me.Address.PlaceholderText = "Enter Address"
+        Me.Address.Size = New System.Drawing.Size(151, 27)
+        Me.Address.TabIndex = 30
         '
-        'ComboBox1
+        'Gender
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Male", "Female", "Other"})
-        Me.ComboBox1.Location = New System.Drawing.Point(278, 81)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(151, 28)
-        Me.ComboBox1.TabIndex = 29
-        Me.ComboBox1.Text = "Select"
+        Me.Gender.FormattingEnabled = True
+        Me.Gender.Items.AddRange(New Object() {"Male", "Female", "Other"})
+        Me.Gender.Location = New System.Drawing.Point(278, 81)
+        Me.Gender.Name = "Gender"
+        Me.Gender.Size = New System.Drawing.Size(151, 28)
+        Me.Gender.TabIndex = 29
+        Me.Gender.Text = "Select"
         '
-        'TextBox1
+        'PName
         '
-        Me.TextBox1.Location = New System.Drawing.Point(278, 38)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.PlaceholderText = "Enter Name"
-        Me.TextBox1.Size = New System.Drawing.Size(151, 27)
-        Me.TextBox1.TabIndex = 28
+        Me.PName.Location = New System.Drawing.Point(278, 38)
+        Me.PName.Name = "PName"
+        Me.PName.PlaceholderText = "Enter Name"
+        Me.PName.Size = New System.Drawing.Size(151, 27)
+        Me.PName.TabIndex = 28
         '
         'Label12
         '
@@ -289,16 +289,16 @@ Partial Class AddPatient
         '
         Me.GroupBox3.AutoSize = True
         Me.GroupBox3.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.GroupBox3.Controls.Add(Me.Button1)
-        Me.GroupBox3.Controls.Add(Me.ComboBox5)
+        Me.GroupBox3.Controls.Add(Me.UploadBtn)
+        Me.GroupBox3.Controls.Add(Me.MaritalStatus)
         Me.GroupBox3.Controls.Add(Me.PictureBox1)
         Me.GroupBox3.Controls.Add(Me.Label24)
         Me.GroupBox3.Controls.Add(Me.Label6)
-        Me.GroupBox3.Controls.Add(Me.TextBox6)
+        Me.GroupBox3.Controls.Add(Me.Phone)
         Me.GroupBox3.Controls.Add(Me.Label13)
-        Me.GroupBox3.Controls.Add(Me.TextBox5)
+        Me.GroupBox3.Controls.Add(Me.Email)
         Me.GroupBox3.Controls.Add(Me.Label14)
-        Me.GroupBox3.Controls.Add(Me.ComboBox4)
+        Me.GroupBox3.Controls.Add(Me.Nationality)
         Me.GroupBox3.Controls.Add(Me.Label15)
         Me.GroupBox3.Location = New System.Drawing.Point(451, 13)
         Me.GroupBox3.MinimumSize = New System.Drawing.Size(442, 0)
@@ -308,23 +308,23 @@ Partial Class AddPatient
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Patient Detail Information"
         '
-        'Button1
+        'UploadBtn
         '
-        Me.Button1.Location = New System.Drawing.Point(274, 208)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(151, 29)
-        Me.Button1.TabIndex = 31
-        Me.Button1.Text = "Upload"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.UploadBtn.Location = New System.Drawing.Point(274, 208)
+        Me.UploadBtn.Name = "UploadBtn"
+        Me.UploadBtn.Size = New System.Drawing.Size(151, 29)
+        Me.UploadBtn.TabIndex = 31
+        Me.UploadBtn.Text = "Upload"
+        Me.UploadBtn.UseVisualStyleBackColor = True
         '
-        'ComboBox5
+        'MaritalStatus
         '
-        Me.ComboBox5.FormattingEnabled = True
-        Me.ComboBox5.Location = New System.Drawing.Point(274, 165)
-        Me.ComboBox5.Name = "ComboBox5"
-        Me.ComboBox5.Size = New System.Drawing.Size(151, 28)
-        Me.ComboBox5.TabIndex = 30
-        Me.ComboBox5.Text = "Select"
+        Me.MaritalStatus.FormattingEnabled = True
+        Me.MaritalStatus.Location = New System.Drawing.Point(274, 165)
+        Me.MaritalStatus.Name = "MaritalStatus"
+        Me.MaritalStatus.Size = New System.Drawing.Size(151, 28)
+        Me.MaritalStatus.TabIndex = 30
+        Me.MaritalStatus.Text = "Select"
         '
         'PictureBox1
         '
@@ -355,13 +355,13 @@ Partial Class AddPatient
         Me.Label6.TabIndex = 17
         Me.Label6.Text = "Marital Status"
         '
-        'TextBox6
+        'Phone
         '
-        Me.TextBox6.Location = New System.Drawing.Point(274, 123)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.PlaceholderText = "Enter Phone no."
-        Me.TextBox6.Size = New System.Drawing.Size(151, 27)
-        Me.TextBox6.TabIndex = 22
+        Me.Phone.Location = New System.Drawing.Point(274, 123)
+        Me.Phone.Name = "Phone"
+        Me.Phone.PlaceholderText = "Enter Phone no."
+        Me.Phone.Size = New System.Drawing.Size(151, 27)
+        Me.Phone.TabIndex = 22
         '
         'Label13
         '
@@ -372,13 +372,13 @@ Partial Class AddPatient
         Me.Label13.TabIndex = 0
         Me.Label13.Text = "Nationality"
         '
-        'TextBox5
+        'Email
         '
-        Me.TextBox5.Location = New System.Drawing.Point(274, 81)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.PlaceholderText = "Enter Email"
-        Me.TextBox5.Size = New System.Drawing.Size(151, 27)
-        Me.TextBox5.TabIndex = 21
+        Me.Email.Location = New System.Drawing.Point(274, 81)
+        Me.Email.Name = "Email"
+        Me.Email.PlaceholderText = "Enter Email"
+        Me.Email.Size = New System.Drawing.Size(151, 27)
+        Me.Email.TabIndex = 21
         '
         'Label14
         '
@@ -389,16 +389,16 @@ Partial Class AddPatient
         Me.Label14.TabIndex = 1
         Me.Label14.Text = "Email"
         '
-        'ComboBox4
+        'Nationality
         '
-        Me.ComboBox4.FormattingEnabled = True
-        Me.ComboBox4.Items.AddRange(New Object() {"Nepal", "India"})
-        Me.ComboBox4.Location = New System.Drawing.Point(274, 38)
-        Me.ComboBox4.Name = "ComboBox4"
-        Me.ComboBox4.Size = New System.Drawing.Size(151, 28)
-        Me.ComboBox4.TabIndex = 20
-        Me.ComboBox4.Tag = ""
-        Me.ComboBox4.Text = "Select"
+        Me.Nationality.FormattingEnabled = True
+        Me.Nationality.Items.AddRange(New Object() {"Nepal", "India"})
+        Me.Nationality.Location = New System.Drawing.Point(274, 38)
+        Me.Nationality.Name = "Nationality"
+        Me.Nationality.Size = New System.Drawing.Size(151, 28)
+        Me.Nationality.TabIndex = 20
+        Me.Nationality.Tag = ""
+        Me.Nationality.Text = "Select"
         '
         'Label15
         '
@@ -413,12 +413,12 @@ Partial Class AddPatient
         '
         Me.GroupBox2.AutoSize = True
         Me.GroupBox2.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.GroupBox2.Controls.Add(Me.TextBox8)
-        Me.GroupBox2.Controls.Add(Me.ComboBox7)
-        Me.GroupBox2.Controls.Add(Me.DateTimePicker3)
-        Me.GroupBox2.Controls.Add(Me.DateTimePicker2)
-        Me.GroupBox2.Controls.Add(Me.TextBox7)
-        Me.GroupBox2.Controls.Add(Me.ComboBox6)
+        Me.GroupBox2.Controls.Add(Me.CitizenshipNo)
+        Me.GroupBox2.Controls.Add(Me.PIssuedDistrict)
+        Me.GroupBox2.Controls.Add(Me.PassportExpiredDate)
+        Me.GroupBox2.Controls.Add(Me.PassportIssuedDate)
+        Me.GroupBox2.Controls.Add(Me.PassportNo)
+        Me.GroupBox2.Controls.Add(Me.Country)
         Me.GroupBox2.Controls.Add(Me.Label17)
         Me.GroupBox2.Controls.Add(Me.Label16)
         Me.GroupBox2.Controls.Add(Me.Label5)
@@ -433,53 +433,53 @@ Partial Class AddPatient
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Roreign Employment"
         '
-        'TextBox8
+        'CitizenshipNo
         '
-        Me.TextBox8.Location = New System.Drawing.Point(278, 285)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.PlaceholderText = "Enter Citizenship No."
-        Me.TextBox8.Size = New System.Drawing.Size(151, 27)
-        Me.TextBox8.TabIndex = 25
+        Me.CitizenshipNo.Location = New System.Drawing.Point(278, 285)
+        Me.CitizenshipNo.Name = "CitizenshipNo"
+        Me.CitizenshipNo.PlaceholderText = "Enter Citizenship No."
+        Me.CitizenshipNo.Size = New System.Drawing.Size(151, 27)
+        Me.CitizenshipNo.TabIndex = 25
         '
-        'ComboBox7
+        'PIssuedDistrict
         '
-        Me.ComboBox7.FormattingEnabled = True
-        Me.ComboBox7.Location = New System.Drawing.Point(278, 235)
-        Me.ComboBox7.Name = "ComboBox7"
-        Me.ComboBox7.Size = New System.Drawing.Size(151, 28)
-        Me.ComboBox7.TabIndex = 24
-        Me.ComboBox7.Text = "Select"
+        Me.PIssuedDistrict.FormattingEnabled = True
+        Me.PIssuedDistrict.Location = New System.Drawing.Point(278, 235)
+        Me.PIssuedDistrict.Name = "PIssuedDistrict"
+        Me.PIssuedDistrict.Size = New System.Drawing.Size(151, 28)
+        Me.PIssuedDistrict.TabIndex = 24
+        Me.PIssuedDistrict.Text = "Select"
         '
-        'DateTimePicker3
+        'PassportExpiredDate
         '
-        Me.DateTimePicker3.Location = New System.Drawing.Point(179, 186)
-        Me.DateTimePicker3.Name = "DateTimePicker3"
-        Me.DateTimePicker3.Size = New System.Drawing.Size(250, 27)
-        Me.DateTimePicker3.TabIndex = 23
+        Me.PassportExpiredDate.Location = New System.Drawing.Point(179, 186)
+        Me.PassportExpiredDate.Name = "PassportExpiredDate"
+        Me.PassportExpiredDate.Size = New System.Drawing.Size(250, 27)
+        Me.PassportExpiredDate.TabIndex = 23
         '
-        'DateTimePicker2
+        'PassportIssuedDate
         '
-        Me.DateTimePicker2.Location = New System.Drawing.Point(179, 137)
-        Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(250, 27)
-        Me.DateTimePicker2.TabIndex = 22
+        Me.PassportIssuedDate.Location = New System.Drawing.Point(179, 137)
+        Me.PassportIssuedDate.Name = "PassportIssuedDate"
+        Me.PassportIssuedDate.Size = New System.Drawing.Size(250, 27)
+        Me.PassportIssuedDate.TabIndex = 22
         '
-        'TextBox7
+        'PassportNo
         '
-        Me.TextBox7.Location = New System.Drawing.Point(278, 88)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.PlaceholderText = "Enter Passport No."
-        Me.TextBox7.Size = New System.Drawing.Size(151, 27)
-        Me.TextBox7.TabIndex = 21
+        Me.PassportNo.Location = New System.Drawing.Point(278, 88)
+        Me.PassportNo.Name = "PassportNo"
+        Me.PassportNo.PlaceholderText = "Enter Passport No."
+        Me.PassportNo.Size = New System.Drawing.Size(151, 27)
+        Me.PassportNo.TabIndex = 21
         '
-        'ComboBox6
+        'Country
         '
-        Me.ComboBox6.FormattingEnabled = True
-        Me.ComboBox6.Location = New System.Drawing.Point(278, 38)
-        Me.ComboBox6.Name = "ComboBox6"
-        Me.ComboBox6.Size = New System.Drawing.Size(151, 28)
-        Me.ComboBox6.TabIndex = 20
-        Me.ComboBox6.Text = "Select"
+        Me.Country.FormattingEnabled = True
+        Me.Country.Location = New System.Drawing.Point(278, 38)
+        Me.Country.Name = "Country"
+        Me.Country.Size = New System.Drawing.Size(151, 28)
+        Me.Country.TabIndex = 20
+        Me.Country.Text = "Select"
         '
         'Label17
         '
@@ -539,9 +539,9 @@ Partial Class AddPatient
         '
         Me.GroupBox4.AutoSize = True
         Me.GroupBox4.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.GroupBox4.Controls.Add(Me.TextBox11)
-        Me.GroupBox4.Controls.Add(Me.TextBox10)
-        Me.GroupBox4.Controls.Add(Me.TextBox9)
+        Me.GroupBox4.Controls.Add(Me.CPPhone)
+        Me.GroupBox4.Controls.Add(Me.CPRelation)
+        Me.GroupBox4.Controls.Add(Me.CPerson)
         Me.GroupBox4.Controls.Add(Me.Label21)
         Me.GroupBox4.Controls.Add(Me.Label22)
         Me.GroupBox4.Controls.Add(Me.Label23)
@@ -553,29 +553,29 @@ Partial Class AddPatient
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Emergency Contact Information"
         '
-        'TextBox11
+        'CPPhone
         '
-        Me.TextBox11.Location = New System.Drawing.Point(274, 136)
-        Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.PlaceholderText = "Enter Phone No."
-        Me.TextBox11.Size = New System.Drawing.Size(151, 27)
-        Me.TextBox11.TabIndex = 5
+        Me.CPPhone.Location = New System.Drawing.Point(274, 136)
+        Me.CPPhone.Name = "CPPhone"
+        Me.CPPhone.PlaceholderText = "Enter Phone No."
+        Me.CPPhone.Size = New System.Drawing.Size(151, 27)
+        Me.CPPhone.TabIndex = 5
         '
-        'TextBox10
+        'CPRelation
         '
-        Me.TextBox10.Location = New System.Drawing.Point(274, 87)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.PlaceholderText = "Enter Relation"
-        Me.TextBox10.Size = New System.Drawing.Size(151, 27)
-        Me.TextBox10.TabIndex = 4
+        Me.CPRelation.Location = New System.Drawing.Point(274, 87)
+        Me.CPRelation.Name = "CPRelation"
+        Me.CPRelation.PlaceholderText = "Enter Relation"
+        Me.CPRelation.Size = New System.Drawing.Size(151, 27)
+        Me.CPRelation.TabIndex = 4
         '
-        'TextBox9
+        'CPerson
         '
-        Me.TextBox9.Location = New System.Drawing.Point(274, 38)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.PlaceholderText = "Enter Contact Name"
-        Me.TextBox9.Size = New System.Drawing.Size(151, 27)
-        Me.TextBox9.TabIndex = 3
+        Me.CPerson.Location = New System.Drawing.Point(274, 38)
+        Me.CPerson.Name = "CPerson"
+        Me.CPerson.PlaceholderText = "Enter Contact Name"
+        Me.CPerson.Size = New System.Drawing.Size(151, 27)
+        Me.CPerson.TabIndex = 3
         '
         'Label21
         '
@@ -662,26 +662,26 @@ Partial Class AddPatient
     Friend WithEvents Label23 As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label24 As Label
-    Friend WithEvents ComboBox3 As ComboBox
-    Friend WithEvents ComboBox2 As ComboBox
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents RLab As ComboBox
+    Friend WithEvents Referral As ComboBox
+    Friend WithEvents Age As TextBox
     Friend WithEvents DateTimePicker1 As DateTimePicker
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents ComboBox5 As ComboBox
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents ComboBox4 As ComboBox
-    Friend WithEvents TextBox8 As TextBox
-    Friend WithEvents ComboBox7 As ComboBox
-    Friend WithEvents DateTimePicker3 As DateTimePicker
-    Friend WithEvents DateTimePicker2 As DateTimePicker
-    Friend WithEvents TextBox7 As TextBox
-    Friend WithEvents ComboBox6 As ComboBox
-    Friend WithEvents TextBox11 As TextBox
-    Friend WithEvents TextBox10 As TextBox
-    Friend WithEvents TextBox9 As TextBox
+    Friend WithEvents Mobile As TextBox
+    Friend WithEvents Address As TextBox
+    Friend WithEvents Gender As ComboBox
+    Friend WithEvents PName As TextBox
+    Friend WithEvents UploadBtn As Button
+    Friend WithEvents MaritalStatus As ComboBox
+    Friend WithEvents Phone As TextBox
+    Friend WithEvents Email As TextBox
+    Friend WithEvents Nationality As ComboBox
+    Friend WithEvents CitizenshipNo As TextBox
+    Friend WithEvents PIssuedDistrict As ComboBox
+    Friend WithEvents PassportExpiredDate As DateTimePicker
+    Friend WithEvents PassportIssuedDate As DateTimePicker
+    Friend WithEvents PassportNo As TextBox
+    Friend WithEvents Country As ComboBox
+    Friend WithEvents CPPhone As TextBox
+    Friend WithEvents CPRelation As TextBox
+    Friend WithEvents CPerson As TextBox
 End Class

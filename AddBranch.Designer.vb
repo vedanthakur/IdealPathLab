@@ -30,10 +30,10 @@ Partial Class AddBranch
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.StatusCkBox = New System.Windows.Forms.CheckBox()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.ContactPersonTBox = New System.Windows.Forms.TextBox()
+        Me.ContactPerson = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.ImageButton = New System.Windows.Forms.Button()
-        Me.EmailTBox = New System.Windows.Forms.TextBox()
+        Me.Email = New System.Windows.Forms.TextBox()
         Me.Phone = New System.Windows.Forms.TextBox()
         Me.Address = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -83,10 +83,10 @@ Partial Class AddBranch
         Me.GroupBox1.Controls.Add(Me.PictureBox1)
         Me.GroupBox1.Controls.Add(Me.StatusCkBox)
         Me.GroupBox1.Controls.Add(Me.Label7)
-        Me.GroupBox1.Controls.Add(Me.ContactPersonTBox)
+        Me.GroupBox1.Controls.Add(Me.ContactPerson)
         Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.ImageButton)
-        Me.GroupBox1.Controls.Add(Me.EmailTBox)
+        Me.GroupBox1.Controls.Add(Me.Email)
         Me.GroupBox1.Controls.Add(Me.Phone)
         Me.GroupBox1.Controls.Add(Me.Address)
         Me.GroupBox1.Controls.Add(Me.Label5)
@@ -133,13 +133,13 @@ Partial Class AddBranch
         Me.Label7.TabIndex = 31
         Me.Label7.Text = "Status"
         '
-        'ContactPersonTBox
+        'ContactPerson
         '
-        Me.ContactPersonTBox.Location = New System.Drawing.Point(140, 275)
-        Me.ContactPersonTBox.Name = "ContactPersonTBox"
-        Me.ContactPersonTBox.PlaceholderText = "Enter Contact name"
-        Me.ContactPersonTBox.Size = New System.Drawing.Size(151, 27)
-        Me.ContactPersonTBox.TabIndex = 30
+        Me.ContactPerson.Location = New System.Drawing.Point(140, 275)
+        Me.ContactPerson.Name = "ContactPerson"
+        Me.ContactPerson.PlaceholderText = "Enter Contact name"
+        Me.ContactPerson.Size = New System.Drawing.Size(151, 27)
+        Me.ContactPerson.TabIndex = 30
         '
         'Label6
         '
@@ -159,13 +159,13 @@ Partial Class AddBranch
         Me.ImageButton.Text = "Upload"
         Me.ImageButton.UseVisualStyleBackColor = True
         '
-        'EmailTBox
+        'Email
         '
-        Me.EmailTBox.Location = New System.Drawing.Point(140, 179)
-        Me.EmailTBox.Name = "EmailTBox"
-        Me.EmailTBox.PlaceholderText = "Enter Email"
-        Me.EmailTBox.Size = New System.Drawing.Size(151, 27)
-        Me.EmailTBox.TabIndex = 26
+        Me.Email.Location = New System.Drawing.Point(140, 179)
+        Me.Email.Name = "Email"
+        Me.Email.PlaceholderText = "Enter Email"
+        Me.Email.Size = New System.Drawing.Size(151, 27)
+        Me.Email.TabIndex = 26
         '
         'Phone
         '
@@ -264,11 +264,11 @@ Partial Class AddBranch
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents StatusCkBox As CheckBox
     Friend WithEvents Label7 As Label
-    Friend WithEvents ContactPersonTBox As TextBox
+    Friend WithEvents ContactPerson As TextBox
     Friend WithEvents Label6 As Label
     Friend WithEvents ImageL As Label
     Friend WithEvents ImageButton As Button
-    Friend WithEvents EmailTBox As TextBox
+    Friend WithEvents Email As TextBox
     Friend WithEvents Phone As TextBox
     Friend WithEvents Address As TextBox
     Friend WithEvents Label5 As Label

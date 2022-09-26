@@ -28,23 +28,23 @@ Partial Class AddSampleCollection
         Me.SaveToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.FlowLayoutPanel2 = New System.Windows.Forms.FlowLayoutPanel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Address = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.SCollectedBy = New System.Windows.Forms.ComboBox()
+        Me.PName = New System.Windows.Forms.ComboBox()
+        Me.InvoiceNo = New System.Windows.Forms.ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
+        Me.Notes = New System.Windows.Forms.RichTextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Time = New System.Windows.Forms.TextBox()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.ComboBox5 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox6 = New System.Windows.Forms.ComboBox()
+        Me.Status = New System.Windows.Forms.ComboBox()
+        Me.Description = New System.Windows.Forms.ComboBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
@@ -88,11 +88,11 @@ Partial Class AddSampleCollection
         'GroupBox1
         '
         Me.GroupBox1.AutoSize = True
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
+        Me.GroupBox1.Controls.Add(Me.Address)
         Me.GroupBox1.Controls.Add(Me.Label4)
-        Me.GroupBox1.Controls.Add(Me.ComboBox3)
-        Me.GroupBox1.Controls.Add(Me.ComboBox2)
-        Me.GroupBox1.Controls.Add(Me.ComboBox1)
+        Me.GroupBox1.Controls.Add(Me.SCollectedBy)
+        Me.GroupBox1.Controls.Add(Me.PName)
+        Me.GroupBox1.Controls.Add(Me.InvoiceNo)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label3)
@@ -104,13 +104,13 @@ Partial Class AddSampleCollection
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Create Sample"
         '
-        'TextBox1
+        'Address
         '
-        Me.TextBox1.Location = New System.Drawing.Point(187, 125)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.PlaceholderText = "Enter Billing Address"
-        Me.TextBox1.Size = New System.Drawing.Size(154, 27)
-        Me.TextBox1.TabIndex = 2
+        Me.Address.Location = New System.Drawing.Point(187, 125)
+        Me.Address.Name = "Address"
+        Me.Address.PlaceholderText = "Enter Billing Address"
+        Me.Address.Size = New System.Drawing.Size(154, 27)
+        Me.Address.TabIndex = 2
         '
         'Label4
         '
@@ -121,32 +121,32 @@ Partial Class AddSampleCollection
         Me.Label4.TabIndex = 17
         Me.Label4.Text = "Sample Collected By"
         '
-        'ComboBox3
+        'SCollectedBy
         '
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Location = New System.Drawing.Point(187, 170)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(151, 28)
-        Me.ComboBox3.TabIndex = 3
-        Me.ComboBox3.Text = "Select"
+        Me.SCollectedBy.FormattingEnabled = True
+        Me.SCollectedBy.Location = New System.Drawing.Point(187, 170)
+        Me.SCollectedBy.Name = "SCollectedBy"
+        Me.SCollectedBy.Size = New System.Drawing.Size(151, 28)
+        Me.SCollectedBy.TabIndex = 3
+        Me.SCollectedBy.Text = "Select"
         '
-        'ComboBox2
+        'PName
         '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(187, 79)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(151, 28)
-        Me.ComboBox2.TabIndex = 1
-        Me.ComboBox2.Text = "Select"
+        Me.PName.FormattingEnabled = True
+        Me.PName.Location = New System.Drawing.Point(187, 79)
+        Me.PName.Name = "PName"
+        Me.PName.Size = New System.Drawing.Size(151, 28)
+        Me.PName.TabIndex = 1
+        Me.PName.Text = "Select"
         '
-        'ComboBox1
+        'InvoiceNo
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(187, 33)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(151, 28)
-        Me.ComboBox1.TabIndex = 0
-        Me.ComboBox1.Text = "Select"
+        Me.InvoiceNo.FormattingEnabled = True
+        Me.InvoiceNo.Location = New System.Drawing.Point(187, 33)
+        Me.InvoiceNo.Name = "InvoiceNo"
+        Me.InvoiceNo.Size = New System.Drawing.Size(151, 28)
+        Me.InvoiceNo.TabIndex = 0
+        Me.InvoiceNo.Text = "Select"
         '
         'Label1
         '
@@ -178,14 +178,14 @@ Partial Class AddSampleCollection
         'GroupBox2
         '
         Me.GroupBox2.AutoSize = True
-        Me.GroupBox2.Controls.Add(Me.RichTextBox1)
+        Me.GroupBox2.Controls.Add(Me.Notes)
         Me.GroupBox2.Controls.Add(Me.Label6)
         Me.GroupBox2.Controls.Add(Me.Button1)
         Me.GroupBox2.Controls.Add(Me.Time)
         Me.GroupBox2.Controls.Add(Me.DateTimePicker1)
         Me.GroupBox2.Controls.Add(Me.Label5)
-        Me.GroupBox2.Controls.Add(Me.ComboBox5)
-        Me.GroupBox2.Controls.Add(Me.ComboBox6)
+        Me.GroupBox2.Controls.Add(Me.Status)
+        Me.GroupBox2.Controls.Add(Me.Description)
         Me.GroupBox2.Controls.Add(Me.Label7)
         Me.GroupBox2.Controls.Add(Me.Label8)
         Me.GroupBox2.Controls.Add(Me.Label9)
@@ -197,13 +197,13 @@ Partial Class AddSampleCollection
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Description"
         '
-        'RichTextBox1
+        'Notes
         '
-        Me.RichTextBox1.Location = New System.Drawing.Point(18, 253)
-        Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(394, 110)
-        Me.RichTextBox1.TabIndex = 9
-        Me.RichTextBox1.Text = ""
+        Me.Notes.Location = New System.Drawing.Point(18, 253)
+        Me.Notes.Name = "Notes"
+        Me.Notes.Size = New System.Drawing.Size(394, 110)
+        Me.Notes.TabIndex = 9
+        Me.Notes.Text = ""
         '
         'Label6
         '
@@ -247,23 +247,23 @@ Partial Class AddSampleCollection
         Me.Label5.TabIndex = 17
         Me.Label5.Text = "Time"
         '
-        'ComboBox5
+        'Status
         '
-        Me.ComboBox5.FormattingEnabled = True
-        Me.ComboBox5.Location = New System.Drawing.Point(187, 82)
-        Me.ComboBox5.Name = "ComboBox5"
-        Me.ComboBox5.Size = New System.Drawing.Size(151, 28)
-        Me.ComboBox5.TabIndex = 5
-        Me.ComboBox5.Text = "Select"
+        Me.Status.FormattingEnabled = True
+        Me.Status.Location = New System.Drawing.Point(187, 82)
+        Me.Status.Name = "Status"
+        Me.Status.Size = New System.Drawing.Size(151, 28)
+        Me.Status.TabIndex = 5
+        Me.Status.Text = "Select"
         '
-        'ComboBox6
+        'Description
         '
-        Me.ComboBox6.FormattingEnabled = True
-        Me.ComboBox6.Location = New System.Drawing.Point(187, 33)
-        Me.ComboBox6.Name = "ComboBox6"
-        Me.ComboBox6.Size = New System.Drawing.Size(151, 28)
-        Me.ComboBox6.TabIndex = 4
-        Me.ComboBox6.Text = "Select"
+        Me.Description.FormattingEnabled = True
+        Me.Description.Location = New System.Drawing.Point(187, 33)
+        Me.Description.Name = "Description"
+        Me.Description.Size = New System.Drawing.Size(151, 28)
+        Me.Description.TabIndex = 4
+        Me.Description.Text = "Select"
         '
         'Label7
         '
@@ -326,22 +326,22 @@ Partial Class AddSampleCollection
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents ComboBox3 As ComboBox
-    Friend WithEvents ComboBox2 As ComboBox
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents SCollectedBy As ComboBox
+    Friend WithEvents PName As ComboBox
+    Friend WithEvents InvoiceNo As ComboBox
     Friend WithEvents Label4 As Label
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents DateTimePicker1 As DateTimePicker
     Friend WithEvents Label5 As Label
-    Friend WithEvents ComboBox5 As ComboBox
-    Friend WithEvents ComboBox6 As ComboBox
+    Friend WithEvents Status As ComboBox
+    Friend WithEvents Description As ComboBox
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Timer1 As Timer
     Friend WithEvents Time As TextBox
     Friend WithEvents Button1 As Button
-    Friend WithEvents RichTextBox1 As RichTextBox
+    Friend WithEvents Notes As RichTextBox
     Friend WithEvents Label6 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Address As TextBox
 End Class

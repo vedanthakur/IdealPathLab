@@ -30,39 +30,39 @@ Partial Class AddHumanResource
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Label15 = New System.Windows.Forms.Label()
-        Me.TextBox10 = New System.Windows.Forms.TextBox()
+        Me.Phone = New System.Windows.Forms.TextBox()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
+        Me.Email = New System.Windows.Forms.TextBox()
         Me.Address = New System.Windows.Forms.TextBox()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.PName = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.Rank = New System.Windows.Forms.TextBox()
+        Me.CuncilNo = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.HRType = New System.Windows.Forms.ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Position = New System.Windows.Forms.TextBox()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.Label21 = New System.Windows.Forms.Label()
-        Me.TextBox13 = New System.Windows.Forms.TextBox()
+        Me.Instagram = New System.Windows.Forms.TextBox()
         Me.Label22 = New System.Windows.Forms.Label()
-        Me.TextBox14 = New System.Windows.Forms.TextBox()
+        Me.YouTube = New System.Windows.Forms.TextBox()
         Me.Label19 = New System.Windows.Forms.Label()
-        Me.TextBox11 = New System.Windows.Forms.TextBox()
+        Me.Facebook = New System.Windows.Forms.TextBox()
         Me.Label20 = New System.Windows.Forms.Label()
-        Me.TextBox12 = New System.Windows.Forms.TextBox()
+        Me.Twitter = New System.Windows.Forms.TextBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.Use = New System.Windows.Forms.CheckBox()
+        Me.Publish = New System.Windows.Forms.CheckBox()
+        Me.Speciqlization = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -114,14 +114,14 @@ Partial Class AddHumanResource
         Me.GroupBox3.Controls.Add(Me.PictureBox2)
         Me.GroupBox3.Controls.Add(Me.Button3)
         Me.GroupBox3.Controls.Add(Me.Label15)
-        Me.GroupBox3.Controls.Add(Me.TextBox10)
+        Me.GroupBox3.Controls.Add(Me.Phone)
         Me.GroupBox3.Controls.Add(Me.Label14)
         Me.GroupBox3.Controls.Add(Me.Label13)
-        Me.GroupBox3.Controls.Add(Me.TextBox9)
+        Me.GroupBox3.Controls.Add(Me.Email)
         Me.GroupBox3.Controls.Add(Me.Address)
         Me.GroupBox3.Controls.Add(Me.Label12)
         Me.GroupBox3.Controls.Add(Me.Label2)
-        Me.GroupBox3.Controls.Add(Me.TextBox1)
+        Me.GroupBox3.Controls.Add(Me.PName)
         Me.GroupBox3.Location = New System.Drawing.Point(3, 33)
         Me.GroupBox3.MinimumSize = New System.Drawing.Size(442, 150)
         Me.GroupBox3.Name = "GroupBox3"
@@ -159,13 +159,13 @@ Partial Class AddHumanResource
         Me.Label15.TabIndex = 38
         Me.Label15.Text = "Image"
         '
-        'TextBox10
+        'Phone
         '
-        Me.TextBox10.Location = New System.Drawing.Point(112, 179)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.PlaceholderText = "Enter Phone No."
-        Me.TextBox10.Size = New System.Drawing.Size(151, 27)
-        Me.TextBox10.TabIndex = 3
+        Me.Phone.Location = New System.Drawing.Point(112, 179)
+        Me.Phone.Name = "Phone"
+        Me.Phone.PlaceholderText = "Enter Phone No."
+        Me.Phone.Size = New System.Drawing.Size(151, 27)
+        Me.Phone.TabIndex = 3
         '
         'Label14
         '
@@ -185,13 +185,13 @@ Partial Class AddHumanResource
         Me.Label13.TabIndex = 35
         Me.Label13.Text = "Email*"
         '
-        'TextBox9
+        'Email
         '
-        Me.TextBox9.Location = New System.Drawing.Point(112, 132)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.PlaceholderText = "Enter Email"
-        Me.TextBox9.Size = New System.Drawing.Size(151, 27)
-        Me.TextBox9.TabIndex = 2
+        Me.Email.Location = New System.Drawing.Point(112, 132)
+        Me.Email.Name = "Email"
+        Me.Email.PlaceholderText = "Enter Email"
+        Me.Email.Size = New System.Drawing.Size(151, 27)
+        Me.Email.TabIndex = 2
         '
         'Address
         '
@@ -219,13 +219,13 @@ Partial Class AddHumanResource
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Name*"
         '
-        'TextBox1
+        'PName
         '
-        Me.TextBox1.Location = New System.Drawing.Point(112, 38)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.PlaceholderText = "Enter Name"
-        Me.TextBox1.Size = New System.Drawing.Size(151, 27)
-        Me.TextBox1.TabIndex = 0
+        Me.PName.Location = New System.Drawing.Point(112, 38)
+        Me.PName.Name = "PName"
+        Me.PName.PlaceholderText = "Enter Name"
+        Me.PName.Size = New System.Drawing.Size(151, 27)
+        Me.PName.TabIndex = 0
         '
         'GroupBox1
         '
@@ -234,13 +234,13 @@ Partial Class AddHumanResource
         Me.GroupBox1.Controls.Add(Me.Button4)
         Me.GroupBox1.Controls.Add(Me.Label18)
         Me.GroupBox1.Controls.Add(Me.Label11)
-        Me.GroupBox1.Controls.Add(Me.TextBox7)
-        Me.GroupBox1.Controls.Add(Me.TextBox6)
+        Me.GroupBox1.Controls.Add(Me.Rank)
+        Me.GroupBox1.Controls.Add(Me.CuncilNo)
         Me.GroupBox1.Controls.Add(Me.Label10)
-        Me.GroupBox1.Controls.Add(Me.ComboBox1)
+        Me.GroupBox1.Controls.Add(Me.HRType)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
+        Me.GroupBox1.Controls.Add(Me.Position)
         Me.GroupBox1.Location = New System.Drawing.Point(451, 33)
         Me.GroupBox1.MinimumSize = New System.Drawing.Size(442, 187)
         Me.GroupBox1.Name = "GroupBox1"
@@ -287,21 +287,21 @@ Partial Class AddHumanResource
         Me.Label11.TabIndex = 17
         Me.Label11.Text = "Rank*"
         '
-        'TextBox7
+        'Rank
         '
-        Me.TextBox7.Location = New System.Drawing.Point(197, 182)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.PlaceholderText = "Enter Rank"
-        Me.TextBox7.Size = New System.Drawing.Size(151, 27)
-        Me.TextBox7.TabIndex = 12
+        Me.Rank.Location = New System.Drawing.Point(197, 182)
+        Me.Rank.Name = "Rank"
+        Me.Rank.PlaceholderText = "Enter Rank"
+        Me.Rank.Size = New System.Drawing.Size(151, 27)
+        Me.Rank.TabIndex = 12
         '
-        'TextBox6
+        'CuncilNo
         '
-        Me.TextBox6.Location = New System.Drawing.Point(197, 134)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.PlaceholderText = "Enter Council Reg. No."
-        Me.TextBox6.Size = New System.Drawing.Size(151, 27)
-        Me.TextBox6.TabIndex = 11
+        Me.CuncilNo.Location = New System.Drawing.Point(197, 134)
+        Me.CuncilNo.Name = "CuncilNo"
+        Me.CuncilNo.PlaceholderText = "Enter Council Reg. No."
+        Me.CuncilNo.Size = New System.Drawing.Size(151, 27)
+        Me.CuncilNo.TabIndex = 11
         '
         'Label10
         '
@@ -312,14 +312,14 @@ Partial Class AddHumanResource
         Me.Label10.TabIndex = 14
         Me.Label10.Text = "Council Registration No."
         '
-        'ComboBox1
+        'HRType
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(197, 37)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(151, 28)
-        Me.ComboBox1.TabIndex = 9
-        Me.ComboBox1.Text = "Select"
+        Me.HRType.FormattingEnabled = True
+        Me.HRType.Location = New System.Drawing.Point(197, 37)
+        Me.HRType.Name = "HRType"
+        Me.HRType.Size = New System.Drawing.Size(151, 28)
+        Me.HRType.TabIndex = 9
+        Me.HRType.Text = "Select"
         '
         'Label1
         '
@@ -339,24 +339,24 @@ Partial Class AddHumanResource
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Position*"
         '
-        'TextBox2
+        'Position
         '
-        Me.TextBox2.Location = New System.Drawing.Point(197, 86)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.PlaceholderText = "Enter Address"
-        Me.TextBox2.Size = New System.Drawing.Size(151, 27)
-        Me.TextBox2.TabIndex = 10
+        Me.Position.Location = New System.Drawing.Point(197, 86)
+        Me.Position.Name = "Position"
+        Me.Position.PlaceholderText = "Enter Address"
+        Me.Position.Size = New System.Drawing.Size(151, 27)
+        Me.Position.TabIndex = 10
         '
         'GroupBox4
         '
         Me.GroupBox4.Controls.Add(Me.Label21)
-        Me.GroupBox4.Controls.Add(Me.TextBox13)
+        Me.GroupBox4.Controls.Add(Me.Instagram)
         Me.GroupBox4.Controls.Add(Me.Label22)
-        Me.GroupBox4.Controls.Add(Me.TextBox14)
+        Me.GroupBox4.Controls.Add(Me.YouTube)
         Me.GroupBox4.Controls.Add(Me.Label19)
-        Me.GroupBox4.Controls.Add(Me.TextBox11)
+        Me.GroupBox4.Controls.Add(Me.Facebook)
         Me.GroupBox4.Controls.Add(Me.Label20)
-        Me.GroupBox4.Controls.Add(Me.TextBox12)
+        Me.GroupBox4.Controls.Add(Me.Twitter)
         Me.GroupBox4.Location = New System.Drawing.Point(3, 328)
         Me.GroupBox4.MinimumSize = New System.Drawing.Size(442, 150)
         Me.GroupBox4.Name = "GroupBox4"
@@ -374,13 +374,13 @@ Partial Class AddHumanResource
         Me.Label21.TabIndex = 16
         Me.Label21.Text = "Instagram"
         '
-        'TextBox13
+        'Instagram
         '
-        Me.TextBox13.Location = New System.Drawing.Point(112, 120)
-        Me.TextBox13.Name = "TextBox13"
-        Me.TextBox13.PlaceholderText = "Enter Instagram URL"
-        Me.TextBox13.Size = New System.Drawing.Size(264, 27)
-        Me.TextBox13.TabIndex = 7
+        Me.Instagram.Location = New System.Drawing.Point(112, 120)
+        Me.Instagram.Name = "Instagram"
+        Me.Instagram.PlaceholderText = "Enter Instagram URL"
+        Me.Instagram.Size = New System.Drawing.Size(264, 27)
+        Me.Instagram.TabIndex = 7
         '
         'Label22
         '
@@ -391,13 +391,13 @@ Partial Class AddHumanResource
         Me.Label22.TabIndex = 17
         Me.Label22.Text = "YouTube"
         '
-        'TextBox14
+        'YouTube
         '
-        Me.TextBox14.Location = New System.Drawing.Point(112, 161)
-        Me.TextBox14.Name = "TextBox14"
-        Me.TextBox14.PlaceholderText = "Enter YouTube URL"
-        Me.TextBox14.Size = New System.Drawing.Size(264, 27)
-        Me.TextBox14.TabIndex = 8
+        Me.YouTube.Location = New System.Drawing.Point(112, 161)
+        Me.YouTube.Name = "YouTube"
+        Me.YouTube.PlaceholderText = "Enter YouTube URL"
+        Me.YouTube.Size = New System.Drawing.Size(264, 27)
+        Me.YouTube.TabIndex = 8
         '
         'Label19
         '
@@ -408,13 +408,13 @@ Partial Class AddHumanResource
         Me.Label19.TabIndex = 12
         Me.Label19.Text = "Facebook"
         '
-        'TextBox11
+        'Facebook
         '
-        Me.TextBox11.Location = New System.Drawing.Point(112, 38)
-        Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.PlaceholderText = "Enter Facebook URL"
-        Me.TextBox11.Size = New System.Drawing.Size(264, 27)
-        Me.TextBox11.TabIndex = 5
+        Me.Facebook.Location = New System.Drawing.Point(112, 38)
+        Me.Facebook.Name = "Facebook"
+        Me.Facebook.PlaceholderText = "Enter Facebook URL"
+        Me.Facebook.Size = New System.Drawing.Size(264, 27)
+        Me.Facebook.TabIndex = 5
         '
         'Label20
         '
@@ -425,19 +425,19 @@ Partial Class AddHumanResource
         Me.Label20.TabIndex = 13
         Me.Label20.Text = "Twitter"
         '
-        'TextBox12
+        'Twitter
         '
-        Me.TextBox12.Location = New System.Drawing.Point(112, 79)
-        Me.TextBox12.Name = "TextBox12"
-        Me.TextBox12.PlaceholderText = "Enter Twitter URL"
-        Me.TextBox12.Size = New System.Drawing.Size(264, 27)
-        Me.TextBox12.TabIndex = 6
+        Me.Twitter.Location = New System.Drawing.Point(112, 79)
+        Me.Twitter.Name = "Twitter"
+        Me.Twitter.PlaceholderText = "Enter Twitter URL"
+        Me.Twitter.Size = New System.Drawing.Size(264, 27)
+        Me.Twitter.TabIndex = 6
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.CheckBox2)
-        Me.GroupBox2.Controls.Add(Me.CheckBox1)
-        Me.GroupBox2.Controls.Add(Me.TextBox3)
+        Me.GroupBox2.Controls.Add(Me.Use)
+        Me.GroupBox2.Controls.Add(Me.Publish)
+        Me.GroupBox2.Controls.Add(Me.Speciqlization)
         Me.GroupBox2.Controls.Add(Me.Label4)
         Me.GroupBox2.Controls.Add(Me.Label6)
         Me.GroupBox2.Controls.Add(Me.Label7)
@@ -450,33 +450,33 @@ Partial Class AddHumanResource
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "More"
         '
-        'CheckBox2
+        'Use
         '
-        Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Location = New System.Drawing.Point(197, 40)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(55, 24)
-        Me.CheckBox2.TabIndex = 14
-        Me.CheckBox2.Text = "Use"
-        Me.CheckBox2.UseVisualStyleBackColor = True
+        Me.Use.AutoSize = True
+        Me.Use.Location = New System.Drawing.Point(197, 40)
+        Me.Use.Name = "Use"
+        Me.Use.Size = New System.Drawing.Size(55, 24)
+        Me.Use.TabIndex = 14
+        Me.Use.Text = "Use"
+        Me.Use.UseVisualStyleBackColor = True
         '
-        'CheckBox1
+        'Publish
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(197, 79)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(78, 24)
-        Me.CheckBox1.TabIndex = 15
-        Me.CheckBox1.Text = "Publish"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.Publish.AutoSize = True
+        Me.Publish.Location = New System.Drawing.Point(197, 79)
+        Me.Publish.Name = "Publish"
+        Me.Publish.Size = New System.Drawing.Size(78, 24)
+        Me.Publish.TabIndex = 15
+        Me.Publish.Text = "Publish"
+        Me.Publish.UseVisualStyleBackColor = True
         '
-        'TextBox3
+        'Speciqlization
         '
-        Me.TextBox3.Location = New System.Drawing.Point(197, 118)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.PlaceholderText = "Enter Speciqlization"
-        Me.TextBox3.Size = New System.Drawing.Size(151, 27)
-        Me.TextBox3.TabIndex = 15
+        Me.Speciqlization.Location = New System.Drawing.Point(197, 118)
+        Me.Speciqlization.Name = "Speciqlization"
+        Me.Speciqlization.PlaceholderText = "Enter Speciqlization"
+        Me.Speciqlization.Size = New System.Drawing.Size(151, 27)
+        Me.Speciqlization.TabIndex = 15
         '
         'Label4
         '
@@ -541,38 +541,38 @@ Partial Class AddHumanResource
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents PName As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents Position As TextBox
     Friend WithEvents GroupBox4 As GroupBox
     Friend WithEvents GroupBox3 As GroupBox
     Friend WithEvents Label11 As Label
-    Friend WithEvents TextBox7 As TextBox
-    Friend WithEvents TextBox6 As TextBox
+    Friend WithEvents Rank As TextBox
+    Friend WithEvents CuncilNo As TextBox
     Friend WithEvents Label10 As Label
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents HRType As ComboBox
     Friend WithEvents Button3 As Button
     Friend WithEvents Label15 As Label
-    Friend WithEvents TextBox10 As TextBox
+    Friend WithEvents Phone As TextBox
     Friend WithEvents Label14 As Label
     Friend WithEvents Label13 As Label
-    Friend WithEvents TextBox9 As TextBox
+    Friend WithEvents Email As TextBox
     Friend WithEvents Address As TextBox
     Friend WithEvents Label12 As Label
     Friend WithEvents Button4 As Button
     Friend WithEvents Label18 As Label
     Friend WithEvents Label21 As Label
-    Friend WithEvents TextBox13 As TextBox
+    Friend WithEvents Instagram As TextBox
     Friend WithEvents Label22 As Label
-    Friend WithEvents TextBox14 As TextBox
+    Friend WithEvents YouTube As TextBox
     Friend WithEvents Label19 As Label
-    Friend WithEvents TextBox11 As TextBox
+    Friend WithEvents Facebook As TextBox
     Friend WithEvents Label20 As Label
-    Friend WithEvents TextBox12 As TextBox
+    Friend WithEvents Twitter As TextBox
     Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents CheckBox2 As CheckBox
-    Friend WithEvents CheckBox1 As CheckBox
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents Use As CheckBox
+    Friend WithEvents Publish As CheckBox
+    Friend WithEvents Speciqlization As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label

@@ -27,17 +27,17 @@ Partial Class AddLabReport
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.PName = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Address = New System.Windows.Forms.TextBox()
         Me.GroupBox8 = New System.Windows.Forms.GroupBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.TSH = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox7 = New System.Windows.Forms.GroupBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.LabNo = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.CheckedListBox1 = New System.Windows.Forms.CheckedListBox()
@@ -54,8 +54,8 @@ Partial Class AddLabReport
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox9 = New System.Windows.Forms.GroupBox()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.Notes = New System.Windows.Forms.RichTextBox()
+        Me.Delivered = New System.Windows.Forms.CheckBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.SaveAllToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -81,9 +81,9 @@ Partial Class AddLabReport
         Me.GroupBox1.Controls.Add(Me.DateTimePicker1)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
+        Me.GroupBox1.Controls.Add(Me.PName)
         Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
+        Me.GroupBox1.Controls.Add(Me.Address)
         Me.GroupBox1.Location = New System.Drawing.Point(3, 33)
         Me.GroupBox1.MaximumSize = New System.Drawing.Size(442, 187)
         Me.GroupBox1.MinimumSize = New System.Drawing.Size(442, 187)
@@ -123,14 +123,14 @@ Partial Class AddLabReport
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "Patient Name*"
         '
-        'TextBox1
+        'PName
         '
-        Me.TextBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox1.Location = New System.Drawing.Point(153, 29)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.PlaceholderText = "Enter Name"
-        Me.TextBox1.Size = New System.Drawing.Size(147, 27)
-        Me.TextBox1.TabIndex = 0
+        Me.PName.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PName.Location = New System.Drawing.Point(153, 29)
+        Me.PName.Name = "PName"
+        Me.PName.PlaceholderText = "Enter Name"
+        Me.PName.Size = New System.Drawing.Size(147, 27)
+        Me.PName.TabIndex = 0
         '
         'Label3
         '
@@ -143,19 +143,19 @@ Partial Class AddLabReport
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Billing Address"
         '
-        'TextBox2
+        'Address
         '
-        Me.TextBox2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox2.Location = New System.Drawing.Point(153, 81)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.PlaceholderText = "Enter Address"
-        Me.TextBox2.Size = New System.Drawing.Size(147, 27)
-        Me.TextBox2.TabIndex = 1
+        Me.Address.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Address.Location = New System.Drawing.Point(153, 81)
+        Me.Address.Name = "Address"
+        Me.Address.PlaceholderText = "Enter Address"
+        Me.Address.Size = New System.Drawing.Size(147, 27)
+        Me.Address.TabIndex = 1
         '
         'GroupBox8
         '
         Me.GroupBox8.Controls.Add(Me.Label6)
-        Me.GroupBox8.Controls.Add(Me.TextBox5)
+        Me.GroupBox8.Controls.Add(Me.TSH)
         Me.GroupBox8.Controls.Add(Me.Button1)
         Me.GroupBox8.Location = New System.Drawing.Point(3, 554)
         Me.GroupBox8.MinimumSize = New System.Drawing.Size(442, 130)
@@ -174,13 +174,13 @@ Partial Class AddLabReport
         Me.Label6.TabIndex = 5
         Me.Label6.Text = "Thyroid Stimulating Hormone (TSH)"
         '
-        'TextBox5
+        'TSH
         '
-        Me.TextBox5.Location = New System.Drawing.Point(262, 33)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.PlaceholderText = "Enter TSH"
-        Me.TextBox5.Size = New System.Drawing.Size(125, 27)
-        Me.TextBox5.TabIndex = 5
+        Me.TSH.Location = New System.Drawing.Point(262, 33)
+        Me.TSH.Name = "TSH"
+        Me.TSH.PlaceholderText = "Enter TSH"
+        Me.TSH.Size = New System.Drawing.Size(125, 27)
+        Me.TSH.TabIndex = 5
         '
         'Button1
         '
@@ -195,7 +195,7 @@ Partial Class AddLabReport
         '
         Me.GroupBox7.Controls.Add(Me.Label4)
         Me.GroupBox7.Controls.Add(Me.DateTimePicker2)
-        Me.GroupBox7.Controls.Add(Me.TextBox4)
+        Me.GroupBox7.Controls.Add(Me.LabNo)
         Me.GroupBox7.Controls.Add(Me.Label5)
         Me.GroupBox7.Location = New System.Drawing.Point(451, 398)
         Me.GroupBox7.MinimumSize = New System.Drawing.Size(442, 150)
@@ -221,13 +221,13 @@ Partial Class AddLabReport
         Me.DateTimePicker2.Size = New System.Drawing.Size(250, 27)
         Me.DateTimePicker2.TabIndex = 11
         '
-        'TextBox4
+        'LabNo
         '
-        Me.TextBox4.Location = New System.Drawing.Point(131, 76)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.PlaceholderText = "Enter Lab no."
-        Me.TextBox4.Size = New System.Drawing.Size(125, 27)
-        Me.TextBox4.TabIndex = 12
+        Me.LabNo.Location = New System.Drawing.Point(131, 76)
+        Me.LabNo.Name = "LabNo"
+        Me.LabNo.PlaceholderText = "Enter Lab no."
+        Me.LabNo.Size = New System.Drawing.Size(125, 27)
+        Me.LabNo.TabIndex = 12
         '
         'Label5
         '
@@ -385,8 +385,8 @@ Partial Class AddLabReport
         'GroupBox9
         '
         Me.GroupBox9.Controls.Add(Me.Label9)
-        Me.GroupBox9.Controls.Add(Me.RichTextBox1)
-        Me.GroupBox9.Controls.Add(Me.CheckBox1)
+        Me.GroupBox9.Controls.Add(Me.Notes)
+        Me.GroupBox9.Controls.Add(Me.Delivered)
         Me.GroupBox9.Controls.Add(Me.Label8)
         Me.GroupBox9.Location = New System.Drawing.Point(3, 690)
         Me.GroupBox9.MinimumSize = New System.Drawing.Size(442, 0)
@@ -405,23 +405,23 @@ Partial Class AddLabReport
         Me.Label9.TabIndex = 23
         Me.Label9.Text = "Notes:"
         '
-        'RichTextBox1
+        'Notes
         '
-        Me.RichTextBox1.Location = New System.Drawing.Point(13, 102)
-        Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(406, 84)
-        Me.RichTextBox1.TabIndex = 8
-        Me.RichTextBox1.Text = ""
+        Me.Notes.Location = New System.Drawing.Point(13, 102)
+        Me.Notes.Name = "Notes"
+        Me.Notes.Size = New System.Drawing.Size(406, 84)
+        Me.Notes.TabIndex = 8
+        Me.Notes.Text = ""
         '
-        'CheckBox1
+        'Delivered
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(119, 36)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(95, 24)
-        Me.CheckBox1.TabIndex = 7
-        Me.CheckBox1.Text = "Delivered"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.Delivered.AutoSize = True
+        Me.Delivered.Location = New System.Drawing.Point(119, 36)
+        Me.Delivered.Name = "Delivered"
+        Me.Delivered.Size = New System.Drawing.Size(95, 24)
+        Me.Delivered.TabIndex = 7
+        Me.Delivered.Text = "Delivered"
+        Me.Delivered.UseVisualStyleBackColor = True
         '
         'Label8
         '
@@ -500,16 +500,16 @@ Partial Class AddLabReport
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents PName As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents Address As TextBox
     Friend WithEvents DateTimePicker1 As DateTimePicker
     Friend WithEvents CheckedListBox1 As CheckedListBox
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Button1 As Button
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents LabNo As TextBox
+    Friend WithEvents TSH As TextBox
     Friend WithEvents GroupBox4 As GroupBox
     Friend WithEvents CheckedListBox3 As CheckedListBox
     Friend WithEvents GroupBox3 As GroupBox
@@ -527,8 +527,8 @@ Partial Class AddLabReport
     Friend WithEvents Button2 As Button
     Friend WithEvents GroupBox9 As GroupBox
     Friend WithEvents Label9 As Label
-    Friend WithEvents RichTextBox1 As RichTextBox
-    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents Notes As RichTextBox
+    Friend WithEvents Delivered As CheckBox
     Friend WithEvents Label8 As Label
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
     Friend WithEvents SaveAllToolStripMenuItem As ToolStripMenuItem

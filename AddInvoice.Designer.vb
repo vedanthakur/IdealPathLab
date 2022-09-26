@@ -41,10 +41,10 @@ Partial Class AddInvoice
         Me.Label3 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.AllPaid = New System.Windows.Forms.CheckBox()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.ReturnedCash = New System.Windows.Forms.TextBox()
+        Me.ReceivedCash = New System.Windows.Forms.TextBox()
+        Me.Amount3 = New System.Windows.Forms.TextBox()
+        Me.Amount2 = New System.Windows.Forms.TextBox()
         Me.Percentage = New System.Windows.Forms.TextBox()
         Me.Amount = New System.Windows.Forms.TextBox()
         Me.Total = New System.Windows.Forms.TextBox()
@@ -55,7 +55,6 @@ Partial Class AddInvoice
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
         Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -227,10 +226,10 @@ Partial Class AddInvoice
         '
         Me.GroupBox2.AutoSize = True
         Me.GroupBox2.Controls.Add(Me.AllPaid)
-        Me.GroupBox2.Controls.Add(Me.TextBox8)
-        Me.GroupBox2.Controls.Add(Me.TextBox7)
-        Me.GroupBox2.Controls.Add(Me.TextBox6)
-        Me.GroupBox2.Controls.Add(Me.TextBox5)
+        Me.GroupBox2.Controls.Add(Me.ReturnedCash)
+        Me.GroupBox2.Controls.Add(Me.ReceivedCash)
+        Me.GroupBox2.Controls.Add(Me.Amount3)
+        Me.GroupBox2.Controls.Add(Me.Amount2)
         Me.GroupBox2.Controls.Add(Me.Percentage)
         Me.GroupBox2.Controls.Add(Me.Amount)
         Me.GroupBox2.Controls.Add(Me.Total)
@@ -241,7 +240,6 @@ Partial Class AddInvoice
         Me.GroupBox2.Controls.Add(Me.Label11)
         Me.GroupBox2.Controls.Add(Me.Label8)
         Me.GroupBox2.Controls.Add(Me.Label7)
-        Me.GroupBox2.Controls.Add(Me.RadioButton3)
         Me.GroupBox2.Controls.Add(Me.RadioButton2)
         Me.GroupBox2.Controls.Add(Me.RadioButton1)
         Me.GroupBox2.Controls.Add(Me.Label6)
@@ -267,33 +265,33 @@ Partial Class AddInvoice
         Me.AllPaid.Text = "All Paid"
         Me.AllPaid.UseVisualStyleBackColor = True
         '
-        'TextBox8
+        'ReturnedCash
         '
-        Me.TextBox8.Location = New System.Drawing.Point(255, 511)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(125, 27)
-        Me.TextBox8.TabIndex = 17
+        Me.ReturnedCash.Location = New System.Drawing.Point(255, 511)
+        Me.ReturnedCash.Name = "ReturnedCash"
+        Me.ReturnedCash.Size = New System.Drawing.Size(125, 27)
+        Me.ReturnedCash.TabIndex = 17
         '
-        'TextBox7
+        'ReceivedCash
         '
-        Me.TextBox7.Location = New System.Drawing.Point(255, 478)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(125, 27)
-        Me.TextBox7.TabIndex = 16
+        Me.ReceivedCash.Location = New System.Drawing.Point(255, 478)
+        Me.ReceivedCash.Name = "ReceivedCash"
+        Me.ReceivedCash.Size = New System.Drawing.Size(125, 27)
+        Me.ReceivedCash.TabIndex = 16
         '
-        'TextBox6
+        'Amount3
         '
-        Me.TextBox6.Location = New System.Drawing.Point(255, 445)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(125, 27)
-        Me.TextBox6.TabIndex = 15
+        Me.Amount3.Location = New System.Drawing.Point(255, 445)
+        Me.Amount3.Name = "Amount3"
+        Me.Amount3.Size = New System.Drawing.Size(125, 27)
+        Me.Amount3.TabIndex = 15
         '
-        'TextBox5
+        'Amount2
         '
-        Me.TextBox5.Location = New System.Drawing.Point(255, 412)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(125, 27)
-        Me.TextBox5.TabIndex = 14
+        Me.Amount2.Location = New System.Drawing.Point(255, 412)
+        Me.Amount2.Name = "Amount2"
+        Me.Amount2.Size = New System.Drawing.Size(125, 27)
+        Me.Amount2.TabIndex = 14
         '
         'Percentage
         '
@@ -379,17 +377,6 @@ Partial Class AddInvoice
         Me.Label7.Size = New System.Drawing.Size(42, 20)
         Me.Label7.TabIndex = 30
         Me.Label7.Text = "Total"
-        '
-        'RadioButton3
-        '
-        Me.RadioButton3.AutoSize = True
-        Me.RadioButton3.Location = New System.Drawing.Point(284, 41)
-        Me.RadioButton3.Name = "RadioButton3"
-        Me.RadioButton3.Size = New System.Drawing.Size(75, 24)
-        Me.RadioButton3.TabIndex = 7
-        Me.RadioButton3.TabStop = True
-        Me.RadioButton3.Text = "Offline"
-        Me.RadioButton3.UseVisualStyleBackColor = True
         '
         'RadioButton2
         '
@@ -502,7 +489,6 @@ Partial Class AddInvoice
     Friend WithEvents Label11 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents Label7 As Label
-    Friend WithEvents RadioButton3 As RadioButton
     Friend WithEvents RadioButton2 As RadioButton
     Friend WithEvents RadioButton1 As RadioButton
     Friend WithEvents Label6 As Label
@@ -510,10 +496,10 @@ Partial Class AddInvoice
     Friend WithEvents Paid As CheckBox
     Friend WithEvents Label9 As Label
     Friend WithEvents Label10 As Label
-    Friend WithEvents TextBox8 As TextBox
-    Friend WithEvents TextBox7 As TextBox
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents ReturnedCash As TextBox
+    Friend WithEvents ReceivedCash As TextBox
+    Friend WithEvents Amount3 As TextBox
+    Friend WithEvents Amount2 As TextBox
     Friend WithEvents Percentage As TextBox
     Friend WithEvents Amount As TextBox
     Friend WithEvents Total As TextBox

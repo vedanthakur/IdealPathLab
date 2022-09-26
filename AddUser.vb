@@ -9,7 +9,25 @@ Public Class AddUser
 
     Dim imgpath As String
     Dim arrimage() As Byte
-    Private Sub Button2_Click(sender As Object, e As EventArgs)
+
+    Private Sub status_CheckedChanged(sender As Object, e As EventArgs) Handles status.CheckedChanged
+        statusC = status.Checked
+    End Sub
+
+    Private Sub showUserWiseData_CheckedChanged(sender As Object, e As EventArgs) Handles showUserWiseData.CheckedChanged
+        showUserWiseDataC = showUserWiseData.Checked
+    End Sub
+
+    Private Sub imgUpload_Click(sender As Object, e As EventArgs) Handles imgUpload.Click
+        Dim openfiledialog1 As New OpenFileDialog()
+        openfiledialog1.Filter = "Image file|*.jpg;*.png;*.gif;*.bmp"
+        If openfiledialog1.ShowDialog = Windows.Forms.DialogResult.OK Then
+            imgpath = openfiledialog1.FileName
+            PictureBox1.ImageLocation = imgpath
+        End If
+    End Sub
+
+    Private Sub SaveToolStripButton_Click(sender As Object, e As EventArgs) Handles SaveToolStripButton.Click
         Try
             Dim sql As String
             Dim i As Integer
@@ -41,26 +59,5 @@ Public Class AddUser
         Finally
             con.Close()
         End Try
-    End Sub
-
-    Private Sub status_CheckedChanged(sender As Object, e As EventArgs) Handles status.CheckedChanged
-        statusC = status.Checked
-    End Sub
-
-    Private Sub showUserWiseData_CheckedChanged(sender As Object, e As EventArgs) Handles showUserWiseData.CheckedChanged
-        showUserWiseDataC = showUserWiseData.Checked
-    End Sub
-
-    Private Sub imgUpload_Click(sender As Object, e As EventArgs) Handles imgUpload.Click
-        Dim openfiledialog1 As New OpenFileDialog()
-        openfiledialog1.Filter = "Image file|*.jpg;*.png;*.gif;*.bmp"
-        If openfiledialog1.ShowDialog = Windows.Forms.DialogResult.OK Then
-            imgpath = openfiledialog1.FileName
-            PictureBox1.ImageLocation = imgpath
-        End If
-    End Sub
-
-    Private Sub SaveToolStripButton_Click(sender As Object, e As EventArgs) Handles SaveToolStripButton.Click
-
     End Sub
 End Class

@@ -23,8 +23,9 @@ Public Class AddBranch
             memstr.Close()
 
             con.Open()
-            sql = "INSERT INTO branch values ('" & Address.Text & "', '" & Phone.Text & "','" & BName.Text & "','" & EmailTBox.Text & "','" & ImageL.Text & "','" & ContactPersonTBox.Text & "','" & StatusCkBox.Text & "');"
+            sql = "INSERT INTO branch values ('" & BName.Text & "', '" & Address.Text & "','" & Phone.Text & "','" & Email.Text & "', @img ,'" & ContactPerson.Text & "','" & StatusCkBox.Enabled.ToString & "');"
             Dim mysc As New MySqlCommand(sql, con)
+            mysc.Parameters.AddWithValue("@img", arrimage)
             i = mysc.ExecuteNonQuery()
 
             If i > 0 Then
