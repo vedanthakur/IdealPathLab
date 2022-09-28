@@ -2,7 +2,6 @@
 Imports IdealPathLab.dbconfig
 Imports System.Drawing.Image
 Imports System.IO
-
 Public Class AddUser
     Dim statusC As Boolean
     Dim showUserWiseDataC As Boolean

@@ -10,7 +10,7 @@ Public Class ListUser
         Try
             Dim sql As String
             Dim dt As New DataTable
-            sql = "Select username, email from users"
+            sql = "Select * from users"
             Dim da As New MySqlDataAdapter(sql, con)
             da.Fill(dt)
             DataGridView1.DataSource = dt
