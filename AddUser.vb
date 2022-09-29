@@ -40,7 +40,7 @@ Public Class AddUser
             memstr.Close()
 
             con.Open()
-            sql = "INSERT INTO users values ('" & nameL.Text & "', '" & roll.Text & "','" & email.Text & "','" & address.Text & "','" & mobile.Text & "','" & password.Text & "','" & branch.Text & "','" & humanResource.Text & "', '" & showUserWiseData.ToString & "', @img , '" & status.ToString & "');"
+            sql = "INSERT INTO users values ('" & nameL.Text & "', '" & roll.Text & "','" & email.Text & "','" & address.Text & "','" & mobile.Text & "','" & password.Text & "','" & branch.Text & "','" & humanResource.Text & "', '" & showUserWiseData.Enabled.ToString & "', @img , '" & status.Enabled.ToString & "');"
             Dim mysc As New MySqlCommand(sql, con)
 
             mysc.Parameters.AddWithValue("@img", arrimage)
