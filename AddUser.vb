@@ -3,19 +3,21 @@ Imports IdealPathLab.dbconfig
 Imports System.Drawing.Image
 Imports System.IO
 Public Class AddUser
-    Dim statusC As Boolean
-    Dim showUserWiseDataC As Boolean
+    Dim statusC As Byte = 1
+    Dim userC As Byte = 1
 
     Dim imgpath As String
     Dim arrimage() As Byte
 
     Private Sub status_CheckedChanged(sender As Object, e As EventArgs) Handles status.CheckedChanged
-        statusC = status.Checked
+        If status.Checked Then
+            statusC = 1
+        Else
+            statusC = 0
+        End If
     End Sub
 
-    Private Sub showUserWiseData_CheckedChanged(sender As Object, e As EventArgs) Handles showUserWiseData.CheckedChanged
-        showUserWiseDataC = showUserWiseData.Checked
-    End Sub
+
 
     Private Sub imgUpload_Click(sender As Object, e As EventArgs) Handles imgUpload.Click
         Dim openfiledialog1 As New OpenFileDialog()
@@ -40,7 +42,7 @@ Public Class AddUser
             memstr.Close()
 
             con.Open()
-            sql = "INSERT INTO users values ('" & nameL.Text & "', '" & roll.Text & "','" & email.Text & "','" & address.Text & "','" & mobile.Text & "','" & password.Text & "','" & branch.Text & "','" & humanResource.Text & "', '" & showUserWiseData.Enabled.ToString & "', @img , '" & status.Enabled.ToString & "');"
+            sql = "INSERT INTO users values ('" & nameL.Text & "', '" & roll.Text & "','" & email.Text & "','" & address.Text & "','" & mobile.Text & "','" & password.Text & "','" & branch.Text & "','" & humanResource.Text & "', '" & userB.Enabled.ToString & "', @img , '" & status.Enabled.ToString & "');"
             Dim mysc As New MySqlCommand(sql, con)
 
             mysc.Parameters.AddWithValue("@img", arrimage)
@@ -58,5 +60,13 @@ Public Class AddUser
         Finally
             con.Close()
         End Try
+    End Sub
+
+    Private Sub userB_CheckedChanged(sender As Object, e As EventArgs) Handles userB.CheckedChanged
+        If userB.Checked Then
+            statusC = 1
+        Else
+            statusC = 0
+        End If
     End Sub
 End Class

@@ -1,6 +1,5 @@
 ﻿Imports IdealPathLab.dbconfig
 Imports MySql.Data.MySqlClient
-
 Public Class ListUser
     Private Sub ListUser_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try

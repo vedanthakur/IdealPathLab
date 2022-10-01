@@ -242,13 +242,13 @@ Partial Class MDIParent1
         'ToolStripMenuItem6
         '
         Me.ToolStripMenuItem6.Name = "ToolStripMenuItem6"
-        Me.ToolStripMenuItem6.Size = New System.Drawing.Size(135, 26)
+        Me.ToolStripMenuItem6.Size = New System.Drawing.Size(224, 26)
         Me.ToolStripMenuItem6.Text = "&List"
         '
         'ToolStripMenuItem8
         '
         Me.ToolStripMenuItem8.Name = "ToolStripMenuItem8"
-        Me.ToolStripMenuItem8.Size = New System.Drawing.Size(135, 26)
+        Me.ToolStripMenuItem8.Size = New System.Drawing.Size(224, 26)
         Me.ToolStripMenuItem8.Text = "&Create"
         '
         'ServicesToolStripMenuItem
@@ -286,13 +286,13 @@ Partial Class MDIParent1
         'ToolStripMenuItem7
         '
         Me.ToolStripMenuItem7.Name = "ToolStripMenuItem7"
-        Me.ToolStripMenuItem7.Size = New System.Drawing.Size(135, 26)
+        Me.ToolStripMenuItem7.Size = New System.Drawing.Size(224, 26)
         Me.ToolStripMenuItem7.Text = "&List"
         '
         'ToolStripMenuItem13
         '
         Me.ToolStripMenuItem13.Name = "ToolStripMenuItem13"
-        Me.ToolStripMenuItem13.Size = New System.Drawing.Size(135, 26)
+        Me.ToolStripMenuItem13.Size = New System.Drawing.Size(224, 26)
         Me.ToolStripMenuItem13.Text = "&Create"
         '
         'UserToolStripMenuItem
@@ -305,13 +305,13 @@ Partial Class MDIParent1
         'ToolStripMenuItem9
         '
         Me.ToolStripMenuItem9.Name = "ToolStripMenuItem9"
-        Me.ToolStripMenuItem9.Size = New System.Drawing.Size(224, 26)
+        Me.ToolStripMenuItem9.Size = New System.Drawing.Size(135, 26)
         Me.ToolStripMenuItem9.Text = "&List"
         '
         'ToolStripMenuItem15
         '
         Me.ToolStripMenuItem15.Name = "ToolStripMenuItem15"
-        Me.ToolStripMenuItem15.Size = New System.Drawing.Size(224, 26)
+        Me.ToolStripMenuItem15.Size = New System.Drawing.Size(135, 26)
         Me.ToolStripMenuItem15.Text = "&Create"
         '
         'ParentDataToolStripMenuItem

@@ -3,11 +3,10 @@ Imports IdealPathLab.dbconfig
 Imports System.IO
 
 Public Class AddBranch
-    Dim statusC As Boolean
-    Dim showUserWiseDataC As Boolean
 
     Dim imgpath As String
     Dim arrimage() As Byte
+    Dim statusC As Byte = 1
 
     Private Sub SaveToolStripButton_Click(sender As Object, e As EventArgs) Handles SaveToolStripButton.Click
         Try
@@ -23,7 +22,7 @@ Public Class AddBranch
             memstr.Close()
 
             con.Open()
-            sql = "INSERT INTO branch values ('" & BName.Text & "', '" & Address.Text & "','" & Phone.Text & "','" & Email.Text & "', @img ,'" & ContactPerson.Text & "','" & StatusCkBox.Enabled.ToString & "');"
+            sql = "INSERT INTO branch values ('" & BName.Text & "', '" & Address.Text & "'," & Phone.Text & ",'" & Email.Text & "', @img ,'" & ContactPerson.Text & "'," & statusC & ");"
             Dim mysc As New MySqlCommand(sql, con)
             mysc.Parameters.AddWithValue("@img", arrimage)
             i = mysc.ExecuteNonQuery()
@@ -50,4 +49,12 @@ Public Class AddBranch
         End If
     End Sub
 
+    Private Sub StatusCkBox_CheckedChanged(sender As Object, e As EventArgs) Handles status.CheckedChanged
+        If status.Checked Then
+            statusC = 1
+        Else
+            statusC = 0
+        End If
+
+    End Sub
 End Class

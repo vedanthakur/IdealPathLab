@@ -28,7 +28,7 @@ Partial Class AddUser
         Me.status = New System.Windows.Forms.CheckBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.showUserWiseData = New System.Windows.Forms.CheckBox()
+        Me.userB = New System.Windows.Forms.CheckBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.humanResource = New System.Windows.Forms.ComboBox()
         Me.Label9 = New System.Windows.Forms.Label()
@@ -73,7 +73,7 @@ Partial Class AddUser
         Me.GroupBox1.Controls.Add(Me.status)
         Me.GroupBox1.Controls.Add(Me.PictureBox1)
         Me.GroupBox1.Controls.Add(Me.Label11)
-        Me.GroupBox1.Controls.Add(Me.showUserWiseData)
+        Me.GroupBox1.Controls.Add(Me.userB)
         Me.GroupBox1.Controls.Add(Me.Label10)
         Me.GroupBox1.Controls.Add(Me.humanResource)
         Me.GroupBox1.Controls.Add(Me.Label9)
@@ -104,6 +104,8 @@ Partial Class AddUser
         'status
         '
         Me.status.AutoSize = True
+        Me.status.Checked = True
+        Me.status.CheckState = System.Windows.Forms.CheckState.Checked
         Me.status.Location = New System.Drawing.Point(140, 526)
         Me.status.Name = "status"
         Me.status.Size = New System.Drawing.Size(78, 24)
@@ -131,15 +133,17 @@ Partial Class AddUser
         Me.Label11.TabIndex = 42
         Me.Label11.Text = "Status"
         '
-        'showUserWiseData
+        'userB
         '
-        Me.showUserWiseData.AutoSize = True
-        Me.showUserWiseData.Location = New System.Drawing.Point(193, 429)
-        Me.showUserWiseData.Name = "showUserWiseData"
-        Me.showUserWiseData.Size = New System.Drawing.Size(52, 24)
-        Me.showUserWiseData.TabIndex = 8
-        Me.showUserWiseData.Text = "Yes"
-        Me.showUserWiseData.UseVisualStyleBackColor = True
+        Me.userB.AutoSize = True
+        Me.userB.Checked = True
+        Me.userB.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.userB.Location = New System.Drawing.Point(193, 429)
+        Me.userB.Name = "userB"
+        Me.userB.Size = New System.Drawing.Size(52, 24)
+        Me.userB.TabIndex = 8
+        Me.userB.Text = "Yes"
+        Me.userB.UseVisualStyleBackColor = True
         '
         'Label10
         '
@@ -367,7 +371,7 @@ Partial Class AddUser
     Friend WithEvents SaveToolStripButton As ToolStripButton
     Friend WithEvents status As CheckBox
     Friend WithEvents Label11 As Label
-    Friend WithEvents showUserWiseData As CheckBox
+    Friend WithEvents userB As CheckBox
     Friend WithEvents Label10 As Label
     Friend WithEvents humanResource As ComboBox
     Friend WithEvents Label9 As Label

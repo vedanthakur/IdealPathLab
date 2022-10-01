@@ -9,7 +9,7 @@ Public Class ListHumanResource
         Try
             Dim sql As String
             Dim dt As New DataTable
-            sql = "Select * from users"
+            sql = "Select * from hr"
             Dim da As New MySqlDataAdapter(sql, con)
             da.Fill(dt)
             DataGridView1.DataSource = dt

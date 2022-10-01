@@ -30,7 +30,7 @@ Partial Class AddPatient
         Me.RLab = New System.Windows.Forms.ComboBox()
         Me.Referral = New System.Windows.Forms.ComboBox()
         Me.Age = New System.Windows.Forms.TextBox()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.DOB = New System.Windows.Forms.DateTimePicker()
         Me.Mobile = New System.Windows.Forms.TextBox()
         Me.Address = New System.Windows.Forms.TextBox()
         Me.Gender = New System.Windows.Forms.ComboBox()
@@ -125,7 +125,7 @@ Partial Class AddPatient
         Me.GroupBox1.Controls.Add(Me.RLab)
         Me.GroupBox1.Controls.Add(Me.Referral)
         Me.GroupBox1.Controls.Add(Me.Age)
-        Me.GroupBox1.Controls.Add(Me.DateTimePicker1)
+        Me.GroupBox1.Controls.Add(Me.DOB)
         Me.GroupBox1.Controls.Add(Me.Mobile)
         Me.GroupBox1.Controls.Add(Me.Address)
         Me.GroupBox1.Controls.Add(Me.Gender)
@@ -172,12 +172,12 @@ Partial Class AddPatient
         Me.Age.Size = New System.Drawing.Size(151, 27)
         Me.Age.TabIndex = 33
         '
-        'DateTimePicker1
+        'DOB
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(179, 211)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(250, 27)
-        Me.DateTimePicker1.TabIndex = 32
+        Me.DOB.Location = New System.Drawing.Point(179, 211)
+        Me.DOB.Name = "DOB"
+        Me.DOB.Size = New System.Drawing.Size(250, 27)
+        Me.DOB.TabIndex = 32
         '
         'Mobile
         '
@@ -452,6 +452,7 @@ Partial Class AddPatient
         '
         'PassportExpiredDate
         '
+        Me.PassportExpiredDate.CustomFormat = ""
         Me.PassportExpiredDate.Location = New System.Drawing.Point(179, 186)
         Me.PassportExpiredDate.Name = "PassportExpiredDate"
         Me.PassportExpiredDate.Size = New System.Drawing.Size(250, 27)
@@ -459,8 +460,10 @@ Partial Class AddPatient
         '
         'PassportIssuedDate
         '
-        Me.PassportIssuedDate.Location = New System.Drawing.Point(179, 137)
+        Me.PassportIssuedDate.CustomFormat = ""
+        Me.PassportIssuedDate.Location = New System.Drawing.Point(179, 138)
         Me.PassportIssuedDate.Name = "PassportIssuedDate"
+        Me.PassportIssuedDate.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.PassportIssuedDate.Size = New System.Drawing.Size(250, 27)
         Me.PassportIssuedDate.TabIndex = 22
         '
@@ -665,7 +668,7 @@ Partial Class AddPatient
     Friend WithEvents RLab As ComboBox
     Friend WithEvents Referral As ComboBox
     Friend WithEvents Age As TextBox
-    Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents DOB As DateTimePicker
     Friend WithEvents Mobile As TextBox
     Friend WithEvents Address As TextBox
     Friend WithEvents Gender As ComboBox

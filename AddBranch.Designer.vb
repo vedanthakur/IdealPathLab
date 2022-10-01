@@ -28,7 +28,7 @@ Partial Class AddBranch
         Me.FlowLayoutPanel2 = New System.Windows.Forms.FlowLayoutPanel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.StatusCkBox = New System.Windows.Forms.CheckBox()
+        Me.status = New System.Windows.Forms.CheckBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.ContactPerson = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -81,7 +81,7 @@ Partial Class AddBranch
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.PictureBox1)
-        Me.GroupBox1.Controls.Add(Me.StatusCkBox)
+        Me.GroupBox1.Controls.Add(Me.status)
         Me.GroupBox1.Controls.Add(Me.Label7)
         Me.GroupBox1.Controls.Add(Me.ContactPerson)
         Me.GroupBox1.Controls.Add(Me.Label6)
@@ -114,15 +114,17 @@ Partial Class AddBranch
         Me.PictureBox1.TabIndex = 33
         Me.PictureBox1.TabStop = False
         '
-        'StatusCkBox
+        'status
         '
-        Me.StatusCkBox.AutoSize = True
-        Me.StatusCkBox.Location = New System.Drawing.Point(140, 322)
-        Me.StatusCkBox.Name = "StatusCkBox"
-        Me.StatusCkBox.Size = New System.Drawing.Size(78, 24)
-        Me.StatusCkBox.TabIndex = 32
-        Me.StatusCkBox.Text = "Publish"
-        Me.StatusCkBox.UseVisualStyleBackColor = True
+        Me.status.AutoSize = True
+        Me.status.Checked = True
+        Me.status.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.status.Location = New System.Drawing.Point(140, 322)
+        Me.status.Name = "status"
+        Me.status.Size = New System.Drawing.Size(78, 24)
+        Me.status.TabIndex = 32
+        Me.status.Text = "Publish"
+        Me.status.UseVisualStyleBackColor = True
         '
         'Label7
         '
@@ -262,7 +264,7 @@ Partial Class AddBranch
     Friend WithEvents SaveToolStripButton As ToolStripButton
     Friend WithEvents FlowLayoutPanel2 As FlowLayoutPanel
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents StatusCkBox As CheckBox
+    Friend WithEvents status As CheckBox
     Friend WithEvents Label7 As Label
     Friend WithEvents ContactPerson As TextBox
     Friend WithEvents Label6 As Label

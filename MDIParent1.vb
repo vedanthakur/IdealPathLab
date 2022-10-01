@@ -174,4 +174,18 @@ Public Class MDIParent1
         ListUser.Left = 0
         ListUser.Top = 0
     End Sub
+
+    Private Sub ToolStripMenuItem7_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem7.Click
+        ListBranch.MdiParent = Me
+        ListBranch.Show()
+        ListBranch.Left = 0
+        ListBranch.Top = 0
+    End Sub
+
+    Private Sub ToolStripMenuItem6_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem6.Click
+        ListHumanResource.MdiParent = Me
+        ListHumanResource.Show()
+        ListHumanResource.Left = 0
+        ListHumanResource.Top = 0
+    End Sub
 End Class

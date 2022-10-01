@@ -25,7 +25,7 @@ Public Class AddSampleCollection
             Dim sql As String
             Dim i As Integer
             con.Open()
-            sql = "INSERT INTO referral values ('" & InvoiceNo.Text & "','" & PName.Text & "','" & Address.Text & "','" & SCollectedBy.Text & "','" & Description.Text & "','" & Status.Text & "','" & DateTimePicker1.Text & "','" & Time.Text & "','" & Notes.Text & "');"
+            sql = "INSERT INTO sample values ('" & InvoiceNo.Text & "','" & PName.Text & "','" & Address.Text & "','" & SCollectedBy.Text & "','" & Description.Text & "','" & Status.Text & "','" & DateTimePicker1.Text & "','" & Time.Text & "','" & Notes.Text & "');"
             Dim mysc As New MySqlCommand(sql, con)
             i = mysc.ExecuteNonQuery()
 

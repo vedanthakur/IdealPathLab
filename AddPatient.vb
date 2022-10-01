@@ -20,7 +20,7 @@ Public Class AddPatient
             filesize = memstr.Length
             memstr.Close()
             con.Open()
-            sql = "INSERT INTO branch values ('" & PName.Text & "', '" & Gender.Text & "','" & Address.Text & "','" & Mobile.Text & "','" & DateTimePicker1.ToString & "','" & Age.Text & "','" & Referral.Text & "','" & RLab.Text & "','" & Nationality.Text & "','" & Email.Text & "','" & Phone.Text & "','" & MaritalStatus.Text & "', @img ,'" & Country.Text & "','" & PassportNo.Text & "','" & PassportIssuedDate.ToString & "','" & PassportExpiredDate.ToString & "','" & PIssuedDistrict.Text & "','" & CitizenshipNo.Text & "','" & CPerson.Text & "','" & CPRelation.Text & "','" & CPPhone.Text & "' );"
+            sql = "INSERT INTO patient values ('" & PName.Text & "', '" & Gender.Text & "','" & Address.Text & "','" & Mobile.Text & "','" & DOB.ToString & "','" & Age.Text & "','" & Referral.Text & "','" & RLab.Text & "','" & Nationality.Text & "','" & Email.Text & "','" & Phone.Text & "','" & MaritalStatus.Text & "', @img ,'" & Country.Text & "','" & PassportNo.Text & "','" & PassportIssuedDate.CustomFormat & "','" & PassportExpiredDate.ToString & "','" & PIssuedDistrict.Text & "','" & CitizenshipNo.Text & "','" & CPerson.Text & "','" & CPRelation.Text & "','" & CPPhone.Text & "' );"
             Dim mysc As New MySqlCommand(sql, con)
             mysc.Parameters.AddWithValue("@img", arrimage)
             i = mysc.ExecuteNonQuery()
@@ -45,4 +45,5 @@ Public Class AddPatient
             PictureBox1.ImageLocation = imgpath
         End If
     End Sub
+
 End Class

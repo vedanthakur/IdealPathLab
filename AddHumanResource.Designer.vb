@@ -27,7 +27,7 @@ Partial Class AddHumanResource
         Me.SaveToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.FlowLayoutPanel2 = New System.Windows.Forms.FlowLayoutPanel()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Phone = New System.Windows.Forms.TextBox()
@@ -39,7 +39,7 @@ Partial Class AddHumanResource
         Me.Label2 = New System.Windows.Forms.Label()
         Me.PName = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
@@ -60,8 +60,8 @@ Partial Class AddHumanResource
         Me.Label20 = New System.Windows.Forms.Label()
         Me.Twitter = New System.Windows.Forms.TextBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Use = New System.Windows.Forms.CheckBox()
-        Me.Publish = New System.Windows.Forms.CheckBox()
+        Me.useB = New System.Windows.Forms.CheckBox()
+        Me.statusB = New System.Windows.Forms.CheckBox()
         Me.Speciqlization = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -69,9 +69,9 @@ Partial Class AddHumanResource
         Me.ToolStrip.SuspendLayout()
         Me.FlowLayoutPanel2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox4.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -111,7 +111,7 @@ Partial Class AddHumanResource
         '
         'GroupBox3
         '
-        Me.GroupBox3.Controls.Add(Me.PictureBox2)
+        Me.GroupBox3.Controls.Add(Me.PictureBox1)
         Me.GroupBox3.Controls.Add(Me.Button3)
         Me.GroupBox3.Controls.Add(Me.Label15)
         Me.GroupBox3.Controls.Add(Me.Phone)
@@ -130,16 +130,16 @@ Partial Class AddHumanResource
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Personal Details"
         '
-        'PictureBox2
+        'PictureBox1
         '
-        Me.PictureBox2.Location = New System.Drawing.Point(297, 26)
-        Me.PictureBox2.MaximumSize = New System.Drawing.Size(130, 0)
-        Me.PictureBox2.MinimumSize = New System.Drawing.Size(0, 100)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(127, 133)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 40
-        Me.PictureBox2.TabStop = False
+        Me.PictureBox1.Location = New System.Drawing.Point(297, 26)
+        Me.PictureBox1.MaximumSize = New System.Drawing.Size(130, 0)
+        Me.PictureBox1.MinimumSize = New System.Drawing.Size(0, 100)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(127, 133)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 40
+        Me.PictureBox1.TabStop = False
         '
         'Button3
         '
@@ -230,7 +230,7 @@ Partial Class AddHumanResource
         'GroupBox1
         '
         Me.GroupBox1.AutoSize = True
-        Me.GroupBox1.Controls.Add(Me.PictureBox1)
+        Me.GroupBox1.Controls.Add(Me.PictureBox2)
         Me.GroupBox1.Controls.Add(Me.Button4)
         Me.GroupBox1.Controls.Add(Me.Label18)
         Me.GroupBox1.Controls.Add(Me.Label11)
@@ -249,16 +249,16 @@ Partial Class AddHumanResource
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "HR Info"
         '
-        'PictureBox1
+        'PictureBox2
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(354, 163)
-        Me.PictureBox1.MaximumSize = New System.Drawing.Size(130, 0)
-        Me.PictureBox1.MinimumSize = New System.Drawing.Size(0, 100)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(80, 100)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 34
-        Me.PictureBox1.TabStop = False
+        Me.PictureBox2.Location = New System.Drawing.Point(354, 163)
+        Me.PictureBox2.MaximumSize = New System.Drawing.Size(130, 0)
+        Me.PictureBox2.MinimumSize = New System.Drawing.Size(0, 100)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(80, 100)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox2.TabIndex = 34
+        Me.PictureBox2.TabStop = False
         '
         'Button4
         '
@@ -435,8 +435,8 @@ Partial Class AddHumanResource
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.Use)
-        Me.GroupBox2.Controls.Add(Me.Publish)
+        Me.GroupBox2.Controls.Add(Me.useB)
+        Me.GroupBox2.Controls.Add(Me.statusB)
         Me.GroupBox2.Controls.Add(Me.Speciqlization)
         Me.GroupBox2.Controls.Add(Me.Label4)
         Me.GroupBox2.Controls.Add(Me.Label6)
@@ -450,25 +450,29 @@ Partial Class AddHumanResource
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "More"
         '
-        'Use
+        'useB
         '
-        Me.Use.AutoSize = True
-        Me.Use.Location = New System.Drawing.Point(197, 40)
-        Me.Use.Name = "Use"
-        Me.Use.Size = New System.Drawing.Size(55, 24)
-        Me.Use.TabIndex = 14
-        Me.Use.Text = "Use"
-        Me.Use.UseVisualStyleBackColor = True
+        Me.useB.AutoSize = True
+        Me.useB.Checked = True
+        Me.useB.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.useB.Location = New System.Drawing.Point(197, 40)
+        Me.useB.Name = "useB"
+        Me.useB.Size = New System.Drawing.Size(55, 24)
+        Me.useB.TabIndex = 14
+        Me.useB.Text = "Use"
+        Me.useB.UseVisualStyleBackColor = True
         '
-        'Publish
+        'statusB
         '
-        Me.Publish.AutoSize = True
-        Me.Publish.Location = New System.Drawing.Point(197, 79)
-        Me.Publish.Name = "Publish"
-        Me.Publish.Size = New System.Drawing.Size(78, 24)
-        Me.Publish.TabIndex = 15
-        Me.Publish.Text = "Publish"
-        Me.Publish.UseVisualStyleBackColor = True
+        Me.statusB.AutoSize = True
+        Me.statusB.Checked = True
+        Me.statusB.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.statusB.Location = New System.Drawing.Point(197, 79)
+        Me.statusB.Name = "statusB"
+        Me.statusB.Size = New System.Drawing.Size(78, 24)
+        Me.statusB.TabIndex = 15
+        Me.statusB.Text = "Publish"
+        Me.statusB.UseVisualStyleBackColor = True
         '
         'Speciqlization
         '
@@ -522,10 +526,10 @@ Partial Class AddHumanResource
         Me.FlowLayoutPanel2.PerformLayout()
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox4.ResumeLayout(False)
         Me.GroupBox4.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
@@ -570,12 +574,12 @@ Partial Class AddHumanResource
     Friend WithEvents Label20 As Label
     Friend WithEvents Twitter As TextBox
     Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents Use As CheckBox
-    Friend WithEvents Publish As CheckBox
+    Friend WithEvents useB As CheckBox
+    Friend WithEvents statusB As CheckBox
     Friend WithEvents Speciqlization As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
-    Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents PictureBox2 As PictureBox
 End Class
