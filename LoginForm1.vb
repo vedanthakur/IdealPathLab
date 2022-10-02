@@ -37,12 +37,9 @@ Public Class LoginForm1
             MessageBox.Show("Invalid Username Or Password")
 
         Else
-
-            MessageBox.Show("Logged In")
             MDIParent1.Show()
             MDIParent1.welcomeName.Text = UsernameTextBox.Text
             Me.Hide()
-
         End If
 
 

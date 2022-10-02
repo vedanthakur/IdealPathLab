@@ -188,4 +188,39 @@ Public Class MDIParent1
         ListHumanResource.Left = 0
         ListHumanResource.Top = 0
     End Sub
+
+    Private Sub ToolStripMenuItem14_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem14.Click
+        ListReferral.MdiParent = Me
+        ListReferral.Show()
+        ListReferral.Left = 0
+        ListReferral.Top = 0
+    End Sub
+
+    Private Sub ListToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ListToolStripMenuItem.Click
+        ListPatient.MdiParent = Me
+        ListPatient.Show()
+        ListPatient.Left = 0
+        ListPatient.Top = 0
+    End Sub
+
+    Private Sub ListToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles ListToolStripMenuItem2.Click
+        ListInvoice.MdiParent = Me
+        ListInvoice.Show()
+        ListInvoice.Left = 0
+        ListInvoice.Top = 0
+    End Sub
+
+    Private Sub ToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem2.Click
+        ListSampleCollection.MdiParent = Me
+        ListSampleCollection.Show()
+        ListSampleCollection.Left = 0
+        ListSampleCollection.Top = 0
+    End Sub
+
+    Private Sub ToolStripMenuItem4_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem4.Click
+        ListLabResult.MdiParent = Me
+        ListLabResult.Show()
+        ListLabResult.Left = 0
+        ListLabResult.Top = 0
+    End Sub
 End Class

@@ -115,11 +115,11 @@ Partial Class AddUser
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(275, 443)
+        Me.PictureBox1.Location = New System.Drawing.Point(286, 433)
         Me.PictureBox1.MaximumSize = New System.Drawing.Size(130, 0)
         Me.PictureBox1.MinimumSize = New System.Drawing.Size(0, 100)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(100, 100)
+        Me.PictureBox1.Size = New System.Drawing.Size(130, 121)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 26
         Me.PictureBox1.TabStop = False
