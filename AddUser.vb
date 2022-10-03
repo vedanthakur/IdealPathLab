@@ -3,19 +3,8 @@ Imports IdealPathLab.dbconfig
 Imports System.Drawing.Image
 Imports System.IO
 Public Class AddUser
-    Dim statusC As Byte = 1
-    Dim userC As Byte = 1
-
     Dim imgpath As String
     Dim arrimage() As Byte
-
-    Private Sub status_CheckedChanged(sender As Object, e As EventArgs) Handles status.CheckedChanged
-        If status.Checked Then
-            statusC = 1
-        Else
-            statusC = 0
-        End If
-    End Sub
 
 
 
@@ -60,13 +49,5 @@ Public Class AddUser
         Finally
             con.Close()
         End Try
-    End Sub
-
-    Private Sub userB_CheckedChanged(sender As Object, e As EventArgs) Handles userB.CheckedChanged
-        If userB.Checked Then
-            statusC = 1
-        Else
-            statusC = 0
-        End If
     End Sub
 End Class
