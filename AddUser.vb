@@ -50,4 +50,23 @@ Public Class AddUser
             con.Close()
         End Try
     End Sub
+
+    Private Sub AddUser_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Try
+            Dim sql As String
+            Dim rd As MySqlDataReader
+            sql = "Select `branch_name` from branch"
+            con.Open()
+            Dim com = New MySqlCommand(sql, con)
+            rd = com.ExecuteReader
+            While rd.Read
+                Dim sBranch = rd.GetString("branch_name")
+                branch.Items.Add(sBranch)
+            End While
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            con.Close()
+        End Try
+    End Sub
 End Class

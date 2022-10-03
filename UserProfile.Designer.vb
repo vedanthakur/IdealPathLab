@@ -48,16 +48,16 @@ Partial Class UserProfile
         '
         Me.UName.AutoSize = True
         Me.UName.Font = New System.Drawing.Font("Segoe UI", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.UName.Location = New System.Drawing.Point(144, 0)
+        Me.UName.Location = New System.Drawing.Point(144, -4)
         Me.UName.Name = "UName"
-        Me.UName.Size = New System.Drawing.Size(125, 46)
+        Me.UName.Size = New System.Drawing.Size(141, 46)
         Me.UName.TabIndex = 28
-        Me.UName.Text = "Name: "
+        Me.UName.Text = "yName: "
         '
         'RollnBranch
         '
         Me.RollnBranch.AutoSize = True
-        Me.RollnBranch.Location = New System.Drawing.Point(149, 43)
+        Me.RollnBranch.Location = New System.Drawing.Point(149, 46)
         Me.RollnBranch.Name = "RollnBranch"
         Me.RollnBranch.Size = New System.Drawing.Size(113, 20)
         Me.RollnBranch.TabIndex = 29
@@ -66,7 +66,7 @@ Partial Class UserProfile
         'HR
         '
         Me.HR.AutoSize = True
-        Me.HR.Location = New System.Drawing.Point(149, 91)
+        Me.HR.Location = New System.Drawing.Point(149, 94)
         Me.HR.Name = "HR"
         Me.HR.Size = New System.Drawing.Size(29, 20)
         Me.HR.TabIndex = 30
@@ -75,7 +75,7 @@ Partial Class UserProfile
         'ContactDetails
         '
         Me.ContactDetails.AutoSize = True
-        Me.ContactDetails.Location = New System.Drawing.Point(149, 67)
+        Me.ContactDetails.Location = New System.Drawing.Point(149, 70)
         Me.ContactDetails.Name = "ContactDetails"
         Me.ContactDetails.Size = New System.Drawing.Size(110, 20)
         Me.ContactDetails.TabIndex = 32
@@ -84,7 +84,7 @@ Partial Class UserProfile
         'userWD
         '
         Me.userWD.AutoSize = True
-        Me.userWD.Location = New System.Drawing.Point(154, 114)
+        Me.userWD.Location = New System.Drawing.Point(154, 117)
         Me.userWD.Name = "userWD"
         Me.userWD.Size = New System.Drawing.Size(178, 24)
         Me.userWD.TabIndex = 33
@@ -94,7 +94,7 @@ Partial Class UserProfile
         'publishS
         '
         Me.publishS.AutoSize = True
-        Me.publishS.Location = New System.Drawing.Point(339, 114)
+        Me.publishS.Location = New System.Drawing.Point(339, 117)
         Me.publishS.Name = "publishS"
         Me.publishS.Size = New System.Drawing.Size(78, 24)
         Me.publishS.TabIndex = 34
@@ -103,7 +103,7 @@ Partial Class UserProfile
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(449, 109)
+        Me.Button1.Location = New System.Drawing.Point(449, 112)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(94, 29)
         Me.Button1.TabIndex = 35
@@ -114,7 +114,7 @@ Partial Class UserProfile
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(555, 149)
+        Me.ClientSize = New System.Drawing.Size(555, 153)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.publishS)
         Me.Controls.Add(Me.userWD)
