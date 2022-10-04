@@ -22,6 +22,7 @@ Partial Class AddUser
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AddUser))
         Me.FlowLayoutPanel2 = New System.Windows.Forms.FlowLayoutPanel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
@@ -51,6 +52,7 @@ Partial Class AddUser
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.ToolStrip = New System.Windows.Forms.ToolStrip()
         Me.SaveToolStripButton = New System.Windows.Forms.ToolStripButton()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.FlowLayoutPanel2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -222,9 +224,9 @@ Partial Class AddUser
         Me.Label5.AutoSize = True
         Me.Label5.Location = New System.Drawing.Point(16, 480)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(51, 20)
+        Me.Label5.Size = New System.Drawing.Size(57, 20)
         Me.Label5.TabIndex = 22
-        Me.Label5.Text = "Image"
+        Me.Label5.Text = "Image*"
         '
         'Label7
         '
@@ -341,6 +343,9 @@ Partial Class AddUser
         Me.SaveToolStripButton.Size = New System.Drawing.Size(64, 24)
         Me.SaveToolStripButton.Text = "Save"
         '
+        'Timer1
+        '
+        '
         'AddUser
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
@@ -391,4 +396,5 @@ Partial Class AddUser
     Friend WithEvents password As TextBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents ImageSizeLabel As Label
+    Public WithEvents Timer1 As Timer
 End Class

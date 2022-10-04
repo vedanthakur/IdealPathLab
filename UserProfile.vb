@@ -12,7 +12,6 @@ Public Class UserProfile
 
         Try
             Dim sql As String
-            Dim dt As New DataTable
             Dim rd As MySqlDataReader
             sql = "Select `image`, `showUserWiseData`, `status`  from users where email = '" & emailID & "';"
             con.Open()
@@ -21,9 +20,9 @@ Public Class UserProfile
             rd.Read()
             Dim img() As Byte
             If rd.HasRows() Then
-                img = rd("image")
                 userWD.Checked = rd("showUserWiseData")
                 publishS.Checked = rd("status")
+                img = rd("image")
                 Dim ms As New MemoryStream(img)
                 PictureBox1.Image = Image.FromStream(ms)
                 PictureBox1.SizeMode = PictureBoxSizeMode.Zoom
@@ -38,7 +37,14 @@ Public Class UserProfile
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-
+        AddUser.Show()
+        AddUser.Mode = True
+        AddUser.Text = "Edit User"
+        AddUser.SaveToolStripButton.Text = "Update"
+        AddUser.emailID = emailID
+        AddUser.email.Text = emailID
+        AddUser.email.Enabled = False
+        AddUser.Timer1.Enabled = True
     End Sub
 
     Private Sub userWD_CheckedChanged(sender As Object, e As EventArgs) Handles userWD.Click
