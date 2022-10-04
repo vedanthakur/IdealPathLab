@@ -25,8 +25,8 @@ Partial Class AddUser
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AddUser))
         Me.FlowLayoutPanel2 = New System.Windows.Forms.FlowLayoutPanel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.ImageSizeLabel = New System.Windows.Forms.Label()
         Me.status = New System.Windows.Forms.CheckBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.userB = New System.Windows.Forms.CheckBox()
         Me.Label10 = New System.Windows.Forms.Label()
@@ -48,6 +48,7 @@ Partial Class AddUser
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.ToolStrip = New System.Windows.Forms.ToolStrip()
         Me.SaveToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.FlowLayoutPanel2.SuspendLayout()
@@ -70,8 +71,8 @@ Partial Class AddUser
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.ImageSizeLabel)
         Me.GroupBox1.Controls.Add(Me.status)
-        Me.GroupBox1.Controls.Add(Me.PictureBox1)
         Me.GroupBox1.Controls.Add(Me.Label11)
         Me.GroupBox1.Controls.Add(Me.userB)
         Me.GroupBox1.Controls.Add(Me.Label10)
@@ -93,6 +94,7 @@ Partial Class AddUser
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.Label3)
+        Me.GroupBox1.Controls.Add(Me.PictureBox1)
         Me.GroupBox1.Location = New System.Drawing.Point(3, 13)
         Me.GroupBox1.MinimumSize = New System.Drawing.Size(442, 0)
         Me.GroupBox1.Name = "GroupBox1"
@@ -101,33 +103,32 @@ Partial Class AddUser
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Create User"
         '
+        'ImageSizeLabel
+        '
+        Me.ImageSizeLabel.AutoSize = True
+        Me.ImageSizeLabel.Font = New System.Drawing.Font("Segoe UI", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.ImageSizeLabel.Location = New System.Drawing.Point(18, 502)
+        Me.ImageSizeLabel.Name = "ImageSizeLabel"
+        Me.ImageSizeLabel.Size = New System.Drawing.Size(204, 15)
+        Me.ImageSizeLabel.TabIndex = 43
+        Me.ImageSizeLabel.Text = "Image size should be less than 500 KB"
+        '
         'status
         '
         Me.status.AutoSize = True
         Me.status.Checked = True
         Me.status.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.status.Location = New System.Drawing.Point(176, 519)
+        Me.status.Location = New System.Drawing.Point(176, 529)
         Me.status.Name = "status"
         Me.status.Size = New System.Drawing.Size(78, 24)
         Me.status.TabIndex = 10
         Me.status.Text = "Publish"
         Me.status.UseVisualStyleBackColor = True
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.Location = New System.Drawing.Point(286, 433)
-        Me.PictureBox1.MaximumSize = New System.Drawing.Size(130, 0)
-        Me.PictureBox1.MinimumSize = New System.Drawing.Size(0, 100)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(130, 121)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 26
-        Me.PictureBox1.TabStop = False
-        '
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(16, 528)
+        Me.Label11.Location = New System.Drawing.Point(16, 531)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(49, 20)
         Me.Label11.TabIndex = 42
@@ -174,12 +175,12 @@ Partial Class AddUser
         '
         'branch
         '
+        Me.branch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.branch.FormattingEnabled = True
         Me.branch.Location = New System.Drawing.Point(144, 327)
         Me.branch.Name = "branch"
         Me.branch.Size = New System.Drawing.Size(152, 28)
         Me.branch.TabIndex = 6
-        Me.branch.Text = "Select"
         '
         'password
         '
@@ -200,18 +201,18 @@ Partial Class AddUser
         '
         'roll
         '
+        Me.roll.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.roll.Items.AddRange(New Object() {"Doctor", "Lab Technician", "Human Resource"})
         Me.roll.Location = New System.Drawing.Point(144, 81)
         Me.roll.Name = "roll"
         Me.roll.Size = New System.Drawing.Size(152, 28)
         Me.roll.TabIndex = 1
-        Me.roll.Text = "Select"
         '
         'imgUpload
         '
-        Me.imgUpload.Location = New System.Drawing.Point(168, 473)
+        Me.imgUpload.Location = New System.Drawing.Point(168, 469)
         Me.imgUpload.Name = "imgUpload"
-        Me.imgUpload.Size = New System.Drawing.Size(96, 24)
+        Me.imgUpload.Size = New System.Drawing.Size(96, 31)
         Me.imgUpload.TabIndex = 9
         Me.imgUpload.Text = "Upload"
         Me.imgUpload.UseVisualStyleBackColor = True
@@ -311,6 +312,17 @@ Partial Class AddUser
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Roll*"
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Location = New System.Drawing.Point(286, 433)
+        Me.PictureBox1.MaximumSize = New System.Drawing.Size(130, 0)
+        Me.PictureBox1.MinimumSize = New System.Drawing.Size(0, 100)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(130, 121)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 26
+        Me.PictureBox1.TabStop = False
+        '
         'ToolStrip
         '
         Me.ToolStrip.ImageScalingSize = New System.Drawing.Size(20, 20)
@@ -378,4 +390,5 @@ Partial Class AddUser
     Friend WithEvents branch As ComboBox
     Friend WithEvents password As TextBox
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents ImageSizeLabel As Label
 End Class

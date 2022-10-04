@@ -107,7 +107,7 @@ Partial Class UserProfile
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(94, 29)
         Me.Button1.TabIndex = 35
-        Me.Button1.Text = "Save"
+        Me.Button1.Text = "Edit User"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'UserProfile

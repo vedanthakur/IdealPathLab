@@ -13,8 +13,6 @@ Public Class AddHumanResource
     Dim arrimage() As Byte
     Dim imgpath2 As String
     Dim arrimage2() As Byte
-    Dim useC As Byte
-    Dim statusC As Byte
     Private Sub SaveToolStripButton_Click(sender As Object, e As EventArgs) Handles SaveToolStripButton.Click
         Try
             Dim sql As String
@@ -34,7 +32,7 @@ Public Class AddHumanResource
             memstr.Close()
             memstr2.Close()
             con.Open()
-            sql = "INSERT INTO hr values ('" & PName.Text & "', '" & Address.Text & "','" & Email.Text & "','" & Phone.Text & "', @img ,'" & HRType.Text & "','" & Position.Text & "','" & CuncilNo.Text & "', '" & Rank.Text & "', @img2 , '" & Facebook.Text & "', '" & Twitter.Text & "', '" & Instagram.Text & "', '" & YouTube.Text & "', '" & useC & "', '" & statusC & "', '" & Speciqlization.Text & "' );"
+            sql = "INSERT INTO hr values ('" & PName.Text & "', '" & Address.Text & "','" & Email.Text & "','" & Phone.Text & "', @img ,'" & HRType.Text & "','" & Position.Text & "','" & CuncilNo.Text & "', '" & Rank.Text & "', @img2 , '" & Facebook.Text & "', '" & Twitter.Text & "', '" & Instagram.Text & "', '" & YouTube.Text & "', '" & useB.Enabled.ToString & "', '" & statusB.Enabled.ToString & "', '" & Speciqlization.Text & "' );"
             Dim mysc As New MySqlCommand(sql, con)
             mysc.Parameters.AddWithValue("@img", arrimage)
             mysc.Parameters.AddWithValue("@img2", arrimage2)
@@ -67,22 +65,6 @@ Public Class AddHumanResource
         If openfiledialog2.ShowDialog = Windows.Forms.DialogResult.OK Then
             imgpath2 = openfiledialog2.FileName
             PictureBox2.ImageLocation = imgpath2
-        End If
-    End Sub
-
-    Private Sub UseB_CheckedChanged(sender As Object, e As EventArgs) Handles useB.CheckedChanged
-        If useB.Checked Then
-            useC = 1
-        Else
-            useC = 0
-        End If
-    End Sub
-
-    Private Sub statusB_CheckedChanged(sender As Object, e As EventArgs) Handles statusB.CheckedChanged
-        If statusB.Checked Then
-            statusC = 1
-        Else
-            statusC = 0
         End If
     End Sub
 End Class

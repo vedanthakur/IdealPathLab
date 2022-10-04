@@ -6,8 +6,6 @@ Public Class AddUser
     Dim imgpath As String
     Dim arrimage() As Byte
 
-
-
     Private Sub imgUpload_Click(sender As Object, e As EventArgs) Handles imgUpload.Click
         Dim openfiledialog1 As New OpenFileDialog()
         openfiledialog1.Filter = "Image file|*.jpg;*.png;*.gif;*.bmp"
@@ -21,15 +19,6 @@ Public Class AddUser
         Try
             Dim sql As String
             Dim i As Integer
-
-
-            Dim memstr As New MemoryStream()
-            PictureBox1.Image.Save(memstr, Imaging.ImageFormat.Jpeg)
-            arrimage = memstr.GetBuffer()
-            Dim filesize As UInt32
-            filesize = memstr.Length
-            memstr.Close()
-
             con.Open()
             sql = "INSERT INTO users values ('" & nameL.Text & "', '" & roll.Text & "','" & email.Text & "','" & address.Text & "','" & mobile.Text & "','" & password.Text & "','" & branch.Text & "','" & humanResource.Text & "', '" & userB.Enabled.ToString & "', @img , '" & status.Enabled.ToString & "');"
             Dim mysc As New MySqlCommand(sql, con)
@@ -68,5 +57,28 @@ Public Class AddUser
         Finally
             con.Close()
         End Try
+    End Sub
+
+    Private Sub PictureBox1_LoadCompleted(sender As Object, e As System.ComponentModel.AsyncCompletedEventArgs) Handles PictureBox1.LoadCompleted
+        Dim memstr As New MemoryStream()
+        PictureBox1.Image.Save(memstr, Imaging.ImageFormat.Jpeg)
+        arrimage = memstr.GetBuffer()
+        Dim filesize As UInt32
+        filesize = memstr.Length
+        If filesize > 500000 Then
+            ImageSizeLabel.ForeColor = Color.DarkRed
+            ImageSizeLabel.Text = "Image size should be less than 500 KB"
+        Else
+            ImageSizeLabel.Text = " "
+        End If
+        memstr.Close()
+    End Sub
+
+    Private Sub mobile_KeyPress(sender As Object, e As KeyPressEventArgs) Handles mobile.KeyPress
+        If Asc(e.KeyChar) <> 8 Then
+            If Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57 Then
+                e.Handled = True
+            End If
+        End If
     End Sub
 End Class

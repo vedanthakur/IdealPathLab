@@ -29,8 +29,6 @@ Public Class ListUser
         UserProfile.ContactDetails.Text = "From " & DataGridView1.CurrentRow.Cells(3).Value.ToString & " • " & DataGridView1.CurrentRow.Cells(2).Value.ToString & " • " & DataGridView1.CurrentRow.Cells(4).Value.ToString
         UserProfile.HR.Text = DataGridView1.CurrentRow.Cells(6).Value.ToString
         UserProfile.emailID = DataGridView1.CurrentRow.Cells(2).Value.ToString
-        UserProfile.publishStatus = DataGridView1.CurrentRow.Cells(9).Value.ToString
-        UserProfile.userWiseData = DataGridView1.CurrentRow.Cells(7).Value.ToString
         UserProfile.Show()
 
     End Sub

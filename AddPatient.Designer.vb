@@ -197,13 +197,13 @@ Partial Class AddPatient
         '
         'Gender
         '
+        Me.Gender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Gender.FormattingEnabled = True
         Me.Gender.Items.AddRange(New Object() {"Male", "Female", "Other"})
         Me.Gender.Location = New System.Drawing.Point(278, 81)
         Me.Gender.Name = "Gender"
         Me.Gender.Size = New System.Drawing.Size(151, 28)
         Me.Gender.TabIndex = 29
-        Me.Gender.Text = "Select"
         '
         'PName
         '
@@ -319,12 +319,13 @@ Partial Class AddPatient
         '
         'MaritalStatus
         '
+        Me.MaritalStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.MaritalStatus.FormattingEnabled = True
+        Me.MaritalStatus.Items.AddRange(New Object() {"Single", "Married", "Divorced", "Widowed"})
         Me.MaritalStatus.Location = New System.Drawing.Point(274, 165)
         Me.MaritalStatus.Name = "MaritalStatus"
         Me.MaritalStatus.Size = New System.Drawing.Size(151, 28)
         Me.MaritalStatus.TabIndex = 30
-        Me.MaritalStatus.Text = "Select"
         '
         'PictureBox1
         '
@@ -391,14 +392,14 @@ Partial Class AddPatient
         '
         'Nationality
         '
+        Me.Nationality.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Nationality.FormattingEnabled = True
-        Me.Nationality.Items.AddRange(New Object() {"Nepal", "India"})
+        Me.Nationality.Items.AddRange(New Object() {"Nepal", "India", "Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Antigua and Barbuda", "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan", "The Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bhutan", "Bolivia", "Bosnia and Herzegovina", "Botswana", "Brazil", "Brunei", "Bulgaria", "Burkina Faso", "Burundi", "Cabo Verde", "Cambodia", "Cameroon", "Canada", "Central African Republic", "Chad", "Chile", "China", "Colombia", "Comoros", "Congo, Democratic Republic of the", "Congo, Republic of the", "Costa Rica", "Côte d’Ivoire", "Croatia", "Cuba", "Cyprus", "Czech Republic", "Denmark", "Djibouti", "Dominica", "Dominican Republic", "East Timor (Timor-Leste)", "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Eritrea", "Estonia", "Eswatini", "Ethiopia", "Fiji", "Finland", "France", "Gabon", "The Gambia", "Georgia", "Germany", "Ghana", "Greece", "Grenada", "Guatemala", "Guinea", "Guinea-Bissau", "Guyana", "Haiti", "Honduras", "Hungary", "Iceland", "India", "Indonesia", "Iran", "Iraq", "Ireland", "Israel", "Italy", "Jamaica", "Japan", "Jordan", "Kazakhstan", "Kenya", "Kiribati", "Korea, North", "Korea, South", "Kosovo", "Kuwait", "Kyrgyzstan", "Laos", "Latvia", "Lebanon", "Lesotho", "Liberia", "Libya", "Liechtenstein", "Lithuania", "Luxembourg", "Madagascar", "Malawi", "Malaysia", "Maldives", "Mali", "Malta", "Marshall Islands", "Mauritania", "Mauritius", "Mexico", "Micronesia, Federated States of", "Moldova", "Monaco", "Mongolia", "Montenegro", "Morocco", "Mozambique", "Myanmar (Burma)", "Namibia", "Nauru", "Nepal", "Netherlands", "New Zealand", "Nicaragua", "Niger", "Nigeria", "North Macedonia", "Norway", "Oman", "Pakistan", "Palau", "Panama", "Papua New Guinea", "Paraguay", "Peru", "Philippines", "Poland", "Portugal", "Qatar", "Romania", "Russia", "Rwanda", "Saint Kitts and Nevis", "Saint Lucia", "Saint Vincent and the Grenadines", "Samoa", "San Marino", "Sao Tome and Principe", "Saudi Arabia", "Senegal", "Serbia", "Seychelles", "Sierra Leone", "Singapore", "Slovakia", "Slovenia", "Solomon Islands", "Somalia", "South Africa", "Spain", "Sri Lanka", "Sudan", "Sudan, South", "Suriname", "Sweden", "Switzerland", "Syria", "Taiwan", "Tajikistan", "Tanzania", "Thailand", "Togo", "Tonga", "Trinidad and Tobago", "Tunisia", "Turkey", "Turkmenistan", "Tuvalu", "Uganda", "Ukraine", "United Arab Emirates", "United Kingdom", "United States", "Uruguay", "Uzbekistan", "Vanuatu", "Vatican City", "Venezuela", "Vietnam", "Yemen", "Zambia", "Zimbabwe"})
         Me.Nationality.Location = New System.Drawing.Point(274, 38)
         Me.Nationality.Name = "Nationality"
         Me.Nationality.Size = New System.Drawing.Size(151, 28)
         Me.Nationality.TabIndex = 20
         Me.Nationality.Tag = ""
-        Me.Nationality.Text = "Select"
         '
         'Label15
         '
@@ -443,12 +444,13 @@ Partial Class AddPatient
         '
         'PIssuedDistrict
         '
+        Me.PIssuedDistrict.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.PIssuedDistrict.FormattingEnabled = True
+        Me.PIssuedDistrict.Items.AddRange(New Object() {"Bhojpur", "Dhankuta", "Ilam", "Jhapa", "Khotang", "Morang", "Okhaldhunga", "Panchthar", "Sankhuwasabha", "Solukhumbu", "Sunsari", "Taplejung", "Terhathum", "Udayapur", "Bara", "Dhanusa", "Mahottari", "Parsa", "Rautahat", "Saptari", "Sarlahi", "Siraha", "Bhaktapur District", "Chitwan", "Dhading", "Dolakha", "Kathmandu", "Kavrepalanchok", "Lalitpur", "Makawanpur", "Nuwakot District", "Ramechhap", "Rasuwa", "Sindhuli", "Sindhupalchok", "Baglung", "Gorkha", "Kaski", "Lamjung", "Manang", "Mustang", "Myagdi", "Nawalparasi (Bardaghat Susta Purva)", "Parbat", "Syangja", "Tanahu District", "Arghakhanchi", "Banke", "Bardiya", "Dang", "Gulmi", "Kapilvastu", "Nawalparasi (Bardaghat Susta Paschim)", "Palpa", "Pyuthan", "Rolpa", "Purbi Rukum", "Rupandehi", "Dailekh", "Dolpa", "Humla", "Jajarkot", "Jumla", "Kalikot", "Mugu", "Rukum Paschim", "Salyan", "Surkhet", "Achham", "Baitadi", "Bajhang", "Bajura", "Dadeldhura", "Darchula", "Doti", "Kailali", "Kanchanpur"})
         Me.PIssuedDistrict.Location = New System.Drawing.Point(278, 235)
         Me.PIssuedDistrict.Name = "PIssuedDistrict"
         Me.PIssuedDistrict.Size = New System.Drawing.Size(151, 28)
         Me.PIssuedDistrict.TabIndex = 24
-        Me.PIssuedDistrict.Text = "Select"
         '
         'PassportExpiredDate
         '
@@ -477,12 +479,13 @@ Partial Class AddPatient
         '
         'Country
         '
+        Me.Country.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Country.FormattingEnabled = True
+        Me.Country.Items.AddRange(New Object() {"Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Antigua and Barbuda", "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan", "The Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bhutan", "Bolivia", "Bosnia and Herzegovina", "Botswana", "Brazil", "Brunei", "Bulgaria", "Burkina Faso", "Burundi", "Cabo Verde", "Cambodia", "Cameroon", "Canada", "Central African Republic", "Chad", "Chile", "China", "Colombia", "Comoros", "Congo, Democratic Republic of the", "Congo, Republic of the", "Costa Rica", "Côte d’Ivoire", "Croatia", "Cuba", "Cyprus", "Czech Republic", "Denmark", "Djibouti", "Dominica", "Dominican Republic", "East Timor (Timor-Leste)", "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Eritrea", "Estonia", "Eswatini", "Ethiopia", "Fiji", "Finland", "France", "Gabon", "The Gambia", "Georgia", "Germany", "Ghana", "Greece", "Grenada", "Guatemala", "Guinea", "Guinea-Bissau", "Guyana", "Haiti", "Honduras", "Hungary", "Iceland", "India", "Indonesia", "Iran", "Iraq", "Ireland", "Israel", "Italy", "Jamaica", "Japan", "Jordan", "Kazakhstan", "Kenya", "Kiribati", "Korea, North", "Korea, South", "Kosovo", "Kuwait", "Kyrgyzstan", "Laos", "Latvia", "Lebanon", "Lesotho", "Liberia", "Libya", "Liechtenstein", "Lithuania", "Luxembourg", "Madagascar", "Malawi", "Malaysia", "Maldives", "Mali", "Malta", "Marshall Islands", "Mauritania", "Mauritius", "Mexico", "Micronesia, Federated States of", "Moldova", "Monaco", "Mongolia", "Montenegro", "Morocco", "Mozambique", "Myanmar (Burma)", "Namibia", "Nauru", "Nepal", "Netherlands", "New Zealand", "Nicaragua", "Niger", "Nigeria", "North Macedonia", "Norway", "Oman", "Pakistan", "Palau", "Panama", "Papua New Guinea", "Paraguay", "Peru", "Philippines", "Poland", "Portugal", "Qatar", "Romania", "Russia", "Rwanda", "Saint Kitts and Nevis", "Saint Lucia", "Saint Vincent and the Grenadines", "Samoa", "San Marino", "Sao Tome and Principe", "Saudi Arabia", "Senegal", "Serbia", "Seychelles", "Sierra Leone", "Singapore", "Slovakia", "Slovenia", "Solomon Islands", "Somalia", "South Africa", "Spain", "Sri Lanka", "Sudan", "Sudan, South", "Suriname", "Sweden", "Switzerland", "Syria", "Taiwan", "Tajikistan", "Tanzania", "Thailand", "Togo", "Tonga", "Trinidad and Tobago", "Tunisia", "Turkey", "Turkmenistan", "Tuvalu", "Uganda", "Ukraine", "United Arab Emirates", "United Kingdom", "United States", "Uruguay", "Uzbekistan", "Vanuatu", "Vatican City", "Venezuela", "Vietnam", "Yemen", "Zambia", "Zimbabwe"})
         Me.Country.Location = New System.Drawing.Point(278, 38)
         Me.Country.Name = "Country"
         Me.Country.Size = New System.Drawing.Size(151, 28)
         Me.Country.TabIndex = 20
-        Me.Country.Text = "Select"
         '
         'Label17
         '
