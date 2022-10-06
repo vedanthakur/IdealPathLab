@@ -20,4 +20,20 @@ Public Class ListBranch
             con.Close()
         End Try
     End Sub
+
+    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+        OneBranch.MdiParent = MDIParent1
+        OneBranch.Left = 0
+        OneBranch.Top = 0
+
+        OneBranch.UName.Text = DataGridView1.CurrentRow.Cells(0).Value.ToString
+        OneBranch.ContactPerson.Text = DataGridView1.CurrentRow.Cells(5).Value.ToString
+        OneBranch.Address.Text = "Address: " & DataGridView1.CurrentRow.Cells(1).Value.ToString
+        OneBranch.ContactDetails.Text = "Email: " & DataGridView1.CurrentRow.Cells(3).Value.ToString & " • Phone " & DataGridView1.CurrentRow.Cells(2).Value.ToString
+        OneBranch.ContactPerson.Text = "Contact Person: " & DataGridView1.CurrentRow.Cells(5).Value.ToString
+        OneBranch.branchName = DataGridView1.CurrentRow.Cells(0).Value.ToString
+        OneBranch.Show()
+    End Sub
+
+
 End Class

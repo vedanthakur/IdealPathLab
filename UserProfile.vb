@@ -38,7 +38,6 @@ Public Class UserProfile
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         AddUser.Show()
-        AddUser.Mode = True
         AddUser.Text = "Edit User"
         AddUser.SaveToolStripButton.Text = "Update"
         AddUser.emailID = emailID
@@ -77,7 +76,7 @@ Public Class UserProfile
             Dim mysc As New MySqlCommand(sql, con)
             i = mysc.ExecuteNonQuery()
             If i > 0 Then
-                MessageBox.Show("'" & UName.Text & "' Published updated successfully! to '" & publishS.Checked.ToString & "'", "Alert for Publishing  '" & UName.Text & "'", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                MessageBox.Show("'" & UName.Text & "' updated successfully! to '" & publishS.Checked.ToString & "'", "Alert for Publishing  '" & UName.Text & "'", MessageBoxButtons.OK, MessageBoxIcon.Information)
             Else
                 MessageBox.Show("No record has been updated!", "Alert for Publish'" & UName.Text & "'", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
@@ -96,4 +95,5 @@ Public Class UserProfile
         ListUser.Left = 0
         ListUser.Top = 0
     End Sub
+
 End Class

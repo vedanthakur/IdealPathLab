@@ -22,6 +22,7 @@ Partial Class AddBranch
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AddBranch))
         Me.ToolStrip = New System.Windows.Forms.ToolStrip()
         Me.SaveToolStripButton = New System.Windows.Forms.ToolStripButton()
@@ -43,6 +44,7 @@ Partial Class AddBranch
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.ToolStripContainer1 = New System.Windows.Forms.ToolStripContainer()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.ToolStrip.SuspendLayout()
         Me.FlowLayoutPanel2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
@@ -264,6 +266,9 @@ Partial Class AddBranch
         '
         Me.ToolStripContainer1.TopToolStripPanel.Controls.Add(Me.ToolStrip)
         '
+        'Timer1
+        '
+        '
         'AddBranch
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
@@ -310,4 +315,5 @@ Partial Class AddBranch
     Friend WithEvents Label3 As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents ToolStripContainer1 As ToolStripContainer
+    Friend WithEvents Timer1 As Timer
 End Class

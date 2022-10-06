@@ -7,7 +7,6 @@ Imports System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel
 Public Class AddUser
     Dim imgpath As String
     Dim arrimage() As Byte
-    Public Mode As Boolean
     Public emailID As String
 
     Private Sub imgUpload_Click(sender As Object, e As EventArgs) Handles imgUpload.Click
