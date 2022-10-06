@@ -7,6 +7,7 @@ Imports Org.BouncyCastle.Crypto
 Public Class AddLabReport
     Dim Doctor, LabTechnician, TestPerformed, Verified As String
     Dim imgpath As String
+
     Dim arrimage() As Byte
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click

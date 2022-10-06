@@ -75,6 +75,7 @@ Partial Class AddPatient
         Me.Label21 = New System.Windows.Forms.Label()
         Me.Label22 = New System.Windows.Forms.Label()
         Me.Label23 = New System.Windows.Forms.Label()
+        Me.ToolStripContainer1 = New System.Windows.Forms.ToolStripContainer()
         Me.ToolStrip.SuspendLayout()
         Me.FlowLayoutPanel2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
@@ -82,15 +83,19 @@ Partial Class AddPatient
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
+        Me.ToolStripContainer1.ContentPanel.SuspendLayout()
+        Me.ToolStripContainer1.TopToolStripPanel.SuspendLayout()
+        Me.ToolStripContainer1.SuspendLayout()
         Me.SuspendLayout()
         '
         'ToolStrip
         '
+        Me.ToolStrip.Dock = System.Windows.Forms.DockStyle.None
         Me.ToolStrip.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.ToolStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SaveToolStripButton})
-        Me.ToolStrip.Location = New System.Drawing.Point(0, 0)
+        Me.ToolStrip.Location = New System.Drawing.Point(4, 0)
         Me.ToolStrip.Name = "ToolStrip"
-        Me.ToolStrip.Size = New System.Drawing.Size(904, 27)
+        Me.ToolStrip.Size = New System.Drawing.Size(77, 27)
         Me.ToolStrip.TabIndex = 30
         Me.ToolStrip.Text = "ToolStrip"
         '
@@ -111,11 +116,10 @@ Partial Class AddPatient
         Me.FlowLayoutPanel2.Controls.Add(Me.GroupBox2)
         Me.FlowLayoutPanel2.Controls.Add(Me.GroupBox4)
         Me.FlowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.FlowLayoutPanel2.Location = New System.Drawing.Point(0, 27)
-        Me.FlowLayoutPanel2.MinimumSize = New System.Drawing.Size(904, 767)
+        Me.FlowLayoutPanel2.Location = New System.Drawing.Point(0, 0)
+        Me.FlowLayoutPanel2.Margin = New System.Windows.Forms.Padding(0)
         Me.FlowLayoutPanel2.Name = "FlowLayoutPanel2"
-        Me.FlowLayoutPanel2.Padding = New System.Windows.Forms.Padding(0, 10, 0, 0)
-        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(904, 773)
+        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(921, 767)
         Me.FlowLayoutPanel2.TabIndex = 31
         '
         'GroupBox1
@@ -138,8 +142,9 @@ Partial Class AddPatient
         Me.GroupBox1.Controls.Add(Me.NameL)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Location = New System.Drawing.Point(3, 13)
-        Me.GroupBox1.MinimumSize = New System.Drawing.Size(442, 0)
+        Me.GroupBox1.Location = New System.Drawing.Point(3, 3)
+        Me.GroupBox1.MaximumSize = New System.Drawing.Size(442, 395)
+        Me.GroupBox1.MinimumSize = New System.Drawing.Size(442, 395)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(442, 395)
         Me.GroupBox1.TabIndex = 25
@@ -174,9 +179,11 @@ Partial Class AddPatient
         '
         'DOB
         '
-        Me.DOB.Location = New System.Drawing.Point(179, 211)
+        Me.DOB.CustomFormat = "yyyy-MM-dd"
+        Me.DOB.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.DOB.Location = New System.Drawing.Point(278, 211)
         Me.DOB.Name = "DOB"
-        Me.DOB.Size = New System.Drawing.Size(250, 27)
+        Me.DOB.Size = New System.Drawing.Size(151, 27)
         Me.DOB.TabIndex = 32
         '
         'Mobile
@@ -300,8 +307,9 @@ Partial Class AddPatient
         Me.GroupBox3.Controls.Add(Me.Label14)
         Me.GroupBox3.Controls.Add(Me.Nationality)
         Me.GroupBox3.Controls.Add(Me.Label15)
-        Me.GroupBox3.Location = New System.Drawing.Point(451, 13)
-        Me.GroupBox3.MinimumSize = New System.Drawing.Size(442, 0)
+        Me.GroupBox3.Location = New System.Drawing.Point(451, 3)
+        Me.GroupBox3.MaximumSize = New System.Drawing.Size(442, 395)
+        Me.GroupBox3.MinimumSize = New System.Drawing.Size(442, 395)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(442, 395)
         Me.GroupBox3.TabIndex = 27
@@ -426,7 +434,7 @@ Partial Class AddPatient
         Me.GroupBox2.Controls.Add(Me.Label7)
         Me.GroupBox2.Controls.Add(Me.Label8)
         Me.GroupBox2.Controls.Add(Me.Label9)
-        Me.GroupBox2.Location = New System.Drawing.Point(3, 414)
+        Me.GroupBox2.Location = New System.Drawing.Point(3, 404)
         Me.GroupBox2.MinimumSize = New System.Drawing.Size(442, 0)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(442, 338)
@@ -551,7 +559,7 @@ Partial Class AddPatient
         Me.GroupBox4.Controls.Add(Me.Label21)
         Me.GroupBox4.Controls.Add(Me.Label22)
         Me.GroupBox4.Controls.Add(Me.Label23)
-        Me.GroupBox4.Location = New System.Drawing.Point(451, 414)
+        Me.GroupBox4.Location = New System.Drawing.Point(451, 404)
         Me.GroupBox4.MinimumSize = New System.Drawing.Size(442, 0)
         Me.GroupBox4.Name = "GroupBox4"
         Me.GroupBox4.Size = New System.Drawing.Size(442, 189)
@@ -610,14 +618,35 @@ Partial Class AddPatient
         Me.Label23.TabIndex = 2
         Me.Label23.Text = "Contact Person Phone No."
         '
+        'ToolStripContainer1
+        '
+        Me.ToolStripContainer1.BottomToolStripPanelVisible = False
+        '
+        'ToolStripContainer1.ContentPanel
+        '
+        Me.ToolStripContainer1.ContentPanel.AutoScroll = True
+        Me.ToolStripContainer1.ContentPanel.Controls.Add(Me.FlowLayoutPanel2)
+        Me.ToolStripContainer1.ContentPanel.Size = New System.Drawing.Size(921, 767)
+        Me.ToolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ToolStripContainer1.LeftToolStripPanelVisible = False
+        Me.ToolStripContainer1.Location = New System.Drawing.Point(0, 0)
+        Me.ToolStripContainer1.Name = "ToolStripContainer1"
+        Me.ToolStripContainer1.RightToolStripPanelVisible = False
+        Me.ToolStripContainer1.Size = New System.Drawing.Size(921, 794)
+        Me.ToolStripContainer1.TabIndex = 32
+        Me.ToolStripContainer1.Text = "ToolStripContainer1"
+        '
+        'ToolStripContainer1.TopToolStripPanel
+        '
+        Me.ToolStripContainer1.TopToolStripPanel.Controls.Add(Me.ToolStrip)
+        '
         'AddPatient
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(904, 800)
-        Me.Controls.Add(Me.FlowLayoutPanel2)
-        Me.Controls.Add(Me.ToolStrip)
-        Me.MinimumSize = New System.Drawing.Size(922, 847)
+        Me.ClientSize = New System.Drawing.Size(921, 794)
+        Me.Controls.Add(Me.ToolStripContainer1)
+        Me.MinimumSize = New System.Drawing.Size(497, 637)
         Me.Name = "AddPatient"
         Me.Text = "Add Patient"
         Me.ToolStrip.ResumeLayout(False)
@@ -633,8 +662,12 @@ Partial Class AddPatient
         Me.GroupBox2.PerformLayout()
         Me.GroupBox4.ResumeLayout(False)
         Me.GroupBox4.PerformLayout()
+        Me.ToolStripContainer1.ContentPanel.ResumeLayout(False)
+        Me.ToolStripContainer1.TopToolStripPanel.ResumeLayout(False)
+        Me.ToolStripContainer1.TopToolStripPanel.PerformLayout()
+        Me.ToolStripContainer1.ResumeLayout(False)
+        Me.ToolStripContainer1.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
@@ -690,4 +723,5 @@ Partial Class AddPatient
     Friend WithEvents CPPhone As TextBox
     Friend WithEvents CPRelation As TextBox
     Friend WithEvents CPerson As TextBox
+    Friend WithEvents ToolStripContainer1 As ToolStripContainer
 End Class

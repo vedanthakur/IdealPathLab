@@ -66,6 +66,7 @@ Partial Class AddHumanResource
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.ToolStripContainer1 = New System.Windows.Forms.ToolStripContainer()
         Me.ToolStrip.SuspendLayout()
         Me.FlowLayoutPanel2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -74,15 +75,19 @@ Partial Class AddHumanResource
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox4.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
+        Me.ToolStripContainer1.ContentPanel.SuspendLayout()
+        Me.ToolStripContainer1.TopToolStripPanel.SuspendLayout()
+        Me.ToolStripContainer1.SuspendLayout()
         Me.SuspendLayout()
         '
         'ToolStrip
         '
+        Me.ToolStrip.Dock = System.Windows.Forms.DockStyle.None
         Me.ToolStrip.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.ToolStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SaveToolStripButton})
-        Me.ToolStrip.Location = New System.Drawing.Point(0, 0)
+        Me.ToolStrip.Location = New System.Drawing.Point(4, 0)
         Me.ToolStrip.Name = "ToolStrip"
-        Me.ToolStrip.Size = New System.Drawing.Size(900, 27)
+        Me.ToolStrip.Size = New System.Drawing.Size(77, 27)
         Me.ToolStrip.TabIndex = 30
         Me.ToolStrip.Text = "ToolStrip"
         '
@@ -102,11 +107,11 @@ Partial Class AddHumanResource
         Me.FlowLayoutPanel2.Controls.Add(Me.GroupBox1)
         Me.FlowLayoutPanel2.Controls.Add(Me.GroupBox4)
         Me.FlowLayoutPanel2.Controls.Add(Me.GroupBox2)
+        Me.FlowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.FlowLayoutPanel2.Location = New System.Drawing.Point(0, 0)
         Me.FlowLayoutPanel2.MinimumSize = New System.Drawing.Size(450, 0)
         Me.FlowLayoutPanel2.Name = "FlowLayoutPanel2"
-        Me.FlowLayoutPanel2.Padding = New System.Windows.Forms.Padding(0, 30, 0, 0)
-        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(900, 550)
+        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(900, 523)
         Me.FlowLayoutPanel2.TabIndex = 29
         '
         'GroupBox3
@@ -122,7 +127,7 @@ Partial Class AddHumanResource
         Me.GroupBox3.Controls.Add(Me.Label12)
         Me.GroupBox3.Controls.Add(Me.Label2)
         Me.GroupBox3.Controls.Add(Me.PName)
-        Me.GroupBox3.Location = New System.Drawing.Point(3, 33)
+        Me.GroupBox3.Location = New System.Drawing.Point(3, 3)
         Me.GroupBox3.MinimumSize = New System.Drawing.Size(442, 150)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(442, 288)
@@ -241,7 +246,7 @@ Partial Class AddHumanResource
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Position)
-        Me.GroupBox1.Location = New System.Drawing.Point(451, 33)
+        Me.GroupBox1.Location = New System.Drawing.Point(451, 3)
         Me.GroupBox1.MinimumSize = New System.Drawing.Size(442, 187)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(442, 289)
@@ -357,7 +362,7 @@ Partial Class AddHumanResource
         Me.GroupBox4.Controls.Add(Me.Facebook)
         Me.GroupBox4.Controls.Add(Me.Label20)
         Me.GroupBox4.Controls.Add(Me.Twitter)
-        Me.GroupBox4.Location = New System.Drawing.Point(3, 328)
+        Me.GroupBox4.Location = New System.Drawing.Point(3, 298)
         Me.GroupBox4.MinimumSize = New System.Drawing.Size(442, 150)
         Me.GroupBox4.Name = "GroupBox4"
         Me.GroupBox4.Size = New System.Drawing.Size(442, 219)
@@ -441,8 +446,7 @@ Partial Class AddHumanResource
         Me.GroupBox2.Controls.Add(Me.Label4)
         Me.GroupBox2.Controls.Add(Me.Label6)
         Me.GroupBox2.Controls.Add(Me.Label7)
-        Me.GroupBox2.Location = New System.Drawing.Point(451, 328)
-        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(3, 3, 3, 30)
+        Me.GroupBox2.Location = New System.Drawing.Point(451, 298)
         Me.GroupBox2.MinimumSize = New System.Drawing.Size(442, 150)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(442, 219)
@@ -509,15 +513,36 @@ Partial Class AddHumanResource
         Me.Label7.TabIndex = 13
         Me.Label7.Text = "Status"
         '
+        'ToolStripContainer1
+        '
+        Me.ToolStripContainer1.BottomToolStripPanelVisible = False
+        '
+        'ToolStripContainer1.ContentPanel
+        '
+        Me.ToolStripContainer1.ContentPanel.AutoScroll = True
+        Me.ToolStripContainer1.ContentPanel.Controls.Add(Me.FlowLayoutPanel2)
+        Me.ToolStripContainer1.ContentPanel.Size = New System.Drawing.Size(900, 523)
+        Me.ToolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ToolStripContainer1.LeftToolStripPanelVisible = False
+        Me.ToolStripContainer1.Location = New System.Drawing.Point(0, 0)
+        Me.ToolStripContainer1.Name = "ToolStripContainer1"
+        Me.ToolStripContainer1.RightToolStripPanelVisible = False
+        Me.ToolStripContainer1.Size = New System.Drawing.Size(900, 550)
+        Me.ToolStripContainer1.TabIndex = 31
+        Me.ToolStripContainer1.Text = "ToolStripContainer1"
+        '
+        'ToolStripContainer1.TopToolStripPanel
+        '
+        Me.ToolStripContainer1.TopToolStripPanel.Controls.Add(Me.ToolStrip)
+        '
         'AddHumanResource
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(900, 550)
-        Me.Controls.Add(Me.ToolStrip)
-        Me.Controls.Add(Me.FlowLayoutPanel2)
+        Me.Controls.Add(Me.ToolStripContainer1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.MinimumSize = New System.Drawing.Size(918, 597)
+        Me.MinimumSize = New System.Drawing.Size(492, 597)
         Me.Name = "AddHumanResource"
         Me.Text = "Add Human Resource"
         Me.ToolStrip.ResumeLayout(False)
@@ -534,8 +559,12 @@ Partial Class AddHumanResource
         Me.GroupBox4.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
+        Me.ToolStripContainer1.ContentPanel.ResumeLayout(False)
+        Me.ToolStripContainer1.TopToolStripPanel.ResumeLayout(False)
+        Me.ToolStripContainer1.TopToolStripPanel.PerformLayout()
+        Me.ToolStripContainer1.ResumeLayout(False)
+        Me.ToolStripContainer1.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
@@ -582,4 +611,5 @@ Partial Class AddHumanResource
     Friend WithEvents Label7 As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents ToolStripContainer1 As ToolStripContainer
 End Class

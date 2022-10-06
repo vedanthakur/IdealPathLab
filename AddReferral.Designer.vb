@@ -46,10 +46,14 @@ Partial Class AddReferral
         Me.ToolStrip = New System.Windows.Forms.ToolStrip()
         Me.SaveToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
+        Me.ToolStripContainer1 = New System.Windows.Forms.ToolStripContainer()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.ToolStrip.SuspendLayout()
         Me.FlowLayoutPanel1.SuspendLayout()
+        Me.ToolStripContainer1.ContentPanel.SuspendLayout()
+        Me.ToolStripContainer1.TopToolStripPanel.SuspendLayout()
+        Me.ToolStripContainer1.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox2
@@ -254,11 +258,12 @@ Partial Class AddReferral
         '
         'ToolStrip
         '
+        Me.ToolStrip.Dock = System.Windows.Forms.DockStyle.None
         Me.ToolStrip.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.ToolStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SaveToolStripButton})
-        Me.ToolStrip.Location = New System.Drawing.Point(0, 0)
+        Me.ToolStrip.Location = New System.Drawing.Point(4, 0)
         Me.ToolStrip.Name = "ToolStrip"
-        Me.ToolStrip.Size = New System.Drawing.Size(410, 27)
+        Me.ToolStrip.Size = New System.Drawing.Size(77, 27)
         Me.ToolStrip.TabIndex = 34
         Me.ToolStrip.Text = "ToolStrip"
         '
@@ -275,20 +280,40 @@ Partial Class AddReferral
         Me.FlowLayoutPanel1.Controls.Add(Me.GroupBox2)
         Me.FlowLayoutPanel1.Controls.Add(Me.GroupBox1)
         Me.FlowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.FlowLayoutPanel1.Location = New System.Drawing.Point(0, 27)
+        Me.FlowLayoutPanel1.Location = New System.Drawing.Point(0, 0)
         Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
         Me.FlowLayoutPanel1.Size = New System.Drawing.Size(410, 500)
         Me.FlowLayoutPanel1.TabIndex = 35
+        '
+        'ToolStripContainer1
+        '
+        Me.ToolStripContainer1.BottomToolStripPanelVisible = False
+        '
+        'ToolStripContainer1.ContentPanel
+        '
+        Me.ToolStripContainer1.ContentPanel.AutoScroll = True
+        Me.ToolStripContainer1.ContentPanel.Controls.Add(Me.FlowLayoutPanel1)
+        Me.ToolStripContainer1.ContentPanel.Size = New System.Drawing.Size(410, 500)
+        Me.ToolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ToolStripContainer1.LeftToolStripPanelVisible = False
+        Me.ToolStripContainer1.Location = New System.Drawing.Point(0, 0)
+        Me.ToolStripContainer1.Name = "ToolStripContainer1"
+        Me.ToolStripContainer1.RightToolStripPanelVisible = False
+        Me.ToolStripContainer1.Size = New System.Drawing.Size(410, 527)
+        Me.ToolStripContainer1.TabIndex = 36
+        Me.ToolStripContainer1.Text = "ToolStripContainer1"
+        '
+        'ToolStripContainer1.TopToolStripPanel
+        '
+        Me.ToolStripContainer1.TopToolStripPanel.Controls.Add(Me.ToolStrip)
         '
         'AddReferral
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.ClientSize = New System.Drawing.Size(410, 527)
-        Me.Controls.Add(Me.FlowLayoutPanel1)
-        Me.Controls.Add(Me.ToolStrip)
+        Me.Controls.Add(Me.ToolStripContainer1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.MaximizeBox = False
         Me.MinimumSize = New System.Drawing.Size(428, 574)
         Me.Name = "AddReferral"
         Me.Text = "Add Referral"
@@ -299,8 +324,12 @@ Partial Class AddReferral
         Me.ToolStrip.ResumeLayout(False)
         Me.ToolStrip.PerformLayout()
         Me.FlowLayoutPanel1.ResumeLayout(False)
+        Me.ToolStripContainer1.ContentPanel.ResumeLayout(False)
+        Me.ToolStripContainer1.TopToolStripPanel.ResumeLayout(False)
+        Me.ToolStripContainer1.TopToolStripPanel.PerformLayout()
+        Me.ToolStripContainer1.ResumeLayout(False)
+        Me.ToolStripContainer1.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
@@ -327,4 +356,5 @@ Partial Class AddReferral
     Friend WithEvents ToolStrip As ToolStrip
     Friend WithEvents SaveToolStripButton As ToolStripButton
     Friend WithEvents FlowLayoutPanel1 As FlowLayoutPanel
+    Friend WithEvents ToolStripContainer1 As ToolStripContainer
 End Class

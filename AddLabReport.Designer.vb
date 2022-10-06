@@ -61,6 +61,7 @@ Partial Class AddLabReport
         Me.SaveAllToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStrip = New System.Windows.Forms.ToolStrip()
         Me.SaveToolStripButton = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripContainer1 = New System.Windows.Forms.ToolStripContainer()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox8.SuspendLayout()
         Me.GroupBox7.SuspendLayout()
@@ -73,6 +74,9 @@ Partial Class AddLabReport
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox9.SuspendLayout()
         Me.ToolStrip.SuspendLayout()
+        Me.ToolStripContainer1.ContentPanel.SuspendLayout()
+        Me.ToolStripContainer1.TopToolStripPanel.SuspendLayout()
+        Me.ToolStripContainer1.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
@@ -84,7 +88,7 @@ Partial Class AddLabReport
         Me.GroupBox1.Controls.Add(Me.PName)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Address)
-        Me.GroupBox1.Location = New System.Drawing.Point(3, 33)
+        Me.GroupBox1.Location = New System.Drawing.Point(6, 6)
         Me.GroupBox1.MaximumSize = New System.Drawing.Size(442, 187)
         Me.GroupBox1.MinimumSize = New System.Drawing.Size(442, 187)
         Me.GroupBox1.Name = "GroupBox1"
@@ -96,9 +100,11 @@ Partial Class AddLabReport
         'DateTimePicker1
         '
         Me.DateTimePicker1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.DateTimePicker1.CustomFormat = "yyyy-MM-dd hh:mm:ss"
+        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.DateTimePicker1.Location = New System.Drawing.Point(153, 133)
         Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(239, 27)
+        Me.DateTimePicker1.Size = New System.Drawing.Size(182, 27)
         Me.DateTimePicker1.TabIndex = 2
         '
         'Label1
@@ -129,7 +135,7 @@ Partial Class AddLabReport
         Me.PName.Location = New System.Drawing.Point(153, 29)
         Me.PName.Name = "PName"
         Me.PName.PlaceholderText = "Enter Name"
-        Me.PName.Size = New System.Drawing.Size(147, 27)
+        Me.PName.Size = New System.Drawing.Size(151, 27)
         Me.PName.TabIndex = 0
         '
         'Label3
@@ -149,7 +155,7 @@ Partial Class AddLabReport
         Me.Address.Location = New System.Drawing.Point(153, 81)
         Me.Address.Name = "Address"
         Me.Address.PlaceholderText = "Enter Address"
-        Me.Address.Size = New System.Drawing.Size(147, 27)
+        Me.Address.Size = New System.Drawing.Size(151, 27)
         Me.Address.TabIndex = 1
         '
         'GroupBox8
@@ -157,7 +163,8 @@ Partial Class AddLabReport
         Me.GroupBox8.Controls.Add(Me.Label6)
         Me.GroupBox8.Controls.Add(Me.TSH)
         Me.GroupBox8.Controls.Add(Me.Button1)
-        Me.GroupBox8.Location = New System.Drawing.Point(3, 554)
+        Me.GroupBox8.Location = New System.Drawing.Point(6, 392)
+        Me.GroupBox8.MaximumSize = New System.Drawing.Size(442, 130)
         Me.GroupBox8.MinimumSize = New System.Drawing.Size(442, 130)
         Me.GroupBox8.Name = "GroupBox8"
         Me.GroupBox8.Size = New System.Drawing.Size(442, 130)
@@ -179,14 +186,14 @@ Partial Class AddLabReport
         Me.TSH.Location = New System.Drawing.Point(262, 33)
         Me.TSH.Name = "TSH"
         Me.TSH.PlaceholderText = "Enter TSH"
-        Me.TSH.Size = New System.Drawing.Size(125, 27)
+        Me.TSH.Size = New System.Drawing.Size(151, 27)
         Me.TSH.TabIndex = 5
         '
         'Button1
         '
         Me.Button1.Location = New System.Drawing.Point(262, 75)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(125, 29)
+        Me.Button1.Size = New System.Drawing.Size(151, 29)
         Me.Button1.TabIndex = 6
         Me.Button1.Text = "Save"
         Me.Button1.UseVisualStyleBackColor = True
@@ -197,10 +204,11 @@ Partial Class AddLabReport
         Me.GroupBox7.Controls.Add(Me.DateTimePicker2)
         Me.GroupBox7.Controls.Add(Me.LabNo)
         Me.GroupBox7.Controls.Add(Me.Label5)
-        Me.GroupBox7.Location = New System.Drawing.Point(451, 398)
-        Me.GroupBox7.MinimumSize = New System.Drawing.Size(442, 150)
+        Me.GroupBox7.Location = New System.Drawing.Point(902, 199)
+        Me.GroupBox7.MaximumSize = New System.Drawing.Size(442, 130)
+        Me.GroupBox7.MinimumSize = New System.Drawing.Size(442, 130)
         Me.GroupBox7.Name = "GroupBox7"
-        Me.GroupBox7.Size = New System.Drawing.Size(442, 150)
+        Me.GroupBox7.Size = New System.Drawing.Size(442, 130)
         Me.GroupBox7.TabIndex = 5
         Me.GroupBox7.TabStop = False
         Me.GroupBox7.Text = "Info"
@@ -216,9 +224,11 @@ Partial Class AddLabReport
         '
         'DateTimePicker2
         '
+        Me.DateTimePicker2.CustomFormat = "yyyy-MM-dd"
+        Me.DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.DateTimePicker2.Location = New System.Drawing.Point(131, 23)
         Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(250, 27)
+        Me.DateTimePicker2.Size = New System.Drawing.Size(151, 27)
         Me.DateTimePicker2.TabIndex = 11
         '
         'LabNo
@@ -226,7 +236,7 @@ Partial Class AddLabReport
         Me.LabNo.Location = New System.Drawing.Point(131, 76)
         Me.LabNo.Name = "LabNo"
         Me.LabNo.PlaceholderText = "Enter Lab no."
-        Me.LabNo.Size = New System.Drawing.Size(125, 27)
+        Me.LabNo.Size = New System.Drawing.Size(151, 27)
         Me.LabNo.TabIndex = 12
         '
         'Label5
@@ -241,10 +251,11 @@ Partial Class AddLabReport
         'GroupBox3
         '
         Me.GroupBox3.Controls.Add(Me.CheckedListBox1)
-        Me.GroupBox3.Location = New System.Drawing.Point(3, 226)
-        Me.GroupBox3.MinimumSize = New System.Drawing.Size(442, 150)
+        Me.GroupBox3.Location = New System.Drawing.Point(902, 6)
+        Me.GroupBox3.MaximumSize = New System.Drawing.Size(442, 187)
+        Me.GroupBox3.MinimumSize = New System.Drawing.Size(442, 187)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(442, 150)
+        Me.GroupBox3.Size = New System.Drawing.Size(442, 187)
         Me.GroupBox3.TabIndex = 2
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Lab Technician*"
@@ -254,15 +265,17 @@ Partial Class AddLabReport
         Me.CheckedListBox1.FormattingEnabled = True
         Me.CheckedListBox1.Items.AddRange(New Object() {"1", "2", "3", "4", "5"})
         Me.CheckedListBox1.Location = New System.Drawing.Point(6, 26)
+        Me.CheckedListBox1.MaximumSize = New System.Drawing.Size(341, 136)
         Me.CheckedListBox1.Name = "CheckedListBox1"
-        Me.CheckedListBox1.Size = New System.Drawing.Size(341, 114)
+        Me.CheckedListBox1.Size = New System.Drawing.Size(341, 136)
         Me.CheckedListBox1.TabIndex = 3
         '
         'GroupBox4
         '
         Me.GroupBox4.Controls.Add(Me.CheckedListBox3)
-        Me.GroupBox4.Location = New System.Drawing.Point(451, 33)
-        Me.GroupBox4.MinimumSize = New System.Drawing.Size(442, 150)
+        Me.GroupBox4.Location = New System.Drawing.Point(454, 6)
+        Me.GroupBox4.MaximumSize = New System.Drawing.Size(442, 187)
+        Me.GroupBox4.MinimumSize = New System.Drawing.Size(442, 187)
         Me.GroupBox4.Name = "GroupBox4"
         Me.GroupBox4.Size = New System.Drawing.Size(442, 187)
         Me.GroupBox4.TabIndex = 1
@@ -274,18 +287,20 @@ Partial Class AddLabReport
         Me.CheckedListBox3.FormattingEnabled = True
         Me.CheckedListBox3.Items.AddRange(New Object() {"1", "2", "3", "4", "5"})
         Me.CheckedListBox3.Location = New System.Drawing.Point(6, 26)
+        Me.CheckedListBox3.MaximumSize = New System.Drawing.Size(341, 136)
         Me.CheckedListBox3.Name = "CheckedListBox3"
-        Me.CheckedListBox3.Size = New System.Drawing.Size(341, 114)
+        Me.CheckedListBox3.Size = New System.Drawing.Size(341, 136)
         Me.CheckedListBox3.TabIndex = 9
         '
         'GroupBox5
         '
         Me.GroupBox5.AutoSize = True
         Me.GroupBox5.Controls.Add(Me.CheckedListBox2)
-        Me.GroupBox5.Location = New System.Drawing.Point(451, 226)
-        Me.GroupBox5.MinimumSize = New System.Drawing.Size(442, 150)
+        Me.GroupBox5.Location = New System.Drawing.Point(6, 199)
+        Me.GroupBox5.MaximumSize = New System.Drawing.Size(442, 187)
+        Me.GroupBox5.MinimumSize = New System.Drawing.Size(442, 187)
         Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.Size = New System.Drawing.Size(442, 166)
+        Me.GroupBox5.Size = New System.Drawing.Size(442, 187)
         Me.GroupBox5.TabIndex = 3
         Me.GroupBox5.TabStop = False
         Me.GroupBox5.Text = "Test Performed By"
@@ -295,17 +310,19 @@ Partial Class AddLabReport
         Me.CheckedListBox2.FormattingEnabled = True
         Me.CheckedListBox2.Items.AddRange(New Object() {"1", "2", "3", "4", "5"})
         Me.CheckedListBox2.Location = New System.Drawing.Point(6, 26)
+        Me.CheckedListBox2.MaximumSize = New System.Drawing.Size(341, 136)
         Me.CheckedListBox2.Name = "CheckedListBox2"
-        Me.CheckedListBox2.Size = New System.Drawing.Size(341, 114)
+        Me.CheckedListBox2.Size = New System.Drawing.Size(341, 136)
         Me.CheckedListBox2.TabIndex = 10
         '
         'GroupBox6
         '
         Me.GroupBox6.Controls.Add(Me.CheckedListBox4)
-        Me.GroupBox6.Location = New System.Drawing.Point(3, 398)
-        Me.GroupBox6.MinimumSize = New System.Drawing.Size(442, 150)
+        Me.GroupBox6.Location = New System.Drawing.Point(454, 199)
+        Me.GroupBox6.MaximumSize = New System.Drawing.Size(442, 187)
+        Me.GroupBox6.MinimumSize = New System.Drawing.Size(442, 187)
         Me.GroupBox6.Name = "GroupBox6"
-        Me.GroupBox6.Size = New System.Drawing.Size(442, 150)
+        Me.GroupBox6.Size = New System.Drawing.Size(442, 187)
         Me.GroupBox6.TabIndex = 4
         Me.GroupBox6.TabStop = False
         Me.GroupBox6.Text = "Verified By"
@@ -315,8 +332,9 @@ Partial Class AddLabReport
         Me.CheckedListBox4.FormattingEnabled = True
         Me.CheckedListBox4.Items.AddRange(New Object() {"1", "2", "3", "4", "5"})
         Me.CheckedListBox4.Location = New System.Drawing.Point(6, 26)
+        Me.CheckedListBox4.MaximumSize = New System.Drawing.Size(341, 136)
         Me.CheckedListBox4.Name = "CheckedListBox4"
-        Me.CheckedListBox4.Size = New System.Drawing.Size(341, 114)
+        Me.CheckedListBox4.Size = New System.Drawing.Size(341, 136)
         Me.CheckedListBox4.TabIndex = 4
         '
         'FlowLayoutPanel2
@@ -336,8 +354,8 @@ Partial Class AddLabReport
         Me.FlowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.FlowLayoutPanel2.Location = New System.Drawing.Point(0, 0)
         Me.FlowLayoutPanel2.Name = "FlowLayoutPanel2"
-        Me.FlowLayoutPanel2.Padding = New System.Windows.Forms.Padding(0, 30, 0, 3)
-        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(897, 908)
+        Me.FlowLayoutPanel2.Padding = New System.Windows.Forms.Padding(3)
+        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(1380, 584)
         Me.FlowLayoutPanel2.TabIndex = 27
         '
         'GroupBox2
@@ -345,7 +363,8 @@ Partial Class AddLabReport
         Me.GroupBox2.Controls.Add(Me.Label7)
         Me.GroupBox2.Controls.Add(Me.Button2)
         Me.GroupBox2.Controls.Add(Me.PictureBox1)
-        Me.GroupBox2.Location = New System.Drawing.Point(451, 554)
+        Me.GroupBox2.Location = New System.Drawing.Point(454, 392)
+        Me.GroupBox2.MaximumSize = New System.Drawing.Size(442, 130)
         Me.GroupBox2.MinimumSize = New System.Drawing.Size(442, 130)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(442, 130)
@@ -366,14 +385,14 @@ Partial Class AddLabReport
         '
         Me.Button2.Location = New System.Drawing.Point(131, 32)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(125, 29)
+        Me.Button2.Size = New System.Drawing.Size(151, 29)
         Me.Button2.TabIndex = 13
         Me.Button2.Text = "Upload"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(281, 21)
+        Me.PictureBox1.Location = New System.Drawing.Point(310, 21)
         Me.PictureBox1.MaximumSize = New System.Drawing.Size(130, 0)
         Me.PictureBox1.MinimumSize = New System.Drawing.Size(0, 100)
         Me.PictureBox1.Name = "PictureBox1"
@@ -388,8 +407,9 @@ Partial Class AddLabReport
         Me.GroupBox9.Controls.Add(Me.Notes)
         Me.GroupBox9.Controls.Add(Me.Delivered)
         Me.GroupBox9.Controls.Add(Me.Label8)
-        Me.GroupBox9.Location = New System.Drawing.Point(3, 690)
-        Me.GroupBox9.MinimumSize = New System.Drawing.Size(442, 0)
+        Me.GroupBox9.Location = New System.Drawing.Point(902, 392)
+        Me.GroupBox9.MaximumSize = New System.Drawing.Size(442, 206)
+        Me.GroupBox9.MinimumSize = New System.Drawing.Size(442, 206)
         Me.GroupBox9.Name = "GroupBox9"
         Me.GroupBox9.Size = New System.Drawing.Size(442, 206)
         Me.GroupBox9.TabIndex = 8
@@ -444,11 +464,12 @@ Partial Class AddLabReport
         '
         'ToolStrip
         '
+        Me.ToolStrip.Dock = System.Windows.Forms.DockStyle.None
         Me.ToolStrip.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.ToolStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SaveToolStripButton})
-        Me.ToolStrip.Location = New System.Drawing.Point(0, 0)
+        Me.ToolStrip.Location = New System.Drawing.Point(4, 0)
         Me.ToolStrip.Name = "ToolStrip"
-        Me.ToolStrip.Size = New System.Drawing.Size(897, 27)
+        Me.ToolStrip.Size = New System.Drawing.Size(77, 27)
         Me.ToolStrip.TabIndex = 28
         Me.ToolStrip.Text = "ToolStrip"
         '
@@ -460,17 +481,37 @@ Partial Class AddLabReport
         Me.SaveToolStripButton.Size = New System.Drawing.Size(64, 24)
         Me.SaveToolStripButton.Text = "Save"
         '
+        'ToolStripContainer1
+        '
+        Me.ToolStripContainer1.BottomToolStripPanelVisible = False
+        '
+        'ToolStripContainer1.ContentPanel
+        '
+        Me.ToolStripContainer1.ContentPanel.AutoScroll = True
+        Me.ToolStripContainer1.ContentPanel.Controls.Add(Me.FlowLayoutPanel2)
+        Me.ToolStripContainer1.ContentPanel.Size = New System.Drawing.Size(1380, 584)
+        Me.ToolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ToolStripContainer1.LeftToolStripPanelVisible = False
+        Me.ToolStripContainer1.Location = New System.Drawing.Point(0, 0)
+        Me.ToolStripContainer1.Name = "ToolStripContainer1"
+        Me.ToolStripContainer1.RightToolStripPanelVisible = False
+        Me.ToolStripContainer1.Size = New System.Drawing.Size(1380, 611)
+        Me.ToolStripContainer1.TabIndex = 29
+        Me.ToolStripContainer1.Text = "ToolStripContainer1"
+        '
+        'ToolStripContainer1.TopToolStripPanel
+        '
+        Me.ToolStripContainer1.TopToolStripPanel.Controls.Add(Me.ToolStrip)
+        '
         'AddLabReport
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
-        Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(897, 908)
-        Me.Controls.Add(Me.ToolStrip)
-        Me.Controls.Add(Me.FlowLayoutPanel2)
+        Me.ClientSize = New System.Drawing.Size(1380, 611)
+        Me.Controls.Add(Me.ToolStripContainer1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.MinimumSize = New System.Drawing.Size(915, 955)
+        Me.MinimumSize = New System.Drawing.Size(496, 654)
         Me.Name = "AddLabReport"
         Me.Text = "Add Lab Report"
         Me.GroupBox1.ResumeLayout(False)
@@ -492,8 +533,13 @@ Partial Class AddLabReport
         Me.GroupBox9.PerformLayout()
         Me.ToolStrip.ResumeLayout(False)
         Me.ToolStrip.PerformLayout()
+        Me.ToolStripContainer1.ContentPanel.ResumeLayout(False)
+        Me.ToolStripContainer1.ContentPanel.PerformLayout()
+        Me.ToolStripContainer1.TopToolStripPanel.ResumeLayout(False)
+        Me.ToolStripContainer1.TopToolStripPanel.PerformLayout()
+        Me.ToolStripContainer1.ResumeLayout(False)
+        Me.ToolStripContainer1.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
@@ -535,4 +581,5 @@ Partial Class AddLabReport
     Friend WithEvents ToolStrip As ToolStrip
     Friend WithEvents SaveToolStripButton As ToolStripButton
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents ToolStripContainer1 As ToolStripContainer
 End Class

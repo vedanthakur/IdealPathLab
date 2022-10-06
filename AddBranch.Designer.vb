@@ -42,19 +42,24 @@ Partial Class AddBranch
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.ToolStripContainer1 = New System.Windows.Forms.ToolStripContainer()
         Me.ToolStrip.SuspendLayout()
         Me.FlowLayoutPanel2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ToolStripContainer1.ContentPanel.SuspendLayout()
+        Me.ToolStripContainer1.TopToolStripPanel.SuspendLayout()
+        Me.ToolStripContainer1.SuspendLayout()
         Me.SuspendLayout()
         '
         'ToolStrip
         '
+        Me.ToolStrip.Dock = System.Windows.Forms.DockStyle.None
         Me.ToolStrip.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.ToolStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SaveToolStripButton})
-        Me.ToolStrip.Location = New System.Drawing.Point(0, 0)
+        Me.ToolStrip.Location = New System.Drawing.Point(4, 0)
         Me.ToolStrip.Name = "ToolStrip"
-        Me.ToolStrip.Size = New System.Drawing.Size(448, 27)
+        Me.ToolStrip.Size = New System.Drawing.Size(77, 27)
         Me.ToolStrip.TabIndex = 31
         Me.ToolStrip.Text = "ToolStrip"
         '
@@ -71,11 +76,10 @@ Partial Class AddBranch
         Me.FlowLayoutPanel2.AutoScroll = True
         Me.FlowLayoutPanel2.Controls.Add(Me.GroupBox1)
         Me.FlowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.FlowLayoutPanel2.Location = New System.Drawing.Point(0, 27)
+        Me.FlowLayoutPanel2.Location = New System.Drawing.Point(0, 0)
         Me.FlowLayoutPanel2.MinimumSize = New System.Drawing.Size(450, 0)
         Me.FlowLayoutPanel2.Name = "FlowLayoutPanel2"
-        Me.FlowLayoutPanel2.Padding = New System.Windows.Forms.Padding(0, 10, 0, 0)
-        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(450, 390)
+        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(450, 381)
         Me.FlowLayoutPanel2.TabIndex = 32
         '
         'GroupBox1
@@ -95,7 +99,7 @@ Partial Class AddBranch
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Location = New System.Drawing.Point(3, 13)
+        Me.GroupBox1.Location = New System.Drawing.Point(3, 3)
         Me.GroupBox1.MinimumSize = New System.Drawing.Size(442, 0)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(442, 374)
@@ -238,15 +242,36 @@ Partial Class AddBranch
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Address"
         '
+        'ToolStripContainer1
+        '
+        Me.ToolStripContainer1.BottomToolStripPanelVisible = False
+        '
+        'ToolStripContainer1.ContentPanel
+        '
+        Me.ToolStripContainer1.ContentPanel.AutoScroll = True
+        Me.ToolStripContainer1.ContentPanel.Controls.Add(Me.FlowLayoutPanel2)
+        Me.ToolStripContainer1.ContentPanel.Size = New System.Drawing.Size(448, 381)
+        Me.ToolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ToolStripContainer1.LeftToolStripPanelVisible = False
+        Me.ToolStripContainer1.Location = New System.Drawing.Point(0, 0)
+        Me.ToolStripContainer1.Name = "ToolStripContainer1"
+        Me.ToolStripContainer1.RightToolStripPanelVisible = False
+        Me.ToolStripContainer1.Size = New System.Drawing.Size(448, 408)
+        Me.ToolStripContainer1.TabIndex = 33
+        Me.ToolStripContainer1.Text = "ToolStripContainer1"
+        '
+        'ToolStripContainer1.TopToolStripPanel
+        '
+        Me.ToolStripContainer1.TopToolStripPanel.Controls.Add(Me.ToolStrip)
+        '
         'AddBranch
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(448, 417)
-        Me.Controls.Add(Me.FlowLayoutPanel2)
-        Me.Controls.Add(Me.ToolStrip)
+        Me.ClientSize = New System.Drawing.Size(448, 408)
+        Me.Controls.Add(Me.ToolStripContainer1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.MinimumSize = New System.Drawing.Size(466, 464)
+        Me.MinimumSize = New System.Drawing.Size(466, 455)
         Me.Name = "AddBranch"
         Me.Text = "AddBranch"
         Me.ToolStrip.ResumeLayout(False)
@@ -255,8 +280,12 @@ Partial Class AddBranch
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ToolStripContainer1.ContentPanel.ResumeLayout(False)
+        Me.ToolStripContainer1.TopToolStripPanel.ResumeLayout(False)
+        Me.ToolStripContainer1.TopToolStripPanel.PerformLayout()
+        Me.ToolStripContainer1.ResumeLayout(False)
+        Me.ToolStripContainer1.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
@@ -280,4 +309,5 @@ Partial Class AddBranch
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents ToolStripContainer1 As ToolStripContainer
 End Class

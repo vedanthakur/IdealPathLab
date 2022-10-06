@@ -62,19 +62,24 @@ Partial Class AddInvoice
         Me.Paid = New System.Windows.Forms.CheckBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
+        Me.ToolStripContainer1 = New System.Windows.Forms.ToolStripContainer()
         Me.ToolStrip.SuspendLayout()
         Me.FlowLayoutPanel2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
+        Me.ToolStripContainer1.ContentPanel.SuspendLayout()
+        Me.ToolStripContainer1.TopToolStripPanel.SuspendLayout()
+        Me.ToolStripContainer1.SuspendLayout()
         Me.SuspendLayout()
         '
         'ToolStrip
         '
+        Me.ToolStrip.Dock = System.Windows.Forms.DockStyle.None
         Me.ToolStrip.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.ToolStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SaveToolStripButton, Me.PrintToolStripButton, Me.PrintPreviewToolStripButton})
-        Me.ToolStrip.Location = New System.Drawing.Point(0, 0)
+        Me.ToolStrip.Location = New System.Drawing.Point(4, 0)
         Me.ToolStrip.Name = "ToolStrip"
-        Me.ToolStrip.Size = New System.Drawing.Size(896, 27)
+        Me.ToolStrip.Size = New System.Drawing.Size(258, 27)
         Me.ToolStrip.TabIndex = 30
         Me.ToolStrip.Text = "ToolStrip"
         '
@@ -109,10 +114,10 @@ Partial Class AddInvoice
         Me.FlowLayoutPanel2.Controls.Add(Me.GroupBox1)
         Me.FlowLayoutPanel2.Controls.Add(Me.GroupBox2)
         Me.FlowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.FlowLayoutPanel2.Location = New System.Drawing.Point(0, 27)
+        Me.FlowLayoutPanel2.Location = New System.Drawing.Point(0, 0)
         Me.FlowLayoutPanel2.Name = "FlowLayoutPanel2"
-        Me.FlowLayoutPanel2.Padding = New System.Windows.Forms.Padding(0, 10, 0, 0)
-        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(896, 580)
+        Me.FlowLayoutPanel2.Padding = New System.Windows.Forms.Padding(3)
+        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(907, 580)
         Me.FlowLayoutPanel2.TabIndex = 31
         '
         'GroupBox1
@@ -128,7 +133,7 @@ Partial Class AddInvoice
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.PName)
         Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Location = New System.Drawing.Point(3, 13)
+        Me.GroupBox1.Location = New System.Drawing.Point(6, 6)
         Me.GroupBox1.MinimumSize = New System.Drawing.Size(442, 0)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(442, 277)
@@ -164,9 +169,11 @@ Partial Class AddInvoice
         '
         'DateTimePicker1
         '
+        Me.DateTimePicker1.CustomFormat = "yyyy-MM-dd"
+        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.DateTimePicker1.Location = New System.Drawing.Point(140, 177)
         Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(250, 27)
+        Me.DateTimePicker1.Size = New System.Drawing.Size(151, 27)
         Me.DateTimePicker1.TabIndex = 3
         '
         'Label2
@@ -247,7 +254,7 @@ Partial Class AddInvoice
         Me.GroupBox2.Controls.Add(Me.Paid)
         Me.GroupBox2.Controls.Add(Me.Label9)
         Me.GroupBox2.Controls.Add(Me.Label10)
-        Me.GroupBox2.Location = New System.Drawing.Point(451, 13)
+        Me.GroupBox2.Location = New System.Drawing.Point(454, 6)
         Me.GroupBox2.MinimumSize = New System.Drawing.Size(442, 0)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(442, 564)
@@ -445,14 +452,36 @@ Partial Class AddInvoice
         Me.Label10.TabIndex = 2
         Me.Label10.Text = "Payment Status*"
         '
+        'ToolStripContainer1
+        '
+        Me.ToolStripContainer1.BottomToolStripPanelVisible = False
+        '
+        'ToolStripContainer1.ContentPanel
+        '
+        Me.ToolStripContainer1.ContentPanel.AutoScroll = True
+        Me.ToolStripContainer1.ContentPanel.Controls.Add(Me.FlowLayoutPanel2)
+        Me.ToolStripContainer1.ContentPanel.Size = New System.Drawing.Size(907, 580)
+        Me.ToolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ToolStripContainer1.LeftToolStripPanelVisible = False
+        Me.ToolStripContainer1.Location = New System.Drawing.Point(0, 0)
+        Me.ToolStripContainer1.Name = "ToolStripContainer1"
+        Me.ToolStripContainer1.RightToolStripPanelVisible = False
+        Me.ToolStripContainer1.Size = New System.Drawing.Size(907, 607)
+        Me.ToolStripContainer1.TabIndex = 32
+        Me.ToolStripContainer1.Text = "ToolStripContainer1"
+        '
+        'ToolStripContainer1.TopToolStripPanel
+        '
+        Me.ToolStripContainer1.TopToolStripPanel.Controls.Add(Me.ToolStrip)
+        '
         'AddInvoice
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(896, 607)
-        Me.Controls.Add(Me.FlowLayoutPanel2)
-        Me.Controls.Add(Me.ToolStrip)
+        Me.ClientSize = New System.Drawing.Size(907, 607)
+        Me.Controls.Add(Me.ToolStripContainer1)
+        Me.MinimumSize = New System.Drawing.Size(496, 654)
         Me.Name = "AddInvoice"
         Me.Text = "AddInvoice"
         Me.ToolStrip.ResumeLayout(False)
@@ -463,8 +492,13 @@ Partial Class AddInvoice
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
+        Me.ToolStripContainer1.ContentPanel.ResumeLayout(False)
+        Me.ToolStripContainer1.ContentPanel.PerformLayout()
+        Me.ToolStripContainer1.TopToolStripPanel.ResumeLayout(False)
+        Me.ToolStripContainer1.TopToolStripPanel.PerformLayout()
+        Me.ToolStripContainer1.ResumeLayout(False)
+        Me.ToolStripContainer1.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
@@ -507,4 +541,5 @@ Partial Class AddInvoice
     Friend WithEvents PrintPreviewToolStripButton As ToolStripButton
     Friend WithEvents AllPaid As CheckBox
     Friend WithEvents Address As TextBox
+    Friend WithEvents ToolStripContainer1 As ToolStripContainer
 End Class
