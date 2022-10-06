@@ -30,6 +30,7 @@ Partial Class UserProfile
         Me.userWD = New System.Windows.Forms.CheckBox()
         Me.publishS = New System.Windows.Forms.CheckBox()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.NoImage = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -110,11 +111,22 @@ Partial Class UserProfile
         Me.Button1.Text = "Edit User"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'NoImage
+        '
+        Me.NoImage.AutoSize = True
+        Me.NoImage.Location = New System.Drawing.Point(33, 60)
+        Me.NoImage.Name = "NoImage"
+        Me.NoImage.Size = New System.Drawing.Size(75, 20)
+        Me.NoImage.TabIndex = 36
+        Me.NoImage.Text = "No image"
+        Me.NoImage.Visible = False
+        '
         'UserProfile
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(555, 153)
+        Me.Controls.Add(Me.NoImage)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.publishS)
         Me.Controls.Add(Me.userWD)
@@ -139,4 +151,5 @@ Partial Class UserProfile
     Friend WithEvents userWD As CheckBox
     Friend WithEvents publishS As CheckBox
     Friend WithEvents Button1 As Button
+    Friend WithEvents NoImage As Label
 End Class

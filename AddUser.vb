@@ -130,11 +130,13 @@ Public Class AddUser
                 humanResource.Text = rd.GetString("humanResource")
                 userB.Checked = rd.GetString("showUserWiseData")
                 status.Checked = rd.GetString("status")
-                Dim img() As Byte
-                img = rd("image")
-                Dim ms As New MemoryStream(img)
-                PictureBox1.Image = Image.FromStream(ms)
-                PictureBox1.SizeMode = PictureBoxSizeMode.Zoom
+                If UserProfile.NoImage.Visible = False Then
+                    Dim img() As Byte
+                    img = rd("image")
+                    Dim ms As New MemoryStream(img)
+                    PictureBox1.Image = Image.FromStream(ms)
+                    PictureBox1.SizeMode = PictureBoxSizeMode.Zoom
+                End If
             End If
         Catch ex As Exception
             MsgBox(ex.Message)

@@ -29,7 +29,7 @@ Public Class UserProfile
             End If
 
         Catch ex As Exception
-            MsgBox(ex.Message)
+            NoImage.Visible = True
         Finally
             con.Close()
         End Try
