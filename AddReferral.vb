@@ -9,14 +9,28 @@ Public Class AddReferral
             Dim sql As String
             Dim i As Integer
             con.Open()
-            sql = "INSERT INTO referral values ('" & Address.Text & "','" & Phone.Text & "','" & Email.Text & "','" & SharingPersantage.Text & "'," & DiscountKey.Enabled.ToString & "," & Status.Enabled.ToString & ",'" & Type.Text & "','" & ReferralName.Text & "','" & RContactPerson.Text & "');"
+            Dim sqlcmd As String
+            If SaveToolStripButton.Text = "Save" Then
+                sqlcmd = "INSERT INTO referral values ('" & Address.Text & "','" & Phone.Text & "','" & Email.Text & "','" & SharingPersantage.Text & "'," & DiscountKey.Enabled.ToString & "," & Status.Enabled.ToString & ",'" & Type.Text & "','" & ReferralName.Text & "','" & RContactPerson.Text & "');"
+            Else
+                sqlcmd = "UPDATE `referral` SET `address` ='" & Address.Text & "',`phone`='" & Phone.Text & "',`email`='" & Email.Text & "',`benifit`='" & SharingPersantage.Text & "',`discount`='" & DiscountKey.Enabled.ToString & "',`status`='" & Status.Checked.ToString & "',`type`='" & Type.Text & "',`contactperson` ='" & RContactPerson.Text & "' WHERE `name` = '" & ReferralName.Text & "';"
+            End If
+            sql = sqlcmd
             Dim mysc As New MySqlCommand(sql, con)
             i = mysc.ExecuteNonQuery()
 
             If i > 0 Then
-                MessageBox.Show("New record has been inserted successfully!", "Alert for Add Referral", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                If SaveToolStripButton.Text = "Save" Then
+                    MessageBox.Show("New record has been inserted successfully!", "Alert for Add Referral", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                Else
+                    MessageBox.Show("Record has been updated successfully!", "Alert for Update Referral", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                End If
             Else
-                MessageBox.Show("No record has been inserted!", "Alert for Add Referral", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                If SaveToolStripButton.Text = "Save" Then
+                    MessageBox.Show("No record has been inserted!", "Alert for Add Referral", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                Else
+                    MessageBox.Show("No record has been updated!", "Alert for Update Referral", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                End If
             End If
             con.Close()
         Catch ex As Exception
