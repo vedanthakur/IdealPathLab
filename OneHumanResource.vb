@@ -63,4 +63,46 @@ Public Class OneHumanResource
         AddHumanResource.Email.Enabled = False
         AddHumanResource.Timer1.Enabled = True
     End Sub
+
+    Private Sub userWD_CheckedChanged(sender As Object, e As EventArgs) Handles userWD.Click
+        Try
+            Dim sql As String
+            Dim i As Integer
+            con.Open()
+            sql = "UPDATE `hr` SET `su`='" & userWD.Checked.ToString & "'  WHERE email = '" & emailID & "';"
+            Dim mysc As New MySqlCommand(sql, con)
+            i = mysc.ExecuteNonQuery()
+            If i > 0 Then
+                MessageBox.Show("'" & UName.Text & "' updated successfully! to '" & userWD.Checked.ToString & "'", "Alert for User Wise Data " & UName.Text & "'", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Else
+                MessageBox.Show("No record has been updated!", "Alert for User Wise Data'" & UName.Text & "'", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End If
+            con.Close()
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            con.Close()
+        End Try
+    End Sub
+
+    Private Sub publishS_CheckedChanged(sender As Object, e As EventArgs) Handles publishS.Click
+        Try
+            Dim sql As String
+            Dim i As Integer
+            con.Open()
+            sql = "UPDATE `hr` SET `status`='" & publishS.Checked.ToString & "'  WHERE email = '" & emailID & "';"
+            Dim mysc As New MySqlCommand(sql, con)
+            i = mysc.ExecuteNonQuery()
+            If i > 0 Then
+                MessageBox.Show("'" & UName.Text & "' updated successfully! to '" & publishS.Checked.ToString & "'", "Alert for Publishing  '" & UName.Text & "'", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Else
+                MessageBox.Show("No record has been updated!", "Alert for Publish'" & UName.Text & "'", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End If
+            con.Close()
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            con.Close()
+        End Try
+    End Sub
 End Class

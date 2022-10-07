@@ -462,19 +462,21 @@ Partial Class AddPatient
         '
         'PassportExpiredDate
         '
-        Me.PassportExpiredDate.CustomFormat = ""
-        Me.PassportExpiredDate.Location = New System.Drawing.Point(179, 186)
+        Me.PassportExpiredDate.CustomFormat = "yyyy-MM-dd"
+        Me.PassportExpiredDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.PassportExpiredDate.Location = New System.Drawing.Point(278, 186)
         Me.PassportExpiredDate.Name = "PassportExpiredDate"
-        Me.PassportExpiredDate.Size = New System.Drawing.Size(250, 27)
+        Me.PassportExpiredDate.Size = New System.Drawing.Size(151, 27)
         Me.PassportExpiredDate.TabIndex = 23
         '
         'PassportIssuedDate
         '
-        Me.PassportIssuedDate.CustomFormat = ""
-        Me.PassportIssuedDate.Location = New System.Drawing.Point(179, 138)
+        Me.PassportIssuedDate.CustomFormat = "yyyy-MM-dd"
+        Me.PassportIssuedDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.PassportIssuedDate.Location = New System.Drawing.Point(278, 138)
         Me.PassportIssuedDate.Name = "PassportIssuedDate"
         Me.PassportIssuedDate.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.PassportIssuedDate.Size = New System.Drawing.Size(250, 27)
+        Me.PassportIssuedDate.Size = New System.Drawing.Size(151, 27)
         Me.PassportIssuedDate.TabIndex = 22
         '
         'PassportNo

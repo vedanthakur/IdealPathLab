@@ -95,5 +95,4 @@ Public Class UserProfile
         ListUser.Left = 0
         ListUser.Top = 0
     End Sub
-
 End Class

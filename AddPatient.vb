@@ -46,4 +46,8 @@ Public Class AddPatient
         End If
     End Sub
 
+    Private Sub DOB_ValueChanged(sender As Object, e As EventArgs) Handles DOB.ValueChanged
+        Age.Text = 2022 - DOB.Value.Year
+    End Sub
+
 End Class
