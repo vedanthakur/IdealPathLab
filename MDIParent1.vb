@@ -223,4 +223,11 @@ Public Class MDIParent1
         ListLabResult.Left = 0
         ListLabResult.Top = 0
     End Sub
+
+    Private Sub ConFigurationToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ConFigurationToolStripMenuItem.Click
+        CompanyProfile.MdiParent = Me
+        CompanyProfile.Show()
+        CompanyProfile.Left = 0
+        CompanyProfile.Top = 0
+    End Sub
 End Class

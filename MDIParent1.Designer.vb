@@ -71,7 +71,6 @@ Partial Class MDIParent1
         Me.UnitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DepartmentToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ConFigurationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CompanyProfileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LogoutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.StatusStrip.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
@@ -366,16 +365,9 @@ Partial Class MDIParent1
         '
         'ConFigurationToolStripMenuItem
         '
-        Me.ConFigurationToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CompanyProfileToolStripMenuItem})
         Me.ConFigurationToolStripMenuItem.Name = "ConFigurationToolStripMenuItem"
-        Me.ConFigurationToolStripMenuItem.Size = New System.Drawing.Size(114, 24)
-        Me.ConFigurationToolStripMenuItem.Text = "&Configuration"
-        '
-        'CompanyProfileToolStripMenuItem
-        '
-        Me.CompanyProfileToolStripMenuItem.Name = "CompanyProfileToolStripMenuItem"
-        Me.CompanyProfileToolStripMenuItem.Size = New System.Drawing.Size(202, 26)
-        Me.CompanyProfileToolStripMenuItem.Text = "Company &Profile"
+        Me.ConFigurationToolStripMenuItem.Size = New System.Drawing.Size(133, 24)
+        Me.ConFigurationToolStripMenuItem.Text = "&Company Profile"
         '
         'LogoutToolStripMenuItem
         '
@@ -448,7 +440,6 @@ Partial Class MDIParent1
     Friend WithEvents UnitToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents DepartmentToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ConFigurationToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents CompanyProfileToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents LogoutToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ListToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents ParentDataToolStripMenuItem1 As ToolStripMenuItem
