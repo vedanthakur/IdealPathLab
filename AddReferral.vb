@@ -18,7 +18,6 @@ Public Class AddReferral
             sql = sqlcmd
             Dim mysc As New MySqlCommand(sql, con)
             i = mysc.ExecuteNonQuery()
-
             If i > 0 Then
                 If SaveToolStripButton.Text = "Save" Then
                     MessageBox.Show("New record has been inserted successfully!", "Alert for Add Referral", MessageBoxButtons.OK, MessageBoxIcon.Information)

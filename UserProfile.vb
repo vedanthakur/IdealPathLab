@@ -37,6 +37,9 @@ Public Class UserProfile
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        AddUser.MdiParent = MDIParent1
+        AddUser.Left = 0
+        AddUser.Top = 0
         AddUser.Show()
         AddUser.Text = "Edit User"
         AddUser.SaveToolStripButton.Text = "Update"

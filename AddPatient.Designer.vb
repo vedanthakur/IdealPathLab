@@ -22,6 +22,7 @@ Partial Class AddPatient
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AddPatient))
         Me.ToolStrip = New System.Windows.Forms.ToolStrip()
         Me.SaveToolStripButton = New System.Windows.Forms.ToolStripButton()
@@ -76,6 +77,8 @@ Partial Class AddPatient
         Me.Label22 = New System.Windows.Forms.Label()
         Me.Label23 = New System.Windows.Forms.Label()
         Me.ToolStripContainer1 = New System.Windows.Forms.ToolStripContainer()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.ImageSizeLabel = New System.Windows.Forms.Label()
         Me.ToolStrip.SuspendLayout()
         Me.FlowLayoutPanel2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
@@ -185,6 +188,7 @@ Partial Class AddPatient
         Me.DOB.Name = "DOB"
         Me.DOB.Size = New System.Drawing.Size(151, 27)
         Me.DOB.TabIndex = 32
+        Me.DOB.Value = New Date(2022, 10, 8, 0, 0, 0, 0)
         '
         'Mobile
         '
@@ -296,6 +300,7 @@ Partial Class AddPatient
         '
         Me.GroupBox3.AutoSize = True
         Me.GroupBox3.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.GroupBox3.Controls.Add(Me.ImageSizeLabel)
         Me.GroupBox3.Controls.Add(Me.UploadBtn)
         Me.GroupBox3.Controls.Add(Me.MaritalStatus)
         Me.GroupBox3.Controls.Add(Me.PictureBox1)
@@ -468,6 +473,7 @@ Partial Class AddPatient
         Me.PassportExpiredDate.Name = "PassportExpiredDate"
         Me.PassportExpiredDate.Size = New System.Drawing.Size(151, 27)
         Me.PassportExpiredDate.TabIndex = 23
+        Me.PassportExpiredDate.Value = New Date(2022, 10, 8, 0, 0, 0, 0)
         '
         'PassportIssuedDate
         '
@@ -478,6 +484,7 @@ Partial Class AddPatient
         Me.PassportIssuedDate.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.PassportIssuedDate.Size = New System.Drawing.Size(151, 27)
         Me.PassportIssuedDate.TabIndex = 22
+        Me.PassportIssuedDate.Value = New Date(2022, 10, 8, 0, 0, 0, 0)
         '
         'PassportNo
         '
@@ -642,6 +649,19 @@ Partial Class AddPatient
         '
         Me.ToolStripContainer1.TopToolStripPanel.Controls.Add(Me.ToolStrip)
         '
+        'Timer1
+        '
+        '
+        'ImageSizeLabel
+        '
+        Me.ImageSizeLabel.AutoSize = True
+        Me.ImageSizeLabel.Font = New System.Drawing.Font("Segoe UI", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.ImageSizeLabel.Location = New System.Drawing.Point(18, 253)
+        Me.ImageSizeLabel.Name = "ImageSizeLabel"
+        Me.ImageSizeLabel.Size = New System.Drawing.Size(204, 15)
+        Me.ImageSizeLabel.TabIndex = 42
+        Me.ImageSizeLabel.Text = "Image size should be less than 500 KB"
+        '
         'AddPatient
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
@@ -726,4 +746,6 @@ Partial Class AddPatient
     Friend WithEvents CPRelation As TextBox
     Friend WithEvents CPerson As TextBox
     Friend WithEvents ToolStripContainer1 As ToolStripContainer
+    Friend WithEvents Timer1 As Timer
+    Friend WithEvents ImageSizeLabel As Label
 End Class

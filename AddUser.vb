@@ -110,7 +110,6 @@ Public Class AddUser
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         Try
-
             Dim sql As String
             Dim rd As MySqlDataReader
             sql = "Select * from users where email = '" & emailID & "';"
