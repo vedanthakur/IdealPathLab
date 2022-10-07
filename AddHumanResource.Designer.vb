@@ -22,11 +22,13 @@ Partial Class AddHumanResource
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AddHumanResource))
         Me.ToolStrip = New System.Windows.Forms.ToolStrip()
         Me.SaveToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.FlowLayoutPanel2 = New System.Windows.Forms.FlowLayoutPanel()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.ImageSizeLabel = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Label15 = New System.Windows.Forms.Label()
@@ -39,6 +41,7 @@ Partial Class AddHumanResource
         Me.Label2 = New System.Windows.Forms.Label()
         Me.PName = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.ImageSizeLabel2 = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Label18 = New System.Windows.Forms.Label()
@@ -67,6 +70,7 @@ Partial Class AddHumanResource
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.ToolStripContainer1 = New System.Windows.Forms.ToolStripContainer()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.ToolStrip.SuspendLayout()
         Me.FlowLayoutPanel2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -111,11 +115,12 @@ Partial Class AddHumanResource
         Me.FlowLayoutPanel2.Location = New System.Drawing.Point(0, 0)
         Me.FlowLayoutPanel2.MinimumSize = New System.Drawing.Size(450, 0)
         Me.FlowLayoutPanel2.Name = "FlowLayoutPanel2"
-        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(900, 523)
+        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(907, 538)
         Me.FlowLayoutPanel2.TabIndex = 29
         '
         'GroupBox3
         '
+        Me.GroupBox3.Controls.Add(Me.ImageSizeLabel)
         Me.GroupBox3.Controls.Add(Me.PictureBox1)
         Me.GroupBox3.Controls.Add(Me.Button3)
         Me.GroupBox3.Controls.Add(Me.Label15)
@@ -130,10 +135,20 @@ Partial Class AddHumanResource
         Me.GroupBox3.Location = New System.Drawing.Point(3, 3)
         Me.GroupBox3.MinimumSize = New System.Drawing.Size(442, 150)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(442, 288)
+        Me.GroupBox3.Size = New System.Drawing.Size(442, 300)
         Me.GroupBox3.TabIndex = 25
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Personal Details"
+        '
+        'ImageSizeLabel
+        '
+        Me.ImageSizeLabel.AutoSize = True
+        Me.ImageSizeLabel.Font = New System.Drawing.Font("Segoe UI", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.ImageSizeLabel.Location = New System.Drawing.Point(112, 258)
+        Me.ImageSizeLabel.Name = "ImageSizeLabel"
+        Me.ImageSizeLabel.Size = New System.Drawing.Size(204, 15)
+        Me.ImageSizeLabel.TabIndex = 41
+        Me.ImageSizeLabel.Text = "Image size should be less than 500 KB"
         '
         'PictureBox1
         '
@@ -235,6 +250,7 @@ Partial Class AddHumanResource
         'GroupBox1
         '
         Me.GroupBox1.AutoSize = True
+        Me.GroupBox1.Controls.Add(Me.ImageSizeLabel2)
         Me.GroupBox1.Controls.Add(Me.PictureBox2)
         Me.GroupBox1.Controls.Add(Me.Button4)
         Me.GroupBox1.Controls.Add(Me.Label18)
@@ -249,14 +265,24 @@ Partial Class AddHumanResource
         Me.GroupBox1.Location = New System.Drawing.Point(451, 3)
         Me.GroupBox1.MinimumSize = New System.Drawing.Size(442, 187)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(442, 289)
+        Me.GroupBox1.Size = New System.Drawing.Size(442, 300)
         Me.GroupBox1.TabIndex = 25
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "HR Info"
         '
+        'ImageSizeLabel2
+        '
+        Me.ImageSizeLabel2.AutoSize = True
+        Me.ImageSizeLabel2.Font = New System.Drawing.Font("Segoe UI", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.ImageSizeLabel2.Location = New System.Drawing.Point(197, 262)
+        Me.ImageSizeLabel2.Name = "ImageSizeLabel2"
+        Me.ImageSizeLabel2.Size = New System.Drawing.Size(204, 15)
+        Me.ImageSizeLabel2.TabIndex = 42
+        Me.ImageSizeLabel2.Text = "Image size should be less than 500 KB"
+        '
         'PictureBox2
         '
-        Me.PictureBox2.Location = New System.Drawing.Point(354, 163)
+        Me.PictureBox2.Location = New System.Drawing.Point(354, 155)
         Me.PictureBox2.MaximumSize = New System.Drawing.Size(130, 0)
         Me.PictureBox2.MinimumSize = New System.Drawing.Size(0, 100)
         Me.PictureBox2.Name = "PictureBox2"
@@ -362,7 +388,7 @@ Partial Class AddHumanResource
         Me.GroupBox4.Controls.Add(Me.Facebook)
         Me.GroupBox4.Controls.Add(Me.Label20)
         Me.GroupBox4.Controls.Add(Me.Twitter)
-        Me.GroupBox4.Location = New System.Drawing.Point(3, 298)
+        Me.GroupBox4.Location = New System.Drawing.Point(3, 309)
         Me.GroupBox4.MinimumSize = New System.Drawing.Size(442, 150)
         Me.GroupBox4.Name = "GroupBox4"
         Me.GroupBox4.Size = New System.Drawing.Size(442, 219)
@@ -446,7 +472,7 @@ Partial Class AddHumanResource
         Me.GroupBox2.Controls.Add(Me.Label4)
         Me.GroupBox2.Controls.Add(Me.Label6)
         Me.GroupBox2.Controls.Add(Me.Label7)
-        Me.GroupBox2.Location = New System.Drawing.Point(451, 298)
+        Me.GroupBox2.Location = New System.Drawing.Point(451, 309)
         Me.GroupBox2.MinimumSize = New System.Drawing.Size(442, 150)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(442, 219)
@@ -521,13 +547,13 @@ Partial Class AddHumanResource
         '
         Me.ToolStripContainer1.ContentPanel.AutoScroll = True
         Me.ToolStripContainer1.ContentPanel.Controls.Add(Me.FlowLayoutPanel2)
-        Me.ToolStripContainer1.ContentPanel.Size = New System.Drawing.Size(900, 523)
+        Me.ToolStripContainer1.ContentPanel.Size = New System.Drawing.Size(907, 538)
         Me.ToolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ToolStripContainer1.LeftToolStripPanelVisible = False
         Me.ToolStripContainer1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripContainer1.Name = "ToolStripContainer1"
         Me.ToolStripContainer1.RightToolStripPanelVisible = False
-        Me.ToolStripContainer1.Size = New System.Drawing.Size(900, 550)
+        Me.ToolStripContainer1.Size = New System.Drawing.Size(907, 565)
         Me.ToolStripContainer1.TabIndex = 31
         Me.ToolStripContainer1.Text = "ToolStripContainer1"
         '
@@ -535,11 +561,14 @@ Partial Class AddHumanResource
         '
         Me.ToolStripContainer1.TopToolStripPanel.Controls.Add(Me.ToolStrip)
         '
+        'Timer1
+        '
+        '
         'AddHumanResource
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(900, 550)
+        Me.ClientSize = New System.Drawing.Size(907, 565)
         Me.Controls.Add(Me.ToolStripContainer1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MinimumSize = New System.Drawing.Size(492, 597)
@@ -612,4 +641,7 @@ Partial Class AddHumanResource
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents ToolStripContainer1 As ToolStripContainer
+    Friend WithEvents Timer1 As Timer
+    Friend WithEvents ImageSizeLabel As Label
+    Friend WithEvents ImageSizeLabel2 As Label
 End Class

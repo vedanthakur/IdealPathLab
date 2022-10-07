@@ -43,7 +43,7 @@ Public Class AddUser
                 If SaveToolStripButton.Text = "Save" Then
                     MessageBox.Show("New record has been inserted successfully!", "Alert for Add User", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 Else
-                    MessageBox.Show("Record has been updated successfully!", "Alert for Update User", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
                 End If
             Else
                 If SaveToolStripButton.Text = "Save" Then
@@ -79,7 +79,6 @@ Public Class AddUser
         Finally
             con.Close()
         End Try
-
     End Sub
 
     Private Sub PictureBox1_LoadCompleted(sender As Object, e As System.ComponentModel.AsyncCompletedEventArgs) Handles PictureBox1.LoadCompleted
