@@ -8,7 +8,7 @@ Public Class ListLabResult
         Try
             Dim sql As String
             Dim dt As New DataTable
-            sql = "Select * from labresult"
+            sql = "Select * from `labreport`"
             Dim da As New MySqlDataAdapter(sql, con)
             da.Fill(dt)
             DataGridView1.DataSource = dt

@@ -7,6 +7,32 @@ Imports Org.BouncyCastle.Crypto
 Public Class AddLabReport
     Dim Doctor, LabTechnician, TestPerformed, Verified As String
     Dim imgpath As String
+    Private Sub CheckBoxSelectedItems()
+        Doctor = ""
+        For j = 0 To DoctorB.Items.Count - 1
+            If DoctorB.GetItemChecked(j) Then
+                Doctor = Doctor & "," & DoctorB.Items.Item(j)
+            End If
+        Next
+        LabTechnician = ""
+        For k = 0 To LabTechnicianB.Items.Count - 1
+            If LabTechnicianB.GetItemChecked(k) Then
+                LabTechnician = LabTechnician & "," & LabTechnicianB.Items.Item(k)
+            End If
+        Next
+        TestPerformed = ""
+        For k = 0 To TestPerformedBy.Items.Count - 1
+            If TestPerformedBy.GetItemChecked(k) Then
+                TestPerformed = TestPerformed & "," & TestPerformedBy.Items.Item(k)
+            End If
+        Next
+        Verified = ""
+        For k = 0 To VerifiedBy.Items.Count - 1
+            If VerifiedBy.GetItemChecked(k) Then
+                Verified = Verified & "," & VerifiedBy.Items.Item(k)
+            End If
+        Next
+    End Sub
 
     Dim arrimage() As Byte
 
@@ -23,7 +49,6 @@ Public Class AddLabReport
             Dim sql As String
             Dim i As Integer
 
-
             Dim memstr As New MemoryStream()
             PictureBox1.Image.Save(memstr, Imaging.ImageFormat.Jpeg)
             arrimage = memstr.GetBuffer()
@@ -31,15 +56,16 @@ Public Class AddLabReport
             filesize = memstr.Length
             memstr.Close()
             con.Open()
-            sql = "INSERT INTO branch values ('" & PName.Text & "', '" & Address.Text & "','" & DateTimePicker1.Text & "','" & Doctor & "','" & LabTechnician & "','" & TestPerformed & "','" & Verified & "','" & DateTimePicker2.ToString & "','" & LabNo.Text & "','" & TSH.Text & "', @img ,'" & Delivered.Enabled & "','" & Notes.Text & "' );"
+            CheckBoxSelectedItems()
+            sql = "INSERT INTO `labreport` values ('" & PName.Text & "', '" & Address.Text & "','" & DateTimePicker1.Text & "','" & Doctor & "','" & LabTechnician & "','" & TestPerformed & "','" & Verified & "','" & Delivered.Checked.ToString & "','" & Notes.Text & "','" & ReportedDate.Text & "','" & LabNo.Text & "','" & TSH.Text & "', @img );"
             Dim mysc As New MySqlCommand(sql, con)
             mysc.Parameters.AddWithValue("@img", arrimage)
             i = mysc.ExecuteNonQuery()
 
             If i > 0 Then
-                MessageBox.Show("New record has been inserted successfully!", "Alert for Add Branch", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                MessageBox.Show("New record has been inserted successfully!", "Alert for Add Lab Report", MessageBoxButtons.OK, MessageBoxIcon.Information)
             Else
-                MessageBox.Show("No record has been inserted!", "Alert for Add Branch", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                MessageBox.Show("No record has been inserted!", "Alert for Add Lab Report", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
             con.Close()
         Catch ex As Exception
