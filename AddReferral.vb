@@ -11,9 +11,9 @@ Public Class AddReferral
             con.Open()
             Dim sqlcmd As String
             If SaveToolStripButton.Text = "Save" Then
-                sqlcmd = "INSERT INTO referral values ('" & Address.Text & "','" & Phone.Text & "','" & Email.Text & "','" & SharingPersantage.Text & "'," & DiscountKey.Enabled.ToString & "," & Status.Enabled.ToString & ",'" & Type.Text & "','" & ReferralName.Text & "','" & RContactPerson.Text & "');"
+                sqlcmd = "INSERT INTO referral values ('" & Address.Text & "','" & Phone.Text & "','" & Email.Text & "','" & SharingPersantage.Text & "'," & DiscountKey.Checked.ToString & "," & Status.Checked.ToString & ",'" & Type.Text & "','" & ReferralName.Text & "','" & RContactPerson.Text & "');"
             Else
-                sqlcmd = "UPDATE `referral` SET `address` ='" & Address.Text & "',`phone`='" & Phone.Text & "',`email`='" & Email.Text & "',`benifit`='" & SharingPersantage.Text & "',`discount`='" & DiscountKey.Enabled.ToString & "',`status`='" & Status.Checked.ToString & "',`type`='" & Type.Text & "',`contactperson` ='" & RContactPerson.Text & "' WHERE `name` = '" & ReferralName.Text & "';"
+                sqlcmd = "UPDATE `referral` SET `address` ='" & Address.Text & "',`phone`='" & Phone.Text & "',`email`='" & Email.Text & "',`benifit`='" & SharingPersantage.Text & "',`discount`='" & DiscountKey.Checked.ToString & "',`status`='" & Status.Checked.ToString & "',`type`='" & Type.Text & "',`contactperson` ='" & RContactPerson.Text & "' WHERE `name` = '" & ReferralName.Text & "';"
             End If
             sql = sqlcmd
             Dim mysc As New MySqlCommand(sql, con)

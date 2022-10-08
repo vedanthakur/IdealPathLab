@@ -30,7 +30,7 @@ Partial Class AddSampleCollection
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Address = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.SCollectedBy = New System.Windows.Forms.ComboBox()
+        Me.CollectedBy = New System.Windows.Forms.ComboBox()
         Me.PName = New System.Windows.Forms.ComboBox()
         Me.InvoiceNo = New System.Windows.Forms.ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -40,8 +40,8 @@ Partial Class AddSampleCollection
         Me.Notes = New System.Windows.Forms.RichTextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Time = New System.Windows.Forms.TextBox()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.CTime = New System.Windows.Forms.TextBox()
+        Me.CollectionDate = New System.Windows.Forms.DateTimePicker()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Status = New System.Windows.Forms.ComboBox()
         Me.Description = New System.Windows.Forms.ComboBox()
@@ -94,7 +94,7 @@ Partial Class AddSampleCollection
         Me.GroupBox1.AutoSize = True
         Me.GroupBox1.Controls.Add(Me.Address)
         Me.GroupBox1.Controls.Add(Me.Label4)
-        Me.GroupBox1.Controls.Add(Me.SCollectedBy)
+        Me.GroupBox1.Controls.Add(Me.CollectedBy)
         Me.GroupBox1.Controls.Add(Me.PName)
         Me.GroupBox1.Controls.Add(Me.InvoiceNo)
         Me.GroupBox1.Controls.Add(Me.Label1)
@@ -125,14 +125,14 @@ Partial Class AddSampleCollection
         Me.Label4.TabIndex = 17
         Me.Label4.Text = "Sample Collected By"
         '
-        'SCollectedBy
+        'CollectedBy
         '
-        Me.SCollectedBy.FormattingEnabled = True
-        Me.SCollectedBy.Location = New System.Drawing.Point(187, 170)
-        Me.SCollectedBy.Name = "SCollectedBy"
-        Me.SCollectedBy.Size = New System.Drawing.Size(151, 28)
-        Me.SCollectedBy.TabIndex = 3
-        Me.SCollectedBy.Text = "Select"
+        Me.CollectedBy.FormattingEnabled = True
+        Me.CollectedBy.Location = New System.Drawing.Point(187, 170)
+        Me.CollectedBy.Name = "CollectedBy"
+        Me.CollectedBy.Size = New System.Drawing.Size(151, 28)
+        Me.CollectedBy.TabIndex = 3
+        Me.CollectedBy.Text = "Select"
         '
         'PName
         '
@@ -185,8 +185,8 @@ Partial Class AddSampleCollection
         Me.GroupBox2.Controls.Add(Me.Notes)
         Me.GroupBox2.Controls.Add(Me.Label6)
         Me.GroupBox2.Controls.Add(Me.Button1)
-        Me.GroupBox2.Controls.Add(Me.Time)
-        Me.GroupBox2.Controls.Add(Me.DateTimePicker1)
+        Me.GroupBox2.Controls.Add(Me.CTime)
+        Me.GroupBox2.Controls.Add(Me.CollectionDate)
         Me.GroupBox2.Controls.Add(Me.Label5)
         Me.GroupBox2.Controls.Add(Me.Status)
         Me.GroupBox2.Controls.Add(Me.Description)
@@ -224,24 +224,24 @@ Partial Class AddSampleCollection
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(154, 29)
         Me.Button1.TabIndex = 8
-        Me.Button1.Text = "Custom Time"
+        Me.Button1.Text = "Set Custom Time"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'Time
+        'CTime
         '
-        Me.Time.Location = New System.Drawing.Point(187, 179)
-        Me.Time.Name = "Time"
-        Me.Time.Size = New System.Drawing.Size(154, 27)
-        Me.Time.TabIndex = 7
+        Me.CTime.Location = New System.Drawing.Point(187, 179)
+        Me.CTime.Name = "CTime"
+        Me.CTime.Size = New System.Drawing.Size(154, 27)
+        Me.CTime.TabIndex = 7
         '
-        'DateTimePicker1
+        'CollectionDate
         '
-        Me.DateTimePicker1.CustomFormat = "yyyy-MM-dd"
-        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.DateTimePicker1.Location = New System.Drawing.Point(187, 131)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(154, 27)
-        Me.DateTimePicker1.TabIndex = 6
+        Me.CollectionDate.CustomFormat = "yyyy-MM-dd"
+        Me.CollectionDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.CollectionDate.Location = New System.Drawing.Point(187, 131)
+        Me.CollectionDate.Name = "CollectionDate"
+        Me.CollectionDate.Size = New System.Drawing.Size(154, 27)
+        Me.CollectionDate.TabIndex = 6
         '
         'Label5
         '
@@ -357,12 +357,12 @@ Partial Class AddSampleCollection
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents SCollectedBy As ComboBox
+    Friend WithEvents CollectedBy As ComboBox
     Friend WithEvents PName As ComboBox
     Friend WithEvents InvoiceNo As ComboBox
     Friend WithEvents Label4 As Label
     Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents CollectionDate As DateTimePicker
     Friend WithEvents Label5 As Label
     Friend WithEvents Status As ComboBox
     Friend WithEvents Description As ComboBox
@@ -370,7 +370,7 @@ Partial Class AddSampleCollection
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Timer1 As Timer
-    Friend WithEvents Time As TextBox
+    Friend WithEvents CTime As TextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents Notes As RichTextBox
     Friend WithEvents Label6 As Label

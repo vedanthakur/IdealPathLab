@@ -20,4 +20,20 @@ Public Class ListSampleCollection
             con.Close()
         End Try
     End Sub
+
+    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+        OneSampleCollection.MdiParent = MDIParent1
+        OneSampleCollection.Left = 0
+        OneSampleCollection.Top = 0
+        OneSampleCollection.InvoiceNo.Text = DataGridView1.CurrentRow.Cells(0).Value.ToString
+        OneSampleCollection.PName.Text = DataGridView1.CurrentRow.Cells(1).Value.ToString
+        OneSampleCollection.Address.Text = DataGridView1.CurrentRow.Cells(2).Value.ToString
+        OneSampleCollection.CollectedBy.Text = DataGridView1.CurrentRow.Cells(3).Value.ToString
+        OneSampleCollection.Description.Text = DataGridView1.CurrentRow.Cells(4).Value.ToString
+        OneSampleCollection.Status.Text = DataGridView1.CurrentRow.Cells(5).Value.ToString
+        OneSampleCollection.CollectionDate.Text = DataGridView1.CurrentRow.Cells(6).Value.ToString
+        OneSampleCollection.CTime.Text = DataGridView1.CurrentRow.Cells(7).Value.ToString
+        OneSampleCollection.Notes.Text = DataGridView1.CurrentRow.Cells(8).Value.ToString
+        OneSampleCollection.Show()
+    End Sub
 End Class
