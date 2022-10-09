@@ -124,7 +124,7 @@ Partial Class OneBranch
         Me.Controls.Add(Me.UName)
         Me.Controls.Add(Me.PictureBox1)
         Me.Name = "OneBranch"
-        Me.Text = "OneBranch"
+        Me.Text = "One Branch"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

@@ -61,7 +61,7 @@ Partial Class AddBranch
         Me.ToolStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SaveToolStripButton})
         Me.ToolStrip.Location = New System.Drawing.Point(4, 0)
         Me.ToolStrip.Name = "ToolStrip"
-        Me.ToolStrip.Size = New System.Drawing.Size(116, 27)
+        Me.ToolStrip.Size = New System.Drawing.Size(77, 27)
         Me.ToolStrip.TabIndex = 31
         Me.ToolStrip.Text = "ToolStrip"
         '
@@ -278,7 +278,7 @@ Partial Class AddBranch
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MinimumSize = New System.Drawing.Size(466, 455)
         Me.Name = "AddBranch"
-        Me.Text = "AddBranch"
+        Me.Text = "Add Branch"
         Me.ToolStrip.ResumeLayout(False)
         Me.ToolStrip.PerformLayout()
         Me.FlowLayoutPanel2.ResumeLayout(False)

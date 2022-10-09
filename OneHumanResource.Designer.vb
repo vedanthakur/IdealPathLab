@@ -211,7 +211,7 @@ Partial Class OneHumanResource
         Me.Controls.Add(Me.PictureBox1)
         Me.MinimumSize = New System.Drawing.Size(818, 237)
         Me.Name = "OneHumanResource"
-        Me.Text = "OneHumanResource"
+        Me.Text = "One Human Resource"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

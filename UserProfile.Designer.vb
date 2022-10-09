@@ -136,7 +136,7 @@ Partial Class UserProfile
         Me.Controls.Add(Me.UName)
         Me.Controls.Add(Me.PictureBox1)
         Me.Name = "UserProfile"
-        Me.Text = "UserProfile"
+        Me.Text = "User Profile"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

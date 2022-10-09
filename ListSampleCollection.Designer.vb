@@ -44,7 +44,7 @@ Partial Class ListSampleCollection
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.DataGridView1)
         Me.Name = "ListSampleCollection"
-        Me.Text = "ListSampleCollection"
+        Me.Text = "List Sample Collection"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 

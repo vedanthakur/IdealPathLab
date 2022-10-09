@@ -381,7 +381,7 @@ Partial Class AddUser
         Me.MaximumSize = New System.Drawing.Size(466, 656)
         Me.MinimumSize = New System.Drawing.Size(466, 656)
         Me.Name = "AddUser"
-        Me.Text = "AddUser"
+        Me.Text = "Add User"
         Me.FlowLayoutPanel2.ResumeLayout(False)
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()

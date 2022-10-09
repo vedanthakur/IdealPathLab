@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class ListReferral
+Partial Class ListExamination
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -37,14 +37,14 @@ Partial Class ListReferral
         Me.DataGridView1.Size = New System.Drawing.Size(800, 450)
         Me.DataGridView1.TabIndex = 0
         '
-        'ListReferral
+        'ListExamination
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.DataGridView1)
-        Me.Name = "ListReferral"
-        Me.Text = "List Referral"
+        Me.Name = "ListExamination"
+        Me.Text = "List Examination"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 

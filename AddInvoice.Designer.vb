@@ -483,7 +483,7 @@ Partial Class AddInvoice
         Me.Controls.Add(Me.ToolStripContainer1)
         Me.MinimumSize = New System.Drawing.Size(496, 654)
         Me.Name = "AddInvoice"
-        Me.Text = "AddInvoice"
+        Me.Text = "Add Invoice"
         Me.ToolStrip.ResumeLayout(False)
         Me.ToolStrip.PerformLayout()
         Me.FlowLayoutPanel2.ResumeLayout(False)

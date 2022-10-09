@@ -44,7 +44,7 @@ Partial Class ListLabResult
         Me.ClientSize = New System.Drawing.Size(1303, 450)
         Me.Controls.Add(Me.DataGridView1)
         Me.Name = "ListLabResult"
-        Me.Text = "ListLabResult"
+        Me.Text = "List Lab Result"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 

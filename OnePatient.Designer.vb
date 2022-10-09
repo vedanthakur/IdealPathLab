@@ -502,7 +502,7 @@ Partial Class OnePatient
         Me.Controls.Add(Me.Label11)
         Me.MinimumSize = New System.Drawing.Size(1149, 653)
         Me.Name = "OnePatient"
-        Me.Text = "OnePatient"
+        Me.Text = "One Patient"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()

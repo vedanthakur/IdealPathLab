@@ -44,7 +44,7 @@ Partial Class ListBranch
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.DataGridView1)
         Me.Name = "ListBranch"
-        Me.Text = "ListBranch"
+        Me.Text = "List Branch"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
