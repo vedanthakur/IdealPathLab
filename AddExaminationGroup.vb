@@ -13,7 +13,7 @@ Public Class AddExaminationGroup
             If SaveToolStripButton.Text = "Save" Then
                 sqlcmd = "INSERT INTO `examinationgroup` values ('" & Department.Text & "','" & TitleB.Text & "','" & KeyB.Text & "','" & RankB.Text & "','" & Interpretation.Text & "','" & Specification.Text & "','" & SampleType.Text & "','" & Price.Text & "','" & StatusP.Checked.ToString & "');"
             Else
-                sqlcmd = "UPDATE `examinationgroup` SET `examination_group` ='" & Department.Text & "',`examination_sub_group`='" & TitleB.Text & "',`unit`='" & KeyB.Text & "',`title`='" & RankB.Text & "',`its_key`='" & Interpretation.Text & "',`rank`='" & Specification.Text & "',`code`='" & SampleType.Text & "',`report`='" & Price.Text & "',`default_value` ='" & StatusP.Checked.ToString & "' WHERE `title` = '" & TitleB.Text & "';"
+                sqlcmd = "UPDATE `examinationgroup` SET `department` ='" & Department.Text & "',`title`='" & TitleB.Text & "',`key_`='" & KeyB.Text & "',`rank`='" & RankB.Text & "',`interpretation`='" & Interpretation.Text & "',`specification`='" & Specification.Text & "',`sample_type`='" & SampleType.Text & "',`price`='" & Price.Text & "',`status` ='" & StatusP.Checked.ToString & "' WHERE `title` = '" & TitleB.Text & "';"
             End If
             sql = sqlcmd
             Dim mysc As New MySqlCommand(sql, con)

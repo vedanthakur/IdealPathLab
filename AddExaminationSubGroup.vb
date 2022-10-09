@@ -14,7 +14,7 @@ Public Class AddExaminationSubGroup
             If SaveToolStripButton.Text = "Save" Then
                 sqlcmd = "INSERT INTO `examinationsubgroup` values ('" & ExaminationGroup.Text & "','" & TitleB.Text & "','" & KeyB.Text & "','" & RankB.Text & "','" & SampleTitle.Text & "','" & QRCode.Text & "','" & Price.Text & "','" & StatusP.Checked.ToString & "');"
             Else
-                sqlcmd = "UPDATE `examinationsubgroup` SET `examination_group` ='" & ExaminationGroup.Text & "',`examination_sub_group`='" & TitleB.Text & "',`unit`='" & KeyB.Text & "',`title`='" & RankB.Text & "',`its_key`='" & SampleTitle.Text & "',`rank`='" & QRCode.Text & "',`code`='" & Price.Text & "',`report`='" & StatusP.Checked.ToString & "' WHERE `title` = '" & TitleB.Text & "';"
+                sqlcmd = "UPDATE `examinationsubgroup` SET `examination_group` ='" & ExaminationGroup.Text & "',`title`='" & TitleB.Text & "',`key_`='" & KeyB.Text & "',`rank`='" & RankB.Text & "',`sample_title`='" & SampleTitle.Text & "',`qr_code`='" & QRCode.Text & "',`price`='" & Price.Text & "',`status`='" & StatusP.Checked.ToString & "' WHERE `title` = '" & TitleB.Text & "';"
             End If
             sql = sqlcmd
             Dim mysc As New MySqlCommand(sql, con)
