@@ -5,7 +5,7 @@ Imports System.Net.Mime.MediaTypeNames
 Imports Org.BouncyCastle.Crypto
 
 Public Class AddLabReport
-    Dim Doctor, LabTechnician, TestPerformed, Verified As String
+    Public Doctor, LabTechnician, TestPerformed, Verified As String
     Dim imgpath As String
     Private Sub CheckBoxSelectedItems()
         Doctor = ""
@@ -67,7 +67,6 @@ Public Class AddLabReport
             Else
                 MessageBox.Show("No record has been inserted!", "Alert for Add Lab Report", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
-            con.Close()
         Catch ex As Exception
             MsgBox(ex.Message)
         Finally

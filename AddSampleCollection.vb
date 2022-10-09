@@ -54,7 +54,6 @@ Public Class AddSampleCollection
                 End If
 
             End If
-            con.Close()
         Catch ex As Exception
             MsgBox(ex.Message)
         Finally

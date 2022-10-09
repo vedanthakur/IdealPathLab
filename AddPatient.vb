@@ -41,7 +41,6 @@ Public Class AddPatient
                     MessageBox.Show("No record has been updated!", "Alert for Update Patient", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 End If
             End If
-            con.Close()
         Catch ex As Exception
             MsgBox(ex.Message)
         Finally

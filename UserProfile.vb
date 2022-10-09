@@ -27,7 +27,6 @@ Public Class UserProfile
                 PictureBox1.Image = Image.FromStream(ms)
                 PictureBox1.SizeMode = PictureBoxSizeMode.Zoom
             End If
-
         Catch ex As Exception
             NoImage.Visible = True
         Finally
@@ -62,7 +61,6 @@ Public Class UserProfile
             Else
                 MessageBox.Show("No record has been updated!", "Alert for show User Wise Data", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
-            con.Close()
         Catch ex As Exception
             MsgBox(ex.Message)
         Finally
@@ -83,7 +81,6 @@ Public Class UserProfile
             Else
                 MessageBox.Show("No record has been updated!", "Alert for Publish'" & UName.Text & "'", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
-            con.Close()
         Catch ex As Exception
             MsgBox(ex.Message)
         Finally

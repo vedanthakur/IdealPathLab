@@ -77,7 +77,6 @@ Public Class OneHumanResource
             Else
                 MessageBox.Show("No record has been updated!", "Alert for User Wise Data'" & UName.Text & "'", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
-            con.Close()
         Catch ex As Exception
             MsgBox(ex.Message)
         Finally
@@ -98,7 +97,6 @@ Public Class OneHumanResource
             Else
                 MessageBox.Show("No record has been updated!", "Alert for Publish'" & UName.Text & "'", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
-            con.Close()
         Catch ex As Exception
             MsgBox(ex.Message)
         Finally

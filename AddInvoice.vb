@@ -17,7 +17,6 @@ Public Class AddInvoice
             Else
                 MessageBox.Show("No record has been inserted!", "Alert for Add Invoice", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
-            con.Close()
         Catch ex As Exception
             MsgBox(ex.Message)
         Finally

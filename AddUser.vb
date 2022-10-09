@@ -52,7 +52,6 @@ Public Class AddUser
                     MessageBox.Show("No record has been updated!", "Alert for Update User", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 End If
             End If
-            con.Close()
         Catch ex As Exception
             MsgBox(ex.Message)
         Finally

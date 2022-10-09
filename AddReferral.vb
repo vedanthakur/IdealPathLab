@@ -31,7 +31,6 @@ Public Class AddReferral
                     MessageBox.Show("No record has been updated!", "Alert for Update Referral", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 End If
             End If
-            con.Close()
         Catch ex As Exception
             MsgBox(ex.Message)
         Finally

@@ -25,7 +25,7 @@ Public Class ListExamination
         AddExamination.MdiParent = MDIParent1
         AddExamination.Left = 0
         AddExamination.Top = 0
-        AddExamination.Text = "Update Referral"
+        AddExamination.Text = "Update Examination"
         AddExamination.SaveToolStripButton.Text = "Update"
         AddExamination.TitleB.Enabled = False
         AddExamination.ExaminationGroup.Text = DataGridView1.CurrentRow.Cells(0).Value.ToString

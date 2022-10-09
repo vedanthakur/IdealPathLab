@@ -19,4 +19,26 @@ Public Class ListLabResult
             con.Close()
         End Try
     End Sub
+
+    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+        AddLabReport.MdiParent = MDIParent1
+        AddLabReport.Left = 0
+        AddLabReport.Top = 0
+        AddLabReport.Text = "Update Examination Group"
+        AddLabReport.SaveToolStripButton.Text = "Update"
+        AddLabReport.PName.Text = False
+        AddLabReport.PName.Text = DataGridView1.CurrentRow.Cells(0).Value.ToString
+        AddLabReport.Address.Text = DataGridView1.CurrentRow.Cells(1).Value.ToString
+        AddLabReport.DateTimePicker1.Value = DataGridView1.CurrentRow.Cells(2).Value.ToString
+        AddLabReport.Doctor = DataGridView1.CurrentRow.Cells(3).Value.ToString
+        AddLabReport.LabTechnician = DataGridView1.CurrentRow.Cells(4).Value.ToString
+        AddLabReport.TestPerformed = DataGridView1.CurrentRow.Cells(5).Value.ToString
+        AddLabReport.Verified = DataGridView1.CurrentRow.Cells(6).Value.ToString
+        AddLabReport.Delivered.Checked = DataGridView1.CurrentRow.Cells(7).Value.ToString
+        AddLabReport.Notes.Text = DataGridView1.CurrentRow.Cells(8).Value.ToString
+        AddLabReport.ReportedDate.Text = DataGridView1.CurrentRow.Cells(9).Value.ToString
+        AddLabReport.LabNo.Text = DataGridView1.CurrentRow.Cells(10).Value.ToString
+        AddLabReport.TSH.Text = DataGridView1.CurrentRow.Cells(11).Value.ToString
+        AddLabReport.Show()
+    End Sub
 End Class

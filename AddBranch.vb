@@ -49,7 +49,6 @@ Public Class AddBranch
                     MessageBox.Show("No record has been updated!", "Alert for Update Branch", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 End If
             End If
-            con.Close()
         Catch ex As Exception
             MsgBox(ex.Message)
         Finally
