@@ -30,54 +30,54 @@ Partial Class MDIParent1
         Me.welcomeName = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem10 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ListToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ParentDataToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem17 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem14 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem16 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem20 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ListToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem21 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.InvoiceToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ListToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CreateToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem29 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.LabResultToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem4 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem5 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.HumanResourceToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem6 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem8 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ServicesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ExampleGroupToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ExaminationSubGroupToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ExaminationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ListToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CreateToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.BranchToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem7 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem13 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.UserToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem9 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem15 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ParentDataToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.LabSideToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.HumanResTYpeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ReferralTYpeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SpecializationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SampleTypeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.UnitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.DepartmentToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ConFigurationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.LogoutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ListToolStripMenuItem4 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CreateToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ListToolStripMenuItem5 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CreateToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DeshboardMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AppoinmentMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ListAppoinmentMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ParentDataAppoinmentMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReferralMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ListReferralMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CreateReferralMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PatientMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ListPatientMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CreatePatientMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.InvoiceMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ListInvoiceMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CreateInvoiceMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SampleCollectionMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ListSampleCollectionMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CreateSampleCollectionMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LabResultMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ListLabResultMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CreateLabResultMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.HumanResourceMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ListHumanResourceMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CreateHumanResourceMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ServicesMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExaminationGroupMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ListExaminationGroupMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CreateExaminationGroupMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExaminationSubGroupMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ListExaminationSubGroupMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CreateExaminationSubGroupMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExaminationMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ListExaminationMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CreateExaminationMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.BranchMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ListBranchMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CreateBranchMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.UserMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ListUserMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CreateUserMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ParentDataMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LabSideMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.HumanResTYpeLabSideMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReferralTYpeLabSideMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SpecializationLabSideMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SampleLabSideMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.UnitLabSideMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DepartmentLabSideMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CompanyProfileMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LogoutMenu = New System.Windows.Forms.ToolStripMenuItem()
         Me.StatusStrip.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -108,7 +108,7 @@ Partial Class MDIParent1
         'MenuStrip1
         '
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1, Me.ToolStripMenuItem10, Me.ToolStripMenuItem17, Me.ToolStripMenuItem20, Me.InvoiceToolStripMenuItem, Me.ToolStripMenuItem29, Me.LabResultToolStripMenuItem, Me.HumanResourceToolStripMenuItem, Me.ServicesToolStripMenuItem, Me.BranchToolStripMenuItem, Me.UserToolStripMenuItem, Me.ParentDataToolStripMenuItem, Me.ConFigurationToolStripMenuItem, Me.LogoutToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DeshboardMenu, Me.AppoinmentMenu, Me.ReferralMenu, Me.PatientMenu, Me.InvoiceMenu, Me.SampleCollectionMenu, Me.LabResultMenu, Me.HumanResourceMenu, Me.ServicesMenu, Me.BranchMenu, Me.UserMenu, Me.ParentDataMenu, Me.CompanyProfileMenu, Me.LogoutMenu})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(8, 3, 0, 3)
@@ -116,309 +116,309 @@ Partial Class MDIParent1
         Me.MenuStrip1.TabIndex = 10
         Me.MenuStrip1.Text = "MenuStrip1"
         '
-        'ToolStripMenuItem1
+        'DeshboardMenu
         '
-        Me.ToolStripMenuItem1.ImageTransparentColor = System.Drawing.SystemColors.ActiveBorder
-        Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(96, 24)
-        Me.ToolStripMenuItem1.Text = "&Dashboard"
+        Me.DeshboardMenu.ImageTransparentColor = System.Drawing.SystemColors.ActiveBorder
+        Me.DeshboardMenu.Name = "DeshboardMenu"
+        Me.DeshboardMenu.Size = New System.Drawing.Size(96, 24)
+        Me.DeshboardMenu.Text = "&Dashboard"
         '
-        'ToolStripMenuItem10
+        'AppoinmentMenu
         '
-        Me.ToolStripMenuItem10.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ListToolStripMenuItem1, Me.ParentDataToolStripMenuItem1})
-        Me.ToolStripMenuItem10.Name = "ToolStripMenuItem10"
-        Me.ToolStripMenuItem10.Size = New System.Drawing.Size(106, 24)
-        Me.ToolStripMenuItem10.Text = "&Appoinment"
+        Me.AppoinmentMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ListAppoinmentMenu, Me.ParentDataAppoinmentMenu})
+        Me.AppoinmentMenu.Name = "AppoinmentMenu"
+        Me.AppoinmentMenu.Size = New System.Drawing.Size(106, 24)
+        Me.AppoinmentMenu.Text = "&Appoinment"
         '
-        'ListToolStripMenuItem1
+        'ListAppoinmentMenu
         '
-        Me.ListToolStripMenuItem1.Name = "ListToolStripMenuItem1"
-        Me.ListToolStripMenuItem1.Size = New System.Drawing.Size(169, 26)
-        Me.ListToolStripMenuItem1.Text = "&List"
+        Me.ListAppoinmentMenu.Name = "ListAppoinmentMenu"
+        Me.ListAppoinmentMenu.Size = New System.Drawing.Size(224, 26)
+        Me.ListAppoinmentMenu.Text = "&List"
         '
-        'ParentDataToolStripMenuItem1
+        'ParentDataAppoinmentMenu
         '
-        Me.ParentDataToolStripMenuItem1.Name = "ParentDataToolStripMenuItem1"
-        Me.ParentDataToolStripMenuItem1.Size = New System.Drawing.Size(169, 26)
-        Me.ParentDataToolStripMenuItem1.Text = "&Parent Data"
+        Me.ParentDataAppoinmentMenu.Name = "ParentDataAppoinmentMenu"
+        Me.ParentDataAppoinmentMenu.Size = New System.Drawing.Size(224, 26)
+        Me.ParentDataAppoinmentMenu.Text = "&Parent Data"
         '
-        'ToolStripMenuItem17
+        'ReferralMenu
         '
-        Me.ToolStripMenuItem17.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem14, Me.ToolStripMenuItem16})
-        Me.ToolStripMenuItem17.Name = "ToolStripMenuItem17"
-        Me.ToolStripMenuItem17.Size = New System.Drawing.Size(75, 24)
-        Me.ToolStripMenuItem17.Text = "&Referral"
+        Me.ReferralMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ListReferralMenu, Me.CreateReferralMenu})
+        Me.ReferralMenu.Name = "ReferralMenu"
+        Me.ReferralMenu.Size = New System.Drawing.Size(75, 24)
+        Me.ReferralMenu.Text = "&Referral"
         '
-        'ToolStripMenuItem14
+        'ListReferralMenu
         '
-        Me.ToolStripMenuItem14.Name = "ToolStripMenuItem14"
-        Me.ToolStripMenuItem14.Size = New System.Drawing.Size(135, 26)
-        Me.ToolStripMenuItem14.Text = "&List"
+        Me.ListReferralMenu.Name = "ListReferralMenu"
+        Me.ListReferralMenu.Size = New System.Drawing.Size(224, 26)
+        Me.ListReferralMenu.Text = "&List"
         '
-        'ToolStripMenuItem16
+        'CreateReferralMenu
         '
-        Me.ToolStripMenuItem16.Name = "ToolStripMenuItem16"
-        Me.ToolStripMenuItem16.Size = New System.Drawing.Size(135, 26)
-        Me.ToolStripMenuItem16.Text = "&Create"
+        Me.CreateReferralMenu.Name = "CreateReferralMenu"
+        Me.CreateReferralMenu.Size = New System.Drawing.Size(224, 26)
+        Me.CreateReferralMenu.Text = "&Create"
         '
-        'ToolStripMenuItem20
+        'PatientMenu
         '
-        Me.ToolStripMenuItem20.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ListToolStripMenuItem, Me.ToolStripMenuItem21})
-        Me.ToolStripMenuItem20.Name = "ToolStripMenuItem20"
-        Me.ToolStripMenuItem20.Size = New System.Drawing.Size(68, 24)
-        Me.ToolStripMenuItem20.Text = "&Patient"
+        Me.PatientMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ListPatientMenu, Me.CreatePatientMenu})
+        Me.PatientMenu.Name = "PatientMenu"
+        Me.PatientMenu.Size = New System.Drawing.Size(68, 24)
+        Me.PatientMenu.Text = "&Patient"
         '
-        'ListToolStripMenuItem
+        'ListPatientMenu
         '
-        Me.ListToolStripMenuItem.Name = "ListToolStripMenuItem"
-        Me.ListToolStripMenuItem.Size = New System.Drawing.Size(135, 26)
-        Me.ListToolStripMenuItem.Text = "&List"
+        Me.ListPatientMenu.Name = "ListPatientMenu"
+        Me.ListPatientMenu.Size = New System.Drawing.Size(224, 26)
+        Me.ListPatientMenu.Text = "&List"
         '
-        'ToolStripMenuItem21
+        'CreatePatientMenu
         '
-        Me.ToolStripMenuItem21.Name = "ToolStripMenuItem21"
-        Me.ToolStripMenuItem21.Size = New System.Drawing.Size(135, 26)
-        Me.ToolStripMenuItem21.Text = "&Create"
+        Me.CreatePatientMenu.Name = "CreatePatientMenu"
+        Me.CreatePatientMenu.Size = New System.Drawing.Size(224, 26)
+        Me.CreatePatientMenu.Text = "&Create"
         '
-        'InvoiceToolStripMenuItem
+        'InvoiceMenu
         '
-        Me.InvoiceToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ListToolStripMenuItem2, Me.CreateToolStripMenuItem})
-        Me.InvoiceToolStripMenuItem.Name = "InvoiceToolStripMenuItem"
-        Me.InvoiceToolStripMenuItem.Size = New System.Drawing.Size(70, 24)
-        Me.InvoiceToolStripMenuItem.Text = "&Invoice"
+        Me.InvoiceMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ListInvoiceMenu, Me.CreateInvoiceMenu})
+        Me.InvoiceMenu.Name = "InvoiceMenu"
+        Me.InvoiceMenu.Size = New System.Drawing.Size(70, 24)
+        Me.InvoiceMenu.Text = "&Invoice"
         '
-        'ListToolStripMenuItem2
+        'ListInvoiceMenu
         '
-        Me.ListToolStripMenuItem2.Name = "ListToolStripMenuItem2"
-        Me.ListToolStripMenuItem2.Size = New System.Drawing.Size(135, 26)
-        Me.ListToolStripMenuItem2.Text = "&List"
+        Me.ListInvoiceMenu.Name = "ListInvoiceMenu"
+        Me.ListInvoiceMenu.Size = New System.Drawing.Size(224, 26)
+        Me.ListInvoiceMenu.Text = "&List"
         '
-        'CreateToolStripMenuItem
+        'CreateInvoiceMenu
         '
-        Me.CreateToolStripMenuItem.Name = "CreateToolStripMenuItem"
-        Me.CreateToolStripMenuItem.Size = New System.Drawing.Size(135, 26)
-        Me.CreateToolStripMenuItem.Text = "&Create"
+        Me.CreateInvoiceMenu.Name = "CreateInvoiceMenu"
+        Me.CreateInvoiceMenu.Size = New System.Drawing.Size(224, 26)
+        Me.CreateInvoiceMenu.Text = "&Create"
         '
-        'ToolStripMenuItem29
+        'SampleCollectionMenu
         '
-        Me.ToolStripMenuItem29.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem2, Me.ToolStripMenuItem3})
-        Me.ToolStripMenuItem29.Name = "ToolStripMenuItem29"
-        Me.ToolStripMenuItem29.Size = New System.Drawing.Size(144, 24)
-        Me.ToolStripMenuItem29.Text = "&Sample Collection"
+        Me.SampleCollectionMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ListSampleCollectionMenu, Me.CreateSampleCollectionMenu})
+        Me.SampleCollectionMenu.Name = "SampleCollectionMenu"
+        Me.SampleCollectionMenu.Size = New System.Drawing.Size(144, 24)
+        Me.SampleCollectionMenu.Text = "&Sample Collection"
         '
-        'ToolStripMenuItem2
+        'ListSampleCollectionMenu
         '
-        Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
-        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(135, 26)
-        Me.ToolStripMenuItem2.Text = "&List"
+        Me.ListSampleCollectionMenu.Name = "ListSampleCollectionMenu"
+        Me.ListSampleCollectionMenu.Size = New System.Drawing.Size(224, 26)
+        Me.ListSampleCollectionMenu.Text = "&List"
         '
-        'ToolStripMenuItem3
+        'CreateSampleCollectionMenu
         '
-        Me.ToolStripMenuItem3.Name = "ToolStripMenuItem3"
-        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(135, 26)
-        Me.ToolStripMenuItem3.Text = "&Create"
+        Me.CreateSampleCollectionMenu.Name = "CreateSampleCollectionMenu"
+        Me.CreateSampleCollectionMenu.Size = New System.Drawing.Size(224, 26)
+        Me.CreateSampleCollectionMenu.Text = "&Create"
         '
-        'LabResultToolStripMenuItem
+        'LabResultMenu
         '
-        Me.LabResultToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem4, Me.ToolStripMenuItem5})
-        Me.LabResultToolStripMenuItem.Name = "LabResultToolStripMenuItem"
-        Me.LabResultToolStripMenuItem.Size = New System.Drawing.Size(91, 24)
-        Me.LabResultToolStripMenuItem.Text = "&Lab Result"
+        Me.LabResultMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ListLabResultMenu, Me.CreateLabResultMenu})
+        Me.LabResultMenu.Name = "LabResultMenu"
+        Me.LabResultMenu.Size = New System.Drawing.Size(91, 24)
+        Me.LabResultMenu.Text = "&Lab Result"
         '
-        'ToolStripMenuItem4
+        'ListLabResultMenu
         '
-        Me.ToolStripMenuItem4.Name = "ToolStripMenuItem4"
-        Me.ToolStripMenuItem4.Size = New System.Drawing.Size(135, 26)
-        Me.ToolStripMenuItem4.Text = "&List"
+        Me.ListLabResultMenu.Name = "ListLabResultMenu"
+        Me.ListLabResultMenu.Size = New System.Drawing.Size(224, 26)
+        Me.ListLabResultMenu.Text = "&List"
         '
-        'ToolStripMenuItem5
+        'CreateLabResultMenu
         '
-        Me.ToolStripMenuItem5.Name = "ToolStripMenuItem5"
-        Me.ToolStripMenuItem5.Size = New System.Drawing.Size(135, 26)
-        Me.ToolStripMenuItem5.Text = "&Create"
+        Me.CreateLabResultMenu.Name = "CreateLabResultMenu"
+        Me.CreateLabResultMenu.Size = New System.Drawing.Size(224, 26)
+        Me.CreateLabResultMenu.Text = "&Create"
         '
-        'HumanResourceToolStripMenuItem
+        'HumanResourceMenu
         '
-        Me.HumanResourceToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem6, Me.ToolStripMenuItem8})
-        Me.HumanResourceToolStripMenuItem.Name = "HumanResourceToolStripMenuItem"
-        Me.HumanResourceToolStripMenuItem.Size = New System.Drawing.Size(135, 24)
-        Me.HumanResourceToolStripMenuItem.Text = "&Human Resource"
+        Me.HumanResourceMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ListHumanResourceMenu, Me.CreateHumanResourceMenu})
+        Me.HumanResourceMenu.Name = "HumanResourceMenu"
+        Me.HumanResourceMenu.Size = New System.Drawing.Size(135, 24)
+        Me.HumanResourceMenu.Text = "&Human Resource"
         '
-        'ToolStripMenuItem6
+        'ListHumanResourceMenu
         '
-        Me.ToolStripMenuItem6.Name = "ToolStripMenuItem6"
-        Me.ToolStripMenuItem6.Size = New System.Drawing.Size(135, 26)
-        Me.ToolStripMenuItem6.Text = "&List"
+        Me.ListHumanResourceMenu.Name = "ListHumanResourceMenu"
+        Me.ListHumanResourceMenu.Size = New System.Drawing.Size(224, 26)
+        Me.ListHumanResourceMenu.Text = "&List"
         '
-        'ToolStripMenuItem8
+        'CreateHumanResourceMenu
         '
-        Me.ToolStripMenuItem8.Name = "ToolStripMenuItem8"
-        Me.ToolStripMenuItem8.Size = New System.Drawing.Size(135, 26)
-        Me.ToolStripMenuItem8.Text = "&Create"
+        Me.CreateHumanResourceMenu.Name = "CreateHumanResourceMenu"
+        Me.CreateHumanResourceMenu.Size = New System.Drawing.Size(224, 26)
+        Me.CreateHumanResourceMenu.Text = "&Create"
         '
-        'ServicesToolStripMenuItem
+        'ServicesMenu
         '
-        Me.ServicesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExampleGroupToolStripMenuItem, Me.ExaminationSubGroupToolStripMenuItem, Me.ExaminationToolStripMenuItem})
-        Me.ServicesToolStripMenuItem.Name = "ServicesToolStripMenuItem"
-        Me.ServicesToolStripMenuItem.Size = New System.Drawing.Size(76, 24)
-        Me.ServicesToolStripMenuItem.Text = "&Services"
+        Me.ServicesMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExaminationGroupMenu, Me.ExaminationSubGroupMenu, Me.ExaminationMenu})
+        Me.ServicesMenu.Name = "ServicesMenu"
+        Me.ServicesMenu.Size = New System.Drawing.Size(76, 24)
+        Me.ServicesMenu.Text = "&Services"
         '
-        'ExampleGroupToolStripMenuItem
+        'ExaminationGroupMenu
         '
-        Me.ExampleGroupToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ListToolStripMenuItem5, Me.CreateToolStripMenuItem3})
-        Me.ExampleGroupToolStripMenuItem.Name = "ExampleGroupToolStripMenuItem"
-        Me.ExampleGroupToolStripMenuItem.Size = New System.Drawing.Size(248, 26)
-        Me.ExampleGroupToolStripMenuItem.Text = "Examination &Group"
+        Me.ExaminationGroupMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ListExaminationGroupMenu, Me.CreateExaminationGroupMenu})
+        Me.ExaminationGroupMenu.Name = "ExaminationGroupMenu"
+        Me.ExaminationGroupMenu.Size = New System.Drawing.Size(248, 26)
+        Me.ExaminationGroupMenu.Text = "Examination &Group"
         '
-        'ExaminationSubGroupToolStripMenuItem
+        'ListExaminationGroupMenu
         '
-        Me.ExaminationSubGroupToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ListToolStripMenuItem4, Me.CreateToolStripMenuItem2})
-        Me.ExaminationSubGroupToolStripMenuItem.Name = "ExaminationSubGroupToolStripMenuItem"
-        Me.ExaminationSubGroupToolStripMenuItem.Size = New System.Drawing.Size(248, 26)
-        Me.ExaminationSubGroupToolStripMenuItem.Text = "Examination &Sub Group"
+        Me.ListExaminationGroupMenu.Name = "ListExaminationGroupMenu"
+        Me.ListExaminationGroupMenu.Size = New System.Drawing.Size(224, 26)
+        Me.ListExaminationGroupMenu.Text = "&List"
         '
-        'ExaminationToolStripMenuItem
+        'CreateExaminationGroupMenu
         '
-        Me.ExaminationToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ListToolStripMenuItem3, Me.CreateToolStripMenuItem1})
-        Me.ExaminationToolStripMenuItem.Name = "ExaminationToolStripMenuItem"
-        Me.ExaminationToolStripMenuItem.Size = New System.Drawing.Size(248, 26)
-        Me.ExaminationToolStripMenuItem.Text = "&Examination"
+        Me.CreateExaminationGroupMenu.Name = "CreateExaminationGroupMenu"
+        Me.CreateExaminationGroupMenu.Size = New System.Drawing.Size(224, 26)
+        Me.CreateExaminationGroupMenu.Text = "&Create"
         '
-        'ListToolStripMenuItem3
+        'ExaminationSubGroupMenu
         '
-        Me.ListToolStripMenuItem3.Name = "ListToolStripMenuItem3"
-        Me.ListToolStripMenuItem3.Size = New System.Drawing.Size(224, 26)
-        Me.ListToolStripMenuItem3.Text = "&List"
+        Me.ExaminationSubGroupMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ListExaminationSubGroupMenu, Me.CreateExaminationSubGroupMenu})
+        Me.ExaminationSubGroupMenu.Name = "ExaminationSubGroupMenu"
+        Me.ExaminationSubGroupMenu.Size = New System.Drawing.Size(248, 26)
+        Me.ExaminationSubGroupMenu.Text = "Examination &Sub Group"
         '
-        'CreateToolStripMenuItem1
+        'ListExaminationSubGroupMenu
         '
-        Me.CreateToolStripMenuItem1.Name = "CreateToolStripMenuItem1"
-        Me.CreateToolStripMenuItem1.Size = New System.Drawing.Size(224, 26)
-        Me.CreateToolStripMenuItem1.Text = "&Create"
+        Me.ListExaminationSubGroupMenu.Name = "ListExaminationSubGroupMenu"
+        Me.ListExaminationSubGroupMenu.Size = New System.Drawing.Size(224, 26)
+        Me.ListExaminationSubGroupMenu.Text = "&List"
         '
-        'BranchToolStripMenuItem
+        'CreateExaminationSubGroupMenu
         '
-        Me.BranchToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem7, Me.ToolStripMenuItem13})
-        Me.BranchToolStripMenuItem.Name = "BranchToolStripMenuItem"
-        Me.BranchToolStripMenuItem.Size = New System.Drawing.Size(68, 24)
-        Me.BranchToolStripMenuItem.Text = "&Branch"
+        Me.CreateExaminationSubGroupMenu.Name = "CreateExaminationSubGroupMenu"
+        Me.CreateExaminationSubGroupMenu.Size = New System.Drawing.Size(224, 26)
+        Me.CreateExaminationSubGroupMenu.Text = "&Create"
         '
-        'ToolStripMenuItem7
+        'ExaminationMenu
         '
-        Me.ToolStripMenuItem7.Name = "ToolStripMenuItem7"
-        Me.ToolStripMenuItem7.Size = New System.Drawing.Size(135, 26)
-        Me.ToolStripMenuItem7.Text = "&List"
+        Me.ExaminationMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ListExaminationMenu, Me.CreateExaminationMenu})
+        Me.ExaminationMenu.Name = "ExaminationMenu"
+        Me.ExaminationMenu.Size = New System.Drawing.Size(248, 26)
+        Me.ExaminationMenu.Text = "&Examination"
         '
-        'ToolStripMenuItem13
+        'ListExaminationMenu
         '
-        Me.ToolStripMenuItem13.Name = "ToolStripMenuItem13"
-        Me.ToolStripMenuItem13.Size = New System.Drawing.Size(135, 26)
-        Me.ToolStripMenuItem13.Text = "&Create"
+        Me.ListExaminationMenu.Name = "ListExaminationMenu"
+        Me.ListExaminationMenu.Size = New System.Drawing.Size(224, 26)
+        Me.ListExaminationMenu.Text = "&List"
         '
-        'UserToolStripMenuItem
+        'CreateExaminationMenu
         '
-        Me.UserToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem9, Me.ToolStripMenuItem15})
-        Me.UserToolStripMenuItem.Name = "UserToolStripMenuItem"
-        Me.UserToolStripMenuItem.Size = New System.Drawing.Size(52, 24)
-        Me.UserToolStripMenuItem.Text = "&User"
+        Me.CreateExaminationMenu.Name = "CreateExaminationMenu"
+        Me.CreateExaminationMenu.Size = New System.Drawing.Size(224, 26)
+        Me.CreateExaminationMenu.Text = "&Create"
         '
-        'ToolStripMenuItem9
+        'BranchMenu
         '
-        Me.ToolStripMenuItem9.Name = "ToolStripMenuItem9"
-        Me.ToolStripMenuItem9.Size = New System.Drawing.Size(135, 26)
-        Me.ToolStripMenuItem9.Text = "&List"
+        Me.BranchMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ListBranchMenu, Me.CreateBranchMenu})
+        Me.BranchMenu.Name = "BranchMenu"
+        Me.BranchMenu.Size = New System.Drawing.Size(68, 24)
+        Me.BranchMenu.Text = "&Branch"
         '
-        'ToolStripMenuItem15
+        'ListBranchMenu
         '
-        Me.ToolStripMenuItem15.Name = "ToolStripMenuItem15"
-        Me.ToolStripMenuItem15.Size = New System.Drawing.Size(135, 26)
-        Me.ToolStripMenuItem15.Text = "&Create"
+        Me.ListBranchMenu.Name = "ListBranchMenu"
+        Me.ListBranchMenu.Size = New System.Drawing.Size(224, 26)
+        Me.ListBranchMenu.Text = "&List"
         '
-        'ParentDataToolStripMenuItem
+        'CreateBranchMenu
         '
-        Me.ParentDataToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LabSideToolStripMenuItem})
-        Me.ParentDataToolStripMenuItem.Name = "ParentDataToolStripMenuItem"
-        Me.ParentDataToolStripMenuItem.Size = New System.Drawing.Size(100, 24)
-        Me.ParentDataToolStripMenuItem.Text = "&Parent Data"
+        Me.CreateBranchMenu.Name = "CreateBranchMenu"
+        Me.CreateBranchMenu.Size = New System.Drawing.Size(224, 26)
+        Me.CreateBranchMenu.Text = "&Create"
         '
-        'LabSideToolStripMenuItem
+        'UserMenu
         '
-        Me.LabSideToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.HumanResTYpeToolStripMenuItem, Me.ReferralTYpeToolStripMenuItem, Me.SpecializationToolStripMenuItem, Me.SampleTypeToolStripMenuItem, Me.UnitToolStripMenuItem, Me.DepartmentToolStripMenuItem})
-        Me.LabSideToolStripMenuItem.Name = "LabSideToolStripMenuItem"
-        Me.LabSideToolStripMenuItem.Size = New System.Drawing.Size(149, 26)
-        Me.LabSideToolStripMenuItem.Text = "Lab Side"
+        Me.UserMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ListUserMenu, Me.CreateUserMenu})
+        Me.UserMenu.Name = "UserMenu"
+        Me.UserMenu.Size = New System.Drawing.Size(52, 24)
+        Me.UserMenu.Text = "&User"
         '
-        'HumanResTYpeToolStripMenuItem
+        'ListUserMenu
         '
-        Me.HumanResTYpeToolStripMenuItem.Name = "HumanResTYpeToolStripMenuItem"
-        Me.HumanResTYpeToolStripMenuItem.Size = New System.Drawing.Size(205, 26)
-        Me.HumanResTYpeToolStripMenuItem.Text = "&Human Res. Type"
+        Me.ListUserMenu.Name = "ListUserMenu"
+        Me.ListUserMenu.Size = New System.Drawing.Size(224, 26)
+        Me.ListUserMenu.Text = "&List"
         '
-        'ReferralTYpeToolStripMenuItem
+        'CreateUserMenu
         '
-        Me.ReferralTYpeToolStripMenuItem.Name = "ReferralTYpeToolStripMenuItem"
-        Me.ReferralTYpeToolStripMenuItem.Size = New System.Drawing.Size(205, 26)
-        Me.ReferralTYpeToolStripMenuItem.Text = "&Referral Type"
+        Me.CreateUserMenu.Name = "CreateUserMenu"
+        Me.CreateUserMenu.Size = New System.Drawing.Size(224, 26)
+        Me.CreateUserMenu.Text = "&Create"
         '
-        'SpecializationToolStripMenuItem
+        'ParentDataMenu
         '
-        Me.SpecializationToolStripMenuItem.Name = "SpecializationToolStripMenuItem"
-        Me.SpecializationToolStripMenuItem.Size = New System.Drawing.Size(205, 26)
-        Me.SpecializationToolStripMenuItem.Text = "&Specialization"
+        Me.ParentDataMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LabSideMenu})
+        Me.ParentDataMenu.Name = "ParentDataMenu"
+        Me.ParentDataMenu.Size = New System.Drawing.Size(100, 24)
+        Me.ParentDataMenu.Text = "&Parent Data"
         '
-        'SampleTypeToolStripMenuItem
+        'LabSideMenu
         '
-        Me.SampleTypeToolStripMenuItem.Name = "SampleTypeToolStripMenuItem"
-        Me.SampleTypeToolStripMenuItem.Size = New System.Drawing.Size(205, 26)
-        Me.SampleTypeToolStripMenuItem.Text = "&Sample Type"
+        Me.LabSideMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.HumanResTYpeLabSideMenu, Me.ReferralTYpeLabSideMenu, Me.SpecializationLabSideMenu, Me.SampleLabSideMenu, Me.UnitLabSideMenu, Me.DepartmentLabSideMenu})
+        Me.LabSideMenu.Name = "LabSideMenu"
+        Me.LabSideMenu.Size = New System.Drawing.Size(224, 26)
+        Me.LabSideMenu.Text = "Lab Side"
         '
-        'UnitToolStripMenuItem
+        'HumanResTYpeLabSideMenu
         '
-        Me.UnitToolStripMenuItem.Name = "UnitToolStripMenuItem"
-        Me.UnitToolStripMenuItem.Size = New System.Drawing.Size(205, 26)
-        Me.UnitToolStripMenuItem.Text = "&Unit"
+        Me.HumanResTYpeLabSideMenu.Name = "HumanResTYpeLabSideMenu"
+        Me.HumanResTYpeLabSideMenu.Size = New System.Drawing.Size(224, 26)
+        Me.HumanResTYpeLabSideMenu.Text = "&Human Res. Type"
         '
-        'DepartmentToolStripMenuItem
+        'ReferralTYpeLabSideMenu
         '
-        Me.DepartmentToolStripMenuItem.Name = "DepartmentToolStripMenuItem"
-        Me.DepartmentToolStripMenuItem.Size = New System.Drawing.Size(205, 26)
-        Me.DepartmentToolStripMenuItem.Text = "&Department"
+        Me.ReferralTYpeLabSideMenu.Name = "ReferralTYpeLabSideMenu"
+        Me.ReferralTYpeLabSideMenu.Size = New System.Drawing.Size(224, 26)
+        Me.ReferralTYpeLabSideMenu.Text = "&Referral Type"
         '
-        'ConFigurationToolStripMenuItem
+        'SpecializationLabSideMenu
         '
-        Me.ConFigurationToolStripMenuItem.Name = "ConFigurationToolStripMenuItem"
-        Me.ConFigurationToolStripMenuItem.Size = New System.Drawing.Size(133, 24)
-        Me.ConFigurationToolStripMenuItem.Text = "&Company Profile"
+        Me.SpecializationLabSideMenu.Name = "SpecializationLabSideMenu"
+        Me.SpecializationLabSideMenu.Size = New System.Drawing.Size(224, 26)
+        Me.SpecializationLabSideMenu.Text = "&Specialization"
         '
-        'LogoutToolStripMenuItem
+        'SampleLabSideMenu
         '
-        Me.LogoutToolStripMenuItem.Name = "LogoutToolStripMenuItem"
-        Me.LogoutToolStripMenuItem.Size = New System.Drawing.Size(74, 24)
-        Me.LogoutToolStripMenuItem.Text = "Log &out"
+        Me.SampleLabSideMenu.Name = "SampleLabSideMenu"
+        Me.SampleLabSideMenu.Size = New System.Drawing.Size(224, 26)
+        Me.SampleLabSideMenu.Text = "&Sample Type"
         '
-        'ListToolStripMenuItem4
+        'UnitLabSideMenu
         '
-        Me.ListToolStripMenuItem4.Name = "ListToolStripMenuItem4"
-        Me.ListToolStripMenuItem4.Size = New System.Drawing.Size(224, 26)
-        Me.ListToolStripMenuItem4.Text = "&List"
+        Me.UnitLabSideMenu.Name = "UnitLabSideMenu"
+        Me.UnitLabSideMenu.Size = New System.Drawing.Size(224, 26)
+        Me.UnitLabSideMenu.Text = "&Unit"
         '
-        'CreateToolStripMenuItem2
+        'DepartmentLabSideMenu
         '
-        Me.CreateToolStripMenuItem2.Name = "CreateToolStripMenuItem2"
-        Me.CreateToolStripMenuItem2.Size = New System.Drawing.Size(224, 26)
-        Me.CreateToolStripMenuItem2.Text = "&Create"
+        Me.DepartmentLabSideMenu.Name = "DepartmentLabSideMenu"
+        Me.DepartmentLabSideMenu.Size = New System.Drawing.Size(224, 26)
+        Me.DepartmentLabSideMenu.Text = "&Department"
         '
-        'ListToolStripMenuItem5
+        'CompanyProfileMenu
         '
-        Me.ListToolStripMenuItem5.Name = "ListToolStripMenuItem5"
-        Me.ListToolStripMenuItem5.Size = New System.Drawing.Size(224, 26)
-        Me.ListToolStripMenuItem5.Text = "&List"
+        Me.CompanyProfileMenu.Name = "CompanyProfileMenu"
+        Me.CompanyProfileMenu.Size = New System.Drawing.Size(133, 24)
+        Me.CompanyProfileMenu.Text = "&Company Profile"
         '
-        'CreateToolStripMenuItem3
+        'LogoutMenu
         '
-        Me.CreateToolStripMenuItem3.Name = "CreateToolStripMenuItem3"
-        Me.CreateToolStripMenuItem3.Size = New System.Drawing.Size(224, 26)
-        Me.CreateToolStripMenuItem3.Text = "&Create"
+        Me.LogoutMenu.Name = "LogoutMenu"
+        Me.LogoutMenu.Size = New System.Drawing.Size(74, 24)
+        Me.LogoutMenu.Text = "Log &out"
         '
         'MDIParent1
         '
@@ -451,53 +451,53 @@ Partial Class MDIParent1
     Friend WithEvents ToolStripStatusLabel As System.Windows.Forms.ToolStripStatusLabel
     Friend WithEvents StatusStrip As System.Windows.Forms.StatusStrip
     Friend WithEvents MenuStrip1 As MenuStrip
-    Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem10 As ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem17 As ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem20 As ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem21 As ToolStripMenuItem
-    Friend WithEvents ListToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem29 As ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem2 As ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem3 As ToolStripMenuItem
-    Friend WithEvents LabResultToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem4 As ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem5 As ToolStripMenuItem
-    Friend WithEvents HumanResourceToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem6 As ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem8 As ToolStripMenuItem
-    Friend WithEvents ServicesToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ExampleGroupToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ExaminationSubGroupToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ExaminationToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents BranchToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem7 As ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem13 As ToolStripMenuItem
-    Friend WithEvents UserToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem9 As ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem15 As ToolStripMenuItem
-    Friend WithEvents ParentDataToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents LabSideToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents HumanResTYpeToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ReferralTYpeToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents SpecializationToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents SampleTypeToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents UnitToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents DepartmentToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ConFigurationToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents LogoutToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ListToolStripMenuItem1 As ToolStripMenuItem
-    Friend WithEvents ParentDataToolStripMenuItem1 As ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem14 As ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem16 As ToolStripMenuItem
+    Friend WithEvents DeshboardMenu As ToolStripMenuItem
+    Friend WithEvents AppoinmentMenu As ToolStripMenuItem
+    Friend WithEvents ReferralMenu As ToolStripMenuItem
+    Friend WithEvents PatientMenu As ToolStripMenuItem
+    Friend WithEvents CreatePatientMenu As ToolStripMenuItem
+    Friend WithEvents ListPatientMenu As ToolStripMenuItem
+    Friend WithEvents SampleCollectionMenu As ToolStripMenuItem
+    Friend WithEvents ListSampleCollectionMenu As ToolStripMenuItem
+    Friend WithEvents CreateSampleCollectionMenu As ToolStripMenuItem
+    Friend WithEvents LabResultMenu As ToolStripMenuItem
+    Friend WithEvents ListLabResultMenu As ToolStripMenuItem
+    Friend WithEvents CreateLabResultMenu As ToolStripMenuItem
+    Friend WithEvents HumanResourceMenu As ToolStripMenuItem
+    Friend WithEvents ListHumanResourceMenu As ToolStripMenuItem
+    Friend WithEvents CreateHumanResourceMenu As ToolStripMenuItem
+    Friend WithEvents ServicesMenu As ToolStripMenuItem
+    Friend WithEvents ExaminationGroupMenu As ToolStripMenuItem
+    Friend WithEvents ExaminationSubGroupMenu As ToolStripMenuItem
+    Friend WithEvents ExaminationMenu As ToolStripMenuItem
+    Friend WithEvents BranchMenu As ToolStripMenuItem
+    Friend WithEvents ListBranchMenu As ToolStripMenuItem
+    Friend WithEvents CreateBranchMenu As ToolStripMenuItem
+    Friend WithEvents UserMenu As ToolStripMenuItem
+    Friend WithEvents ListUserMenu As ToolStripMenuItem
+    Friend WithEvents CreateUserMenu As ToolStripMenuItem
+    Friend WithEvents ParentDataMenu As ToolStripMenuItem
+    Friend WithEvents LabSideMenu As ToolStripMenuItem
+    Friend WithEvents HumanResTYpeLabSideMenu As ToolStripMenuItem
+    Friend WithEvents ReferralTYpeLabSideMenu As ToolStripMenuItem
+    Friend WithEvents SpecializationLabSideMenu As ToolStripMenuItem
+    Friend WithEvents SampleLabSideMenu As ToolStripMenuItem
+    Friend WithEvents UnitLabSideMenu As ToolStripMenuItem
+    Friend WithEvents DepartmentLabSideMenu As ToolStripMenuItem
+    Friend WithEvents CompanyProfileMenu As ToolStripMenuItem
+    Friend WithEvents LogoutMenu As ToolStripMenuItem
+    Friend WithEvents ListAppoinmentMenu As ToolStripMenuItem
+    Friend WithEvents ParentDataAppoinmentMenu As ToolStripMenuItem
+    Friend WithEvents ListReferralMenu As ToolStripMenuItem
+    Friend WithEvents CreateReferralMenu As ToolStripMenuItem
     Friend WithEvents welcomeName As ToolStripStatusLabel
-    Friend WithEvents InvoiceToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ListToolStripMenuItem2 As ToolStripMenuItem
-    Friend WithEvents CreateToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ListToolStripMenuItem3 As ToolStripMenuItem
-    Friend WithEvents CreateToolStripMenuItem1 As ToolStripMenuItem
-    Friend WithEvents ListToolStripMenuItem5 As ToolStripMenuItem
-    Friend WithEvents CreateToolStripMenuItem3 As ToolStripMenuItem
-    Friend WithEvents ListToolStripMenuItem4 As ToolStripMenuItem
-    Friend WithEvents CreateToolStripMenuItem2 As ToolStripMenuItem
+    Friend WithEvents InvoiceMenu As ToolStripMenuItem
+    Friend WithEvents ListInvoiceMenu As ToolStripMenuItem
+    Friend WithEvents CreateInvoiceMenu As ToolStripMenuItem
+    Friend WithEvents ListExaminationMenu As ToolStripMenuItem
+    Friend WithEvents CreateExaminationMenu As ToolStripMenuItem
+    Friend WithEvents ListExaminationGroupMenu As ToolStripMenuItem
+    Friend WithEvents CreateExaminationGroupMenu As ToolStripMenuItem
+    Friend WithEvents ListExaminationSubGroupMenu As ToolStripMenuItem
+    Friend WithEvents CreateExaminationSubGroupMenu As ToolStripMenuItem
 End Class

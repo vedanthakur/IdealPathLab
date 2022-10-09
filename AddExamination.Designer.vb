@@ -34,20 +34,20 @@ Partial Class AddExamination
         Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
         Me.ToolStripContainer1 = New System.Windows.Forms.ToolStripContainer()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.ComboBox5 = New System.Windows.Forms.ComboBox()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.StatusP = New System.Windows.Forms.CheckBox()
+        Me.ValidationonType = New System.Windows.Forms.ComboBox()
+        Me.Comment = New System.Windows.Forms.TextBox()
+        Me.Price = New System.Windows.Forms.TextBox()
+        Me.SampleType = New System.Windows.Forms.ComboBox()
+        Me.DefaultValue = New System.Windows.Forms.TextBox()
+        Me.ReportB = New System.Windows.Forms.TextBox()
+        Me.CodeB = New System.Windows.Forms.TextBox()
+        Me.Rank = New System.Windows.Forms.TextBox()
+        Me.KeyB = New System.Windows.Forms.TextBox()
+        Me.TitleB = New System.Windows.Forms.TextBox()
+        Me.Unit = New System.Windows.Forms.ComboBox()
+        Me.ExaminationSubGroup = New System.Windows.Forms.ComboBox()
+        Me.ExaminationGroup = New System.Windows.Forms.ComboBox()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
@@ -160,20 +160,20 @@ Partial Class AddExamination
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.CheckBox1)
-        Me.GroupBox1.Controls.Add(Me.ComboBox5)
-        Me.GroupBox1.Controls.Add(Me.TextBox8)
-        Me.GroupBox1.Controls.Add(Me.TextBox7)
-        Me.GroupBox1.Controls.Add(Me.ComboBox4)
-        Me.GroupBox1.Controls.Add(Me.TextBox6)
-        Me.GroupBox1.Controls.Add(Me.TextBox5)
-        Me.GroupBox1.Controls.Add(Me.TextBox4)
-        Me.GroupBox1.Controls.Add(Me.TextBox3)
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
-        Me.GroupBox1.Controls.Add(Me.ComboBox3)
-        Me.GroupBox1.Controls.Add(Me.ComboBox2)
-        Me.GroupBox1.Controls.Add(Me.ComboBox1)
+        Me.GroupBox1.Controls.Add(Me.StatusP)
+        Me.GroupBox1.Controls.Add(Me.ValidationonType)
+        Me.GroupBox1.Controls.Add(Me.Comment)
+        Me.GroupBox1.Controls.Add(Me.Price)
+        Me.GroupBox1.Controls.Add(Me.SampleType)
+        Me.GroupBox1.Controls.Add(Me.DefaultValue)
+        Me.GroupBox1.Controls.Add(Me.ReportB)
+        Me.GroupBox1.Controls.Add(Me.CodeB)
+        Me.GroupBox1.Controls.Add(Me.Rank)
+        Me.GroupBox1.Controls.Add(Me.KeyB)
+        Me.GroupBox1.Controls.Add(Me.TitleB)
+        Me.GroupBox1.Controls.Add(Me.Unit)
+        Me.GroupBox1.Controls.Add(Me.ExaminationSubGroup)
+        Me.GroupBox1.Controls.Add(Me.ExaminationGroup)
         Me.GroupBox1.Controls.Add(Me.Label14)
         Me.GroupBox1.Controls.Add(Me.Label13)
         Me.GroupBox1.Controls.Add(Me.Label12)
@@ -195,112 +195,112 @@ Partial Class AddExamination
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Add Examination"
         '
-        'CheckBox1
+        'StatusP
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(214, 676)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(78, 24)
-        Me.CheckBox1.TabIndex = 27
-        Me.CheckBox1.Text = "Publish"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.StatusP.AutoSize = True
+        Me.StatusP.Location = New System.Drawing.Point(214, 676)
+        Me.StatusP.Name = "StatusP"
+        Me.StatusP.Size = New System.Drawing.Size(78, 24)
+        Me.StatusP.TabIndex = 27
+        Me.StatusP.Text = "Publish"
+        Me.StatusP.UseVisualStyleBackColor = True
         '
-        'ComboBox5
+        'ValidationonType
         '
-        Me.ComboBox5.FormattingEnabled = True
-        Me.ComboBox5.Location = New System.Drawing.Point(214, 630)
-        Me.ComboBox5.Name = "ComboBox5"
-        Me.ComboBox5.Size = New System.Drawing.Size(151, 28)
-        Me.ComboBox5.TabIndex = 26
+        Me.ValidationonType.FormattingEnabled = True
+        Me.ValidationonType.Location = New System.Drawing.Point(214, 630)
+        Me.ValidationonType.Name = "ValidationonType"
+        Me.ValidationonType.Size = New System.Drawing.Size(151, 28)
+        Me.ValidationonType.TabIndex = 26
         '
-        'TextBox8
+        'Comment
         '
-        Me.TextBox8.Location = New System.Drawing.Point(214, 524)
-        Me.TextBox8.Multiline = True
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(300, 89)
-        Me.TextBox8.TabIndex = 25
+        Me.Comment.Location = New System.Drawing.Point(214, 524)
+        Me.Comment.Multiline = True
+        Me.Comment.Name = "Comment"
+        Me.Comment.Size = New System.Drawing.Size(300, 89)
+        Me.Comment.TabIndex = 25
         '
-        'TextBox7
+        'Price
         '
-        Me.TextBox7.Location = New System.Drawing.Point(214, 479)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(151, 27)
-        Me.TextBox7.TabIndex = 24
+        Me.Price.Location = New System.Drawing.Point(214, 479)
+        Me.Price.Name = "Price"
+        Me.Price.Size = New System.Drawing.Size(151, 27)
+        Me.Price.TabIndex = 24
         '
-        'ComboBox4
+        'SampleType
         '
-        Me.ComboBox4.FormattingEnabled = True
-        Me.ComboBox4.Location = New System.Drawing.Point(214, 434)
-        Me.ComboBox4.Name = "ComboBox4"
-        Me.ComboBox4.Size = New System.Drawing.Size(151, 28)
-        Me.ComboBox4.TabIndex = 23
+        Me.SampleType.FormattingEnabled = True
+        Me.SampleType.Location = New System.Drawing.Point(214, 434)
+        Me.SampleType.Name = "SampleType"
+        Me.SampleType.Size = New System.Drawing.Size(151, 28)
+        Me.SampleType.TabIndex = 23
         '
-        'TextBox6
+        'DefaultValue
         '
-        Me.TextBox6.Location = New System.Drawing.Point(214, 389)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(151, 27)
-        Me.TextBox6.TabIndex = 22
+        Me.DefaultValue.Location = New System.Drawing.Point(214, 389)
+        Me.DefaultValue.Name = "DefaultValue"
+        Me.DefaultValue.Size = New System.Drawing.Size(151, 27)
+        Me.DefaultValue.TabIndex = 22
         '
-        'TextBox5
+        'ReportB
         '
-        Me.TextBox5.Location = New System.Drawing.Point(214, 344)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(151, 27)
-        Me.TextBox5.TabIndex = 21
+        Me.ReportB.Location = New System.Drawing.Point(214, 344)
+        Me.ReportB.Name = "ReportB"
+        Me.ReportB.Size = New System.Drawing.Size(151, 27)
+        Me.ReportB.TabIndex = 21
         '
-        'TextBox4
+        'CodeB
         '
-        Me.TextBox4.Location = New System.Drawing.Point(214, 299)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(151, 27)
-        Me.TextBox4.TabIndex = 20
+        Me.CodeB.Location = New System.Drawing.Point(214, 299)
+        Me.CodeB.Name = "CodeB"
+        Me.CodeB.Size = New System.Drawing.Size(151, 27)
+        Me.CodeB.TabIndex = 20
         '
-        'TextBox3
+        'Rank
         '
-        Me.TextBox3.Location = New System.Drawing.Point(214, 254)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(151, 27)
-        Me.TextBox3.TabIndex = 19
+        Me.Rank.Location = New System.Drawing.Point(214, 254)
+        Me.Rank.Name = "Rank"
+        Me.Rank.Size = New System.Drawing.Size(151, 27)
+        Me.Rank.TabIndex = 19
         '
-        'TextBox2
+        'KeyB
         '
-        Me.TextBox2.Location = New System.Drawing.Point(214, 209)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(151, 27)
-        Me.TextBox2.TabIndex = 18
+        Me.KeyB.Location = New System.Drawing.Point(214, 209)
+        Me.KeyB.Name = "KeyB"
+        Me.KeyB.Size = New System.Drawing.Size(151, 27)
+        Me.KeyB.TabIndex = 18
         '
-        'TextBox1
+        'TitleB
         '
-        Me.TextBox1.Location = New System.Drawing.Point(214, 164)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(151, 27)
-        Me.TextBox1.TabIndex = 17
+        Me.TitleB.Location = New System.Drawing.Point(214, 164)
+        Me.TitleB.Name = "TitleB"
+        Me.TitleB.Size = New System.Drawing.Size(151, 27)
+        Me.TitleB.TabIndex = 17
         '
-        'ComboBox3
+        'Unit
         '
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Location = New System.Drawing.Point(214, 119)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(151, 28)
-        Me.ComboBox3.TabIndex = 16
+        Me.Unit.FormattingEnabled = True
+        Me.Unit.Location = New System.Drawing.Point(214, 119)
+        Me.Unit.Name = "Unit"
+        Me.Unit.Size = New System.Drawing.Size(151, 28)
+        Me.Unit.TabIndex = 16
         '
-        'ComboBox2
+        'ExaminationSubGroup
         '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(214, 74)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(151, 28)
-        Me.ComboBox2.TabIndex = 15
+        Me.ExaminationSubGroup.FormattingEnabled = True
+        Me.ExaminationSubGroup.Location = New System.Drawing.Point(214, 74)
+        Me.ExaminationSubGroup.Name = "ExaminationSubGroup"
+        Me.ExaminationSubGroup.Size = New System.Drawing.Size(151, 28)
+        Me.ExaminationSubGroup.TabIndex = 15
         '
-        'ComboBox1
+        'ExaminationGroup
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(214, 29)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(151, 28)
-        Me.ComboBox1.TabIndex = 14
+        Me.ExaminationGroup.FormattingEnabled = True
+        Me.ExaminationGroup.Location = New System.Drawing.Point(214, 29)
+        Me.ExaminationGroup.Name = "ExaminationGroup"
+        Me.ExaminationGroup.Size = New System.Drawing.Size(151, 28)
+        Me.ExaminationGroup.TabIndex = 14
         '
         'Label14
         '
@@ -461,20 +461,20 @@ Partial Class AddExamination
     Friend WithEvents FlowLayoutPanel1 As FlowLayoutPanel
     Friend WithEvents ToolStripContainer1 As ToolStripContainer
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents CheckBox1 As CheckBox
-    Friend WithEvents ComboBox5 As ComboBox
-    Friend WithEvents TextBox8 As TextBox
-    Friend WithEvents TextBox7 As TextBox
-    Friend WithEvents ComboBox4 As ComboBox
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents ComboBox3 As ComboBox
-    Friend WithEvents ComboBox2 As ComboBox
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents StatusP As CheckBox
+    Friend WithEvents ValidationonType As ComboBox
+    Friend WithEvents Comment As TextBox
+    Friend WithEvents Price As TextBox
+    Friend WithEvents SampleType As ComboBox
+    Friend WithEvents DefaultValue As TextBox
+    Friend WithEvents ReportB As TextBox
+    Friend WithEvents CodeB As TextBox
+    Friend WithEvents Rank As TextBox
+    Friend WithEvents KeyB As TextBox
+    Friend WithEvents TitleB As TextBox
+    Friend WithEvents Unit As ComboBox
+    Friend WithEvents ExaminationSubGroup As ComboBox
+    Friend WithEvents ExaminationGroup As ComboBox
     Friend WithEvents Label14 As Label
     Friend WithEvents Label13 As Label
     Friend WithEvents Label12 As Label

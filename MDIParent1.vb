@@ -85,7 +85,7 @@ Public Class MDIParent1
 
     End Sub
 
-    Private Sub ToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem1.Click
+    Private Sub ToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles DeshboardMenu.Click
         Dashboard.MdiParent = Me
         Dashboard.Show()
         Dashboard.Top = 0
@@ -99,7 +99,7 @@ Public Class MDIParent1
         AddReferral.Left = 0
     End Sub
 
-    Private Sub ToolStripMenuItem5_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem5.Click
+    Private Sub ToolStripMenuItem5_Click(sender As Object, e As EventArgs) Handles CreateLabResultMenu.Click
         AddLabReport.MdiParent = Me
         AddLabReport.Show()
         AddLabReport.Top = 0
@@ -113,121 +113,163 @@ Public Class MDIParent1
         AddInvoice.Top = 0
     End Sub
 
-    Private Sub ToolStripMenuItem13_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem13.Click
+    Private Sub ToolStripMenuItem13_Click(sender As Object, e As EventArgs) Handles CreateBranchMenu.Click
         AddBranch.MdiParent = Me
         AddBranch.Show()
         AddBranch.Left = 0
         AddBranch.Top = 0
     End Sub
 
-    Private Sub ToolStripMenuItem3_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem3.Click
+    Private Sub ToolStripMenuItem3_Click(sender As Object, e As EventArgs) Handles CreateSampleCollectionMenu.Click
         AddSampleCollection.MdiParent = Me
         AddSampleCollection.Show()
         AddSampleCollection.Left = 0
         AddSampleCollection.Top = 0
     End Sub
 
-    Private Sub ToolStripMenuItem16_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem16.Click
+    Private Sub ToolStripMenuItem16_Click(sender As Object, e As EventArgs) Handles CreateReferralMenu.Click
         AddReferral.MdiParent = Me
         AddReferral.Show()
         AddReferral.Left = 0
         AddReferral.Top = 0
     End Sub
 
-    Private Sub ToolStripMenuItem15_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem15.Click
+    Private Sub ToolStripMenuItem15_Click(sender As Object, e As EventArgs) Handles CreateUserMenu.Click
         AddUser.MdiParent = Me
         AddUser.Show()
         AddUser.Left = 0
         AddUser.Top = 0
     End Sub
 
-    Private Sub ToolStripMenuItem8_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem8.Click
+    Private Sub ToolStripMenuItem8_Click(sender As Object, e As EventArgs) Handles CreateHumanResourceMenu.Click
         AddHumanResource.MdiParent = Me
         AddHumanResource.Show()
         AddHumanResource.Left = 0
         AddHumanResource.Top = 0
     End Sub
 
-    Private Sub LogoutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LogoutToolStripMenuItem.Click
+    Private Sub LogoutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LogoutMenu.Click
         Me.Hide()
         LoginForm1.Show()
 
     End Sub
 
-    Private Sub ToolStripMenuItem21_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem21.Click
+    Private Sub ToolStripMenuItem21_Click(sender As Object, e As EventArgs) Handles CreatePatientMenu.Click
         AddPatient.MdiParent = Me
         AddPatient.Show()
         AddPatient.Left = 0
         AddPatient.Top = 0
     End Sub
 
-    Private Sub CreateToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CreateToolStripMenuItem.Click
+    Private Sub CreateToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CreateInvoiceMenu.Click
         AddInvoice.MdiParent = Me
         AddInvoice.Show()
         AddInvoice.Left = 0
         AddInvoice.Top = 0
     End Sub
 
-    Private Sub ToolStripMenuItem9_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem9.Click
+    Private Sub ToolStripMenuItem9_Click(sender As Object, e As EventArgs) Handles ListUserMenu.Click
         ListUser.MdiParent = Me
         ListUser.Show()
         ListUser.Left = 0
         ListUser.Top = 0
     End Sub
 
-    Private Sub ToolStripMenuItem7_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem7.Click
+    Private Sub ToolStripMenuItem7_Click(sender As Object, e As EventArgs) Handles ListBranchMenu.Click
         ListBranch.MdiParent = Me
         ListBranch.Show()
         ListBranch.Left = 0
         ListBranch.Top = 0
     End Sub
 
-    Private Sub ToolStripMenuItem6_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem6.Click
+    Private Sub ToolStripMenuItem6_Click(sender As Object, e As EventArgs) Handles ListHumanResourceMenu.Click
         ListHumanResource.MdiParent = Me
         ListHumanResource.Show()
         ListHumanResource.Left = 0
         ListHumanResource.Top = 0
     End Sub
 
-    Private Sub ToolStripMenuItem14_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem14.Click
+    Private Sub ToolStripMenuItem14_Click(sender As Object, e As EventArgs) Handles ListReferralMenu.Click
         ListReferral.MdiParent = Me
         ListReferral.Show()
         ListReferral.Left = 0
         ListReferral.Top = 0
     End Sub
 
-    Private Sub ListToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ListToolStripMenuItem.Click
+    Private Sub ListToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ListPatientMenu.Click
         ListPatient.MdiParent = Me
         ListPatient.Show()
         ListPatient.Left = 0
         ListPatient.Top = 0
     End Sub
 
-    Private Sub ListToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles ListToolStripMenuItem2.Click
+    Private Sub ListToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles ListInvoiceMenu.Click
         ListInvoice.MdiParent = Me
         ListInvoice.Show()
         ListInvoice.Left = 0
         ListInvoice.Top = 0
     End Sub
 
-    Private Sub ToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem2.Click
+    Private Sub ToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles ListSampleCollectionMenu.Click
         ListSampleCollection.MdiParent = Me
         ListSampleCollection.Show()
         ListSampleCollection.Left = 0
         ListSampleCollection.Top = 0
     End Sub
 
-    Private Sub ToolStripMenuItem4_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem4.Click
+    Private Sub ToolStripMenuItem4_Click(sender As Object, e As EventArgs) Handles ListLabResultMenu.Click
         ListLabResult.MdiParent = Me
         ListLabResult.Show()
         ListLabResult.Left = 0
         ListLabResult.Top = 0
     End Sub
 
-    Private Sub ConFigurationToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ConFigurationToolStripMenuItem.Click
+    Private Sub ConFigurationToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CompanyProfileMenu.Click
         CompanyProfile.MdiParent = Me
         CompanyProfile.Show()
         CompanyProfile.Left = 0
         CompanyProfile.Top = 0
+    End Sub
+
+    Private Sub CreateToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles CreateExaminationMenu.Click
+        AddExamination.MdiParent = Me
+        AddExamination.Show()
+        AddExamination.Left = 0
+        AddExamination.Top = 0
+    End Sub
+
+    Private Sub ListToolStripMenuItem3_Click(sender As Object, e As EventArgs) Handles ListExaminationMenu.Click
+        ListExamination.MdiParent = Me
+        ListExamination.Show()
+        ListExamination.Left = 0
+        ListExamination.Top = 0
+    End Sub
+
+    Private Sub CreateToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles CreateExaminationSubGroupMenu.Click
+        AddExaminationSubGroup.MdiParent = Me
+        AddExaminationSubGroup.Show()
+        AddExaminationSubGroup.Left = 0
+        AddExaminationSubGroup.Top = 0
+    End Sub
+
+    Private Sub CreateToolStripMenuItem3_Click(sender As Object, e As EventArgs) Handles CreateExaminationGroupMenu.Click
+        AddExaminationGroup.MdiParent = Me
+        AddExaminationGroup.Show()
+        AddExaminationGroup.Left = 0
+        AddExaminationGroup.Top = 0
+    End Sub
+
+    Private Sub ListToolStripMenuItem5_Click(sender As Object, e As EventArgs) Handles ListExaminationGroupMenu.Click
+        ListExaminationGroup.MdiParent = Me
+        ListExaminationGroup.Show()
+        ListExaminationGroup.Left = 0
+        ListExaminationGroup.Top = 0
+    End Sub
+
+    Private Sub ListToolStripMenuItem4_Click(sender As Object, e As EventArgs) Handles ListExaminationSubGroupMenu.Click
+        ListExaminationSubGroup.MdiParent = Me
+        ListExaminationSubGroup.Show()
+        ListExaminationSubGroup.Left = 0
+        ListExaminationSubGroup.Top = 0
     End Sub
 End Class

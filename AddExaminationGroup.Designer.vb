@@ -28,15 +28,15 @@ Partial Class AddExaminationGroup
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.StatusP = New System.Windows.Forms.CheckBox()
+        Me.Specification = New System.Windows.Forms.TextBox()
+        Me.Interpretation = New System.Windows.Forms.TextBox()
+        Me.Price = New System.Windows.Forms.ComboBox()
+        Me.SampleType = New System.Windows.Forms.TextBox()
+        Me.RankB = New System.Windows.Forms.TextBox()
+        Me.KeyB = New System.Windows.Forms.ComboBox()
+        Me.TitleB = New System.Windows.Forms.ComboBox()
+        Me.Department = New System.Windows.Forms.ComboBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
@@ -90,15 +90,15 @@ Partial Class AddExaminationGroup
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.CheckBox1)
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
-        Me.GroupBox1.Controls.Add(Me.TextBox8)
-        Me.GroupBox1.Controls.Add(Me.ComboBox4)
-        Me.GroupBox1.Controls.Add(Me.TextBox6)
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
-        Me.GroupBox1.Controls.Add(Me.ComboBox3)
-        Me.GroupBox1.Controls.Add(Me.ComboBox2)
-        Me.GroupBox1.Controls.Add(Me.ComboBox1)
+        Me.GroupBox1.Controls.Add(Me.StatusP)
+        Me.GroupBox1.Controls.Add(Me.Specification)
+        Me.GroupBox1.Controls.Add(Me.Interpretation)
+        Me.GroupBox1.Controls.Add(Me.Price)
+        Me.GroupBox1.Controls.Add(Me.SampleType)
+        Me.GroupBox1.Controls.Add(Me.RankB)
+        Me.GroupBox1.Controls.Add(Me.KeyB)
+        Me.GroupBox1.Controls.Add(Me.TitleB)
+        Me.GroupBox1.Controls.Add(Me.Department)
         Me.GroupBox1.Controls.Add(Me.Label11)
         Me.GroupBox1.Controls.Add(Me.Label10)
         Me.GroupBox1.Controls.Add(Me.Label9)
@@ -115,77 +115,77 @@ Partial Class AddExaminationGroup
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Add Examination Group"
         '
-        'CheckBox1
+        'StatusP
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(216, 520)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(78, 24)
-        Me.CheckBox1.TabIndex = 49
-        Me.CheckBox1.Text = "Publish"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.StatusP.AutoSize = True
+        Me.StatusP.Location = New System.Drawing.Point(216, 520)
+        Me.StatusP.Name = "StatusP"
+        Me.StatusP.Size = New System.Drawing.Size(78, 24)
+        Me.StatusP.TabIndex = 49
+        Me.StatusP.Text = "Publish"
+        Me.StatusP.UseVisualStyleBackColor = True
         '
-        'TextBox2
+        'Specification
         '
-        Me.TextBox2.Location = New System.Drawing.Point(216, 321)
-        Me.TextBox2.Multiline = True
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(300, 89)
-        Me.TextBox2.TabIndex = 48
+        Me.Specification.Location = New System.Drawing.Point(216, 321)
+        Me.Specification.Multiline = True
+        Me.Specification.Name = "Specification"
+        Me.Specification.Size = New System.Drawing.Size(300, 89)
+        Me.Specification.TabIndex = 48
         '
-        'TextBox8
+        'Interpretation
         '
-        Me.TextBox8.Location = New System.Drawing.Point(216, 214)
-        Me.TextBox8.Multiline = True
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(300, 89)
-        Me.TextBox8.TabIndex = 47
+        Me.Interpretation.Location = New System.Drawing.Point(216, 214)
+        Me.Interpretation.Multiline = True
+        Me.Interpretation.Name = "Interpretation"
+        Me.Interpretation.Size = New System.Drawing.Size(300, 89)
+        Me.Interpretation.TabIndex = 47
         '
-        'ComboBox4
+        'Price
         '
-        Me.ComboBox4.FormattingEnabled = True
-        Me.ComboBox4.Location = New System.Drawing.Point(216, 473)
-        Me.ComboBox4.Name = "ComboBox4"
-        Me.ComboBox4.Size = New System.Drawing.Size(151, 28)
-        Me.ComboBox4.TabIndex = 45
+        Me.Price.FormattingEnabled = True
+        Me.Price.Location = New System.Drawing.Point(216, 473)
+        Me.Price.Name = "Price"
+        Me.Price.Size = New System.Drawing.Size(151, 28)
+        Me.Price.TabIndex = 45
         '
-        'TextBox6
+        'SampleType
         '
-        Me.TextBox6.Location = New System.Drawing.Point(216, 428)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(151, 27)
-        Me.TextBox6.TabIndex = 44
+        Me.SampleType.Location = New System.Drawing.Point(216, 428)
+        Me.SampleType.Name = "SampleType"
+        Me.SampleType.Size = New System.Drawing.Size(151, 27)
+        Me.SampleType.TabIndex = 44
         '
-        'TextBox1
+        'RankB
         '
-        Me.TextBox1.Location = New System.Drawing.Point(216, 169)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(151, 27)
-        Me.TextBox1.TabIndex = 39
+        Me.RankB.Location = New System.Drawing.Point(216, 169)
+        Me.RankB.Name = "RankB"
+        Me.RankB.Size = New System.Drawing.Size(151, 27)
+        Me.RankB.TabIndex = 39
         '
-        'ComboBox3
+        'KeyB
         '
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Location = New System.Drawing.Point(216, 124)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(151, 28)
-        Me.ComboBox3.TabIndex = 38
+        Me.KeyB.FormattingEnabled = True
+        Me.KeyB.Location = New System.Drawing.Point(216, 124)
+        Me.KeyB.Name = "KeyB"
+        Me.KeyB.Size = New System.Drawing.Size(151, 28)
+        Me.KeyB.TabIndex = 38
         '
-        'ComboBox2
+        'TitleB
         '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(216, 79)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(151, 28)
-        Me.ComboBox2.TabIndex = 37
+        Me.TitleB.FormattingEnabled = True
+        Me.TitleB.Location = New System.Drawing.Point(216, 79)
+        Me.TitleB.Name = "TitleB"
+        Me.TitleB.Size = New System.Drawing.Size(151, 28)
+        Me.TitleB.TabIndex = 37
         '
-        'ComboBox1
+        'Department
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(216, 34)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(151, 28)
-        Me.ComboBox1.TabIndex = 36
+        Me.Department.FormattingEnabled = True
+        Me.Department.Location = New System.Drawing.Point(216, 34)
+        Me.Department.Name = "Department"
+        Me.Department.Size = New System.Drawing.Size(151, 28)
+        Me.Department.TabIndex = 36
         '
         'Label11
         '
@@ -318,12 +318,12 @@ Partial Class AddExaminationGroup
     Friend WithEvents FlowLayoutPanel1 As FlowLayoutPanel
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents ToolStripContainer1 As ToolStripContainer
-    Friend WithEvents ComboBox4 As ComboBox
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents ComboBox3 As ComboBox
-    Friend WithEvents ComboBox2 As ComboBox
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents Price As ComboBox
+    Friend WithEvents SampleType As TextBox
+    Friend WithEvents RankB As TextBox
+    Friend WithEvents KeyB As ComboBox
+    Friend WithEvents TitleB As ComboBox
+    Friend WithEvents Department As ComboBox
     Friend WithEvents Label11 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents Label9 As Label
@@ -333,7 +333,7 @@ Partial Class AddExaminationGroup
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents CheckBox1 As CheckBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox8 As TextBox
+    Friend WithEvents StatusP As CheckBox
+    Friend WithEvents Specification As TextBox
+    Friend WithEvents Interpretation As TextBox
 End Class

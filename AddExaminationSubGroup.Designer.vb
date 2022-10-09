@@ -28,22 +28,22 @@ Partial Class AddExaminationSubGroup
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Price = New System.Windows.Forms.TextBox()
+        Me.KeyB = New System.Windows.Forms.TextBox()
+        Me.StatusP = New System.Windows.Forms.CheckBox()
+        Me.TitleB = New System.Windows.Forms.TextBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.SampleTitle = New System.Windows.Forms.ComboBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.QRCode = New System.Windows.Forms.TextBox()
+        Me.RankB = New System.Windows.Forms.TextBox()
+        Me.ExaminationGroup = New System.Windows.Forms.ComboBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.ToolStrip.SuspendLayout()
         Me.FlowLayoutPanel1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
@@ -83,16 +83,16 @@ Partial Class AddExaminationSubGroup
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.TextBox5)
-        Me.GroupBox1.Controls.Add(Me.TextBox4)
-        Me.GroupBox1.Controls.Add(Me.CheckBox1)
-        Me.GroupBox1.Controls.Add(Me.TextBox3)
+        Me.GroupBox1.Controls.Add(Me.Price)
+        Me.GroupBox1.Controls.Add(Me.KeyB)
+        Me.GroupBox1.Controls.Add(Me.StatusP)
+        Me.GroupBox1.Controls.Add(Me.TitleB)
         Me.GroupBox1.Controls.Add(Me.Label11)
-        Me.GroupBox1.Controls.Add(Me.ComboBox4)
+        Me.GroupBox1.Controls.Add(Me.SampleTitle)
         Me.GroupBox1.Controls.Add(Me.Label5)
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
-        Me.GroupBox1.Controls.Add(Me.ComboBox1)
+        Me.GroupBox1.Controls.Add(Me.QRCode)
+        Me.GroupBox1.Controls.Add(Me.RankB)
+        Me.GroupBox1.Controls.Add(Me.ExaminationGroup)
         Me.GroupBox1.Controls.Add(Me.Label10)
         Me.GroupBox1.Controls.Add(Me.Label9)
         Me.GroupBox1.Controls.Add(Me.Label4)
@@ -106,20 +106,84 @@ Partial Class AddExaminationSubGroup
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Add Examination Sub Group"
         '
-        'TextBox1
+        'Price
         '
-        Me.TextBox1.Location = New System.Drawing.Point(216, 169)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(151, 27)
-        Me.TextBox1.TabIndex = 39
+        Me.Price.Location = New System.Drawing.Point(216, 303)
+        Me.Price.Name = "Price"
+        Me.Price.Size = New System.Drawing.Size(151, 27)
+        Me.Price.TabIndex = 54
         '
-        'ComboBox1
+        'KeyB
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(216, 34)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(151, 28)
-        Me.ComboBox1.TabIndex = 36
+        Me.KeyB.Location = New System.Drawing.Point(216, 124)
+        Me.KeyB.Name = "KeyB"
+        Me.KeyB.Size = New System.Drawing.Size(151, 27)
+        Me.KeyB.TabIndex = 53
+        '
+        'StatusP
+        '
+        Me.StatusP.AutoSize = True
+        Me.StatusP.Location = New System.Drawing.Point(216, 350)
+        Me.StatusP.Name = "StatusP"
+        Me.StatusP.Size = New System.Drawing.Size(78, 24)
+        Me.StatusP.TabIndex = 53
+        Me.StatusP.Text = "Publish"
+        Me.StatusP.UseVisualStyleBackColor = True
+        '
+        'TitleB
+        '
+        Me.TitleB.Location = New System.Drawing.Point(216, 79)
+        Me.TitleB.Name = "TitleB"
+        Me.TitleB.Size = New System.Drawing.Size(151, 27)
+        Me.TitleB.TabIndex = 52
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(9, 351)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(49, 20)
+        Me.Label11.TabIndex = 52
+        Me.Label11.Text = "Status"
+        '
+        'SampleTitle
+        '
+        Me.SampleTitle.FormattingEnabled = True
+        Me.SampleTitle.Location = New System.Drawing.Point(216, 214)
+        Me.SampleTitle.Name = "SampleTitle"
+        Me.SampleTitle.Size = New System.Drawing.Size(151, 28)
+        Me.SampleTitle.TabIndex = 51
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(9, 306)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(47, 20)
+        Me.Label5.TabIndex = 51
+        Me.Label5.Text = "Price*"
+        '
+        'QRCode
+        '
+        Me.QRCode.Location = New System.Drawing.Point(216, 259)
+        Me.QRCode.Name = "QRCode"
+        Me.QRCode.Size = New System.Drawing.Size(151, 27)
+        Me.QRCode.TabIndex = 50
+        '
+        'RankB
+        '
+        Me.RankB.Location = New System.Drawing.Point(216, 169)
+        Me.RankB.Name = "RankB"
+        Me.RankB.Size = New System.Drawing.Size(151, 27)
+        Me.RankB.TabIndex = 39
+        '
+        'ExaminationGroup
+        '
+        Me.ExaminationGroup.FormattingEnabled = True
+        Me.ExaminationGroup.Location = New System.Drawing.Point(216, 34)
+        Me.ExaminationGroup.Name = "ExaminationGroup"
+        Me.ExaminationGroup.Size = New System.Drawing.Size(151, 28)
+        Me.ExaminationGroup.TabIndex = 36
         '
         'Label10
         '
@@ -175,70 +239,6 @@ Partial Class AddExaminationSubGroup
         Me.Label1.TabIndex = 25
         Me.Label1.Text = "Examination Group*"
         '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(216, 259)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(151, 27)
-        Me.TextBox2.TabIndex = 50
-        '
-        'ComboBox4
-        '
-        Me.ComboBox4.FormattingEnabled = True
-        Me.ComboBox4.Location = New System.Drawing.Point(216, 214)
-        Me.ComboBox4.Name = "ComboBox4"
-        Me.ComboBox4.Size = New System.Drawing.Size(151, 28)
-        Me.ComboBox4.TabIndex = 51
-        '
-        'TextBox3
-        '
-        Me.TextBox3.Location = New System.Drawing.Point(216, 79)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(151, 27)
-        Me.TextBox3.TabIndex = 52
-        '
-        'TextBox4
-        '
-        Me.TextBox4.Location = New System.Drawing.Point(216, 124)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(151, 27)
-        Me.TextBox4.TabIndex = 53
-        '
-        'TextBox5
-        '
-        Me.TextBox5.Location = New System.Drawing.Point(216, 303)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(151, 27)
-        Me.TextBox5.TabIndex = 54
-        '
-        'CheckBox1
-        '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(216, 350)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(78, 24)
-        Me.CheckBox1.TabIndex = 53
-        Me.CheckBox1.Text = "Publish"
-        Me.CheckBox1.UseVisualStyleBackColor = True
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(9, 351)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(49, 20)
-        Me.Label11.TabIndex = 52
-        Me.Label11.Text = "Status"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(9, 306)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(47, 20)
-        Me.Label5.TabIndex = 51
-        Me.Label5.Text = "Price*"
-        '
         'AddExaminationSubGroup
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
@@ -263,16 +263,16 @@ Partial Class AddExaminationSubGroup
     Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
     Friend WithEvents FlowLayoutPanel1 As FlowLayoutPanel
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents CheckBox1 As CheckBox
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents Price As TextBox
+    Friend WithEvents KeyB As TextBox
+    Friend WithEvents StatusP As CheckBox
+    Friend WithEvents TitleB As TextBox
     Friend WithEvents Label11 As Label
-    Friend WithEvents ComboBox4 As ComboBox
+    Friend WithEvents SampleTitle As ComboBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents QRCode As TextBox
+    Friend WithEvents RankB As TextBox
+    Friend WithEvents ExaminationGroup As ComboBox
     Friend WithEvents Label10 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Label4 As Label
