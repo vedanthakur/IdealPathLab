@@ -82,6 +82,8 @@ Partial Class AddLabReport
         'GroupBox1
         '
         Me.GroupBox1.AutoSize = True
+        Me.GroupBox1.BackgroundImage = Global.IdealPathLab.My.Resources.Resources.bg_blur
+        Me.GroupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.GroupBox1.Controls.Add(Me.DateTimePicker1)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.Label2)
@@ -110,6 +112,7 @@ Partial Class AddLabReport
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Location = New System.Drawing.Point(9, 128)
         Me.Label1.Margin = New System.Windows.Forms.Padding(3)
         Me.Label1.Name = "Label1"
@@ -121,6 +124,7 @@ Partial Class AddLabReport
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Location = New System.Drawing.Point(9, 26)
         Me.Label2.Margin = New System.Windows.Forms.Padding(3)
         Me.Label2.Name = "Label2"
@@ -141,6 +145,7 @@ Partial Class AddLabReport
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Location = New System.Drawing.Point(9, 77)
         Me.Label3.Margin = New System.Windows.Forms.Padding(3)
         Me.Label3.Name = "Label3"
@@ -160,6 +165,8 @@ Partial Class AddLabReport
         '
         'GroupBox8
         '
+        Me.GroupBox8.BackgroundImage = Global.IdealPathLab.My.Resources.Resources.bg_blur
+        Me.GroupBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.GroupBox8.Controls.Add(Me.Label6)
         Me.GroupBox8.Controls.Add(Me.TSH)
         Me.GroupBox8.Controls.Add(Me.Button1)
@@ -175,6 +182,7 @@ Partial Class AddLabReport
         'Label6
         '
         Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Location = New System.Drawing.Point(9, 36)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(247, 20)
@@ -200,6 +208,8 @@ Partial Class AddLabReport
         '
         'GroupBox7
         '
+        Me.GroupBox7.BackgroundImage = Global.IdealPathLab.My.Resources.Resources.bg_blur
+        Me.GroupBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.GroupBox7.Controls.Add(Me.Label4)
         Me.GroupBox7.Controls.Add(Me.ReportedDate)
         Me.GroupBox7.Controls.Add(Me.LabNo)
@@ -216,6 +226,7 @@ Partial Class AddLabReport
         'Label4
         '
         Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Location = New System.Drawing.Point(6, 28)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(113, 20)
@@ -243,6 +254,7 @@ Partial Class AddLabReport
         'Label5
         '
         Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Location = New System.Drawing.Point(6, 83)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(91, 20)
@@ -251,6 +263,8 @@ Partial Class AddLabReport
         '
         'GroupBox3
         '
+        Me.GroupBox3.BackgroundImage = Global.IdealPathLab.My.Resources.Resources.bg_blur
+        Me.GroupBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.GroupBox3.Controls.Add(Me.LabTechnicianB)
         Me.GroupBox3.Location = New System.Drawing.Point(902, 6)
         Me.GroupBox3.MaximumSize = New System.Drawing.Size(442, 187)
@@ -274,6 +288,8 @@ Partial Class AddLabReport
         '
         'GroupBox4
         '
+        Me.GroupBox4.BackgroundImage = Global.IdealPathLab.My.Resources.Resources.bg_blur
+        Me.GroupBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.GroupBox4.Controls.Add(Me.DoctorB)
         Me.GroupBox4.Location = New System.Drawing.Point(454, 6)
         Me.GroupBox4.MaximumSize = New System.Drawing.Size(442, 187)
@@ -298,6 +314,8 @@ Partial Class AddLabReport
         'GroupBox5
         '
         Me.GroupBox5.AutoSize = True
+        Me.GroupBox5.BackgroundImage = Global.IdealPathLab.My.Resources.Resources.bg_blur
+        Me.GroupBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.GroupBox5.Controls.Add(Me.TestPerformedBy)
         Me.GroupBox5.Location = New System.Drawing.Point(6, 199)
         Me.GroupBox5.MaximumSize = New System.Drawing.Size(442, 187)
@@ -321,6 +339,8 @@ Partial Class AddLabReport
         '
         'GroupBox6
         '
+        Me.GroupBox6.BackgroundImage = Global.IdealPathLab.My.Resources.Resources.bg_blur
+        Me.GroupBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.GroupBox6.Controls.Add(Me.VerifiedBy)
         Me.GroupBox6.Location = New System.Drawing.Point(454, 199)
         Me.GroupBox6.MaximumSize = New System.Drawing.Size(442, 187)
@@ -365,6 +385,8 @@ Partial Class AddLabReport
         '
         'GroupBox9
         '
+        Me.GroupBox9.BackgroundImage = Global.IdealPathLab.My.Resources.Resources.bg_blur
+        Me.GroupBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.GroupBox9.Controls.Add(Me.Label9)
         Me.GroupBox9.Controls.Add(Me.Notes)
         Me.GroupBox9.Controls.Add(Me.Delivered)
@@ -381,6 +403,7 @@ Partial Class AddLabReport
         'Label9
         '
         Me.Label9.AutoSize = True
+        Me.Label9.BackColor = System.Drawing.Color.Transparent
         Me.Label9.Location = New System.Drawing.Point(13, 69)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(51, 20)
@@ -398,16 +421,18 @@ Partial Class AddLabReport
         'Delivered
         '
         Me.Delivered.AutoSize = True
+        Me.Delivered.BackColor = System.Drawing.Color.Transparent
         Me.Delivered.Location = New System.Drawing.Point(119, 36)
         Me.Delivered.Name = "Delivered"
         Me.Delivered.Size = New System.Drawing.Size(95, 24)
         Me.Delivered.TabIndex = 7
         Me.Delivered.Text = "Delivered"
-        Me.Delivered.UseVisualStyleBackColor = True
+        Me.Delivered.UseVisualStyleBackColor = False
         '
         'Label8
         '
         Me.Label8.AutoSize = True
+        Me.Label8.BackColor = System.Drawing.Color.Transparent
         Me.Label8.Location = New System.Drawing.Point(6, 36)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(107, 20)
@@ -416,6 +441,8 @@ Partial Class AddLabReport
         '
         'GroupBox2
         '
+        Me.GroupBox2.BackgroundImage = Global.IdealPathLab.My.Resources.Resources.bg_blur
+        Me.GroupBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.GroupBox2.Controls.Add(Me.Label7)
         Me.GroupBox2.Controls.Add(Me.Button2)
         Me.GroupBox2.Controls.Add(Me.PictureBox1)
@@ -431,6 +458,7 @@ Partial Class AddLabReport
         'Label7
         '
         Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.Transparent
         Me.Label7.Location = New System.Drawing.Point(6, 36)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(107, 20)
@@ -448,6 +476,8 @@ Partial Class AddLabReport
         '
         'PictureBox1
         '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.PictureBox1.Location = New System.Drawing.Point(310, 21)
         Me.PictureBox1.MaximumSize = New System.Drawing.Size(130, 0)
         Me.PictureBox1.MinimumSize = New System.Drawing.Size(0, 100)

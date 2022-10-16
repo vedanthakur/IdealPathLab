@@ -111,6 +111,8 @@ Partial Class AddInvoice
         '
         Me.FlowLayoutPanel2.AutoScroll = True
         Me.FlowLayoutPanel2.AutoSize = True
+        Me.FlowLayoutPanel2.BackgroundImage = Global.IdealPathLab.My.Resources.Resources.bg_blur
+        Me.FlowLayoutPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.FlowLayoutPanel2.Controls.Add(Me.GroupBox1)
         Me.FlowLayoutPanel2.Controls.Add(Me.GroupBox2)
         Me.FlowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
@@ -123,6 +125,8 @@ Partial Class AddInvoice
         'GroupBox1
         '
         Me.GroupBox1.AutoSize = True
+        Me.GroupBox1.BackgroundImage = Global.IdealPathLab.My.Resources.Resources.bg_blur
+        Me.GroupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.GroupBox1.Controls.Add(Me.Address)
         Me.GroupBox1.Controls.Add(Me.Test)
         Me.GroupBox1.Controls.Add(Me.Label5)
@@ -161,6 +165,7 @@ Partial Class AddInvoice
         'Label5
         '
         Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Location = New System.Drawing.Point(18, 229)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(88, 20)
@@ -179,6 +184,7 @@ Partial Class AddInvoice
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Location = New System.Drawing.Point(18, 182)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(98, 20)
@@ -196,6 +202,7 @@ Partial Class AddInvoice
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Location = New System.Drawing.Point(18, 135)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(114, 20)
@@ -205,6 +212,7 @@ Partial Class AddInvoice
         'Label4
         '
         Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Location = New System.Drawing.Point(18, 41)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(104, 20)
@@ -223,6 +231,7 @@ Partial Class AddInvoice
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Location = New System.Drawing.Point(18, 88)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(108, 20)
@@ -232,6 +241,8 @@ Partial Class AddInvoice
         'GroupBox2
         '
         Me.GroupBox2.AutoSize = True
+        Me.GroupBox2.BackgroundImage = Global.IdealPathLab.My.Resources.Resources.bg_blur
+        Me.GroupBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.GroupBox2.Controls.Add(Me.AllPaid)
         Me.GroupBox2.Controls.Add(Me.ReturnedCash)
         Me.GroupBox2.Controls.Add(Me.ReceivedCash)
@@ -265,12 +276,13 @@ Partial Class AddInvoice
         'AllPaid
         '
         Me.AllPaid.AutoSize = True
+        Me.AllPaid.BackColor = System.Drawing.Color.Transparent
         Me.AllPaid.Location = New System.Drawing.Point(19, 284)
         Me.AllPaid.Name = "AllPaid"
         Me.AllPaid.Size = New System.Drawing.Size(81, 24)
         Me.AllPaid.TabIndex = 10
         Me.AllPaid.Text = "All Paid"
-        Me.AllPaid.UseVisualStyleBackColor = True
+        Me.AllPaid.UseVisualStyleBackColor = False
         '
         'ReturnedCash
         '
@@ -325,6 +337,7 @@ Partial Class AddInvoice
         'Label15
         '
         Me.Label15.AutoSize = True
+        Me.Label15.BackColor = System.Drawing.Color.Transparent
         Me.Label15.Location = New System.Drawing.Point(18, 518)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(104, 20)
@@ -334,6 +347,7 @@ Partial Class AddInvoice
         'Label14
         '
         Me.Label14.AutoSize = True
+        Me.Label14.BackColor = System.Drawing.Color.Transparent
         Me.Label14.Location = New System.Drawing.Point(18, 485)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(104, 20)
@@ -343,6 +357,7 @@ Partial Class AddInvoice
         'Label13
         '
         Me.Label13.AutoSize = True
+        Me.Label13.BackColor = System.Drawing.Color.Transparent
         Me.Label13.Location = New System.Drawing.Point(17, 452)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(74, 20)
@@ -352,6 +367,7 @@ Partial Class AddInvoice
         'Label12
         '
         Me.Label12.AutoSize = True
+        Me.Label12.BackColor = System.Drawing.Color.Transparent
         Me.Label12.Location = New System.Drawing.Point(18, 419)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(75, 20)
@@ -361,6 +377,7 @@ Partial Class AddInvoice
         'Label11
         '
         Me.Label11.AutoSize = True
+        Me.Label11.BackColor = System.Drawing.Color.Transparent
         Me.Label11.Location = New System.Drawing.Point(17, 386)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(82, 20)
@@ -370,6 +387,7 @@ Partial Class AddInvoice
         'Label8
         '
         Me.Label8.AutoSize = True
+        Me.Label8.BackColor = System.Drawing.Color.Transparent
         Me.Label8.Location = New System.Drawing.Point(18, 353)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(62, 20)
@@ -379,6 +397,7 @@ Partial Class AddInvoice
         'Label7
         '
         Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.Transparent
         Me.Label7.Location = New System.Drawing.Point(18, 320)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(42, 20)
@@ -388,28 +407,31 @@ Partial Class AddInvoice
         'RadioButton2
         '
         Me.RadioButton2.AutoSize = True
+        Me.RadioButton2.BackColor = System.Drawing.Color.Transparent
         Me.RadioButton2.Location = New System.Drawing.Point(205, 41)
         Me.RadioButton2.Name = "RadioButton2"
         Me.RadioButton2.Size = New System.Drawing.Size(73, 24)
         Me.RadioButton2.TabIndex = 6
         Me.RadioButton2.TabStop = True
         Me.RadioButton2.Text = "Online"
-        Me.RadioButton2.UseVisualStyleBackColor = True
+        Me.RadioButton2.UseVisualStyleBackColor = False
         '
         'RadioButton1
         '
         Me.RadioButton1.AutoSize = True
+        Me.RadioButton1.BackColor = System.Drawing.Color.Transparent
         Me.RadioButton1.Location = New System.Drawing.Point(138, 41)
         Me.RadioButton1.Name = "RadioButton1"
         Me.RadioButton1.Size = New System.Drawing.Size(61, 24)
         Me.RadioButton1.TabIndex = 5
         Me.RadioButton1.TabStop = True
         Me.RadioButton1.Text = "Cash"
-        Me.RadioButton1.UseVisualStyleBackColor = True
+        Me.RadioButton1.UseVisualStyleBackColor = False
         '
         'Label6
         '
         Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Location = New System.Drawing.Point(18, 137)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(51, 20)
@@ -427,16 +449,18 @@ Partial Class AddInvoice
         'Paid
         '
         Me.Paid.AutoSize = True
+        Me.Paid.BackColor = System.Drawing.Color.Transparent
         Me.Paid.Location = New System.Drawing.Point(139, 88)
         Me.Paid.Name = "Paid"
         Me.Paid.Size = New System.Drawing.Size(59, 24)
         Me.Paid.TabIndex = 8
         Me.Paid.Text = "Paid"
-        Me.Paid.UseVisualStyleBackColor = True
+        Me.Paid.UseVisualStyleBackColor = False
         '
         'Label9
         '
         Me.Label9.AutoSize = True
+        Me.Label9.BackColor = System.Drawing.Color.Transparent
         Me.Label9.Location = New System.Drawing.Point(17, 41)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(114, 20)
@@ -446,6 +470,7 @@ Partial Class AddInvoice
         'Label10
         '
         Me.Label10.AutoSize = True
+        Me.Label10.BackColor = System.Drawing.Color.Transparent
         Me.Label10.Location = New System.Drawing.Point(18, 88)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(115, 20)

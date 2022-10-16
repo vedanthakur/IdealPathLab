@@ -92,6 +92,8 @@ Partial Class AddSampleCollection
         'GroupBox1
         '
         Me.GroupBox1.AutoSize = True
+        Me.GroupBox1.BackgroundImage = Global.IdealPathLab.My.Resources.Resources.bg_blur
+        Me.GroupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.GroupBox1.Controls.Add(Me.Address)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.CollectedBy)
@@ -119,6 +121,7 @@ Partial Class AddSampleCollection
         'Label4
         '
         Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Location = New System.Drawing.Point(18, 173)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(146, 20)
@@ -155,6 +158,7 @@ Partial Class AddSampleCollection
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Location = New System.Drawing.Point(18, 41)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(124, 20)
@@ -164,6 +168,7 @@ Partial Class AddSampleCollection
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Location = New System.Drawing.Point(18, 85)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(104, 20)
@@ -173,6 +178,7 @@ Partial Class AddSampleCollection
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Location = New System.Drawing.Point(18, 129)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(108, 20)
@@ -182,6 +188,8 @@ Partial Class AddSampleCollection
         'GroupBox2
         '
         Me.GroupBox2.AutoSize = True
+        Me.GroupBox2.BackgroundImage = Global.IdealPathLab.My.Resources.Resources.bg_blur
+        Me.GroupBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.GroupBox2.Controls.Add(Me.Notes)
         Me.GroupBox2.Controls.Add(Me.Label6)
         Me.GroupBox2.Controls.Add(Me.Button1)
@@ -212,6 +220,7 @@ Partial Class AddSampleCollection
         'Label6
         '
         Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Location = New System.Drawing.Point(18, 257)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(51, 20)
@@ -246,6 +255,7 @@ Partial Class AddSampleCollection
         'Label5
         '
         Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Location = New System.Drawing.Point(18, 182)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(42, 20)
@@ -273,6 +283,7 @@ Partial Class AddSampleCollection
         'Label7
         '
         Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.Transparent
         Me.Label7.Location = New System.Drawing.Point(18, 41)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(85, 20)
@@ -282,6 +293,7 @@ Partial Class AddSampleCollection
         'Label8
         '
         Me.Label8.AutoSize = True
+        Me.Label8.BackColor = System.Drawing.Color.Transparent
         Me.Label8.Location = New System.Drawing.Point(18, 88)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(49, 20)
@@ -291,6 +303,7 @@ Partial Class AddSampleCollection
         'Label9
         '
         Me.Label9.AutoSize = True
+        Me.Label9.BackColor = System.Drawing.Color.Transparent
         Me.Label9.Location = New System.Drawing.Point(18, 135)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(112, 20)

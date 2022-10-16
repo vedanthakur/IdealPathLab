@@ -76,6 +76,8 @@ Partial Class AddUser
         '
         'GroupBox1
         '
+        Me.GroupBox1.BackgroundImage = Global.IdealPathLab.My.Resources.Resources.bg_blur
+        Me.GroupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.GroupBox1.Controls.Add(Me.ImageSizeLabel)
         Me.GroupBox1.Controls.Add(Me.status)
         Me.GroupBox1.Controls.Add(Me.Label11)
@@ -111,6 +113,7 @@ Partial Class AddUser
         'ImageSizeLabel
         '
         Me.ImageSizeLabel.AutoSize = True
+        Me.ImageSizeLabel.BackColor = System.Drawing.Color.Transparent
         Me.ImageSizeLabel.Font = New System.Drawing.Font("Segoe UI", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.ImageSizeLabel.Location = New System.Drawing.Point(18, 502)
         Me.ImageSizeLabel.Name = "ImageSizeLabel"
@@ -121,6 +124,7 @@ Partial Class AddUser
         'status
         '
         Me.status.AutoSize = True
+        Me.status.BackColor = System.Drawing.Color.Transparent
         Me.status.Checked = True
         Me.status.CheckState = System.Windows.Forms.CheckState.Checked
         Me.status.Location = New System.Drawing.Point(176, 529)
@@ -128,11 +132,12 @@ Partial Class AddUser
         Me.status.Size = New System.Drawing.Size(78, 24)
         Me.status.TabIndex = 10
         Me.status.Text = "Publish"
-        Me.status.UseVisualStyleBackColor = True
+        Me.status.UseVisualStyleBackColor = False
         '
         'Label11
         '
         Me.Label11.AutoSize = True
+        Me.Label11.BackColor = System.Drawing.Color.Transparent
         Me.Label11.Location = New System.Drawing.Point(16, 531)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(49, 20)
@@ -142,6 +147,7 @@ Partial Class AddUser
         'userB
         '
         Me.userB.AutoSize = True
+        Me.userB.BackColor = System.Drawing.Color.Transparent
         Me.userB.Checked = True
         Me.userB.CheckState = System.Windows.Forms.CheckState.Checked
         Me.userB.Location = New System.Drawing.Point(192, 427)
@@ -149,11 +155,12 @@ Partial Class AddUser
         Me.userB.Size = New System.Drawing.Size(52, 24)
         Me.userB.TabIndex = 8
         Me.userB.Text = "Yes"
-        Me.userB.UseVisualStyleBackColor = True
+        Me.userB.UseVisualStyleBackColor = False
         '
         'Label10
         '
         Me.Label10.AutoSize = True
+        Me.Label10.BackColor = System.Drawing.Color.Transparent
         Me.Label10.Location = New System.Drawing.Point(16, 432)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(156, 20)
@@ -172,6 +179,7 @@ Partial Class AddUser
         'Label9
         '
         Me.Label9.AutoSize = True
+        Me.Label9.BackColor = System.Drawing.Color.Transparent
         Me.Label9.Location = New System.Drawing.Point(16, 384)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(121, 20)
@@ -198,6 +206,7 @@ Partial Class AddUser
         'Label8
         '
         Me.Label8.AutoSize = True
+        Me.Label8.BackColor = System.Drawing.Color.Transparent
         Me.Label8.Location = New System.Drawing.Point(16, 280)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(76, 20)
@@ -225,6 +234,7 @@ Partial Class AddUser
         'Label5
         '
         Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Location = New System.Drawing.Point(16, 480)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(57, 20)
@@ -234,6 +244,7 @@ Partial Class AddUser
         'Label7
         '
         Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.Transparent
         Me.Label7.Location = New System.Drawing.Point(16, 328)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(54, 20)
@@ -251,6 +262,7 @@ Partial Class AddUser
         'Label6
         '
         Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Location = New System.Drawing.Point(16, 232)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(62, 20)
@@ -276,6 +288,7 @@ Partial Class AddUser
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Location = New System.Drawing.Point(16, 184)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(62, 20)
@@ -293,6 +306,7 @@ Partial Class AddUser
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Location = New System.Drawing.Point(16, 136)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(46, 20)
@@ -302,6 +316,7 @@ Partial Class AddUser
         'Label4
         '
         Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Location = New System.Drawing.Point(16, 40)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(55, 20)
@@ -311,6 +326,7 @@ Partial Class AddUser
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Location = New System.Drawing.Point(16, 88)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(41, 20)
@@ -319,6 +335,8 @@ Partial Class AddUser
         '
         'PictureBox1
         '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.PictureBox1.Location = New System.Drawing.Point(286, 433)
         Me.PictureBox1.MaximumSize = New System.Drawing.Size(130, 0)
         Me.PictureBox1.MinimumSize = New System.Drawing.Size(0, 100)
@@ -335,7 +353,7 @@ Partial Class AddUser
         Me.ToolStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SaveToolStripButton})
         Me.ToolStrip.Location = New System.Drawing.Point(4, 0)
         Me.ToolStrip.Name = "ToolStrip"
-        Me.ToolStrip.Size = New System.Drawing.Size(116, 27)
+        Me.ToolStrip.Size = New System.Drawing.Size(77, 27)
         Me.ToolStrip.TabIndex = 33
         Me.ToolStrip.Text = "ToolStrip"
         '

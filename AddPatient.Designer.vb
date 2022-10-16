@@ -45,6 +45,7 @@ Partial Class AddPatient
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.ImageSizeLabel = New System.Windows.Forms.Label()
         Me.UploadBtn = New System.Windows.Forms.Button()
         Me.MaritalStatus = New System.Windows.Forms.ComboBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -78,7 +79,6 @@ Partial Class AddPatient
         Me.Label23 = New System.Windows.Forms.Label()
         Me.ToolStripContainer1 = New System.Windows.Forms.ToolStripContainer()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.ImageSizeLabel = New System.Windows.Forms.Label()
         Me.ToolStrip.SuspendLayout()
         Me.FlowLayoutPanel2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
@@ -114,6 +114,8 @@ Partial Class AddPatient
         '
         Me.FlowLayoutPanel2.AutoScroll = True
         Me.FlowLayoutPanel2.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.FlowLayoutPanel2.BackgroundImage = Global.IdealPathLab.My.Resources.Resources.bg_blur
+        Me.FlowLayoutPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.FlowLayoutPanel2.Controls.Add(Me.GroupBox1)
         Me.FlowLayoutPanel2.Controls.Add(Me.GroupBox3)
         Me.FlowLayoutPanel2.Controls.Add(Me.GroupBox2)
@@ -129,6 +131,8 @@ Partial Class AddPatient
         '
         Me.GroupBox1.AutoSize = True
         Me.GroupBox1.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.GroupBox1.BackgroundImage = Global.IdealPathLab.My.Resources.Resources.bg_blur
+        Me.GroupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.GroupBox1.Controls.Add(Me.RLab)
         Me.GroupBox1.Controls.Add(Me.Referral)
         Me.GroupBox1.Controls.Add(Me.Age)
@@ -218,6 +222,7 @@ Partial Class AddPatient
         '
         'PName
         '
+        Me.PName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PName.Location = New System.Drawing.Point(278, 38)
         Me.PName.Name = "PName"
         Me.PName.PlaceholderText = "Enter Name"
@@ -227,6 +232,7 @@ Partial Class AddPatient
         'Label12
         '
         Me.Label12.AutoSize = True
+        Me.Label12.BackColor = System.Drawing.Color.Transparent
         Me.Label12.Location = New System.Drawing.Point(18, 347)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(199, 20)
@@ -236,6 +242,7 @@ Partial Class AddPatient
         'Label11
         '
         Me.Label11.AutoSize = True
+        Me.Label11.BackColor = System.Drawing.Color.Transparent
         Me.Label11.Location = New System.Drawing.Point(18, 297)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(61, 20)
@@ -245,6 +252,7 @@ Partial Class AddPatient
         'Label10
         '
         Me.Label10.AutoSize = True
+        Me.Label10.BackColor = System.Drawing.Color.Transparent
         Me.Label10.Location = New System.Drawing.Point(18, 256)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(36, 20)
@@ -254,6 +262,7 @@ Partial Class AddPatient
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Location = New System.Drawing.Point(18, 215)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(94, 20)
@@ -263,6 +272,7 @@ Partial Class AddPatient
         'Label4
         '
         Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Location = New System.Drawing.Point(18, 172)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(56, 20)
@@ -272,6 +282,7 @@ Partial Class AddPatient
         'NameL
         '
         Me.NameL.AutoSize = True
+        Me.NameL.BackColor = System.Drawing.Color.Transparent
         Me.NameL.Location = New System.Drawing.Point(18, 41)
         Me.NameL.Name = "NameL"
         Me.NameL.Size = New System.Drawing.Size(49, 20)
@@ -281,6 +292,7 @@ Partial Class AddPatient
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Location = New System.Drawing.Point(18, 85)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(57, 20)
@@ -290,6 +302,7 @@ Partial Class AddPatient
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Location = New System.Drawing.Point(18, 125)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(62, 20)
@@ -300,6 +313,8 @@ Partial Class AddPatient
         '
         Me.GroupBox3.AutoSize = True
         Me.GroupBox3.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.GroupBox3.BackgroundImage = Global.IdealPathLab.My.Resources.Resources.bg_blur
+        Me.GroupBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.GroupBox3.Controls.Add(Me.ImageSizeLabel)
         Me.GroupBox3.Controls.Add(Me.UploadBtn)
         Me.GroupBox3.Controls.Add(Me.MaritalStatus)
@@ -320,6 +335,17 @@ Partial Class AddPatient
         Me.GroupBox3.TabIndex = 27
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Patient Detail Information"
+        '
+        'ImageSizeLabel
+        '
+        Me.ImageSizeLabel.AutoSize = True
+        Me.ImageSizeLabel.BackColor = System.Drawing.Color.Transparent
+        Me.ImageSizeLabel.Font = New System.Drawing.Font("Segoe UI", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.ImageSizeLabel.Location = New System.Drawing.Point(18, 253)
+        Me.ImageSizeLabel.Name = "ImageSizeLabel"
+        Me.ImageSizeLabel.Size = New System.Drawing.Size(204, 15)
+        Me.ImageSizeLabel.TabIndex = 42
+        Me.ImageSizeLabel.Text = "Image size should be less than 500 KB"
         '
         'UploadBtn
         '
@@ -342,6 +368,8 @@ Partial Class AddPatient
         '
         'PictureBox1
         '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.PictureBox1.Location = New System.Drawing.Point(286, 253)
         Me.PictureBox1.MaximumSize = New System.Drawing.Size(130, 0)
         Me.PictureBox1.MinimumSize = New System.Drawing.Size(0, 100)
@@ -354,6 +382,7 @@ Partial Class AddPatient
         'Label24
         '
         Me.Label24.AutoSize = True
+        Me.Label24.BackColor = System.Drawing.Color.Transparent
         Me.Label24.Location = New System.Drawing.Point(18, 213)
         Me.Label24.Name = "Label24"
         Me.Label24.Size = New System.Drawing.Size(51, 20)
@@ -363,6 +392,7 @@ Partial Class AddPatient
         'Label6
         '
         Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Location = New System.Drawing.Point(18, 170)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(100, 20)
@@ -380,6 +410,7 @@ Partial Class AddPatient
         'Label13
         '
         Me.Label13.AutoSize = True
+        Me.Label13.BackColor = System.Drawing.Color.Transparent
         Me.Label13.Location = New System.Drawing.Point(18, 41)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(82, 20)
@@ -397,6 +428,7 @@ Partial Class AddPatient
         'Label14
         '
         Me.Label14.AutoSize = True
+        Me.Label14.BackColor = System.Drawing.Color.Transparent
         Me.Label14.Location = New System.Drawing.Point(18, 84)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(46, 20)
@@ -417,6 +449,7 @@ Partial Class AddPatient
         'Label15
         '
         Me.Label15.AutoSize = True
+        Me.Label15.BackColor = System.Drawing.Color.Transparent
         Me.Label15.Location = New System.Drawing.Point(18, 127)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(50, 20)
@@ -427,6 +460,8 @@ Partial Class AddPatient
         '
         Me.GroupBox2.AutoSize = True
         Me.GroupBox2.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.GroupBox2.BackgroundImage = Global.IdealPathLab.My.Resources.Resources.bg_blur
+        Me.GroupBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.GroupBox2.Controls.Add(Me.CitizenshipNo)
         Me.GroupBox2.Controls.Add(Me.PIssuedDistrict)
         Me.GroupBox2.Controls.Add(Me.PassportExpiredDate)
@@ -507,6 +542,7 @@ Partial Class AddPatient
         'Label17
         '
         Me.Label17.AutoSize = True
+        Me.Label17.BackColor = System.Drawing.Color.Transparent
         Me.Label17.Location = New System.Drawing.Point(18, 291)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(139, 20)
@@ -516,6 +552,7 @@ Partial Class AddPatient
         'Label16
         '
         Me.Label16.AutoSize = True
+        Me.Label16.BackColor = System.Drawing.Color.Transparent
         Me.Label16.Location = New System.Drawing.Point(18, 241)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(160, 20)
@@ -525,6 +562,7 @@ Partial Class AddPatient
         'Label5
         '
         Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Location = New System.Drawing.Point(18, 191)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(154, 20)
@@ -534,6 +572,7 @@ Partial Class AddPatient
         'Label7
         '
         Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.Transparent
         Me.Label7.Location = New System.Drawing.Point(18, 41)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(117, 20)
@@ -543,6 +582,7 @@ Partial Class AddPatient
         'Label8
         '
         Me.Label8.AutoSize = True
+        Me.Label8.BackColor = System.Drawing.Color.Transparent
         Me.Label8.Location = New System.Drawing.Point(18, 91)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(122, 20)
@@ -552,6 +592,7 @@ Partial Class AddPatient
         'Label9
         '
         Me.Label9.AutoSize = True
+        Me.Label9.BackColor = System.Drawing.Color.Transparent
         Me.Label9.Location = New System.Drawing.Point(18, 141)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(145, 20)
@@ -562,6 +603,8 @@ Partial Class AddPatient
         '
         Me.GroupBox4.AutoSize = True
         Me.GroupBox4.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.GroupBox4.BackgroundImage = Global.IdealPathLab.My.Resources.Resources.bg_blur
+        Me.GroupBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.GroupBox4.Controls.Add(Me.CPPhone)
         Me.GroupBox4.Controls.Add(Me.CPRelation)
         Me.GroupBox4.Controls.Add(Me.CPerson)
@@ -603,6 +646,7 @@ Partial Class AddPatient
         'Label21
         '
         Me.Label21.AutoSize = True
+        Me.Label21.BackColor = System.Drawing.Color.Transparent
         Me.Label21.Location = New System.Drawing.Point(18, 41)
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(107, 20)
@@ -612,6 +656,7 @@ Partial Class AddPatient
         'Label22
         '
         Me.Label22.AutoSize = True
+        Me.Label22.BackColor = System.Drawing.Color.Transparent
         Me.Label22.Location = New System.Drawing.Point(18, 91)
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(166, 20)
@@ -621,6 +666,7 @@ Partial Class AddPatient
         'Label23
         '
         Me.Label23.AutoSize = True
+        Me.Label23.BackColor = System.Drawing.Color.Transparent
         Me.Label23.Location = New System.Drawing.Point(18, 141)
         Me.Label23.Name = "Label23"
         Me.Label23.Size = New System.Drawing.Size(179, 20)
@@ -651,16 +697,6 @@ Partial Class AddPatient
         '
         'Timer1
         '
-        '
-        'ImageSizeLabel
-        '
-        Me.ImageSizeLabel.AutoSize = True
-        Me.ImageSizeLabel.Font = New System.Drawing.Font("Segoe UI", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.ImageSizeLabel.Location = New System.Drawing.Point(18, 253)
-        Me.ImageSizeLabel.Name = "ImageSizeLabel"
-        Me.ImageSizeLabel.Size = New System.Drawing.Size(204, 15)
-        Me.ImageSizeLabel.TabIndex = 42
-        Me.ImageSizeLabel.Text = "Image size should be less than 500 KB"
         '
         'AddPatient
         '

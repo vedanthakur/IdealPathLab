@@ -58,6 +58,8 @@ Partial Class AddReferral
         '
         'GroupBox2
         '
+        Me.GroupBox2.BackgroundImage = Global.IdealPathLab.My.Resources.Resources.bg_blur
+        Me.GroupBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.GroupBox2.Controls.Add(Me.DiscountKey)
         Me.GroupBox2.Controls.Add(Me.Status)
         Me.GroupBox2.Controls.Add(Me.Label5)
@@ -80,26 +82,29 @@ Partial Class AddReferral
         'DiscountKey
         '
         Me.DiscountKey.AutoSize = True
+        Me.DiscountKey.BackColor = System.Drawing.Color.Transparent
         Me.DiscountKey.Location = New System.Drawing.Point(220, 229)
         Me.DiscountKey.Name = "DiscountKey"
         Me.DiscountKey.Size = New System.Drawing.Size(52, 24)
         Me.DiscountKey.TabIndex = 8
         Me.DiscountKey.Text = "Yes"
-        Me.DiscountKey.UseVisualStyleBackColor = True
+        Me.DiscountKey.UseVisualStyleBackColor = False
         '
         'Status
         '
         Me.Status.AutoSize = True
+        Me.Status.BackColor = System.Drawing.Color.Transparent
         Me.Status.Location = New System.Drawing.Point(220, 273)
         Me.Status.Name = "Status"
         Me.Status.Size = New System.Drawing.Size(78, 24)
         Me.Status.TabIndex = 9
         Me.Status.Text = "Publish"
-        Me.Status.UseVisualStyleBackColor = True
+        Me.Status.UseVisualStyleBackColor = False
         '
         'Label5
         '
         Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Location = New System.Drawing.Point(18, 91)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(50, 20)
@@ -109,6 +114,7 @@ Partial Class AddReferral
         'Label4
         '
         Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Location = New System.Drawing.Point(18, 45)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(62, 20)
@@ -118,6 +124,7 @@ Partial Class AddReferral
         'Label6
         '
         Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Location = New System.Drawing.Point(18, 137)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(46, 20)
@@ -127,6 +134,7 @@ Partial Class AddReferral
         'Label7
         '
         Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.Transparent
         Me.Label7.Location = New System.Drawing.Point(18, 183)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(183, 20)
@@ -136,6 +144,7 @@ Partial Class AddReferral
         'Label8
         '
         Me.Label8.AutoSize = True
+        Me.Label8.BackColor = System.Drawing.Color.Transparent
         Me.Label8.Location = New System.Drawing.Point(18, 229)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(138, 20)
@@ -145,6 +154,7 @@ Partial Class AddReferral
         'Label9
         '
         Me.Label9.AutoSize = True
+        Me.Label9.BackColor = System.Drawing.Color.Transparent
         Me.Label9.Location = New System.Drawing.Point(18, 275)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(49, 20)
@@ -185,6 +195,8 @@ Partial Class AddReferral
         '
         'GroupBox1
         '
+        Me.GroupBox1.BackgroundImage = Global.IdealPathLab.My.Resources.Resources.bg_blur
+        Me.GroupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.GroupBox1.Controls.Add(Me.Type)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.Label2)
@@ -210,6 +222,7 @@ Partial Class AddReferral
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Location = New System.Drawing.Point(16, 40)
         Me.Label1.Margin = New System.Windows.Forms.Padding(3, 0, 3, 3)
         Me.Label1.Name = "Label1"
@@ -221,6 +234,7 @@ Partial Class AddReferral
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Location = New System.Drawing.Point(16, 86)
         Me.Label2.Margin = New System.Windows.Forms.Padding(3, 0, 3, 3)
         Me.Label2.Name = "Label2"
@@ -240,6 +254,7 @@ Partial Class AddReferral
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Location = New System.Drawing.Point(16, 132)
         Me.Label3.Margin = New System.Windows.Forms.Padding(3, 0, 3, 3)
         Me.Label3.Name = "Label3"

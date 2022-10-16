@@ -61,7 +61,7 @@ Partial Class AddBranch
         Me.ToolStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SaveToolStripButton})
         Me.ToolStrip.Location = New System.Drawing.Point(4, 0)
         Me.ToolStrip.Name = "ToolStrip"
-        Me.ToolStrip.Size = New System.Drawing.Size(116, 27)
+        Me.ToolStrip.Size = New System.Drawing.Size(77, 27)
         Me.ToolStrip.TabIndex = 31
         Me.ToolStrip.Text = "ToolStrip"
         '
@@ -86,6 +86,8 @@ Partial Class AddBranch
         '
         'GroupBox1
         '
+        Me.GroupBox1.BackgroundImage = Global.IdealPathLab.My.Resources.Resources.bg_blur
+        Me.GroupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.GroupBox1.Controls.Add(Me.PictureBox1)
         Me.GroupBox1.Controls.Add(Me.status)
         Me.GroupBox1.Controls.Add(Me.Label7)
@@ -111,6 +113,8 @@ Partial Class AddBranch
         '
         'PictureBox1
         '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.PictureBox1.Location = New System.Drawing.Point(321, 195)
         Me.PictureBox1.MaximumSize = New System.Drawing.Size(130, 0)
         Me.PictureBox1.MinimumSize = New System.Drawing.Size(0, 100)
@@ -123,6 +127,7 @@ Partial Class AddBranch
         'status
         '
         Me.status.AutoSize = True
+        Me.status.BackColor = System.Drawing.Color.Transparent
         Me.status.Checked = True
         Me.status.CheckState = System.Windows.Forms.CheckState.Checked
         Me.status.Location = New System.Drawing.Point(140, 322)
@@ -130,11 +135,12 @@ Partial Class AddBranch
         Me.status.Size = New System.Drawing.Size(78, 24)
         Me.status.TabIndex = 32
         Me.status.Text = "Publish"
-        Me.status.UseVisualStyleBackColor = True
+        Me.status.UseVisualStyleBackColor = False
         '
         'Label7
         '
         Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.Transparent
         Me.Label7.Location = New System.Drawing.Point(18, 323)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(49, 20)
@@ -152,6 +158,7 @@ Partial Class AddBranch
         'Label6
         '
         Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Location = New System.Drawing.Point(18, 276)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(107, 20)
@@ -194,6 +201,7 @@ Partial Class AddBranch
         'Label5
         '
         Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Location = New System.Drawing.Point(18, 229)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(51, 20)
@@ -203,6 +211,7 @@ Partial Class AddBranch
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Location = New System.Drawing.Point(18, 182)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(46, 20)
@@ -220,6 +229,7 @@ Partial Class AddBranch
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Location = New System.Drawing.Point(18, 135)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(108, 20)
@@ -229,6 +239,7 @@ Partial Class AddBranch
         'Label4
         '
         Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Location = New System.Drawing.Point(18, 41)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(104, 20)
@@ -238,6 +249,7 @@ Partial Class AddBranch
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Location = New System.Drawing.Point(18, 88)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(62, 20)

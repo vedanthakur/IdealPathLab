@@ -83,6 +83,9 @@ Partial Class AddExaminationSubGroup
         '
         'GroupBox1
         '
+        Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox1.BackgroundImage = Global.IdealPathLab.My.Resources.Resources.bg_blur
+        Me.GroupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.GroupBox1.Controls.Add(Me.Price)
         Me.GroupBox1.Controls.Add(Me.KeyB)
         Me.GroupBox1.Controls.Add(Me.StatusP)

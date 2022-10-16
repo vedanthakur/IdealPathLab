@@ -107,6 +107,9 @@ Partial Class AddHumanResource
         '
         Me.FlowLayoutPanel2.AutoScroll = True
         Me.FlowLayoutPanel2.AutoScrollMargin = New System.Drawing.Size(0, 30)
+        Me.FlowLayoutPanel2.BackColor = System.Drawing.Color.Transparent
+        Me.FlowLayoutPanel2.BackgroundImage = Global.IdealPathLab.My.Resources.Resources.bg_blur
+        Me.FlowLayoutPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.FlowLayoutPanel2.Controls.Add(Me.GroupBox3)
         Me.FlowLayoutPanel2.Controls.Add(Me.GroupBox1)
         Me.FlowLayoutPanel2.Controls.Add(Me.GroupBox4)
@@ -120,6 +123,8 @@ Partial Class AddHumanResource
         '
         'GroupBox3
         '
+        Me.GroupBox3.BackgroundImage = Global.IdealPathLab.My.Resources.Resources.bg_blur
+        Me.GroupBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.GroupBox3.Controls.Add(Me.ImageSizeLabel)
         Me.GroupBox3.Controls.Add(Me.PictureBox1)
         Me.GroupBox3.Controls.Add(Me.Button3)
@@ -152,6 +157,7 @@ Partial Class AddHumanResource
         '
         'PictureBox1
         '
+        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.PictureBox1.Location = New System.Drawing.Point(297, 26)
         Me.PictureBox1.MaximumSize = New System.Drawing.Size(130, 0)
         Me.PictureBox1.MinimumSize = New System.Drawing.Size(0, 100)
@@ -250,6 +256,8 @@ Partial Class AddHumanResource
         'GroupBox1
         '
         Me.GroupBox1.AutoSize = True
+        Me.GroupBox1.BackgroundImage = Global.IdealPathLab.My.Resources.Resources.bg_blur
+        Me.GroupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.GroupBox1.Controls.Add(Me.ImageSizeLabel2)
         Me.GroupBox1.Controls.Add(Me.PictureBox2)
         Me.GroupBox1.Controls.Add(Me.Button4)
@@ -282,6 +290,7 @@ Partial Class AddHumanResource
         '
         'PictureBox2
         '
+        Me.PictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.PictureBox2.Location = New System.Drawing.Point(354, 155)
         Me.PictureBox2.MaximumSize = New System.Drawing.Size(130, 0)
         Me.PictureBox2.MinimumSize = New System.Drawing.Size(0, 100)
@@ -380,6 +389,8 @@ Partial Class AddHumanResource
         '
         'GroupBox4
         '
+        Me.GroupBox4.BackgroundImage = Global.IdealPathLab.My.Resources.Resources.bg_blur
+        Me.GroupBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.GroupBox4.Controls.Add(Me.Label21)
         Me.GroupBox4.Controls.Add(Me.Instagram)
         Me.GroupBox4.Controls.Add(Me.Label22)
@@ -466,6 +477,8 @@ Partial Class AddHumanResource
         '
         'GroupBox2
         '
+        Me.GroupBox2.BackgroundImage = Global.IdealPathLab.My.Resources.Resources.bg_blur
+        Me.GroupBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.GroupBox2.Controls.Add(Me.useB)
         Me.GroupBox2.Controls.Add(Me.statusB)
         Me.GroupBox2.Controls.Add(Me.Speciqlization)

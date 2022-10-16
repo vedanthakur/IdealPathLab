@@ -134,7 +134,7 @@ Partial Class AddExamination
         Me.FlowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.FlowLayoutPanel1.Location = New System.Drawing.Point(0, 0)
         Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
-        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(555, 755)
+        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(528, 755)
         Me.FlowLayoutPanel1.TabIndex = 8
         '
         'ToolStripContainer1
@@ -144,13 +144,13 @@ Partial Class AddExamination
         'ToolStripContainer1.ContentPanel
         '
         Me.ToolStripContainer1.ContentPanel.Controls.Add(Me.GroupBox1)
-        Me.ToolStripContainer1.ContentPanel.Size = New System.Drawing.Size(555, 728)
+        Me.ToolStripContainer1.ContentPanel.Size = New System.Drawing.Size(528, 728)
         Me.ToolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ToolStripContainer1.LeftToolStripPanelVisible = False
         Me.ToolStripContainer1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripContainer1.Name = "ToolStripContainer1"
         Me.ToolStripContainer1.RightToolStripPanelVisible = False
-        Me.ToolStripContainer1.Size = New System.Drawing.Size(555, 755)
+        Me.ToolStripContainer1.Size = New System.Drawing.Size(528, 755)
         Me.ToolStripContainer1.TabIndex = 9
         Me.ToolStripContainer1.Text = "ToolStripContainer1"
         '
@@ -160,6 +160,8 @@ Partial Class AddExamination
         '
         'GroupBox1
         '
+        Me.GroupBox1.BackgroundImage = Global.IdealPathLab.My.Resources.Resources.bg_blur
+        Me.GroupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.GroupBox1.Controls.Add(Me.StatusP)
         Me.GroupBox1.Controls.Add(Me.ValidationonType)
         Me.GroupBox1.Controls.Add(Me.Comment)
@@ -190,7 +192,7 @@ Partial Class AddExamination
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Location = New System.Drawing.Point(11, 3)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(532, 716)
+        Me.GroupBox1.Size = New System.Drawing.Size(508, 716)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Add Examination"
@@ -198,24 +200,25 @@ Partial Class AddExamination
         'StatusP
         '
         Me.StatusP.AutoSize = True
-        Me.StatusP.Location = New System.Drawing.Point(214, 676)
+        Me.StatusP.BackColor = System.Drawing.Color.Transparent
+        Me.StatusP.Location = New System.Drawing.Point(189, 676)
         Me.StatusP.Name = "StatusP"
         Me.StatusP.Size = New System.Drawing.Size(78, 24)
         Me.StatusP.TabIndex = 27
         Me.StatusP.Text = "Publish"
-        Me.StatusP.UseVisualStyleBackColor = True
+        Me.StatusP.UseVisualStyleBackColor = False
         '
         'ValidationonType
         '
         Me.ValidationonType.FormattingEnabled = True
-        Me.ValidationonType.Location = New System.Drawing.Point(214, 630)
+        Me.ValidationonType.Location = New System.Drawing.Point(189, 630)
         Me.ValidationonType.Name = "ValidationonType"
         Me.ValidationonType.Size = New System.Drawing.Size(151, 28)
         Me.ValidationonType.TabIndex = 26
         '
         'Comment
         '
-        Me.Comment.Location = New System.Drawing.Point(214, 524)
+        Me.Comment.Location = New System.Drawing.Point(189, 524)
         Me.Comment.Multiline = True
         Me.Comment.Name = "Comment"
         Me.Comment.Size = New System.Drawing.Size(300, 89)
@@ -223,7 +226,7 @@ Partial Class AddExamination
         '
         'Price
         '
-        Me.Price.Location = New System.Drawing.Point(214, 479)
+        Me.Price.Location = New System.Drawing.Point(189, 479)
         Me.Price.Name = "Price"
         Me.Price.Size = New System.Drawing.Size(151, 27)
         Me.Price.TabIndex = 24
@@ -231,49 +234,49 @@ Partial Class AddExamination
         'SampleType
         '
         Me.SampleType.FormattingEnabled = True
-        Me.SampleType.Location = New System.Drawing.Point(214, 434)
+        Me.SampleType.Location = New System.Drawing.Point(189, 434)
         Me.SampleType.Name = "SampleType"
         Me.SampleType.Size = New System.Drawing.Size(151, 28)
         Me.SampleType.TabIndex = 23
         '
         'DefaultValue
         '
-        Me.DefaultValue.Location = New System.Drawing.Point(214, 389)
+        Me.DefaultValue.Location = New System.Drawing.Point(189, 389)
         Me.DefaultValue.Name = "DefaultValue"
         Me.DefaultValue.Size = New System.Drawing.Size(151, 27)
         Me.DefaultValue.TabIndex = 22
         '
         'ReportB
         '
-        Me.ReportB.Location = New System.Drawing.Point(214, 344)
+        Me.ReportB.Location = New System.Drawing.Point(189, 344)
         Me.ReportB.Name = "ReportB"
         Me.ReportB.Size = New System.Drawing.Size(151, 27)
         Me.ReportB.TabIndex = 21
         '
         'CodeB
         '
-        Me.CodeB.Location = New System.Drawing.Point(214, 299)
+        Me.CodeB.Location = New System.Drawing.Point(189, 299)
         Me.CodeB.Name = "CodeB"
         Me.CodeB.Size = New System.Drawing.Size(151, 27)
         Me.CodeB.TabIndex = 20
         '
         'Rank
         '
-        Me.Rank.Location = New System.Drawing.Point(214, 254)
+        Me.Rank.Location = New System.Drawing.Point(189, 254)
         Me.Rank.Name = "Rank"
         Me.Rank.Size = New System.Drawing.Size(151, 27)
         Me.Rank.TabIndex = 19
         '
         'KeyB
         '
-        Me.KeyB.Location = New System.Drawing.Point(214, 209)
+        Me.KeyB.Location = New System.Drawing.Point(189, 209)
         Me.KeyB.Name = "KeyB"
         Me.KeyB.Size = New System.Drawing.Size(151, 27)
         Me.KeyB.TabIndex = 18
         '
         'TitleB
         '
-        Me.TitleB.Location = New System.Drawing.Point(214, 164)
+        Me.TitleB.Location = New System.Drawing.Point(189, 164)
         Me.TitleB.Name = "TitleB"
         Me.TitleB.Size = New System.Drawing.Size(151, 27)
         Me.TitleB.TabIndex = 17
@@ -281,7 +284,7 @@ Partial Class AddExamination
         'Unit
         '
         Me.Unit.FormattingEnabled = True
-        Me.Unit.Location = New System.Drawing.Point(214, 119)
+        Me.Unit.Location = New System.Drawing.Point(189, 119)
         Me.Unit.Name = "Unit"
         Me.Unit.Size = New System.Drawing.Size(151, 28)
         Me.Unit.TabIndex = 16
@@ -289,7 +292,7 @@ Partial Class AddExamination
         'ExaminationSubGroup
         '
         Me.ExaminationSubGroup.FormattingEnabled = True
-        Me.ExaminationSubGroup.Location = New System.Drawing.Point(214, 74)
+        Me.ExaminationSubGroup.Location = New System.Drawing.Point(189, 74)
         Me.ExaminationSubGroup.Name = "ExaminationSubGroup"
         Me.ExaminationSubGroup.Size = New System.Drawing.Size(151, 28)
         Me.ExaminationSubGroup.TabIndex = 15
@@ -297,7 +300,7 @@ Partial Class AddExamination
         'ExaminationGroup
         '
         Me.ExaminationGroup.FormattingEnabled = True
-        Me.ExaminationGroup.Location = New System.Drawing.Point(214, 29)
+        Me.ExaminationGroup.Location = New System.Drawing.Point(189, 29)
         Me.ExaminationGroup.Name = "ExaminationGroup"
         Me.ExaminationGroup.Size = New System.Drawing.Size(151, 28)
         Me.ExaminationGroup.TabIndex = 14
@@ -305,6 +308,7 @@ Partial Class AddExamination
         'Label14
         '
         Me.Label14.AutoSize = True
+        Me.Label14.BackColor = System.Drawing.Color.Transparent
         Me.Label14.Location = New System.Drawing.Point(7, 677)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(49, 20)
@@ -314,6 +318,7 @@ Partial Class AddExamination
         'Label13
         '
         Me.Label13.AutoSize = True
+        Me.Label13.BackColor = System.Drawing.Color.Transparent
         Me.Label13.Location = New System.Drawing.Point(7, 633)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(132, 20)
@@ -323,6 +328,7 @@ Partial Class AddExamination
         'Label12
         '
         Me.Label12.AutoSize = True
+        Me.Label12.BackColor = System.Drawing.Color.Transparent
         Me.Label12.Location = New System.Drawing.Point(7, 527)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(74, 20)
@@ -332,6 +338,7 @@ Partial Class AddExamination
         'Label11
         '
         Me.Label11.AutoSize = True
+        Me.Label11.BackColor = System.Drawing.Color.Transparent
         Me.Label11.Location = New System.Drawing.Point(7, 482)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(41, 20)
@@ -341,6 +348,7 @@ Partial Class AddExamination
         'Label10
         '
         Me.Label10.AutoSize = True
+        Me.Label10.BackColor = System.Drawing.Color.Transparent
         Me.Label10.Location = New System.Drawing.Point(7, 437)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(94, 20)
@@ -350,6 +358,7 @@ Partial Class AddExamination
         'Label9
         '
         Me.Label9.AutoSize = True
+        Me.Label9.BackColor = System.Drawing.Color.Transparent
         Me.Label9.Location = New System.Drawing.Point(7, 392)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(98, 20)
@@ -359,6 +368,7 @@ Partial Class AddExamination
         'Label8
         '
         Me.Label8.AutoSize = True
+        Me.Label8.BackColor = System.Drawing.Color.Transparent
         Me.Label8.Location = New System.Drawing.Point(7, 347)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(54, 20)
@@ -368,6 +378,7 @@ Partial Class AddExamination
         'Label7
         '
         Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.Transparent
         Me.Label7.Location = New System.Drawing.Point(6, 302)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(44, 20)
@@ -377,6 +388,7 @@ Partial Class AddExamination
         'Label6
         '
         Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Location = New System.Drawing.Point(6, 257)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(41, 20)
@@ -386,6 +398,7 @@ Partial Class AddExamination
         'Label5
         '
         Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Location = New System.Drawing.Point(6, 212)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(33, 20)
@@ -395,6 +408,7 @@ Partial Class AddExamination
         'Label4
         '
         Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Location = New System.Drawing.Point(6, 167)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(44, 20)
@@ -404,6 +418,7 @@ Partial Class AddExamination
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Location = New System.Drawing.Point(7, 122)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(42, 20)
@@ -413,6 +428,7 @@ Partial Class AddExamination
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Location = New System.Drawing.Point(7, 77)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(165, 20)
@@ -422,6 +438,7 @@ Partial Class AddExamination
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Location = New System.Drawing.Point(7, 32)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(136, 20)
@@ -432,7 +449,7 @@ Partial Class AddExamination
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(555, 755)
+        Me.ClientSize = New System.Drawing.Size(528, 755)
         Me.Controls.Add(Me.ToolStripContainer1)
         Me.Controls.Add(Me.FlowLayoutPanel1)
         Me.Name = "AddExamination"
