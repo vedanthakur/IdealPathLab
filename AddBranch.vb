@@ -96,4 +96,40 @@ Public Class AddBranch
         End Try
         Timer1.Stop()
     End Sub
+
+    Private Sub Phone_TextChanged(sender As Object, e As EventArgs) Handles Phone.TextChanged
+
+    End Sub
+
+    Private Sub Phone_KeyPress(sender As Object, e As KeyPressEventArgs) Handles Phone.KeyPress
+        If Asc(e.KeyChar) <> 8 Then
+            If Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57 Then
+                e.Handled = True
+            End If
+        End If
+    End Sub
+
+    Private Sub BName_KeyPress(sender As Object, e As KeyPressEventArgs) Handles BName.KeyPress
+        If Asc(e.KeyChar) <> 8 Then
+            If (Asc(e.KeyChar) < 65 Or Asc(e.KeyChar) > 90) And (Asc(e.KeyChar) < 97 Or Asc(e.KeyChar) > 122) Then
+                e.Handled = True
+            End If
+        End If
+    End Sub
+
+    Private Sub ContactPerson_KeyPress(sender As Object, e As KeyPressEventArgs) Handles ContactPerson.KeyPress
+        If Asc(e.KeyChar) <> 8 Then
+            If (Asc(e.KeyChar) < 65 Or Asc(e.KeyChar) > 90) And (Asc(e.KeyChar) < 97 Or Asc(e.KeyChar) > 122) Then
+                e.Handled = True
+            End If
+        End If
+    End Sub
+
+    Private Sub Address_KeyPress(sender As Object, e As KeyPressEventArgs) Handles Address.KeyPress
+        If Asc(e.KeyChar) <> 8 Then
+            If (Asc(e.KeyChar) < 65 Or Asc(e.KeyChar) > 90) And (Asc(e.KeyChar) < 97 Or Asc(e.KeyChar) > 122) Then
+                e.Handled = True
+            End If
+        End If
+    End Sub
 End Class

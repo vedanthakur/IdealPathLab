@@ -57,10 +57,9 @@ Public Class AddPatient
         End If
     End Sub
 
-    'Private Sub DOB_ValueChanged(sender As Object, e As EventArgs) Handles DOB.ValueChanged
-    'Age.Text = 2022 - DOB.Value.Year
-    'MessageBox.Show(DOB.Value.ToString)
-    'End Sub
+    Private Sub DOB_ValueChanged(sender As Object, e As EventArgs) Handles DOB.ValueChanged
+        Age.Text = 2022 - DOB.Value.Year
+    End Sub
 
     Private Sub PictureBox1_LoadCompleted(sender As Object, e As System.ComponentModel.AsyncCompletedEventArgs) Handles PictureBox1.LoadCompleted
         ImageFunction()
@@ -128,4 +127,83 @@ Public Class AddPatient
         Timer1.Stop()
     End Sub
 
+    Private Sub Mobile_KeyPress(sender As Object, e As KeyPressEventArgs) Handles Mobile.KeyPress
+        If Asc(e.KeyChar) <> 8 Then
+            If Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57 Then
+                e.Handled = True
+            End If
+        End If
+    End Sub
+
+    Private Sub Phone_KeyPress(sender As Object, e As KeyPressEventArgs) Handles Phone.KeyPress
+        If Asc(e.KeyChar) <> 8 Then
+            If Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57 Then
+                e.Handled = True
+            End If
+        End If
+    End Sub
+
+    Private Sub PassportNo_KeyPress(sender As Object, e As KeyPressEventArgs) Handles PassportNo.KeyPress
+        If Asc(e.KeyChar) <> 8 Then
+            If Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57 Then
+                e.Handled = True
+            End If
+        End If
+    End Sub
+
+    Private Sub CPPhone_KeyPress(sender As Object, e As KeyPressEventArgs) Handles CPPhone.KeyPress
+        If Asc(e.KeyChar) <> 8 Then
+            If Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57 Then
+                e.Handled = True
+            End If
+        End If
+    End Sub
+
+    Private Sub Age_KeyPress(sender As Object, e As KeyPressEventArgs) Handles Age.KeyPress
+        If Asc(e.KeyChar) <> 8 Then
+            If Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57 Then
+                e.Handled = True
+            End If
+        End If
+    End Sub
+
+    Private Sub CitizenshipNo_KeyPress(sender As Object, e As KeyPressEventArgs) Handles CitizenshipNo.KeyPress
+        If Asc(e.KeyChar) <> 8 Then
+            If Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57 Then
+                e.Handled = True
+            End If
+        End If
+    End Sub
+
+    Private Sub PName_KeyPress(sender As Object, e As KeyPressEventArgs) Handles PName.KeyPress
+        If Asc(e.KeyChar) <> 8 Then
+            If (Asc(e.KeyChar) < 65 Or Asc(e.KeyChar) > 90) And (Asc(e.KeyChar) < 97 Or Asc(e.KeyChar) > 122) Then
+                e.Handled = True
+            End If
+        End If
+    End Sub
+
+    Private Sub Address_KeyPress(sender As Object, e As KeyPressEventArgs) Handles Address.KeyPress
+        If Asc(e.KeyChar) <> 8 Then
+            If (Asc(e.KeyChar) < 65 Or Asc(e.KeyChar) > 90) And (Asc(e.KeyChar) < 97 Or Asc(e.KeyChar) > 122) Then
+                e.Handled = True
+            End If
+        End If
+    End Sub
+
+    Private Sub CPerson_KeyPress(sender As Object, e As KeyPressEventArgs) Handles CPerson.KeyPress
+        If Asc(e.KeyChar) <> 8 Then
+            If (Asc(e.KeyChar) < 65 Or Asc(e.KeyChar) > 90) And (Asc(e.KeyChar) < 97 Or Asc(e.KeyChar) > 122) Then
+                e.Handled = True
+            End If
+        End If
+    End Sub
+
+    Private Sub CPRelation_KeyPress(sender As Object, e As KeyPressEventArgs) Handles CPRelation.KeyPress
+        If Asc(e.KeyChar) <> 8 Then
+            If (Asc(e.KeyChar) < 65 Or Asc(e.KeyChar) > 90) And (Asc(e.KeyChar) < 97 Or Asc(e.KeyChar) > 122) Then
+                e.Handled = True
+            End If
+        End If
+    End Sub
 End Class

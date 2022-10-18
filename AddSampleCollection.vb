@@ -60,4 +60,12 @@ Public Class AddSampleCollection
             con.Close()
         End Try
     End Sub
+
+    Private Sub Address_KeyPress(sender As Object, e As KeyPressEventArgs) Handles Address.KeyPress
+        If Asc(e.KeyChar) <> 8 Then
+            If (Asc(e.KeyChar) < 65 Or Asc(e.KeyChar) > 90) And (Asc(e.KeyChar) < 97 Or Asc(e.KeyChar) > 122) Then
+                e.Handled = True
+            End If
+        End If
+    End Sub
 End Class

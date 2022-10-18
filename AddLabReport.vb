@@ -34,6 +34,22 @@ Public Class AddLabReport
         Next
     End Sub
 
+    Private Sub PName_KeyPress(sender As Object, e As KeyPressEventArgs) Handles PName.KeyPress
+        If Asc(e.KeyChar) <> 8 Then
+            If (Asc(e.KeyChar) < 65 Or Asc(e.KeyChar) > 90) And (Asc(e.KeyChar) < 97 Or Asc(e.KeyChar) > 122) Then
+                e.Handled = True
+            End If
+        End If
+    End Sub
+
+    Private Sub Address_KeyPress(sender As Object, e As KeyPressEventArgs) Handles Address.KeyPress
+        If Asc(e.KeyChar) <> 8 Then
+            If (Asc(e.KeyChar) < 65 Or Asc(e.KeyChar) > 90) And (Asc(e.KeyChar) < 97 Or Asc(e.KeyChar) > 122) Then
+                e.Handled = True
+            End If
+        End If
+    End Sub
+
     Dim arrimage() As Byte
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click

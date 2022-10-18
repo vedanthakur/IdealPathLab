@@ -141,4 +141,20 @@ Public Class AddUser
         End Try
         Timer1.Stop()
     End Sub
+
+    Private Sub nameL_KeyPress(sender As Object, e As KeyPressEventArgs) Handles nameL.KeyPress
+        If Asc(e.KeyChar) <> 8 Then
+            If (Asc(e.KeyChar) < 65 Or Asc(e.KeyChar) > 90) And (Asc(e.KeyChar) < 97 Or Asc(e.KeyChar) > 122) Then
+                e.Handled = True
+            End If
+        End If
+    End Sub
+
+    Private Sub address_KeyPress(sender As Object, e As KeyPressEventArgs) Handles address.KeyPress
+        If Asc(e.KeyChar) <> 8 Then
+            If (Asc(e.KeyChar) < 65 Or Asc(e.KeyChar) > 90) And (Asc(e.KeyChar) < 97 Or Asc(e.KeyChar) > 122) Then
+                e.Handled = True
+            End If
+        End If
+    End Sub
 End Class
