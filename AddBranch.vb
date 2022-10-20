@@ -39,6 +39,8 @@ Public Class AddBranch
             If i > 0 Then
                 If SaveToolStripButton.Text = "Save" Then
                     MessageBox.Show("New record has been inserted successfully!", "Alert for Add Branch", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                    ClearTextBox(Me)
+                    ClearPictureBox(PictureBox1)
                 Else
                     MessageBox.Show("Record has been updated successfully!", "Alert for Update Branch", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 End If
@@ -54,6 +56,22 @@ Public Class AddBranch
         Finally
             con.Close()
         End Try
+    End Sub
+
+    Public Sub ClearTextBox(parent As Control)
+        For Each child As Control In parent.Controls
+            ClearTextBox(child)
+        Next
+        If TryCast(parent, System.Windows.Forms.TextBox) IsNot Nothing Then
+            TryCast(parent, System.Windows.Forms.TextBox).Text = [String].Empty
+        End If
+    End Sub
+
+    Private Sub ClearPictureBox(pb As PictureBox)
+        pb.Image = Nothing
+        pb.BackColor = Color.Empty
+        pb.Invalidate()
+        pb.BackColor = Color.Transparent
     End Sub
     Private Sub ImageButton_Click(sender As Object, e As EventArgs) Handles ImageButton.Click
         Dim openfiledialog1 As New OpenFileDialog()

@@ -70,12 +70,35 @@ Partial Class MDIParent1
         Me.CreateUserMenu = New System.Windows.Forms.ToolStripMenuItem()
         Me.ParentDataMenu = New System.Windows.Forms.ToolStripMenuItem()
         Me.LabSideMenu = New System.Windows.Forms.ToolStripMenuItem()
-        Me.HumanResTYpeLabSideMenu = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ReferralTYpeLabSideMenu = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SpecializationLabSideMenu = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SampleLabSideMenu = New System.Windows.Forms.ToolStripMenuItem()
-        Me.UnitLabSideMenu = New System.Windows.Forms.ToolStripMenuItem()
-        Me.DepartmentLabSideMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem7 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem8 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem9 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem10 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem11 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem12 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem4 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem13 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem14 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem15 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem16 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DefaultValueToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem17 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem18 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PaymentTermToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem19 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem20 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem5 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem21 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem22 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem6 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem23 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem24 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.BrandToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem25 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem26 = New System.Windows.Forms.ToolStripMenuItem()
         Me.CompanyProfileMenu = New System.Windows.Forms.ToolStripMenuItem()
         Me.LogoutMenu = New System.Windows.Forms.ToolStripMenuItem()
         Me.StatusStrip.SuspendLayout()
@@ -133,13 +156,13 @@ Partial Class MDIParent1
         'ListAppoinmentMenu
         '
         Me.ListAppoinmentMenu.Name = "ListAppoinmentMenu"
-        Me.ListAppoinmentMenu.Size = New System.Drawing.Size(224, 26)
+        Me.ListAppoinmentMenu.Size = New System.Drawing.Size(169, 26)
         Me.ListAppoinmentMenu.Text = "&List"
         '
         'ParentDataAppoinmentMenu
         '
         Me.ParentDataAppoinmentMenu.Name = "ParentDataAppoinmentMenu"
-        Me.ParentDataAppoinmentMenu.Size = New System.Drawing.Size(224, 26)
+        Me.ParentDataAppoinmentMenu.Size = New System.Drawing.Size(169, 26)
         Me.ParentDataAppoinmentMenu.Text = "&Parent Data"
         '
         'ReferralMenu
@@ -152,13 +175,13 @@ Partial Class MDIParent1
         'ListReferralMenu
         '
         Me.ListReferralMenu.Name = "ListReferralMenu"
-        Me.ListReferralMenu.Size = New System.Drawing.Size(224, 26)
+        Me.ListReferralMenu.Size = New System.Drawing.Size(135, 26)
         Me.ListReferralMenu.Text = "&List"
         '
         'CreateReferralMenu
         '
         Me.CreateReferralMenu.Name = "CreateReferralMenu"
-        Me.CreateReferralMenu.Size = New System.Drawing.Size(224, 26)
+        Me.CreateReferralMenu.Size = New System.Drawing.Size(135, 26)
         Me.CreateReferralMenu.Text = "&Create"
         '
         'PatientMenu
@@ -171,13 +194,13 @@ Partial Class MDIParent1
         'ListPatientMenu
         '
         Me.ListPatientMenu.Name = "ListPatientMenu"
-        Me.ListPatientMenu.Size = New System.Drawing.Size(224, 26)
+        Me.ListPatientMenu.Size = New System.Drawing.Size(135, 26)
         Me.ListPatientMenu.Text = "&List"
         '
         'CreatePatientMenu
         '
         Me.CreatePatientMenu.Name = "CreatePatientMenu"
-        Me.CreatePatientMenu.Size = New System.Drawing.Size(224, 26)
+        Me.CreatePatientMenu.Size = New System.Drawing.Size(135, 26)
         Me.CreatePatientMenu.Text = "&Create"
         '
         'InvoiceMenu
@@ -190,13 +213,13 @@ Partial Class MDIParent1
         'ListInvoiceMenu
         '
         Me.ListInvoiceMenu.Name = "ListInvoiceMenu"
-        Me.ListInvoiceMenu.Size = New System.Drawing.Size(224, 26)
+        Me.ListInvoiceMenu.Size = New System.Drawing.Size(135, 26)
         Me.ListInvoiceMenu.Text = "&List"
         '
         'CreateInvoiceMenu
         '
         Me.CreateInvoiceMenu.Name = "CreateInvoiceMenu"
-        Me.CreateInvoiceMenu.Size = New System.Drawing.Size(224, 26)
+        Me.CreateInvoiceMenu.Size = New System.Drawing.Size(135, 26)
         Me.CreateInvoiceMenu.Text = "&Create"
         '
         'SampleCollectionMenu
@@ -209,13 +232,13 @@ Partial Class MDIParent1
         'ListSampleCollectionMenu
         '
         Me.ListSampleCollectionMenu.Name = "ListSampleCollectionMenu"
-        Me.ListSampleCollectionMenu.Size = New System.Drawing.Size(224, 26)
+        Me.ListSampleCollectionMenu.Size = New System.Drawing.Size(135, 26)
         Me.ListSampleCollectionMenu.Text = "&List"
         '
         'CreateSampleCollectionMenu
         '
         Me.CreateSampleCollectionMenu.Name = "CreateSampleCollectionMenu"
-        Me.CreateSampleCollectionMenu.Size = New System.Drawing.Size(224, 26)
+        Me.CreateSampleCollectionMenu.Size = New System.Drawing.Size(135, 26)
         Me.CreateSampleCollectionMenu.Text = "&Create"
         '
         'LabResultMenu
@@ -228,13 +251,13 @@ Partial Class MDIParent1
         'ListLabResultMenu
         '
         Me.ListLabResultMenu.Name = "ListLabResultMenu"
-        Me.ListLabResultMenu.Size = New System.Drawing.Size(224, 26)
+        Me.ListLabResultMenu.Size = New System.Drawing.Size(135, 26)
         Me.ListLabResultMenu.Text = "&List"
         '
         'CreateLabResultMenu
         '
         Me.CreateLabResultMenu.Name = "CreateLabResultMenu"
-        Me.CreateLabResultMenu.Size = New System.Drawing.Size(224, 26)
+        Me.CreateLabResultMenu.Size = New System.Drawing.Size(135, 26)
         Me.CreateLabResultMenu.Text = "&Create"
         '
         'HumanResourceMenu
@@ -247,13 +270,13 @@ Partial Class MDIParent1
         'ListHumanResourceMenu
         '
         Me.ListHumanResourceMenu.Name = "ListHumanResourceMenu"
-        Me.ListHumanResourceMenu.Size = New System.Drawing.Size(224, 26)
+        Me.ListHumanResourceMenu.Size = New System.Drawing.Size(135, 26)
         Me.ListHumanResourceMenu.Text = "&List"
         '
         'CreateHumanResourceMenu
         '
         Me.CreateHumanResourceMenu.Name = "CreateHumanResourceMenu"
-        Me.CreateHumanResourceMenu.Size = New System.Drawing.Size(224, 26)
+        Me.CreateHumanResourceMenu.Size = New System.Drawing.Size(135, 26)
         Me.CreateHumanResourceMenu.Text = "&Create"
         '
         'ServicesMenu
@@ -273,13 +296,13 @@ Partial Class MDIParent1
         'ListExaminationGroupMenu
         '
         Me.ListExaminationGroupMenu.Name = "ListExaminationGroupMenu"
-        Me.ListExaminationGroupMenu.Size = New System.Drawing.Size(224, 26)
+        Me.ListExaminationGroupMenu.Size = New System.Drawing.Size(135, 26)
         Me.ListExaminationGroupMenu.Text = "&List"
         '
         'CreateExaminationGroupMenu
         '
         Me.CreateExaminationGroupMenu.Name = "CreateExaminationGroupMenu"
-        Me.CreateExaminationGroupMenu.Size = New System.Drawing.Size(224, 26)
+        Me.CreateExaminationGroupMenu.Size = New System.Drawing.Size(135, 26)
         Me.CreateExaminationGroupMenu.Text = "&Create"
         '
         'ExaminationSubGroupMenu
@@ -292,13 +315,13 @@ Partial Class MDIParent1
         'ListExaminationSubGroupMenu
         '
         Me.ListExaminationSubGroupMenu.Name = "ListExaminationSubGroupMenu"
-        Me.ListExaminationSubGroupMenu.Size = New System.Drawing.Size(224, 26)
+        Me.ListExaminationSubGroupMenu.Size = New System.Drawing.Size(135, 26)
         Me.ListExaminationSubGroupMenu.Text = "&List"
         '
         'CreateExaminationSubGroupMenu
         '
         Me.CreateExaminationSubGroupMenu.Name = "CreateExaminationSubGroupMenu"
-        Me.CreateExaminationSubGroupMenu.Size = New System.Drawing.Size(224, 26)
+        Me.CreateExaminationSubGroupMenu.Size = New System.Drawing.Size(135, 26)
         Me.CreateExaminationSubGroupMenu.Text = "&Create"
         '
         'ExaminationMenu
@@ -311,13 +334,13 @@ Partial Class MDIParent1
         'ListExaminationMenu
         '
         Me.ListExaminationMenu.Name = "ListExaminationMenu"
-        Me.ListExaminationMenu.Size = New System.Drawing.Size(224, 26)
+        Me.ListExaminationMenu.Size = New System.Drawing.Size(135, 26)
         Me.ListExaminationMenu.Text = "&List"
         '
         'CreateExaminationMenu
         '
         Me.CreateExaminationMenu.Name = "CreateExaminationMenu"
-        Me.CreateExaminationMenu.Size = New System.Drawing.Size(224, 26)
+        Me.CreateExaminationMenu.Size = New System.Drawing.Size(135, 26)
         Me.CreateExaminationMenu.Text = "&Create"
         '
         'BranchMenu
@@ -330,13 +353,13 @@ Partial Class MDIParent1
         'ListBranchMenu
         '
         Me.ListBranchMenu.Name = "ListBranchMenu"
-        Me.ListBranchMenu.Size = New System.Drawing.Size(224, 26)
+        Me.ListBranchMenu.Size = New System.Drawing.Size(135, 26)
         Me.ListBranchMenu.Text = "&List"
         '
         'CreateBranchMenu
         '
         Me.CreateBranchMenu.Name = "CreateBranchMenu"
-        Me.CreateBranchMenu.Size = New System.Drawing.Size(224, 26)
+        Me.CreateBranchMenu.Size = New System.Drawing.Size(135, 26)
         Me.CreateBranchMenu.Text = "&Create"
         '
         'UserMenu
@@ -349,64 +372,211 @@ Partial Class MDIParent1
         'ListUserMenu
         '
         Me.ListUserMenu.Name = "ListUserMenu"
-        Me.ListUserMenu.Size = New System.Drawing.Size(224, 26)
+        Me.ListUserMenu.Size = New System.Drawing.Size(135, 26)
         Me.ListUserMenu.Text = "&List"
         '
         'CreateUserMenu
         '
         Me.CreateUserMenu.Name = "CreateUserMenu"
-        Me.CreateUserMenu.Size = New System.Drawing.Size(224, 26)
+        Me.CreateUserMenu.Size = New System.Drawing.Size(135, 26)
         Me.CreateUserMenu.Text = "&Create"
         '
         'ParentDataMenu
         '
-        Me.ParentDataMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LabSideMenu})
+        Me.ParentDataMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LabSideMenu, Me.ToolStripMenuItem1, Me.ToolStripMenuItem2, Me.ToolStripMenuItem4, Me.ToolStripMenuItem3, Me.DefaultValueToolStripMenuItem, Me.PaymentTermToolStripMenuItem, Me.ToolStripMenuItem5, Me.ToolStripMenuItem6, Me.BrandToolStripMenuItem})
         Me.ParentDataMenu.Name = "ParentDataMenu"
         Me.ParentDataMenu.Size = New System.Drawing.Size(100, 24)
         Me.ParentDataMenu.Text = "&Parent Data"
         '
         'LabSideMenu
         '
-        Me.LabSideMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.HumanResTYpeLabSideMenu, Me.ReferralTYpeLabSideMenu, Me.SpecializationLabSideMenu, Me.SampleLabSideMenu, Me.UnitLabSideMenu, Me.DepartmentLabSideMenu})
+        Me.LabSideMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem7, Me.ToolStripMenuItem8})
         Me.LabSideMenu.Name = "LabSideMenu"
         Me.LabSideMenu.Size = New System.Drawing.Size(224, 26)
-        Me.LabSideMenu.Text = "Lab Side"
+        Me.LabSideMenu.Text = "&HR Type"
         '
-        'HumanResTYpeLabSideMenu
+        'ToolStripMenuItem7
         '
-        Me.HumanResTYpeLabSideMenu.Name = "HumanResTYpeLabSideMenu"
-        Me.HumanResTYpeLabSideMenu.Size = New System.Drawing.Size(224, 26)
-        Me.HumanResTYpeLabSideMenu.Text = "&Human Res. Type"
+        Me.ToolStripMenuItem7.Name = "ToolStripMenuItem7"
+        Me.ToolStripMenuItem7.Size = New System.Drawing.Size(135, 26)
+        Me.ToolStripMenuItem7.Text = "&List"
         '
-        'ReferralTYpeLabSideMenu
+        'ToolStripMenuItem8
         '
-        Me.ReferralTYpeLabSideMenu.Name = "ReferralTYpeLabSideMenu"
-        Me.ReferralTYpeLabSideMenu.Size = New System.Drawing.Size(224, 26)
-        Me.ReferralTYpeLabSideMenu.Text = "&Referral Type"
+        Me.ToolStripMenuItem8.Name = "ToolStripMenuItem8"
+        Me.ToolStripMenuItem8.Size = New System.Drawing.Size(135, 26)
+        Me.ToolStripMenuItem8.Text = "&Create"
         '
-        'SpecializationLabSideMenu
+        'ToolStripMenuItem1
         '
-        Me.SpecializationLabSideMenu.Name = "SpecializationLabSideMenu"
-        Me.SpecializationLabSideMenu.Size = New System.Drawing.Size(224, 26)
-        Me.SpecializationLabSideMenu.Text = "&Specialization"
+        Me.ToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem9, Me.ToolStripMenuItem10})
+        Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(224, 26)
+        Me.ToolStripMenuItem1.Text = "&Referral Type"
         '
-        'SampleLabSideMenu
+        'ToolStripMenuItem9
         '
-        Me.SampleLabSideMenu.Name = "SampleLabSideMenu"
-        Me.SampleLabSideMenu.Size = New System.Drawing.Size(224, 26)
-        Me.SampleLabSideMenu.Text = "&Sample Type"
+        Me.ToolStripMenuItem9.Name = "ToolStripMenuItem9"
+        Me.ToolStripMenuItem9.Size = New System.Drawing.Size(135, 26)
+        Me.ToolStripMenuItem9.Text = "&List"
         '
-        'UnitLabSideMenu
+        'ToolStripMenuItem10
         '
-        Me.UnitLabSideMenu.Name = "UnitLabSideMenu"
-        Me.UnitLabSideMenu.Size = New System.Drawing.Size(224, 26)
-        Me.UnitLabSideMenu.Text = "&Unit"
+        Me.ToolStripMenuItem10.Name = "ToolStripMenuItem10"
+        Me.ToolStripMenuItem10.Size = New System.Drawing.Size(135, 26)
+        Me.ToolStripMenuItem10.Text = "&Create"
         '
-        'DepartmentLabSideMenu
+        'ToolStripMenuItem2
         '
-        Me.DepartmentLabSideMenu.Name = "DepartmentLabSideMenu"
-        Me.DepartmentLabSideMenu.Size = New System.Drawing.Size(224, 26)
-        Me.DepartmentLabSideMenu.Text = "&Department"
+        Me.ToolStripMenuItem2.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem11, Me.ToolStripMenuItem12})
+        Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(224, 26)
+        Me.ToolStripMenuItem2.Text = "&Specialization"
+        '
+        'ToolStripMenuItem11
+        '
+        Me.ToolStripMenuItem11.Name = "ToolStripMenuItem11"
+        Me.ToolStripMenuItem11.Size = New System.Drawing.Size(135, 26)
+        Me.ToolStripMenuItem11.Text = "&List"
+        '
+        'ToolStripMenuItem12
+        '
+        Me.ToolStripMenuItem12.Name = "ToolStripMenuItem12"
+        Me.ToolStripMenuItem12.Size = New System.Drawing.Size(135, 26)
+        Me.ToolStripMenuItem12.Text = "&Create"
+        '
+        'ToolStripMenuItem4
+        '
+        Me.ToolStripMenuItem4.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem13, Me.ToolStripMenuItem14})
+        Me.ToolStripMenuItem4.Name = "ToolStripMenuItem4"
+        Me.ToolStripMenuItem4.Size = New System.Drawing.Size(224, 26)
+        Me.ToolStripMenuItem4.Text = "&Department"
+        '
+        'ToolStripMenuItem13
+        '
+        Me.ToolStripMenuItem13.Name = "ToolStripMenuItem13"
+        Me.ToolStripMenuItem13.Size = New System.Drawing.Size(135, 26)
+        Me.ToolStripMenuItem13.Text = "&List"
+        '
+        'ToolStripMenuItem14
+        '
+        Me.ToolStripMenuItem14.Name = "ToolStripMenuItem14"
+        Me.ToolStripMenuItem14.Size = New System.Drawing.Size(135, 26)
+        Me.ToolStripMenuItem14.Text = "&Create"
+        '
+        'ToolStripMenuItem3
+        '
+        Me.ToolStripMenuItem3.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem15, Me.ToolStripMenuItem16})
+        Me.ToolStripMenuItem3.Name = "ToolStripMenuItem3"
+        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(224, 26)
+        Me.ToolStripMenuItem3.Text = "&Education"
+        '
+        'ToolStripMenuItem15
+        '
+        Me.ToolStripMenuItem15.Name = "ToolStripMenuItem15"
+        Me.ToolStripMenuItem15.Size = New System.Drawing.Size(135, 26)
+        Me.ToolStripMenuItem15.Text = "&List"
+        '
+        'ToolStripMenuItem16
+        '
+        Me.ToolStripMenuItem16.Name = "ToolStripMenuItem16"
+        Me.ToolStripMenuItem16.Size = New System.Drawing.Size(135, 26)
+        Me.ToolStripMenuItem16.Text = "&Create"
+        '
+        'DefaultValueToolStripMenuItem
+        '
+        Me.DefaultValueToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem17, Me.ToolStripMenuItem18})
+        Me.DefaultValueToolStripMenuItem.Name = "DefaultValueToolStripMenuItem"
+        Me.DefaultValueToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.DefaultValueToolStripMenuItem.Text = "De&fault Value"
+        '
+        'ToolStripMenuItem17
+        '
+        Me.ToolStripMenuItem17.Name = "ToolStripMenuItem17"
+        Me.ToolStripMenuItem17.Size = New System.Drawing.Size(135, 26)
+        Me.ToolStripMenuItem17.Text = "&List"
+        '
+        'ToolStripMenuItem18
+        '
+        Me.ToolStripMenuItem18.Name = "ToolStripMenuItem18"
+        Me.ToolStripMenuItem18.Size = New System.Drawing.Size(135, 26)
+        Me.ToolStripMenuItem18.Text = "&Create"
+        '
+        'PaymentTermToolStripMenuItem
+        '
+        Me.PaymentTermToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem19, Me.ToolStripMenuItem20})
+        Me.PaymentTermToolStripMenuItem.Name = "PaymentTermToolStripMenuItem"
+        Me.PaymentTermToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.PaymentTermToolStripMenuItem.Text = "&Payment Term"
+        '
+        'ToolStripMenuItem19
+        '
+        Me.ToolStripMenuItem19.Name = "ToolStripMenuItem19"
+        Me.ToolStripMenuItem19.Size = New System.Drawing.Size(135, 26)
+        Me.ToolStripMenuItem19.Text = "&List"
+        '
+        'ToolStripMenuItem20
+        '
+        Me.ToolStripMenuItem20.Name = "ToolStripMenuItem20"
+        Me.ToolStripMenuItem20.Size = New System.Drawing.Size(135, 26)
+        Me.ToolStripMenuItem20.Text = "&Create"
+        '
+        'ToolStripMenuItem5
+        '
+        Me.ToolStripMenuItem5.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem21, Me.ToolStripMenuItem22})
+        Me.ToolStripMenuItem5.Name = "ToolStripMenuItem5"
+        Me.ToolStripMenuItem5.Size = New System.Drawing.Size(224, 26)
+        Me.ToolStripMenuItem5.Text = "S&ample Type"
+        '
+        'ToolStripMenuItem21
+        '
+        Me.ToolStripMenuItem21.Name = "ToolStripMenuItem21"
+        Me.ToolStripMenuItem21.Size = New System.Drawing.Size(135, 26)
+        Me.ToolStripMenuItem21.Text = "&List"
+        '
+        'ToolStripMenuItem22
+        '
+        Me.ToolStripMenuItem22.Name = "ToolStripMenuItem22"
+        Me.ToolStripMenuItem22.Size = New System.Drawing.Size(135, 26)
+        Me.ToolStripMenuItem22.Text = "&Create"
+        '
+        'ToolStripMenuItem6
+        '
+        Me.ToolStripMenuItem6.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem23, Me.ToolStripMenuItem24})
+        Me.ToolStripMenuItem6.Name = "ToolStripMenuItem6"
+        Me.ToolStripMenuItem6.Size = New System.Drawing.Size(224, 26)
+        Me.ToolStripMenuItem6.Text = "&Unit"
+        '
+        'ToolStripMenuItem23
+        '
+        Me.ToolStripMenuItem23.Name = "ToolStripMenuItem23"
+        Me.ToolStripMenuItem23.Size = New System.Drawing.Size(224, 26)
+        Me.ToolStripMenuItem23.Text = "&List"
+        '
+        'ToolStripMenuItem24
+        '
+        Me.ToolStripMenuItem24.Name = "ToolStripMenuItem24"
+        Me.ToolStripMenuItem24.Size = New System.Drawing.Size(224, 26)
+        Me.ToolStripMenuItem24.Text = "&Create"
+        '
+        'BrandToolStripMenuItem
+        '
+        Me.BrandToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem25, Me.ToolStripMenuItem26})
+        Me.BrandToolStripMenuItem.Name = "BrandToolStripMenuItem"
+        Me.BrandToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.BrandToolStripMenuItem.Text = "&Brand"
+        '
+        'ToolStripMenuItem25
+        '
+        Me.ToolStripMenuItem25.Name = "ToolStripMenuItem25"
+        Me.ToolStripMenuItem25.Size = New System.Drawing.Size(224, 26)
+        Me.ToolStripMenuItem25.Text = "&List"
+        '
+        'ToolStripMenuItem26
+        '
+        Me.ToolStripMenuItem26.Name = "ToolStripMenuItem26"
+        Me.ToolStripMenuItem26.Size = New System.Drawing.Size(224, 26)
+        Me.ToolStripMenuItem26.Text = "&Create"
         '
         'CompanyProfileMenu
         '
@@ -478,12 +648,6 @@ Partial Class MDIParent1
     Friend WithEvents CreateUserMenu As ToolStripMenuItem
     Friend WithEvents ParentDataMenu As ToolStripMenuItem
     Friend WithEvents LabSideMenu As ToolStripMenuItem
-    Friend WithEvents HumanResTYpeLabSideMenu As ToolStripMenuItem
-    Friend WithEvents ReferralTYpeLabSideMenu As ToolStripMenuItem
-    Friend WithEvents SpecializationLabSideMenu As ToolStripMenuItem
-    Friend WithEvents SampleLabSideMenu As ToolStripMenuItem
-    Friend WithEvents UnitLabSideMenu As ToolStripMenuItem
-    Friend WithEvents DepartmentLabSideMenu As ToolStripMenuItem
     Friend WithEvents CompanyProfileMenu As ToolStripMenuItem
     Friend WithEvents LogoutMenu As ToolStripMenuItem
     Friend WithEvents ListAppoinmentMenu As ToolStripMenuItem
@@ -500,4 +664,33 @@ Partial Class MDIParent1
     Friend WithEvents CreateExaminationGroupMenu As ToolStripMenuItem
     Friend WithEvents ListExaminationSubGroupMenu As ToolStripMenuItem
     Friend WithEvents CreateExaminationSubGroupMenu As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem2 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem4 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem3 As ToolStripMenuItem
+    Friend WithEvents DefaultValueToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents PaymentTermToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem5 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem6 As ToolStripMenuItem
+    Friend WithEvents BrandToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem7 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem8 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem9 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem10 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem11 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem12 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem13 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem14 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem15 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem16 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem17 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem18 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem19 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem20 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem21 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem22 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem23 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem24 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem25 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem26 As ToolStripMenuItem
 End Class

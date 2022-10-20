@@ -22,6 +22,7 @@ Public Class AddExaminationSubGroup
             If i > 0 Then
                 If SaveToolStripButton.Text = "Save" Then
                     MessageBox.Show("New record has been inserted successfully!", "Alert for Add Examination Sub Group", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                    ClearTextBox(Me)
                 Else
                     MessageBox.Show("Record has been updated successfully!", "Alert for Update Examination Sub Group", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 End If
@@ -38,4 +39,14 @@ Public Class AddExaminationSubGroup
             con.Close()
         End Try
     End Sub
+
+    Public Sub ClearTextBox(parent As Control)
+        For Each child As Control In parent.Controls
+            ClearTextBox(child)
+        Next
+        If TryCast(parent, System.Windows.Forms.TextBox) IsNot Nothing Then
+            TryCast(parent, System.Windows.Forms.TextBox).Text = [String].Empty
+        End If
+    End Sub
+
 End Class

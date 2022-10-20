@@ -42,6 +42,7 @@ Public Class AddSampleCollection
             If i > 0 Then
                 If SaveToolStripButton.Text = "Save" Then
                     MessageBox.Show("New record has been inserted successfully!", "Alert for Add Sample Collection", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                    ClearTextBox(Me)
                 Else
                     MessageBox.Show("Record has been updated successfully!", "Alert for Update Sample Collection", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 End If
@@ -61,6 +62,14 @@ Public Class AddSampleCollection
         End Try
     End Sub
 
+    Public Sub ClearTextBox(parent As Control)
+        For Each child As Control In parent.Controls
+            ClearTextBox(child)
+        Next
+        If TryCast(parent, System.Windows.Forms.TextBox) IsNot Nothing Then
+            TryCast(parent, System.Windows.Forms.TextBox).Text = [String].Empty
+        End If
+    End Sub
     Private Sub Address_KeyPress(sender As Object, e As KeyPressEventArgs) Handles Address.KeyPress
         If Asc(e.KeyChar) <> 8 Then
             If (Asc(e.KeyChar) < 65 Or Asc(e.KeyChar) > 90) And (Asc(e.KeyChar) < 97 Or Asc(e.KeyChar) > 122) Then

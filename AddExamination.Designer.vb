@@ -31,7 +31,6 @@ Partial Class AddExamination
         Me.ToolStrip = New System.Windows.Forms.ToolStrip()
         Me.SaveToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
         Me.ToolStripContainer1 = New System.Windows.Forms.ToolStripContainer()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.StatusP = New System.Windows.Forms.CheckBox()
@@ -62,11 +61,13 @@ Partial Class AddExamination
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.FlowLayoutPanel2 = New System.Windows.Forms.FlowLayoutPanel()
         Me.ToolStrip.SuspendLayout()
         Me.ToolStripContainer1.ContentPanel.SuspendLayout()
         Me.ToolStripContainer1.TopToolStripPanel.SuspendLayout()
         Me.ToolStripContainer1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
+        Me.FlowLayoutPanel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'BottomToolStripPanel
@@ -129,28 +130,21 @@ Partial Class AddExamination
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
         Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 27)
         '
-        'FlowLayoutPanel1
-        '
-        Me.FlowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.FlowLayoutPanel1.Location = New System.Drawing.Point(0, 0)
-        Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
-        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(528, 755)
-        Me.FlowLayoutPanel1.TabIndex = 8
-        '
         'ToolStripContainer1
         '
         Me.ToolStripContainer1.BottomToolStripPanelVisible = False
         '
         'ToolStripContainer1.ContentPanel
         '
-        Me.ToolStripContainer1.ContentPanel.Controls.Add(Me.GroupBox1)
-        Me.ToolStripContainer1.ContentPanel.Size = New System.Drawing.Size(528, 728)
+        Me.ToolStripContainer1.ContentPanel.AutoScroll = True
+        Me.ToolStripContainer1.ContentPanel.Controls.Add(Me.FlowLayoutPanel2)
+        Me.ToolStripContainer1.ContentPanel.Size = New System.Drawing.Size(528, 778)
         Me.ToolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ToolStripContainer1.LeftToolStripPanelVisible = False
         Me.ToolStripContainer1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripContainer1.Name = "ToolStripContainer1"
         Me.ToolStripContainer1.RightToolStripPanelVisible = False
-        Me.ToolStripContainer1.Size = New System.Drawing.Size(528, 755)
+        Me.ToolStripContainer1.Size = New System.Drawing.Size(528, 805)
         Me.ToolStripContainer1.TabIndex = 9
         Me.ToolStripContainer1.Text = "ToolStripContainer1"
         '
@@ -190,9 +184,9 @@ Partial Class AddExamination
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Location = New System.Drawing.Point(11, 3)
+        Me.GroupBox1.Location = New System.Drawing.Point(3, 3)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(508, 716)
+        Me.GroupBox1.Size = New System.Drawing.Size(525, 745)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Add Examination"
@@ -445,13 +439,21 @@ Partial Class AddExamination
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Examination Group"
         '
+        'FlowLayoutPanel2
+        '
+        Me.FlowLayoutPanel2.Controls.Add(Me.GroupBox1)
+        Me.FlowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.FlowLayoutPanel2.Location = New System.Drawing.Point(0, 0)
+        Me.FlowLayoutPanel2.Name = "FlowLayoutPanel2"
+        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(528, 778)
+        Me.FlowLayoutPanel2.TabIndex = 1
+        '
         'AddExamination
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(528, 755)
+        Me.ClientSize = New System.Drawing.Size(528, 805)
         Me.Controls.Add(Me.ToolStripContainer1)
-        Me.Controls.Add(Me.FlowLayoutPanel1)
         Me.Name = "AddExamination"
         Me.Text = "Add Examination"
         Me.ToolStrip.ResumeLayout(False)
@@ -463,6 +465,7 @@ Partial Class AddExamination
         Me.ToolStripContainer1.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        Me.FlowLayoutPanel2.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -506,4 +509,5 @@ Partial Class AddExamination
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents FlowLayoutPanel2 As FlowLayoutPanel
 End Class

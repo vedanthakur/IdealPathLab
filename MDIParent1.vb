@@ -272,4 +272,74 @@ Public Class MDIParent1
         ListExaminationSubGroup.Left = 0
         ListExaminationSubGroup.Top = 0
     End Sub
+
+    Private Sub ToolStripMenuItem8_Click_1(sender As Object, e As EventArgs) Handles ToolStripMenuItem8.Click
+        AddTypeHR.MdiParent = Me
+        AddTypeHR.Show()
+        AddTypeHR.Left = 0
+        AddTypeHR.Top = 0
+    End Sub
+
+    Private Sub ToolStripMenuItem10_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem10.Click
+        AddTypeReferral.MdiParent = Me
+        AddTypeReferral.Show()
+        AddTypeReferral.Left = 0
+        AddTypeReferral.Top = 0
+    End Sub
+
+    Private Sub ToolStripMenuItem12_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem12.Click
+        AddTypeSpecialization.MdiParent = Me
+        AddTypeSpecialization.Show()
+        AddTypeSpecialization.Left = 0
+        AddTypeSpecialization.Top = 0
+    End Sub
+
+    Private Sub ToolStripMenuItem14_Click_1(sender As Object, e As EventArgs) Handles ToolStripMenuItem14.Click
+        AddTypeDepartment.MdiParent = Me
+        AddTypeDepartment.Show()
+        AddTypeDepartment.Left = 0
+        AddTypeDepartment.Top = 0
+    End Sub
+
+    Private Sub ToolStripMenuItem16_Click_1(sender As Object, e As EventArgs) Handles ToolStripMenuItem16.Click
+        AddTypeEducation.MdiParent = Me
+        AddTypeEducation.Show()
+        AddTypeEducation.Left = 0
+        AddTypeEducation.Top = 0
+    End Sub
+
+    Private Sub ToolStripMenuItem18_Click_1(sender As Object, e As EventArgs) Handles ToolStripMenuItem18.Click
+        AddTypeDefaultValue.MdiParent = Me
+        AddTypeDefaultValue.Show()
+        AddTypeDefaultValue.Left = 0
+        AddTypeDefaultValue.Top = 0
+    End Sub
+
+    Private Sub ToolStripMenuItem20_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem20.Click
+        AddTypePaymentTerm.MdiParent = Me
+        AddTypePaymentTerm.Show()
+        AddTypePaymentTerm.Left = 0
+        AddTypePaymentTerm.Top = 0
+    End Sub
+
+    Private Sub ToolStripMenuItem22_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem22.Click
+        AddTypeSample.MdiParent = Me
+        AddTypeSample.Show()
+        AddTypeSample.Left = 0
+        AddTypeSample.Top = 0
+    End Sub
+
+    Private Sub ToolStripMenuItem24_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem24.Click
+        AddTypeUnit.MdiParent = Me
+        AddTypeUnit.Show()
+        AddTypeUnit.Left = 0
+        AddTypeUnit.Top = 0
+    End Sub
+
+    Private Sub ToolStripMenuItem26_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem26.Click
+        AddTypeBrand.MdiParent = Me
+        AddTypeBrand.Show()
+        AddTypeBrand.Left = 0
+        AddTypeBrand.Top = 0
+    End Sub
 End Class

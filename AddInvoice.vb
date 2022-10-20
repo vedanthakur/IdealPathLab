@@ -14,6 +14,7 @@ Public Class AddInvoice
 
             If i > 0 Then
                 MessageBox.Show("New record has been inserted successfully!", "Alert for Add Invoice", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                ClearTextBox(Me)
             Else
                 MessageBox.Show("No record has been inserted!", "Alert for Add Invoice", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
@@ -22,6 +23,15 @@ Public Class AddInvoice
         Finally
             con.Close()
         End Try
+    End Sub
+
+    Public Sub ClearTextBox(parent As Control)
+        For Each child As Control In parent.Controls
+            ClearTextBox(child)
+        Next
+        If TryCast(parent, System.Windows.Forms.TextBox) IsNot Nothing Then
+            TryCast(parent, System.Windows.Forms.TextBox).Text = [String].Empty
+        End If
     End Sub
 
     Private Sub RadioButton1_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton1.CheckedChanged

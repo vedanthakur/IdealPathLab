@@ -2,7 +2,9 @@
 Imports IdealPathLab.dbconfig
 Imports MySql.Data.MySqlClient
 
+
 Public Class AddExamination
+
     Private Sub SaveToolStripButton_Click(sender As Object, e As EventArgs) Handles SaveToolStripButton.Click
         Try
             Dim sql As String
@@ -20,6 +22,7 @@ Public Class AddExamination
             If i > 0 Then
                 If SaveToolStripButton.Text = "Save" Then
                     MessageBox.Show("New record has been inserted successfully!", "Alert for Add Examination", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                    ClearTextBox(Me)
                 Else
                     MessageBox.Show("Record has been updated successfully!", "Alert for Update Examination", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 End If
@@ -35,5 +38,17 @@ Public Class AddExamination
         Finally
             con.Close()
         End Try
+
     End Sub
+
+    Public Sub ClearTextBox(parent As Control)
+        For Each child As Control In parent.Controls
+            ClearTextBox(child)
+        Next
+        If TryCast(parent, System.Windows.Forms.TextBox) IsNot Nothing Then
+            TryCast(parent, System.Windows.Forms.TextBox).Text = [String].Empty
+        End If
+    End Sub
+
 End Class
+

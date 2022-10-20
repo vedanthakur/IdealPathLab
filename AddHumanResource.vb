@@ -38,6 +38,9 @@ Public Class AddHumanResource
             If i > 0 Then
                 If SaveToolStripButton.Text = "Save" Then
                     MessageBox.Show("New record has been inserted successfully!", "Alert for Add Human Resource", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                    ClearPictureBox(PictureBox1)
+                    ClearPictureBox(PictureBox2)
+                    ClearTextBox(Me)
                 Else
                     MessageBox.Show("Record has been updated successfully!", "Alert for Update Human Resource", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 End If
@@ -54,6 +57,22 @@ Public Class AddHumanResource
             con.Close()
         End Try
     End Sub
+
+    Public Sub ClearTextBox(parent As Control)
+        For Each child As Control In parent.Controls
+            ClearTextBox(child)
+        Next
+        If TryCast(parent, System.Windows.Forms.TextBox) IsNot Nothing Then
+            TryCast(parent, System.Windows.Forms.TextBox).Text = [String].Empty
+        End If
+    End Sub
+    Private Sub ClearPictureBox(pb As PictureBox)
+        pb.Image = Nothing
+        pb.BackColor = Color.Empty
+        pb.Invalidate()
+        pb.BackColor = Color.Transparent
+    End Sub
+
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Dim openfiledialog1 As New OpenFileDialog()

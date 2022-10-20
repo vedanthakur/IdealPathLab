@@ -3,13 +3,14 @@ Imports IdealPathLab.dbconfig
 Imports System.Drawing.Image
 Imports System.IO
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel
+Imports Google.Protobuf.WellKnownTypes
 
 Public Class AddUser
     Dim imgpath As String
     Dim arrimage() As Byte
     Public emailID As String
 
-    Private Sub imgUpload_Click(sender As Object, e As EventArgs) Handles imgUpload.Click
+    Private Sub ImgUpload_Click(sender As Object, e As EventArgs) Handles imgUpload.Click
         Dim openfiledialog1 As New OpenFileDialog()
         openfiledialog1.Filter = "Image file|*.jpg;*.png;*.gif;*.bmp"
         If openfiledialog1.ShowDialog = Windows.Forms.DialogResult.OK Then
@@ -42,6 +43,8 @@ Public Class AddUser
             If i > 0 Then
                 If SaveToolStripButton.Text = "Save" Then
                     MessageBox.Show("New record has been inserted successfully!", "Alert for Add User", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                    ClearTextBox(Me)
+                    ClearPictureBox(PictureBox1)
                 Else
                     MessageBox.Show("Record has been updated successfully!", "Alert for Update User", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 End If
@@ -59,6 +62,22 @@ Public Class AddUser
         End Try
 
 
+    End Sub
+
+    Public Sub ClearTextBox(parent As Control)
+        For Each child As Control In parent.Controls
+            ClearTextBox(child)
+        Next
+        If TryCast(parent, TextBox) IsNot Nothing Then
+            TryCast(parent, TextBox).Text = [String].Empty
+        End If
+    End Sub
+
+    Private Sub ClearPictureBox(pb As PictureBox)
+        pb.Image = Nothing
+        pb.BackColor = Color.Empty
+        pb.Invalidate()
+        pb.BackColor = Color.Transparent
     End Sub
 
     Private Sub AddUser_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -99,7 +118,7 @@ Public Class AddUser
         memstr.Close()
     End Sub
 
-    Private Sub mobile_KeyPress(sender As Object, e As KeyPressEventArgs) Handles mobile.KeyPress
+    Private Sub Mobile_KeyPress(sender As Object, e As KeyPressEventArgs) Handles mobile.KeyPress
         If Asc(e.KeyChar) <> 8 Then
             If Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57 Then
                 e.Handled = True
@@ -142,7 +161,7 @@ Public Class AddUser
         Timer1.Stop()
     End Sub
 
-    Private Sub nameL_KeyPress(sender As Object, e As KeyPressEventArgs) Handles nameL.KeyPress
+    Private Sub NameL_KeyPress(sender As Object, e As KeyPressEventArgs) Handles nameL.KeyPress
         If Asc(e.KeyChar) <> 8 Then
             If (Asc(e.KeyChar) < 65 Or Asc(e.KeyChar) > 90) And (Asc(e.KeyChar) < 97 Or Asc(e.KeyChar) > 122) Then
                 e.Handled = True
@@ -150,7 +169,7 @@ Public Class AddUser
         End If
     End Sub
 
-    Private Sub address_KeyPress(sender As Object, e As KeyPressEventArgs) Handles address.KeyPress
+    Private Sub Address_KeyPress(sender As Object, e As KeyPressEventArgs) Handles address.KeyPress
         If Asc(e.KeyChar) <> 8 Then
             If (Asc(e.KeyChar) < 65 Or Asc(e.KeyChar) > 90) And (Asc(e.KeyChar) < 97 Or Asc(e.KeyChar) > 122) Then
                 e.Handled = True

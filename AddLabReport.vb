@@ -80,6 +80,7 @@ Public Class AddLabReport
 
             If i > 0 Then
                 MessageBox.Show("New record has been inserted successfully!", "Alert for Add Lab Report", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                ClearTextBox(Me)
             Else
                 MessageBox.Show("No record has been inserted!", "Alert for Add Lab Report", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
@@ -88,5 +89,14 @@ Public Class AddLabReport
         Finally
             con.Close()
         End Try
+    End Sub
+
+    Public Sub ClearTextBox(parent As Control)
+        For Each child As Control In parent.Controls
+            ClearTextBox(child)
+        Next
+        If TryCast(parent, System.Windows.Forms.TextBox) IsNot Nothing Then
+            TryCast(parent, System.Windows.Forms.TextBox).Text = [String].Empty
+        End If
     End Sub
 End Class
