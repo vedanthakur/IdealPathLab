@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class AddTypeDefaultValue
+Partial Class AddType
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,16 +22,16 @@ Partial Class AddTypeDefaultValue
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AddTypeDefaultValue))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AddType))
         Me.ToolStrip = New System.Windows.Forms.ToolStrip()
         Me.SaveToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.TitleName = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.ToolStripContainer1 = New System.Windows.Forms.ToolStripContainer()
         Me.ToolStrip.SuspendLayout()
         Me.FlowLayoutPanel1.SuspendLayout()
@@ -71,21 +71,50 @@ Partial Class AddTypeDefaultValue
         Me.FlowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.FlowLayoutPanel1.Location = New System.Drawing.Point(0, 0)
         Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
-        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(263, 125)
+        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(263, 122)
         Me.FlowLayoutPanel1.TabIndex = 8
         '
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.CheckBox1)
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
+        Me.GroupBox1.Controls.Add(Me.TitleName)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Location = New System.Drawing.Point(3, 3)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(250, 113)
+        Me.GroupBox1.Size = New System.Drawing.Size(250, 108)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Add Auto Value"
+        Me.GroupBox1.Text = "Add Type"
+        '
+        'CheckBox1
+        '
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Checked = True
+        Me.CheckBox1.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.CheckBox1.Location = New System.Drawing.Point(76, 68)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(78, 24)
+        Me.CheckBox1.TabIndex = 4
+        Me.CheckBox1.Text = "Publish"
+        Me.CheckBox1.UseVisualStyleBackColor = True
+        '
+        'TitleName
+        '
+        Me.TitleName.Location = New System.Drawing.Point(76, 30)
+        Me.TitleName.Name = "TitleName"
+        Me.TitleName.PlaceholderText = "Enter Title"
+        Me.TitleName.Size = New System.Drawing.Size(151, 27)
+        Me.TitleName.TabIndex = 3
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(9, 69)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(49, 20)
+        Me.Label2.TabIndex = 1
+        Me.Label2.Text = "Status"
         '
         'Label1
         '
@@ -96,34 +125,6 @@ Partial Class AddTypeDefaultValue
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Title*"
         '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(9, 73)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(49, 20)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Status"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(75, 30)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(151, 27)
-        Me.TextBox1.TabIndex = 3
-        '
-        'CheckBox1
-        '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Checked = True
-        Me.CheckBox1.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.CheckBox1.Location = New System.Drawing.Point(75, 72)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(78, 24)
-        Me.CheckBox1.TabIndex = 4
-        Me.CheckBox1.Text = "Publish"
-        Me.CheckBox1.UseVisualStyleBackColor = True
-        '
         'ToolStripContainer1
         '
         Me.ToolStripContainer1.BottomToolStripPanelVisible = False
@@ -132,13 +133,13 @@ Partial Class AddTypeDefaultValue
         '
         Me.ToolStripContainer1.ContentPanel.AutoScroll = True
         Me.ToolStripContainer1.ContentPanel.Controls.Add(Me.FlowLayoutPanel1)
-        Me.ToolStripContainer1.ContentPanel.Size = New System.Drawing.Size(263, 125)
+        Me.ToolStripContainer1.ContentPanel.Size = New System.Drawing.Size(263, 122)
         Me.ToolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ToolStripContainer1.LeftToolStripPanelVisible = False
         Me.ToolStripContainer1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripContainer1.Name = "ToolStripContainer1"
         Me.ToolStripContainer1.RightToolStripPanelVisible = False
-        Me.ToolStripContainer1.Size = New System.Drawing.Size(263, 152)
+        Me.ToolStripContainer1.Size = New System.Drawing.Size(263, 149)
         Me.ToolStripContainer1.TabIndex = 9
         Me.ToolStripContainer1.Text = "ToolStripContainer1"
         '
@@ -146,14 +147,14 @@ Partial Class AddTypeDefaultValue
         '
         Me.ToolStripContainer1.TopToolStripPanel.Controls.Add(Me.ToolStrip)
         '
-        'AddTypeDefaultValue
+        'AddType
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(263, 152)
+        Me.ClientSize = New System.Drawing.Size(263, 149)
         Me.Controls.Add(Me.ToolStripContainer1)
-        Me.Name = "AddTypeDefaultValue"
-        Me.Text = "Add Auto Value"
+        Me.Name = "AddType"
+        Me.Text = "AddType"
         Me.ToolStrip.ResumeLayout(False)
         Me.ToolStrip.PerformLayout()
         Me.FlowLayoutPanel1.ResumeLayout(False)
@@ -174,7 +175,7 @@ Partial Class AddTypeDefaultValue
     Friend WithEvents FlowLayoutPanel1 As FlowLayoutPanel
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents CheckBox1 As CheckBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents TitleName As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents ToolStripContainer1 As ToolStripContainer

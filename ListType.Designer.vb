@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class ListTypeHR
+Partial Class ListType
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,7 +22,9 @@ Partial Class ListTypeHR
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -36,18 +38,23 @@ Partial Class ListTypeHR
         Me.DataGridView1.Size = New System.Drawing.Size(800, 450)
         Me.DataGridView1.TabIndex = 0
         '
-        'ListTypeHR
+        'Timer1
+        '
+        Me.Timer1.Enabled = True
+        '
+        'ListType
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.DataGridView1)
-        Me.Name = "ListTypeHR"
-        Me.Text = "ListTypeHR"
+        Me.Name = "ListType"
+        Me.Text = "ListType"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents Timer1 As Timer
 End Class

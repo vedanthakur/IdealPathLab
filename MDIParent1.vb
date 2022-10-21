@@ -273,73 +273,226 @@ Public Class MDIParent1
         ListExaminationSubGroup.Top = 0
     End Sub
 
-    Private Sub ToolStripMenuItem8_Click_1(sender As Object, e As EventArgs) Handles ToolStripMenuItem8.Click
+    Private Sub ToolStripMenuItem8_Click_1(sender As Object, e As EventArgs) Handles HRTypeCreate.Click
         AddTypeHR.MdiParent = Me
         AddTypeHR.Show()
         AddTypeHR.Left = 0
         AddTypeHR.Top = 0
     End Sub
 
-    Private Sub ToolStripMenuItem10_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem10.Click
-        AddTypeReferral.MdiParent = Me
-        AddTypeReferral.Show()
-        AddTypeReferral.Left = 0
-        AddTypeReferral.Top = 0
+    Private Sub ToolStripMenuItem10_Click(sender As Object, e As EventArgs) Handles ReferralTypeCreate.Click
+        AddType.MdiParent = Me
+        AddType.Show()
+        AddType.Left = 0
+        AddType.Top = 0
+        AddType.Text = "Add Referral Type"
+        AddType.GroupBox1.Text = "Add Referral Type"
+        AddType.TableName = "referral_type"
     End Sub
 
-    Private Sub ToolStripMenuItem12_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem12.Click
-        AddTypeSpecialization.MdiParent = Me
-        AddTypeSpecialization.Show()
-        AddTypeSpecialization.Left = 0
-        AddTypeSpecialization.Top = 0
+    Private Sub ToolStripMenuItem12_Click(sender As Object, e As EventArgs) Handles SpecializationTypeCreate.Click
+        AddType.MdiParent = Me
+        AddType.Show()
+        AddType.Left = 0
+        AddType.Top = 0
+        AddType.Text = "Add Specialization Type"
+        AddType.GroupBox1.Text = "Add Specialization Type"
+        AddType.TableName = "specialization_type"
     End Sub
 
-    Private Sub ToolStripMenuItem14_Click_1(sender As Object, e As EventArgs) Handles ToolStripMenuItem14.Click
-        AddTypeDepartment.MdiParent = Me
-        AddTypeDepartment.Show()
-        AddTypeDepartment.Left = 0
-        AddTypeDepartment.Top = 0
+    Private Sub ToolStripMenuItem14_Click_1(sender As Object, e As EventArgs) Handles DepartmentTypeCreate.Click
+        AddType.MdiParent = Me
+        AddType.Show()
+        AddType.Left = 0
+        AddType.Top = 0
+        AddType.Text = "Add Department Type"
+        AddType.GroupBox1.Text = "Add Department Type"
+        AddType.TableName = "department_type"
     End Sub
 
-    Private Sub ToolStripMenuItem16_Click_1(sender As Object, e As EventArgs) Handles ToolStripMenuItem16.Click
-        AddTypeEducation.MdiParent = Me
-        AddTypeEducation.Show()
-        AddTypeEducation.Left = 0
-        AddTypeEducation.Top = 0
+    Private Sub ToolStripMenuItem16_Click_1(sender As Object, e As EventArgs) Handles EducationTypeCreate.Click
+        AddType.MdiParent = Me
+        AddType.Show()
+        AddType.Left = 0
+        AddType.Top = 0
+        AddType.Text = "Add Education"
+        AddType.GroupBox1.Text = "Add Education"
+        AddType.TableName = "education_type"
     End Sub
 
-    Private Sub ToolStripMenuItem18_Click_1(sender As Object, e As EventArgs) Handles ToolStripMenuItem18.Click
-        AddTypeDefaultValue.MdiParent = Me
-        AddTypeDefaultValue.Show()
-        AddTypeDefaultValue.Left = 0
-        AddTypeDefaultValue.Top = 0
+    Private Sub ToolStripMenuItem18_Click_1(sender As Object, e As EventArgs) Handles DefaultValueTypeCreate.Click
+        AddType.MdiParent = Me
+        AddType.Show()
+        AddType.Left = 0
+        AddType.Top = 0
+        AddType.Text = "Add Default Value"
+        AddType.GroupBox1.Text = "Add Default Value"
+        AddType.TableName = "default_value"
     End Sub
 
-    Private Sub ToolStripMenuItem20_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem20.Click
-        AddTypePaymentTerm.MdiParent = Me
-        AddTypePaymentTerm.Show()
-        AddTypePaymentTerm.Left = 0
-        AddTypePaymentTerm.Top = 0
+    Private Sub ToolStripMenuItem20_Click(sender As Object, e As EventArgs) Handles PaymentTermTypeCreate.Click
+        AddType.MdiParent = Me
+        AddType.Show()
+        AddType.Left = 0
+        AddType.Top = 0
+        AddType.Text = "Add Payment Term"
+        AddType.GroupBox1.Text = "Add Payment Term"
+        AddType.TableName = "payment_term"
     End Sub
 
-    Private Sub ToolStripMenuItem22_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem22.Click
-        AddTypeSample.MdiParent = Me
-        AddTypeSample.Show()
-        AddTypeSample.Left = 0
-        AddTypeSample.Top = 0
+    Private Sub ToolStripMenuItem22_Click(sender As Object, e As EventArgs) Handles SampleTypeCreate.Click
+        AddType.MdiParent = Me
+        AddType.Show()
+        AddType.Left = 0
+        AddType.Top = 0
+        AddType.Text = "Add Sample Type"
+        AddType.GroupBox1.Text = "Add Sample Type"
+        AddType.TableName = "sample_type"
     End Sub
 
-    Private Sub ToolStripMenuItem24_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem24.Click
-        AddTypeUnit.MdiParent = Me
-        AddTypeUnit.Show()
-        AddTypeUnit.Left = 0
-        AddTypeUnit.Top = 0
+    Private Sub ToolStripMenuItem24_Click(sender As Object, e As EventArgs) Handles UnitTypeCreate.Click
+        AddType.MdiParent = Me
+        AddType.Show()
+        AddType.Left = 0
+        AddType.Top = 0
+        AddType.Text = "Add Unit"
+        AddType.GroupBox1.Text = "Add Unit"
+        AddType.TableName = "unit_type"
     End Sub
 
-    Private Sub ToolStripMenuItem26_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem26.Click
-        AddTypeBrand.MdiParent = Me
-        AddTypeBrand.Show()
-        AddTypeBrand.Left = 0
-        AddTypeBrand.Top = 0
+    Private Sub ToolStripMenuItem26_Click(sender As Object, e As EventArgs) Handles BrandTypeCreate.Click
+        AddType.MdiParent = Me
+        AddType.Show()
+        AddType.Left = 0
+        AddType.Top = 0
+        AddType.Text = "Add Brand"
+        AddType.GroupBox1.Text = "Add Brand"
+        AddType.TableName = "brand_type"
+    End Sub
+
+    Private Sub ToolStripMenuItem8_Click_2(sender As Object, e As EventArgs) Handles AppointmentStatusCreate.Click
+        AddType.MdiParent = Me
+        AddType.Show()
+        AddType.Left = 0
+        AddType.Top = 0
+        AddType.Text = "Add Appointment Status"
+        AddType.GroupBox1.Text = "Add Appointment Status"
+        AddType.TableName = "appointment_status"
+    End Sub
+
+    Private Sub PreferTimeCreate_Click(sender As Object, e As EventArgs) Handles PreferTimeCreate.Click
+        AddType.MdiParent = Me
+        AddType.Show()
+        AddType.Left = 0
+        AddType.Top = 0
+        AddType.Text = "Add Prefer Time"
+        AddType.GroupBox1.Text = "Add Prefer Time"
+        AddType.TableName = "prefer_time"
+    End Sub
+
+    Private Sub HRTypeList_Click(sender As Object, e As EventArgs) Handles HRTypeList.Click
+        ListTypeHR.MdiParent = Me
+        ListTypeHR.Show()
+        ListTypeHR.Left = 0
+        ListTypeHR.Top = 0
+    End Sub
+
+    Private Sub ReferralTypeList_Click(sender As Object, e As EventArgs) Handles ReferralTypeList.Click
+        ListType.MdiParent = Me
+        ListType.Show()
+        ListType.Left = 0
+        ListType.Top = 0
+        ListType.Text = "Referral Type"
+        ListType.TableName = "referral_type"
+    End Sub
+
+    Private Sub SpecializationTypeList_Click(sender As Object, e As EventArgs) Handles SpecializationTypeList.Click
+        ListType.MdiParent = Me
+        ListType.Show()
+        ListType.Left = 0
+        ListType.Top = 0
+        ListType.Text = "Specialization"
+        ListType.TableName = "specialization_type"
+    End Sub
+
+    Private Sub DepartmentTypeList_Click(sender As Object, e As EventArgs) Handles DepartmentTypeList.Click
+        ListType.MdiParent = Me
+        ListType.Show()
+        ListType.Left = 0
+        ListType.Top = 0
+        ListType.Text = "Department"
+        ListType.TableName = "department_type"
+    End Sub
+
+    Private Sub EducationTypeList_Click(sender As Object, e As EventArgs) Handles EducationTypeList.Click
+        ListType.MdiParent = Me
+        ListType.Show()
+        ListType.Left = 0
+        ListType.Top = 0
+        ListType.Text = "Education"
+        ListType.TableName = "education_type"
+    End Sub
+
+    Private Sub DefaultValueTypeList_Click(sender As Object, e As EventArgs) Handles DefaultValueTypeList.Click
+        ListType.MdiParent = Me
+        ListType.Show()
+        ListType.Left = 0
+        ListType.Top = 0
+        ListType.Text = "Default Value"
+        ListType.TableName = "default_value"
+    End Sub
+
+    Private Sub PaymentTermList_Click(sender As Object, e As EventArgs) Handles PaymentTermList.Click
+        ListType.MdiParent = Me
+        ListType.Show()
+        ListType.Left = 0
+        ListType.Top = 0
+        ListType.Text = "Payment Term"
+        ListType.TableName = "payment_term"
+    End Sub
+
+    Private Sub SampleTypeList_Click(sender As Object, e As EventArgs) Handles SampleTypeList.Click
+        ListType.MdiParent = Me
+        ListType.Show()
+        ListType.Left = 0
+        ListType.Top = 0
+        ListType.Text = "Sample Type"
+        ListType.TableName = "sample_type"
+    End Sub
+
+    Private Sub UnitTypeList_Click(sender As Object, e As EventArgs) Handles UnitTypeList.Click
+        ListType.MdiParent = Me
+        ListType.Show()
+        ListType.Left = 0
+        ListType.Top = 0
+        ListType.Text = "Unit"
+        ListType.TableName = "unit_type"
+    End Sub
+
+    Private Sub BrandTypeList_Click(sender As Object, e As EventArgs) Handles BrandTypeList.Click
+        ListType.MdiParent = Me
+        ListType.Show()
+        ListType.Left = 0
+        ListType.Top = 0
+        ListType.Text = "Brand"
+        ListType.TableName = "brand_type"
+    End Sub
+
+    Private Sub AppointmentStatusList_Click(sender As Object, e As EventArgs) Handles AppointmentStatusList.Click
+        ListType.MdiParent = Me
+        ListType.Show()
+        ListType.Left = 0
+        ListType.Top = 0
+        ListType.Text = "Appointment Status"
+        ListType.TableName = "appointment_status"
+    End Sub
+
+    Private Sub PreferTimeList_Click(sender As Object, e As EventArgs) Handles PreferTimeList.Click
+        ListType.MdiParent = Me
+        ListType.Show()
+        ListType.Left = 0
+        ListType.Top = 0
+        ListType.Text = "Prefer Time"
+        ListType.TableName = "prefer_time"
     End Sub
 End Class

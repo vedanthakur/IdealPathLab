@@ -29,12 +29,12 @@ Partial Class AddTypeHR
         Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
         Me.ToolStripContainer1 = New System.Windows.Forms.ToolStripContainer()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.GroupName = New System.Windows.Forms.TextBox()
+        Me.TitleName = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.ToolStrip.SuspendLayout()
         Me.ToolStripContainer1.ContentPanel.SuspendLayout()
         Me.ToolStripContainer1.TopToolStripPanel.SuspendLayout()
@@ -98,8 +98,8 @@ Partial Class AddTypeHR
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.CheckBox1)
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
+        Me.GroupBox1.Controls.Add(Me.GroupName)
+        Me.GroupBox1.Controls.Add(Me.TitleName)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
@@ -109,47 +109,6 @@ Partial Class AddTypeHR
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Add Human Resource Type"
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(6, 29)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(44, 20)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Title*"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(6, 72)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(50, 20)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Group"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(6, 115)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(49, 20)
-        Me.Label3.TabIndex = 2
-        Me.Label3.Text = "Status"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(83, 26)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(151, 27)
-        Me.TextBox1.TabIndex = 3
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(83, 69)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(151, 27)
-        Me.TextBox2.TabIndex = 4
         '
         'CheckBox1
         '
@@ -163,6 +122,49 @@ Partial Class AddTypeHR
         Me.CheckBox1.Text = "Publish"
         Me.CheckBox1.UseVisualStyleBackColor = True
         '
+        'GroupName
+        '
+        Me.GroupName.Location = New System.Drawing.Point(83, 69)
+        Me.GroupName.Name = "GroupName"
+        Me.GroupName.PlaceholderText = "Enter Group"
+        Me.GroupName.Size = New System.Drawing.Size(151, 27)
+        Me.GroupName.TabIndex = 4
+        '
+        'TitleName
+        '
+        Me.TitleName.Location = New System.Drawing.Point(83, 26)
+        Me.TitleName.Name = "TitleName"
+        Me.TitleName.PlaceholderText = "Enter Title"
+        Me.TitleName.Size = New System.Drawing.Size(151, 27)
+        Me.TitleName.TabIndex = 3
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(6, 115)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(49, 20)
+        Me.Label3.TabIndex = 2
+        Me.Label3.Text = "Status"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(6, 72)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(50, 20)
+        Me.Label2.TabIndex = 1
+        Me.Label2.Text = "Group"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(6, 29)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(44, 20)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Title*"
+        '
         'AddTypeHR
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
@@ -171,7 +173,7 @@ Partial Class AddTypeHR
         Me.Controls.Add(Me.ToolStripContainer1)
         Me.Controls.Add(Me.FlowLayoutPanel1)
         Me.Name = "AddTypeHR"
-        Me.Text = "AddTypeHR"
+        Me.Text = "Add HR Type"
         Me.ToolStrip.ResumeLayout(False)
         Me.ToolStrip.PerformLayout()
         Me.ToolStripContainer1.ContentPanel.ResumeLayout(False)
@@ -191,8 +193,8 @@ Partial Class AddTypeHR
     Friend WithEvents FlowLayoutPanel1 As FlowLayoutPanel
     Friend WithEvents ToolStripContainer1 As ToolStripContainer
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents GroupName As TextBox
+    Friend WithEvents TitleName As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
