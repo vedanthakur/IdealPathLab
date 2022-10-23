@@ -14,7 +14,7 @@ Public Class AddType
                 MessageBox.Show("New record has been inserted successfully!", "Alert for Add " & Me.Text & "", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 TitleName.Text = ""
             Else
-                MessageBox.Show("No record has been inserted!", "Alert for Add Referral " & Me.Text & "", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                MessageBox.Show("No record has been inserted!", "Alert for Add " & Me.Text & "", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
         Catch ex As Exception
             MsgBox(ex.Message)

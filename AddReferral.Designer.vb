@@ -37,7 +37,7 @@ Partial Class AddReferral
         Me.SharingPersantage = New System.Windows.Forms.TextBox()
         Me.Email = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Type = New System.Windows.Forms.ComboBox()
+        Me.ReferralType = New System.Windows.Forms.ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.ReferralName = New System.Windows.Forms.TextBox()
@@ -197,7 +197,7 @@ Partial Class AddReferral
         '
         Me.GroupBox1.BackgroundImage = Global.IdealPathLab.My.Resources.Resources.bg_blur
         Me.GroupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.GroupBox1.Controls.Add(Me.Type)
+        Me.GroupBox1.Controls.Add(Me.ReferralType)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.ReferralName)
@@ -210,14 +210,14 @@ Partial Class AddReferral
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Referral Basic Information"
         '
-        'Type
+        'ReferralType
         '
-        Me.Type.FormattingEnabled = True
-        Me.Type.Location = New System.Drawing.Point(220, 37)
-        Me.Type.Name = "Type"
-        Me.Type.Size = New System.Drawing.Size(151, 28)
-        Me.Type.TabIndex = 10
-        Me.Type.Text = "Select"
+        Me.ReferralType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ReferralType.FormattingEnabled = True
+        Me.ReferralType.Location = New System.Drawing.Point(220, 37)
+        Me.ReferralType.Name = "ReferralType"
+        Me.ReferralType.Size = New System.Drawing.Size(151, 28)
+        Me.ReferralType.TabIndex = 10
         '
         'Label1
         '
@@ -367,7 +367,7 @@ Partial Class AddReferral
     Friend WithEvents RContactPerson As TextBox
     Friend WithEvents DiscountKey As CheckBox
     Friend WithEvents Status As CheckBox
-    Friend WithEvents Type As ComboBox
+    Friend WithEvents ReferralType As ComboBox
     Friend WithEvents ToolStrip As ToolStrip
     Friend WithEvents SaveToolStripButton As ToolStripButton
     Friend WithEvents FlowLayoutPanel1 As FlowLayoutPanel

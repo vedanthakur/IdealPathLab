@@ -212,4 +212,23 @@ Public Class AddHumanResource
             End If
         End If
     End Sub
+
+    Private Sub AddHumanResource_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Try
+            Dim sql As String
+            Dim rd As MySqlDataReader
+            sql = "Select `title` from hr_type"
+            con.Open()
+            Dim com = New MySqlCommand(sql, con)
+            rd = com.ExecuteReader
+            While rd.Read
+                Dim HRTitle = rd.GetString("title")
+                HRType.Items.Add(HRTitle)
+            End While
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            con.Close()
+        End Try
+    End Sub
 End Class

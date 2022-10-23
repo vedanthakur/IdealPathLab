@@ -8,7 +8,7 @@ Public Class ListTypeHR
         Try
             Dim sql As String
             Dim dt As New DataTable
-            sql = "Select * from invoice"
+            sql = "Select * from hr_type"
             Dim da As New MySqlDataAdapter(sql, con)
             da.Fill(dt)
             DataGridView1.DataSource = dt

@@ -15,7 +15,7 @@ Public Class ListType
         Try
             Dim sql As String
             Dim dt As New DataTable
-            sql = "Select * from branch"
+            sql = "Select * from `" & TableName & "`"
             Dim da As New MySqlDataAdapter(sql, con)
             da.Fill(dt)
             DataGridView1.DataSource = dt

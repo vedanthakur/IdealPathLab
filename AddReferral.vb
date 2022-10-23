@@ -2,6 +2,7 @@
 Imports IdealPathLab.dbconfig
 Imports System.IO
 Imports System.Net.Mime.MediaTypeNames
+Imports System.Windows.Forms.VisualStyles.VisualStyleElement.TreeView
 
 Public Class AddReferral
     Private Sub SaveToolStripButton_Click(sender As Object, e As EventArgs) Handles SaveToolStripButton.Click
@@ -11,9 +12,9 @@ Public Class AddReferral
             con.Open()
             Dim sqlcmd As String
             If SaveToolStripButton.Text = "Save" Then
-                sqlcmd = "INSERT INTO referral values ('" & Address.Text & "','" & Phone.Text & "','" & Email.Text & "','" & SharingPersantage.Text & "'," & DiscountKey.Checked.ToString & "," & Status.Checked.ToString & ",'" & Type.Text & "','" & ReferralName.Text & "','" & RContactPerson.Text & "');"
+                sqlcmd = "INSERT INTO referral values ('" & Address.Text & "','" & Phone.Text & "','" & Email.Text & "','" & SharingPersantage.Text & "'," & DiscountKey.Checked.ToString & "," & Status.Checked.ToString & ",'" & ReferralType.Text & "','" & ReferralName.Text & "','" & RContactPerson.Text & "');"
             Else
-                sqlcmd = "UPDATE `referral` SET `address` ='" & Address.Text & "',`phone`='" & Phone.Text & "',`email`='" & Email.Text & "',`benifit`='" & SharingPersantage.Text & "',`discount`='" & DiscountKey.Checked.ToString & "',`status`='" & Status.Checked.ToString & "',`type`='" & Type.Text & "',`contactperson` ='" & RContactPerson.Text & "' WHERE `name` = '" & ReferralName.Text & "';"
+                sqlcmd = "UPDATE `referral` SET `address` ='" & Address.Text & "',`phone`='" & Phone.Text & "',`email`='" & Email.Text & "',`benifit`='" & SharingPersantage.Text & "',`discount`='" & DiscountKey.Checked.ToString & "',`status`='" & Status.Checked.ToString & "',`type`='" & ReferralType.Text & "',`contactperson` ='" & RContactPerson.Text & "' WHERE `name` = '" & ReferralName.Text & "';"
             End If
             sql = sqlcmd
             Dim mysc As New MySqlCommand(sql, con)
@@ -77,5 +78,24 @@ Public Class AddReferral
                 e.Handled = True
             End If
         End If
+    End Sub
+
+    Private Sub AddReferral_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Try
+            Dim sql As String
+            Dim rd As MySqlDataReader
+            sql = "Select `title` from referral_type"
+            con.Open()
+            Dim com = New MySqlCommand(sql, con)
+            rd = com.ExecuteReader
+            While rd.Read
+                Dim ReferralTitle = rd.GetString("title")
+                ReferralType.Items.Add(ReferralTitle)
+            End While
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            con.Close()
+        End Try
     End Sub
 End Class

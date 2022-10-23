@@ -34,7 +34,7 @@ Public Class ListReferral
         AddReferral.SharingPersantage.Text = DataGridView1.CurrentRow.Cells(3).Value.ToString
         AddReferral.DiscountKey.Checked = DataGridView1.CurrentRow.Cells(4).Value.ToString
         AddReferral.Status.Checked = DataGridView1.CurrentRow.Cells(5).Value.ToString
-        AddReferral.Type.Text = DataGridView1.CurrentRow.Cells(6).Value.ToString
+        AddReferral.ReferralType.Text = DataGridView1.CurrentRow.Cells(6).Value.ToString
         AddReferral.ReferralName.Text = DataGridView1.CurrentRow.Cells(7).Value.ToString
         AddReferral.RContactPerson.Text = DataGridView1.CurrentRow.Cells(8).Value.ToString
         AddReferral.Show()

@@ -12,6 +12,7 @@ Public Class AddTypeHR
             If i > 0 Then
                 MessageBox.Show("New record has been inserted successfully!", "Alert for Add HR Type", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 TitleName.Text = ""
+                GroupName.Text = ""
             Else
                 MessageBox.Show("No record has been inserted!", "Alert for Add HR Type", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If

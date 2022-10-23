@@ -107,9 +107,8 @@ Partial Class AddHumanResource
         '
         Me.FlowLayoutPanel2.AutoScroll = True
         Me.FlowLayoutPanel2.AutoScrollMargin = New System.Drawing.Size(0, 30)
-        Me.FlowLayoutPanel2.BackColor = System.Drawing.Color.Transparent
-        Me.FlowLayoutPanel2.BackgroundImage = Global.IdealPathLab.My.Resources.Resources.bg_blur
-        Me.FlowLayoutPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.FlowLayoutPanel2.BackColor = System.Drawing.SystemColors.Window
+        Me.FlowLayoutPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.FlowLayoutPanel2.Controls.Add(Me.GroupBox3)
         Me.FlowLayoutPanel2.Controls.Add(Me.GroupBox1)
         Me.FlowLayoutPanel2.Controls.Add(Me.GroupBox4)
@@ -118,7 +117,7 @@ Partial Class AddHumanResource
         Me.FlowLayoutPanel2.Location = New System.Drawing.Point(0, 0)
         Me.FlowLayoutPanel2.MinimumSize = New System.Drawing.Size(450, 0)
         Me.FlowLayoutPanel2.Name = "FlowLayoutPanel2"
-        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(907, 538)
+        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(914, 547)
         Me.FlowLayoutPanel2.TabIndex = 29
         '
         'GroupBox3
@@ -148,6 +147,7 @@ Partial Class AddHumanResource
         'ImageSizeLabel
         '
         Me.ImageSizeLabel.AutoSize = True
+        Me.ImageSizeLabel.BackColor = System.Drawing.Color.Transparent
         Me.ImageSizeLabel.Font = New System.Drawing.Font("Segoe UI", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.ImageSizeLabel.Location = New System.Drawing.Point(112, 258)
         Me.ImageSizeLabel.Name = "ImageSizeLabel"
@@ -157,6 +157,7 @@ Partial Class AddHumanResource
         '
         'PictureBox1
         '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.PictureBox1.Location = New System.Drawing.Point(297, 26)
         Me.PictureBox1.MaximumSize = New System.Drawing.Size(130, 0)
@@ -179,6 +180,7 @@ Partial Class AddHumanResource
         'Label15
         '
         Me.Label15.AutoSize = True
+        Me.Label15.BackColor = System.Drawing.Color.Transparent
         Me.Label15.Location = New System.Drawing.Point(20, 237)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(51, 20)
@@ -196,6 +198,7 @@ Partial Class AddHumanResource
         'Label14
         '
         Me.Label14.AutoSize = True
+        Me.Label14.BackColor = System.Drawing.Color.Transparent
         Me.Label14.Location = New System.Drawing.Point(20, 188)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(56, 20)
@@ -205,6 +208,7 @@ Partial Class AddHumanResource
         'Label13
         '
         Me.Label13.AutoSize = True
+        Me.Label13.BackColor = System.Drawing.Color.Transparent
         Me.Label13.Location = New System.Drawing.Point(20, 139)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(52, 20)
@@ -230,6 +234,7 @@ Partial Class AddHumanResource
         'Label12
         '
         Me.Label12.AutoSize = True
+        Me.Label12.BackColor = System.Drawing.Color.Transparent
         Me.Label12.Location = New System.Drawing.Point(20, 90)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(68, 20)
@@ -239,6 +244,7 @@ Partial Class AddHumanResource
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Location = New System.Drawing.Point(20, 41)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(55, 20)
@@ -281,6 +287,7 @@ Partial Class AddHumanResource
         'ImageSizeLabel2
         '
         Me.ImageSizeLabel2.AutoSize = True
+        Me.ImageSizeLabel2.BackColor = System.Drawing.Color.Transparent
         Me.ImageSizeLabel2.Font = New System.Drawing.Font("Segoe UI", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.ImageSizeLabel2.Location = New System.Drawing.Point(197, 262)
         Me.ImageSizeLabel2.Name = "ImageSizeLabel2"
@@ -290,6 +297,7 @@ Partial Class AddHumanResource
         '
         'PictureBox2
         '
+        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.PictureBox2.Location = New System.Drawing.Point(354, 155)
         Me.PictureBox2.MaximumSize = New System.Drawing.Size(130, 0)
@@ -312,6 +320,7 @@ Partial Class AddHumanResource
         'Label18
         '
         Me.Label18.AutoSize = True
+        Me.Label18.BackColor = System.Drawing.Color.Transparent
         Me.Label18.Location = New System.Drawing.Point(20, 237)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(99, 20)
@@ -321,6 +330,7 @@ Partial Class AddHumanResource
         'Label11
         '
         Me.Label11.AutoSize = True
+        Me.Label11.BackColor = System.Drawing.Color.Transparent
         Me.Label11.Location = New System.Drawing.Point(20, 188)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(47, 20)
@@ -346,6 +356,7 @@ Partial Class AddHumanResource
         'Label10
         '
         Me.Label10.AutoSize = True
+        Me.Label10.BackColor = System.Drawing.Color.Transparent
         Me.Label10.Location = New System.Drawing.Point(20, 139)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(169, 20)
@@ -354,16 +365,17 @@ Partial Class AddHumanResource
         '
         'HRType
         '
+        Me.HRType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.HRType.FormattingEnabled = True
         Me.HRType.Location = New System.Drawing.Point(197, 37)
         Me.HRType.Name = "HRType"
         Me.HRType.Size = New System.Drawing.Size(151, 28)
         Me.HRType.TabIndex = 9
-        Me.HRType.Text = "Select"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Location = New System.Drawing.Point(20, 41)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(156, 20)
@@ -373,6 +385,7 @@ Partial Class AddHumanResource
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Location = New System.Drawing.Point(20, 90)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(67, 20)
@@ -410,6 +423,7 @@ Partial Class AddHumanResource
         'Label21
         '
         Me.Label21.AutoSize = True
+        Me.Label21.BackColor = System.Drawing.Color.Transparent
         Me.Label21.Location = New System.Drawing.Point(20, 123)
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(75, 20)
@@ -427,6 +441,7 @@ Partial Class AddHumanResource
         'Label22
         '
         Me.Label22.AutoSize = True
+        Me.Label22.BackColor = System.Drawing.Color.Transparent
         Me.Label22.Location = New System.Drawing.Point(20, 164)
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(66, 20)
@@ -444,6 +459,7 @@ Partial Class AddHumanResource
         'Label19
         '
         Me.Label19.AutoSize = True
+        Me.Label19.BackColor = System.Drawing.Color.Transparent
         Me.Label19.Location = New System.Drawing.Point(20, 41)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(72, 20)
@@ -461,6 +477,7 @@ Partial Class AddHumanResource
         'Label20
         '
         Me.Label20.AutoSize = True
+        Me.Label20.BackColor = System.Drawing.Color.Transparent
         Me.Label20.Location = New System.Drawing.Point(20, 82)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(54, 20)
@@ -508,6 +525,7 @@ Partial Class AddHumanResource
         'statusB
         '
         Me.statusB.AutoSize = True
+        Me.statusB.BackColor = System.Drawing.Color.Transparent
         Me.statusB.Checked = True
         Me.statusB.CheckState = System.Windows.Forms.CheckState.Checked
         Me.statusB.Location = New System.Drawing.Point(197, 79)
@@ -515,7 +533,7 @@ Partial Class AddHumanResource
         Me.statusB.Size = New System.Drawing.Size(78, 24)
         Me.statusB.TabIndex = 15
         Me.statusB.Text = "Publish"
-        Me.statusB.UseVisualStyleBackColor = True
+        Me.statusB.UseVisualStyleBackColor = False
         '
         'Speciqlization
         '
@@ -528,6 +546,7 @@ Partial Class AddHumanResource
         'Label4
         '
         Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Location = New System.Drawing.Point(20, 123)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(109, 20)
@@ -537,6 +556,7 @@ Partial Class AddHumanResource
         'Label6
         '
         Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Location = New System.Drawing.Point(20, 41)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(104, 20)
@@ -546,6 +566,7 @@ Partial Class AddHumanResource
         'Label7
         '
         Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.Transparent
         Me.Label7.Location = New System.Drawing.Point(20, 82)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(49, 20)
@@ -560,13 +581,13 @@ Partial Class AddHumanResource
         '
         Me.ToolStripContainer1.ContentPanel.AutoScroll = True
         Me.ToolStripContainer1.ContentPanel.Controls.Add(Me.FlowLayoutPanel2)
-        Me.ToolStripContainer1.ContentPanel.Size = New System.Drawing.Size(907, 538)
+        Me.ToolStripContainer1.ContentPanel.Size = New System.Drawing.Size(914, 547)
         Me.ToolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ToolStripContainer1.LeftToolStripPanelVisible = False
         Me.ToolStripContainer1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripContainer1.Name = "ToolStripContainer1"
         Me.ToolStripContainer1.RightToolStripPanelVisible = False
-        Me.ToolStripContainer1.Size = New System.Drawing.Size(907, 565)
+        Me.ToolStripContainer1.Size = New System.Drawing.Size(914, 574)
         Me.ToolStripContainer1.TabIndex = 31
         Me.ToolStripContainer1.Text = "ToolStripContainer1"
         '
@@ -581,7 +602,7 @@ Partial Class AddHumanResource
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(907, 565)
+        Me.ClientSize = New System.Drawing.Size(914, 574)
         Me.Controls.Add(Me.ToolStripContainer1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MinimumSize = New System.Drawing.Size(492, 597)
