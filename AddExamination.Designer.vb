@@ -32,6 +32,7 @@ Partial Class AddExamination
         Me.SaveToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripContainer1 = New System.Windows.Forms.ToolStripContainer()
+        Me.FlowLayoutPanel2 = New System.Windows.Forms.FlowLayoutPanel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.StatusP = New System.Windows.Forms.CheckBox()
         Me.ValidationonType = New System.Windows.Forms.ComboBox()
@@ -61,13 +62,12 @@ Partial Class AddExamination
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.FlowLayoutPanel2 = New System.Windows.Forms.FlowLayoutPanel()
         Me.ToolStrip.SuspendLayout()
         Me.ToolStripContainer1.ContentPanel.SuspendLayout()
         Me.ToolStripContainer1.TopToolStripPanel.SuspendLayout()
         Me.ToolStripContainer1.SuspendLayout()
-        Me.GroupBox1.SuspendLayout()
         Me.FlowLayoutPanel2.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'BottomToolStripPanel
@@ -152,6 +152,15 @@ Partial Class AddExamination
         '
         Me.ToolStripContainer1.TopToolStripPanel.Controls.Add(Me.ToolStrip)
         '
+        'FlowLayoutPanel2
+        '
+        Me.FlowLayoutPanel2.Controls.Add(Me.GroupBox1)
+        Me.FlowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.FlowLayoutPanel2.Location = New System.Drawing.Point(0, 0)
+        Me.FlowLayoutPanel2.Name = "FlowLayoutPanel2"
+        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(528, 778)
+        Me.FlowLayoutPanel2.TabIndex = 1
+        '
         'GroupBox1
         '
         Me.GroupBox1.BackgroundImage = Global.IdealPathLab.My.Resources.Resources.bg_blur
@@ -215,6 +224,7 @@ Partial Class AddExamination
         Me.Comment.Location = New System.Drawing.Point(189, 524)
         Me.Comment.Multiline = True
         Me.Comment.Name = "Comment"
+        Me.Comment.PlaceholderText = "Enter comment"
         Me.Comment.Size = New System.Drawing.Size(300, 89)
         Me.Comment.TabIndex = 25
         '
@@ -222,6 +232,7 @@ Partial Class AddExamination
         '
         Me.Price.Location = New System.Drawing.Point(189, 479)
         Me.Price.Name = "Price"
+        Me.Price.PlaceholderText = "Enter Price"
         Me.Price.Size = New System.Drawing.Size(151, 27)
         Me.Price.TabIndex = 24
         '
@@ -237,6 +248,7 @@ Partial Class AddExamination
         '
         Me.DefaultValue.Location = New System.Drawing.Point(189, 389)
         Me.DefaultValue.Name = "DefaultValue"
+        Me.DefaultValue.PlaceholderText = "Enter Default Value"
         Me.DefaultValue.Size = New System.Drawing.Size(151, 27)
         Me.DefaultValue.TabIndex = 22
         '
@@ -244,6 +256,7 @@ Partial Class AddExamination
         '
         Me.ReportB.Location = New System.Drawing.Point(189, 344)
         Me.ReportB.Name = "ReportB"
+        Me.ReportB.PlaceholderText = "Enter Report"
         Me.ReportB.Size = New System.Drawing.Size(151, 27)
         Me.ReportB.TabIndex = 21
         '
@@ -251,6 +264,7 @@ Partial Class AddExamination
         '
         Me.CodeB.Location = New System.Drawing.Point(189, 299)
         Me.CodeB.Name = "CodeB"
+        Me.CodeB.PlaceholderText = "Enter Code"
         Me.CodeB.Size = New System.Drawing.Size(151, 27)
         Me.CodeB.TabIndex = 20
         '
@@ -258,6 +272,7 @@ Partial Class AddExamination
         '
         Me.Rank.Location = New System.Drawing.Point(189, 254)
         Me.Rank.Name = "Rank"
+        Me.Rank.PlaceholderText = "Enter Rank"
         Me.Rank.Size = New System.Drawing.Size(151, 27)
         Me.Rank.TabIndex = 19
         '
@@ -265,6 +280,7 @@ Partial Class AddExamination
         '
         Me.KeyB.Location = New System.Drawing.Point(189, 209)
         Me.KeyB.Name = "KeyB"
+        Me.KeyB.PlaceholderText = "Enter Key"
         Me.KeyB.Size = New System.Drawing.Size(151, 27)
         Me.KeyB.TabIndex = 18
         '
@@ -272,6 +288,7 @@ Partial Class AddExamination
         '
         Me.TitleB.Location = New System.Drawing.Point(189, 164)
         Me.TitleB.Name = "TitleB"
+        Me.TitleB.PlaceholderText = "Enter Title"
         Me.TitleB.Size = New System.Drawing.Size(151, 27)
         Me.TitleB.TabIndex = 17
         '
@@ -439,15 +456,6 @@ Partial Class AddExamination
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Examination Group"
         '
-        'FlowLayoutPanel2
-        '
-        Me.FlowLayoutPanel2.Controls.Add(Me.GroupBox1)
-        Me.FlowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.FlowLayoutPanel2.Location = New System.Drawing.Point(0, 0)
-        Me.FlowLayoutPanel2.Name = "FlowLayoutPanel2"
-        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(528, 778)
-        Me.FlowLayoutPanel2.TabIndex = 1
-        '
         'AddExamination
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
@@ -463,9 +471,9 @@ Partial Class AddExamination
         Me.ToolStripContainer1.TopToolStripPanel.PerformLayout()
         Me.ToolStripContainer1.ResumeLayout(False)
         Me.ToolStripContainer1.PerformLayout()
+        Me.FlowLayoutPanel2.ResumeLayout(False)
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        Me.FlowLayoutPanel2.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub

@@ -35,7 +35,6 @@ Partial Class AddExaminationGroup
         Me.SampleType = New System.Windows.Forms.TextBox()
         Me.RankB = New System.Windows.Forms.TextBox()
         Me.KeyB = New System.Windows.Forms.ComboBox()
-        Me.TitleB = New System.Windows.Forms.ComboBox()
         Me.Department = New System.Windows.Forms.ComboBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
@@ -47,6 +46,7 @@ Partial Class AddExaminationGroup
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ToolStripContainer1 = New System.Windows.Forms.ToolStripContainer()
+        Me.TitleB = New System.Windows.Forms.TextBox()
         Me.ToolStrip.SuspendLayout()
         Me.FlowLayoutPanel1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
@@ -92,6 +92,7 @@ Partial Class AddExaminationGroup
         '
         Me.GroupBox1.BackgroundImage = Global.IdealPathLab.My.Resources.Resources.bg_blur
         Me.GroupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.GroupBox1.Controls.Add(Me.TitleB)
         Me.GroupBox1.Controls.Add(Me.StatusP)
         Me.GroupBox1.Controls.Add(Me.Specification)
         Me.GroupBox1.Controls.Add(Me.Interpretation)
@@ -99,7 +100,6 @@ Partial Class AddExaminationGroup
         Me.GroupBox1.Controls.Add(Me.SampleType)
         Me.GroupBox1.Controls.Add(Me.RankB)
         Me.GroupBox1.Controls.Add(Me.KeyB)
-        Me.GroupBox1.Controls.Add(Me.TitleB)
         Me.GroupBox1.Controls.Add(Me.Department)
         Me.GroupBox1.Controls.Add(Me.Label11)
         Me.GroupBox1.Controls.Add(Me.Label10)
@@ -133,6 +133,7 @@ Partial Class AddExaminationGroup
         Me.Specification.Location = New System.Drawing.Point(131, 321)
         Me.Specification.Multiline = True
         Me.Specification.Name = "Specification"
+        Me.Specification.PlaceholderText = "Enter Specification"
         Me.Specification.Size = New System.Drawing.Size(300, 89)
         Me.Specification.TabIndex = 48
         '
@@ -141,6 +142,7 @@ Partial Class AddExaminationGroup
         Me.Interpretation.Location = New System.Drawing.Point(131, 214)
         Me.Interpretation.Multiline = True
         Me.Interpretation.Name = "Interpretation"
+        Me.Interpretation.PlaceholderText = "Enter Interpretation"
         Me.Interpretation.Size = New System.Drawing.Size(300, 89)
         Me.Interpretation.TabIndex = 47
         '
@@ -156,6 +158,7 @@ Partial Class AddExaminationGroup
         '
         Me.SampleType.Location = New System.Drawing.Point(131, 428)
         Me.SampleType.Name = "SampleType"
+        Me.SampleType.PlaceholderText = "Enter Sample Type"
         Me.SampleType.Size = New System.Drawing.Size(151, 27)
         Me.SampleType.TabIndex = 44
         '
@@ -163,6 +166,7 @@ Partial Class AddExaminationGroup
         '
         Me.RankB.Location = New System.Drawing.Point(131, 169)
         Me.RankB.Name = "RankB"
+        Me.RankB.PlaceholderText = "Enter Rank"
         Me.RankB.Size = New System.Drawing.Size(151, 27)
         Me.RankB.TabIndex = 39
         '
@@ -173,14 +177,6 @@ Partial Class AddExaminationGroup
         Me.KeyB.Name = "KeyB"
         Me.KeyB.Size = New System.Drawing.Size(151, 28)
         Me.KeyB.TabIndex = 38
-        '
-        'TitleB
-        '
-        Me.TitleB.FormattingEnabled = True
-        Me.TitleB.Location = New System.Drawing.Point(131, 79)
-        Me.TitleB.Name = "TitleB"
-        Me.TitleB.Size = New System.Drawing.Size(151, 28)
-        Me.TitleB.TabIndex = 37
         '
         'Department
         '
@@ -302,6 +298,14 @@ Partial Class AddExaminationGroup
         '
         Me.ToolStripContainer1.TopToolStripPanel.Controls.Add(Me.ToolStrip)
         '
+        'TitleB
+        '
+        Me.TitleB.Location = New System.Drawing.Point(131, 79)
+        Me.TitleB.Name = "TitleB"
+        Me.TitleB.PlaceholderText = "Enter Title"
+        Me.TitleB.Size = New System.Drawing.Size(151, 27)
+        Me.TitleB.TabIndex = 50
+        '
         'AddExaminationGroup
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
@@ -334,7 +338,6 @@ Partial Class AddExaminationGroup
     Friend WithEvents SampleType As TextBox
     Friend WithEvents RankB As TextBox
     Friend WithEvents KeyB As ComboBox
-    Friend WithEvents TitleB As ComboBox
     Friend WithEvents Department As ComboBox
     Friend WithEvents Label11 As Label
     Friend WithEvents Label10 As Label
@@ -348,4 +351,5 @@ Partial Class AddExaminationGroup
     Friend WithEvents StatusP As CheckBox
     Friend WithEvents Specification As TextBox
     Friend WithEvents Interpretation As TextBox
+    Friend WithEvents TitleB As TextBox
 End Class

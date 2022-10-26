@@ -169,12 +169,12 @@ Partial Class AddUser
         '
         'humanResource
         '
+        Me.humanResource.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.humanResource.FormattingEnabled = True
         Me.humanResource.Location = New System.Drawing.Point(144, 377)
         Me.humanResource.Name = "humanResource"
         Me.humanResource.Size = New System.Drawing.Size(152, 28)
         Me.humanResource.TabIndex = 7
-        Me.humanResource.Text = "Select"
         '
         'Label9
         '

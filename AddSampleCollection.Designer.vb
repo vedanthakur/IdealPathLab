@@ -139,12 +139,12 @@ Partial Class AddSampleCollection
         '
         'PName
         '
+        Me.PName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.PName.FormattingEnabled = True
         Me.PName.Location = New System.Drawing.Point(187, 79)
         Me.PName.Name = "PName"
         Me.PName.Size = New System.Drawing.Size(151, 28)
         Me.PName.TabIndex = 1
-        Me.PName.Text = "Select"
         '
         'InvoiceNo
         '

@@ -113,6 +113,7 @@ Partial Class AddExaminationSubGroup
         '
         Me.Price.Location = New System.Drawing.Point(216, 303)
         Me.Price.Name = "Price"
+        Me.Price.PlaceholderText = "Enter Price"
         Me.Price.Size = New System.Drawing.Size(151, 27)
         Me.Price.TabIndex = 54
         '
@@ -120,6 +121,7 @@ Partial Class AddExaminationSubGroup
         '
         Me.KeyB.Location = New System.Drawing.Point(216, 124)
         Me.KeyB.Name = "KeyB"
+        Me.KeyB.PlaceholderText = "Enter Key"
         Me.KeyB.Size = New System.Drawing.Size(151, 27)
         Me.KeyB.TabIndex = 53
         '
@@ -137,6 +139,7 @@ Partial Class AddExaminationSubGroup
         '
         Me.TitleB.Location = New System.Drawing.Point(216, 79)
         Me.TitleB.Name = "TitleB"
+        Me.TitleB.PlaceholderText = "Enter Title"
         Me.TitleB.Size = New System.Drawing.Size(151, 27)
         Me.TitleB.TabIndex = 52
         '
@@ -170,6 +173,7 @@ Partial Class AddExaminationSubGroup
         '
         Me.QRCode.Location = New System.Drawing.Point(216, 259)
         Me.QRCode.Name = "QRCode"
+        Me.QRCode.PlaceholderText = "Enter QR Code"
         Me.QRCode.Size = New System.Drawing.Size(151, 27)
         Me.QRCode.TabIndex = 50
         '
@@ -177,6 +181,7 @@ Partial Class AddExaminationSubGroup
         '
         Me.RankB.Location = New System.Drawing.Point(216, 169)
         Me.RankB.Name = "RankB"
+        Me.RankB.PlaceholderText = "Enter Rank"
         Me.RankB.Size = New System.Drawing.Size(151, 27)
         Me.RankB.TabIndex = 39
         '

@@ -1,6 +1,8 @@
 ﻿Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 Imports MySql.Data.MySqlClient
 Imports IdealPathLab.dbconfig
+Imports Google.Protobuf.Reflection.FieldOptions.Types
+
 Public Class AddSampleCollection
     Private Sub AddSampleCollection_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If SaveToolStripButton.Text = "Save" Then
@@ -8,6 +10,22 @@ Public Class AddSampleCollection
         Else
             Timer1.Enabled = False
         End If
+        Try
+            Dim sql As String
+            Dim rd As MySqlDataReader
+            sql = "Select `name` from patient"
+            con.Open()
+            Dim com = New MySqlCommand(sql, con)
+            rd = com.ExecuteReader
+            While rd.Read
+                Dim P_name = rd.GetString("name")
+                PName.Items.Add(P_name)
+            End While
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            con.Close()
+        End Try
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
@@ -76,5 +94,24 @@ Public Class AddSampleCollection
                 e.Handled = True
             End If
         End If
+    End Sub
+
+    Private Sub PName_TextChanged(sender As Object, e As EventArgs) Handles PName.TextChanged
+        Try
+            Dim sql As String
+            Dim rd As MySqlDataReader
+            sql = "Select `address` from patient where name='" & PName.Text & "'"
+            con.Open()
+            Dim com = New MySqlCommand(sql, con)
+            rd = com.ExecuteReader
+            While rd.Read
+                Dim P_address = rd.GetString("address")
+                Address.Text = P_address
+            End While
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            con.Close()
+        End Try
     End Sub
 End Class

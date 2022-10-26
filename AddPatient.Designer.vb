@@ -114,8 +114,7 @@ Partial Class AddPatient
         '
         Me.FlowLayoutPanel2.AutoScroll = True
         Me.FlowLayoutPanel2.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.FlowLayoutPanel2.BackgroundImage = Global.IdealPathLab.My.Resources.Resources.bg_blur
-        Me.FlowLayoutPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.FlowLayoutPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.FlowLayoutPanel2.Controls.Add(Me.GroupBox1)
         Me.FlowLayoutPanel2.Controls.Add(Me.GroupBox3)
         Me.FlowLayoutPanel2.Controls.Add(Me.GroupBox2)

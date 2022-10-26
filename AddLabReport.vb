@@ -3,6 +3,7 @@ Imports IdealPathLab.dbconfig
 Imports System.IO
 Imports System.Net.Mime.MediaTypeNames
 Imports Org.BouncyCastle.Crypto
+Imports System.Windows.Forms.VisualStyles.VisualStyleElement.TreeView
 
 Public Class AddLabReport
     Public Doctor, LabTechnician, TestPerformed, Verified As String
@@ -51,6 +52,34 @@ Public Class AddLabReport
     End Sub
 
     Dim arrimage() As Byte
+
+    Private Sub AddLabReport_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        LoadElements("users", "Doctor")
+        LoadElements("users", "Lab Technician")
+    End Sub
+
+    Sub LoadElements(TableName As String, Cname As String)
+        Try
+            Dim sql As String
+            Dim rd As MySqlDataReader
+            sql = "Select `username` from `" & TableName & "` where `roll` = '" & Cname & "';"
+            con.Open()
+            Dim com = New MySqlCommand(sql, con)
+            rd = com.ExecuteReader
+            While rd.Read
+                Dim elements = rd.GetString("username")
+                If Cname = "Doctor" Then
+                    DoctorB.Items.Add(elements)
+                Else
+                    LabTechnicianB.Items.Add(elements)
+                End If
+            End While
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            con.Close()
+        End Try
+    End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Dim openfiledialog1 As New OpenFileDialog()

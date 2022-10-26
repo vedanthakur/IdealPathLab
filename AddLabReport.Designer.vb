@@ -279,7 +279,6 @@ Partial Class AddLabReport
         '
         Me.LabTechnicianB.CheckOnClick = True
         Me.LabTechnicianB.FormattingEnabled = True
-        Me.LabTechnicianB.Items.AddRange(New Object() {"1", "2", "3", "4", "5"})
         Me.LabTechnicianB.Location = New System.Drawing.Point(6, 26)
         Me.LabTechnicianB.MaximumSize = New System.Drawing.Size(341, 136)
         Me.LabTechnicianB.Name = "LabTechnicianB"
@@ -304,7 +303,6 @@ Partial Class AddLabReport
         '
         Me.DoctorB.CheckOnClick = True
         Me.DoctorB.FormattingEnabled = True
-        Me.DoctorB.Items.AddRange(New Object() {"1owo", "2two", "3three", "4four", "5five"})
         Me.DoctorB.Location = New System.Drawing.Point(6, 26)
         Me.DoctorB.MaximumSize = New System.Drawing.Size(341, 136)
         Me.DoctorB.Name = "DoctorB"

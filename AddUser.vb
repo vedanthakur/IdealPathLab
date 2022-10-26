@@ -4,6 +4,7 @@ Imports System.Drawing.Image
 Imports System.IO
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel
 Imports Google.Protobuf.WellKnownTypes
+Imports System.Numerics
 
 Public Class AddUser
     Dim imgpath As String
@@ -81,16 +82,26 @@ Public Class AddUser
     End Sub
 
     Private Sub AddUser_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        LoadElements("hr_type", "title")
+        LoadElements("branch", "branch_name")
+    End Sub
+
+    Sub LoadElements(TableName As String, Cname As String)
         Try
             Dim sql As String
             Dim rd As MySqlDataReader
-            sql = "Select `branch_name` from branch"
+            sql = "Select `" & Cname & "` from `" & TableName & "`"
             con.Open()
             Dim com = New MySqlCommand(sql, con)
             rd = com.ExecuteReader
             While rd.Read
-                Dim sBranch = rd.GetString("branch_name")
-                branch.Items.Add(sBranch)
+                Dim elements = rd.GetString("" & Cname & "")
+                If TableName = "branch" Then
+                    branch.Items.Add(elements)
+                Else
+                    humanResource.Items.Add(elements)
+                End If
+
             End While
         Catch ex As Exception
             MsgBox(ex.Message)
@@ -163,7 +174,7 @@ Public Class AddUser
 
     Private Sub NameL_KeyPress(sender As Object, e As KeyPressEventArgs) Handles nameL.KeyPress
         If Asc(e.KeyChar) <> 8 Then
-            If (Asc(e.KeyChar) < 65 Or Asc(e.KeyChar) > 90) And (Asc(e.KeyChar) < 97 Or Asc(e.KeyChar) > 122) Then
+            If (Asc(e.KeyChar) < 65 Or Asc(e.KeyChar) > 90) And (Asc(e.KeyChar) < 97 Or Asc(e.KeyChar) > 122) And (Asc(e.KeyChar) < 31 Or Asc(e.KeyChar) > 33) Then
                 e.Handled = True
             End If
         End If
