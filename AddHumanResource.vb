@@ -181,38 +181,6 @@ Public Class AddHumanResource
         Timer1.Stop()
     End Sub
 
-    Private Sub Phone_KeyPress(sender As Object, e As KeyPressEventArgs) Handles Phone.KeyPress
-        If Asc(e.KeyChar) <> 8 Then
-            If Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57 Then
-                e.Handled = True
-            End If
-        End If
-    End Sub
-
-    Private Sub CuncilNo_KeyPress(sender As Object, e As KeyPressEventArgs) Handles CuncilNo.KeyPress
-        If Asc(e.KeyChar) <> 8 Then
-            If Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57 Then
-                e.Handled = True
-            End If
-        End If
-    End Sub
-
-    Private Sub PName_KeyPress(sender As Object, e As KeyPressEventArgs) Handles PName.KeyPress
-        If Asc(e.KeyChar) <> 8 Then
-            If (Asc(e.KeyChar) < 65 Or Asc(e.KeyChar) > 90) And (Asc(e.KeyChar) < 97 Or Asc(e.KeyChar) > 122) Then
-                e.Handled = True
-            End If
-        End If
-    End Sub
-
-    Private Sub Address_KeyPress(sender As Object, e As KeyPressEventArgs) Handles Address.KeyPress
-        If Asc(e.KeyChar) <> 8 Then
-            If (Asc(e.KeyChar) < 65 Or Asc(e.KeyChar) > 90) And (Asc(e.KeyChar) < 97 Or Asc(e.KeyChar) > 122) Then
-                e.Handled = True
-            End If
-        End If
-    End Sub
-
     Private Sub AddHumanResource_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
             Dim sql As String
@@ -230,5 +198,29 @@ Public Class AddHumanResource
         Finally
             con.Close()
         End Try
+    End Sub
+
+    Private Sub Phone_KeyPress(sender As Object, e As KeyPressEventArgs) Handles Phone.KeyPress
+        If (Asc(e.KeyChar) <> 8) And (Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57) Then
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub CuncilNo_KeyPress(sender As Object, e As KeyPressEventArgs) Handles CuncilNo.KeyPress
+        If (Asc(e.KeyChar) <> 8) And (Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57) Then
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub PName_KeyPress(sender As Object, e As KeyPressEventArgs) Handles PName.KeyPress
+        If (Asc(e.KeyChar) <> 8) And (Asc(e.KeyChar) < 65 Or Asc(e.KeyChar) > 90) And (Asc(e.KeyChar) < 97 Or Asc(e.KeyChar) > 122) And (Asc(e.KeyChar) <> 32) Then
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub Address_KeyPress(sender As Object, e As KeyPressEventArgs) Handles Address.KeyPress
+        If (Asc(e.KeyChar) <> 8) And (Asc(e.KeyChar) < 65 Or Asc(e.KeyChar) > 90) And (Asc(e.KeyChar) < 97 Or Asc(e.KeyChar) > 122) And (Asc(e.KeyChar) <> 32) And (Asc(e.KeyChar) <> 44) Then
+            e.Handled = True
+        End If
     End Sub
 End Class

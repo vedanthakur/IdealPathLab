@@ -21,7 +21,6 @@ Public Class AddUser
     End Sub
 
     Private Sub SaveToolStripButton_Click(sender As Object, e As EventArgs) Handles SaveToolStripButton.Click
-
         Try
             Dim sql As String
             Dim i As Integer
@@ -38,9 +37,7 @@ Public Class AddUser
                 ImageFunction()
             End If
             mysc.Parameters.AddWithValue("@img", arrimage)
-
             i = mysc.ExecuteNonQuery()
-
             If i > 0 Then
                 If SaveToolStripButton.Text = "Save" Then
                     MessageBox.Show("New record has been inserted successfully!", "Alert for Add User", MessageBoxButtons.OK, MessageBoxIcon.Information)
@@ -61,8 +58,6 @@ Public Class AddUser
         Finally
             con.Close()
         End Try
-
-
     End Sub
 
     Public Sub ClearTextBox(parent As Control)
@@ -129,14 +124,6 @@ Public Class AddUser
         memstr.Close()
     End Sub
 
-    Private Sub Mobile_KeyPress(sender As Object, e As KeyPressEventArgs) Handles mobile.KeyPress
-        If Asc(e.KeyChar) <> 8 Then
-            If Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57 Then
-                e.Handled = True
-            End If
-        End If
-    End Sub
-
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         Try
             Dim sql As String
@@ -173,18 +160,23 @@ Public Class AddUser
     End Sub
 
     Private Sub NameL_KeyPress(sender As Object, e As KeyPressEventArgs) Handles nameL.KeyPress
-        If Asc(e.KeyChar) <> 8 Then
-            If (Asc(e.KeyChar) < 65 Or Asc(e.KeyChar) > 90) And (Asc(e.KeyChar) < 97 Or Asc(e.KeyChar) > 122) And (Asc(e.KeyChar) < 31 Or Asc(e.KeyChar) > 33) Then
-                e.Handled = True
-            End If
+        ' String and space
+        If (Asc(e.KeyChar) <> 8) And (Asc(e.KeyChar) < 65 Or Asc(e.KeyChar) > 90) And (Asc(e.KeyChar) < 97 Or Asc(e.KeyChar) > 122) And (Asc(e.KeyChar) <> 32) Then
+            e.Handled = True
         End If
     End Sub
 
     Private Sub Address_KeyPress(sender As Object, e As KeyPressEventArgs) Handles address.KeyPress
-        If Asc(e.KeyChar) <> 8 Then
-            If (Asc(e.KeyChar) < 65 Or Asc(e.KeyChar) > 90) And (Asc(e.KeyChar) < 97 Or Asc(e.KeyChar) > 122) Then
-                e.Handled = True
-            End If
+        ' String + Number + # + space + backspace
+        If (Asc(e.KeyChar) <> 8) And (Asc(e.KeyChar) < 65 Or Asc(e.KeyChar) > 90) And (Asc(e.KeyChar) < 97 Or Asc(e.KeyChar) > 122) And (Asc(e.KeyChar) <> 32) And (Asc(e.KeyChar) <> 44) And (Asc(e.KeyChar) <> 35) And (Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57) Then
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub Mobile_KeyPress(sender As Object, e As KeyPressEventArgs) Handles mobile.KeyPress
+        ' Number
+        If (Asc(e.KeyChar) <> 8) And (Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57) Then
+            e.Handled = True
         End If
     End Sub
 End Class

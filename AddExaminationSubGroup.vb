@@ -49,4 +49,9 @@ Public Class AddExaminationSubGroup
         End If
     End Sub
 
+    Private Sub TitleB_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TitleB.KeyPress
+        If (Asc(e.KeyChar) <> 8) And (Asc(e.KeyChar) < 65 Or Asc(e.KeyChar) > 90) And (Asc(e.KeyChar) < 97 Or Asc(e.KeyChar) > 122) And (Asc(e.KeyChar) <> 32) Then
+            e.Handled = True
+        End If
+    End Sub
 End Class

@@ -328,7 +328,6 @@ Partial Class AddLabReport
         '
         Me.TestPerformedBy.CheckOnClick = True
         Me.TestPerformedBy.FormattingEnabled = True
-        Me.TestPerformedBy.Items.AddRange(New Object() {"1", "2", "3", "4", "5"})
         Me.TestPerformedBy.Location = New System.Drawing.Point(6, 26)
         Me.TestPerformedBy.MaximumSize = New System.Drawing.Size(341, 136)
         Me.TestPerformedBy.Name = "TestPerformedBy"
@@ -353,7 +352,6 @@ Partial Class AddLabReport
         '
         Me.VerifiedBy.CheckOnClick = True
         Me.VerifiedBy.FormattingEnabled = True
-        Me.VerifiedBy.Items.AddRange(New Object() {"1", "2", "3", "4", "5"})
         Me.VerifiedBy.Location = New System.Drawing.Point(6, 26)
         Me.VerifiedBy.MaximumSize = New System.Drawing.Size(341, 136)
         Me.VerifiedBy.Name = "VerifiedBy"

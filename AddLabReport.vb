@@ -8,6 +8,7 @@ Imports System.Windows.Forms.VisualStyles.VisualStyleElement.TreeView
 Public Class AddLabReport
     Public Doctor, LabTechnician, TestPerformed, Verified As String
     Dim imgpath As String
+    Dim arrimage() As Byte
     Private Sub CheckBoxSelectedItems()
         Doctor = ""
         For j = 0 To DoctorB.Items.Count - 1
@@ -36,22 +37,18 @@ Public Class AddLabReport
     End Sub
 
     Private Sub PName_KeyPress(sender As Object, e As KeyPressEventArgs) Handles PName.KeyPress
-        If Asc(e.KeyChar) <> 8 Then
-            If (Asc(e.KeyChar) < 65 Or Asc(e.KeyChar) > 90) And (Asc(e.KeyChar) < 97 Or Asc(e.KeyChar) > 122) Then
-                e.Handled = True
-            End If
+        If (Asc(e.KeyChar) <> 8) And (Asc(e.KeyChar) < 65 Or Asc(e.KeyChar) > 90) And (Asc(e.KeyChar) < 97 Or Asc(e.KeyChar) > 122) And (Asc(e.KeyChar) <> 32) Then
+            e.Handled = True
         End If
     End Sub
 
     Private Sub Address_KeyPress(sender As Object, e As KeyPressEventArgs) Handles Address.KeyPress
-        If Asc(e.KeyChar) <> 8 Then
-            If (Asc(e.KeyChar) < 65 Or Asc(e.KeyChar) > 90) And (Asc(e.KeyChar) < 97 Or Asc(e.KeyChar) > 122) Then
-                e.Handled = True
-            End If
+        If (Asc(e.KeyChar) <> 8) And (Asc(e.KeyChar) < 65 Or Asc(e.KeyChar) > 90) And (Asc(e.KeyChar) < 97 Or Asc(e.KeyChar) > 122) And (Asc(e.KeyChar) <> 32) And (Asc(e.KeyChar) <> 44) And (Asc(e.KeyChar) <> 35) And (Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57) Then
+            e.Handled = True
         End If
     End Sub
 
-    Dim arrimage() As Byte
+
 
     Private Sub AddLabReport_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         LoadElements("users", "Doctor")

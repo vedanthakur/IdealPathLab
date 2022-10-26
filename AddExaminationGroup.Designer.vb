@@ -28,6 +28,7 @@ Partial Class AddExaminationGroup
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.TitleB = New System.Windows.Forms.TextBox()
         Me.StatusP = New System.Windows.Forms.CheckBox()
         Me.Specification = New System.Windows.Forms.TextBox()
         Me.Interpretation = New System.Windows.Forms.TextBox()
@@ -46,7 +47,6 @@ Partial Class AddExaminationGroup
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ToolStripContainer1 = New System.Windows.Forms.ToolStripContainer()
-        Me.TitleB = New System.Windows.Forms.TextBox()
         Me.ToolStrip.SuspendLayout()
         Me.FlowLayoutPanel1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
@@ -116,6 +116,14 @@ Partial Class AddExaminationGroup
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Add Examination Group"
+        '
+        'TitleB
+        '
+        Me.TitleB.Location = New System.Drawing.Point(131, 79)
+        Me.TitleB.Name = "TitleB"
+        Me.TitleB.PlaceholderText = "Enter Title"
+        Me.TitleB.Size = New System.Drawing.Size(151, 27)
+        Me.TitleB.TabIndex = 50
         '
         'StatusP
         '
@@ -297,14 +305,6 @@ Partial Class AddExaminationGroup
         'ToolStripContainer1.TopToolStripPanel
         '
         Me.ToolStripContainer1.TopToolStripPanel.Controls.Add(Me.ToolStrip)
-        '
-        'TitleB
-        '
-        Me.TitleB.Location = New System.Drawing.Point(131, 79)
-        Me.TitleB.Name = "TitleB"
-        Me.TitleB.PlaceholderText = "Enter Title"
-        Me.TitleB.Size = New System.Drawing.Size(151, 27)
-        Me.TitleB.TabIndex = 50
         '
         'AddExaminationGroup
         '
