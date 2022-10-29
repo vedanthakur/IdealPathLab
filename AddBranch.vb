@@ -138,4 +138,8 @@ Public Class AddBranch
             e.Handled = True
         End If
     End Sub
+
+    Private Sub AddBranch_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

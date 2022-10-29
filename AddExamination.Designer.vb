@@ -138,13 +138,13 @@ Partial Class AddExamination
         '
         Me.ToolStripContainer1.ContentPanel.AutoScroll = True
         Me.ToolStripContainer1.ContentPanel.Controls.Add(Me.FlowLayoutPanel2)
-        Me.ToolStripContainer1.ContentPanel.Size = New System.Drawing.Size(528, 778)
+        Me.ToolStripContainer1.ContentPanel.Size = New System.Drawing.Size(549, 764)
         Me.ToolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ToolStripContainer1.LeftToolStripPanelVisible = False
         Me.ToolStripContainer1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripContainer1.Name = "ToolStripContainer1"
         Me.ToolStripContainer1.RightToolStripPanelVisible = False
-        Me.ToolStripContainer1.Size = New System.Drawing.Size(528, 805)
+        Me.ToolStripContainer1.Size = New System.Drawing.Size(549, 791)
         Me.ToolStripContainer1.TabIndex = 9
         Me.ToolStripContainer1.Text = "ToolStripContainer1"
         '
@@ -158,7 +158,7 @@ Partial Class AddExamination
         Me.FlowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.FlowLayoutPanel2.Location = New System.Drawing.Point(0, 0)
         Me.FlowLayoutPanel2.Name = "FlowLayoutPanel2"
-        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(528, 778)
+        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(549, 764)
         Me.FlowLayoutPanel2.TabIndex = 1
         '
         'GroupBox1
@@ -238,6 +238,7 @@ Partial Class AddExamination
         '
         'SampleType
         '
+        Me.SampleType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.SampleType.FormattingEnabled = True
         Me.SampleType.Location = New System.Drawing.Point(189, 434)
         Me.SampleType.Name = "SampleType"
@@ -294,6 +295,7 @@ Partial Class AddExamination
         '
         'Unit
         '
+        Me.Unit.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Unit.FormattingEnabled = True
         Me.Unit.Location = New System.Drawing.Point(189, 119)
         Me.Unit.Name = "Unit"
@@ -302,6 +304,7 @@ Partial Class AddExamination
         '
         'ExaminationSubGroup
         '
+        Me.ExaminationSubGroup.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ExaminationSubGroup.FormattingEnabled = True
         Me.ExaminationSubGroup.Location = New System.Drawing.Point(189, 74)
         Me.ExaminationSubGroup.Name = "ExaminationSubGroup"
@@ -310,6 +313,7 @@ Partial Class AddExamination
         '
         'ExaminationGroup
         '
+        Me.ExaminationGroup.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ExaminationGroup.FormattingEnabled = True
         Me.ExaminationGroup.Location = New System.Drawing.Point(189, 29)
         Me.ExaminationGroup.Name = "ExaminationGroup"
@@ -460,7 +464,7 @@ Partial Class AddExamination
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(528, 805)
+        Me.ClientSize = New System.Drawing.Size(549, 791)
         Me.Controls.Add(Me.ToolStripContainer1)
         Me.Name = "AddExamination"
         Me.Text = "Add Examination"

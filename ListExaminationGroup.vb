@@ -34,8 +34,8 @@ Public Class ListExaminationGroup
         AddExaminationGroup.RankB.Text = DataGridView1.CurrentRow.Cells(3).Value.ToString
         AddExaminationGroup.Interpretation.Text = DataGridView1.CurrentRow.Cells(4).Value.ToString
         AddExaminationGroup.Specification.Text = DataGridView1.CurrentRow.Cells(5).Value.ToString
-        AddExaminationGroup.SampleType.Text = DataGridView1.CurrentRow.Cells(6).Value.ToString
-        AddExaminationGroup.Price.Text = DataGridView1.CurrentRow.Cells(7).Value.ToString
+        AddExaminationGroup.Price.Text = DataGridView1.CurrentRow.Cells(6).Value.ToString
+        AddExaminationGroup.SampleType.Text = DataGridView1.CurrentRow.Cells(7).Value.ToString
         AddExaminationGroup.StatusP.Checked = DataGridView1.CurrentRow.Cells(8).Value.ToString
         AddExaminationGroup.Show()
     End Sub

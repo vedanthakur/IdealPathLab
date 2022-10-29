@@ -297,7 +297,7 @@ Partial Class AddReferral
         Me.FlowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.FlowLayoutPanel1.Location = New System.Drawing.Point(0, 0)
         Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
-        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(410, 500)
+        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(418, 509)
         Me.FlowLayoutPanel1.TabIndex = 35
         '
         'ToolStripContainer1
@@ -308,13 +308,13 @@ Partial Class AddReferral
         '
         Me.ToolStripContainer1.ContentPanel.AutoScroll = True
         Me.ToolStripContainer1.ContentPanel.Controls.Add(Me.FlowLayoutPanel1)
-        Me.ToolStripContainer1.ContentPanel.Size = New System.Drawing.Size(410, 500)
+        Me.ToolStripContainer1.ContentPanel.Size = New System.Drawing.Size(418, 509)
         Me.ToolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ToolStripContainer1.LeftToolStripPanelVisible = False
         Me.ToolStripContainer1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripContainer1.Name = "ToolStripContainer1"
         Me.ToolStripContainer1.RightToolStripPanelVisible = False
-        Me.ToolStripContainer1.Size = New System.Drawing.Size(410, 527)
+        Me.ToolStripContainer1.Size = New System.Drawing.Size(418, 536)
         Me.ToolStripContainer1.TabIndex = 36
         Me.ToolStripContainer1.Text = "ToolStripContainer1"
         '
@@ -325,7 +325,7 @@ Partial Class AddReferral
         'AddReferral
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
-        Me.ClientSize = New System.Drawing.Size(410, 527)
+        Me.ClientSize = New System.Drawing.Size(418, 536)
         Me.Controls.Add(Me.ToolStripContainer1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)

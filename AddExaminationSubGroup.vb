@@ -12,9 +12,9 @@ Public Class AddExaminationSubGroup
             con.Open()
             Dim sqlcmd As String
             If SaveToolStripButton.Text = "Save" Then
-                sqlcmd = "INSERT INTO `examinationsubgroup` values ('" & ExaminationGroup.Text & "','" & TitleB.Text & "','" & KeyB.Text & "','" & RankB.Text & "','" & SampleTitle.Text & "','" & QRCode.Text & "','" & Price.Text & "','" & StatusP.Checked.ToString & "');"
+                sqlcmd = "INSERT INTO `examinationsubgroup` values ('" & ExaminationGroup.Text & "','" & TitleB.Text & "','" & KeyB.Text & "','" & RankB.Text & "','" & SampleType.Text & "','" & QRCode.Text & "','" & Price.Text & "','" & StatusP.Checked.ToString & "');"
             Else
-                sqlcmd = "UPDATE `examinationsubgroup` SET `examination_group` ='" & ExaminationGroup.Text & "',`title`='" & TitleB.Text & "',`key_`='" & KeyB.Text & "',`rank`='" & RankB.Text & "',`sample_title`='" & SampleTitle.Text & "',`qr_code`='" & QRCode.Text & "',`price`='" & Price.Text & "',`status`='" & StatusP.Checked.ToString & "' WHERE `title` = '" & TitleB.Text & "';"
+                sqlcmd = "UPDATE `examinationsubgroup` SET `examination_group` ='" & ExaminationGroup.Text & "',`title`='" & TitleB.Text & "',`key_`='" & KeyB.Text & "',`rank`='" & RankB.Text & "',`sample_title`='" & SampleType.Text & "',`qr_code`='" & QRCode.Text & "',`price`='" & Price.Text & "',`status`='" & StatusP.Checked.ToString & "' WHERE `title` = '" & TitleB.Text & "';"
             End If
             sql = sqlcmd
             Dim mysc As New MySqlCommand(sql, con)
@@ -53,5 +53,32 @@ Public Class AddExaminationSubGroup
         If (Asc(e.KeyChar) <> 8) And (Asc(e.KeyChar) < 65 Or Asc(e.KeyChar) > 90) And (Asc(e.KeyChar) < 97 Or Asc(e.KeyChar) > 122) And (Asc(e.KeyChar) <> 32) Then
             e.Handled = True
         End If
+    End Sub
+
+    Private Sub AddExaminationSubGroup_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        LoadElements("examinationgroup")
+        LoadElements("sample_type")
+    End Sub
+    Sub LoadElements(TableName As String)
+        Try
+            Dim sql As String
+            Dim rd As MySqlDataReader
+            sql = "Select `title` from `" & TableName & "`"
+            con.Open()
+            Dim com = New MySqlCommand(sql, con)
+            rd = com.ExecuteReader
+            While rd.Read
+                Dim Elements = rd.GetString("title")
+                If TableName = "examinationgroup" Then
+                    ExaminationGroup.Items.Add(Elements)
+                ElseIf TableName = "sample_type" Then
+                    SampleType.Items.Add(Elements)
+                End If
+            End While
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            con.Close()
+        End Try
     End Sub
 End Class

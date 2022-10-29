@@ -32,7 +32,7 @@ Public Class ListExaminationSubGroup
         AddExaminationSubGroup.TitleB.Text = DataGridView1.CurrentRow.Cells(1).Value.ToString
         AddExaminationSubGroup.KeyB.Text = DataGridView1.CurrentRow.Cells(2).Value.ToString
         AddExaminationSubGroup.RankB.Text = DataGridView1.CurrentRow.Cells(3).Value.ToString
-        AddExaminationSubGroup.SampleTitle.Text = DataGridView1.CurrentRow.Cells(4).Value.ToString
+        AddExaminationSubGroup.SampleType.Text = DataGridView1.CurrentRow.Cells(4).Value.ToString
         AddExaminationSubGroup.QRCode.Text = DataGridView1.CurrentRow.Cells(5).Value.ToString
         AddExaminationSubGroup.Price.Text = DataGridView1.CurrentRow.Cells(6).Value.ToString
         AddExaminationSubGroup.StatusP.Checked = DataGridView1.CurrentRow.Cells(7).Value.ToString

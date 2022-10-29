@@ -51,15 +51,16 @@ Public Class AddLabReport
 
 
     Private Sub AddLabReport_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        LoadElements("users", "Doctor")
-        LoadElements("users", "Lab Technician")
+        LoadElements("Doctor")
+        LoadElements("Lab Technician")
+        LoadAllElements()
     End Sub
 
-    Sub LoadElements(TableName As String, Cname As String)
+    Sub LoadElements(Cname As String)
         Try
             Dim sql As String
             Dim rd As MySqlDataReader
-            sql = "Select `username` from `" & TableName & "` where `roll` = '" & Cname & "';"
+            sql = "Select `username` from `users` where `roll` = '" & Cname & "';"
             con.Open()
             Dim com = New MySqlCommand(sql, con)
             rd = com.ExecuteReader
@@ -70,6 +71,26 @@ Public Class AddLabReport
                 Else
                     LabTechnicianB.Items.Add(elements)
                 End If
+            End While
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            con.Close()
+        End Try
+    End Sub
+
+    Sub LoadAllElements()
+        Try
+            Dim sql As String
+            Dim rd As MySqlDataReader
+            sql = "Select `username` from `users`"
+            con.Open()
+            Dim com = New MySqlCommand(sql, con)
+            rd = com.ExecuteReader
+            While rd.Read
+                Dim elements = rd.GetString("username")
+                TestPerformedBy.Items.Add(elements)
+                VerifiedBy.Items.Add(elements)
             End While
         Catch ex As Exception
             MsgBox(ex.Message)

@@ -53,4 +53,32 @@ Public Class AddExaminationGroup
             e.Handled = True
         End If
     End Sub
+
+    Private Sub AddExaminationGroup_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        LoadElements("department_type")
+        LoadElements("sample_type")
+    End Sub
+    Sub LoadElements(TableName As String)
+        Try
+            Dim sql As String
+            Dim rd As MySqlDataReader
+            sql = "Select `title` from `" & TableName & "`"
+            con.Open()
+            Dim com = New MySqlCommand(sql, con)
+            rd = com.ExecuteReader
+            While rd.Read
+                Dim Elements = rd.GetString("title")
+                If TableName = "department_type" Then
+                    Department.Items.Add(Elements)
+                ElseIf TableName = "sample_type" Then
+                    SampleType.Items.Add(Elements)
+                End If
+            End While
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            con.Close()
+        End Try
+    End Sub
+
 End Class

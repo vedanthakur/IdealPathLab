@@ -33,7 +33,7 @@ Partial Class AddExaminationSubGroup
         Me.StatusP = New System.Windows.Forms.CheckBox()
         Me.TitleB = New System.Windows.Forms.TextBox()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.SampleTitle = New System.Windows.Forms.ComboBox()
+        Me.SampleType = New System.Windows.Forms.ComboBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.QRCode = New System.Windows.Forms.TextBox()
         Me.RankB = New System.Windows.Forms.TextBox()
@@ -91,7 +91,7 @@ Partial Class AddExaminationSubGroup
         Me.GroupBox1.Controls.Add(Me.StatusP)
         Me.GroupBox1.Controls.Add(Me.TitleB)
         Me.GroupBox1.Controls.Add(Me.Label11)
-        Me.GroupBox1.Controls.Add(Me.SampleTitle)
+        Me.GroupBox1.Controls.Add(Me.SampleType)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.QRCode)
         Me.GroupBox1.Controls.Add(Me.RankB)
@@ -152,13 +152,14 @@ Partial Class AddExaminationSubGroup
         Me.Label11.TabIndex = 52
         Me.Label11.Text = "Status"
         '
-        'SampleTitle
+        'SampleType
         '
-        Me.SampleTitle.FormattingEnabled = True
-        Me.SampleTitle.Location = New System.Drawing.Point(216, 214)
-        Me.SampleTitle.Name = "SampleTitle"
-        Me.SampleTitle.Size = New System.Drawing.Size(151, 28)
-        Me.SampleTitle.TabIndex = 51
+        Me.SampleType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.SampleType.FormattingEnabled = True
+        Me.SampleType.Location = New System.Drawing.Point(216, 214)
+        Me.SampleType.Name = "SampleType"
+        Me.SampleType.Size = New System.Drawing.Size(151, 28)
+        Me.SampleType.TabIndex = 51
         '
         'Label5
         '
@@ -187,6 +188,7 @@ Partial Class AddExaminationSubGroup
         '
         'ExaminationGroup
         '
+        Me.ExaminationGroup.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ExaminationGroup.FormattingEnabled = True
         Me.ExaminationGroup.Location = New System.Drawing.Point(216, 34)
         Me.ExaminationGroup.Name = "ExaminationGroup"
@@ -276,7 +278,7 @@ Partial Class AddExaminationSubGroup
     Friend WithEvents StatusP As CheckBox
     Friend WithEvents TitleB As TextBox
     Friend WithEvents Label11 As Label
-    Friend WithEvents SampleTitle As ComboBox
+    Friend WithEvents SampleType As ComboBox
     Friend WithEvents Label5 As Label
     Friend WithEvents QRCode As TextBox
     Friend WithEvents RankB As TextBox

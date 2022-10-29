@@ -28,14 +28,14 @@ Partial Class AddExaminationGroup
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.KeyB = New System.Windows.Forms.TextBox()
         Me.TitleB = New System.Windows.Forms.TextBox()
         Me.StatusP = New System.Windows.Forms.CheckBox()
         Me.Specification = New System.Windows.Forms.TextBox()
         Me.Interpretation = New System.Windows.Forms.TextBox()
-        Me.Price = New System.Windows.Forms.ComboBox()
-        Me.SampleType = New System.Windows.Forms.TextBox()
+        Me.SampleType = New System.Windows.Forms.ComboBox()
+        Me.Price = New System.Windows.Forms.TextBox()
         Me.RankB = New System.Windows.Forms.TextBox()
-        Me.KeyB = New System.Windows.Forms.ComboBox()
         Me.Department = New System.Windows.Forms.ComboBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
@@ -92,14 +92,14 @@ Partial Class AddExaminationGroup
         '
         Me.GroupBox1.BackgroundImage = Global.IdealPathLab.My.Resources.Resources.bg_blur
         Me.GroupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.GroupBox1.Controls.Add(Me.KeyB)
         Me.GroupBox1.Controls.Add(Me.TitleB)
         Me.GroupBox1.Controls.Add(Me.StatusP)
         Me.GroupBox1.Controls.Add(Me.Specification)
         Me.GroupBox1.Controls.Add(Me.Interpretation)
-        Me.GroupBox1.Controls.Add(Me.Price)
         Me.GroupBox1.Controls.Add(Me.SampleType)
+        Me.GroupBox1.Controls.Add(Me.Price)
         Me.GroupBox1.Controls.Add(Me.RankB)
-        Me.GroupBox1.Controls.Add(Me.KeyB)
         Me.GroupBox1.Controls.Add(Me.Department)
         Me.GroupBox1.Controls.Add(Me.Label11)
         Me.GroupBox1.Controls.Add(Me.Label10)
@@ -117,13 +117,21 @@ Partial Class AddExaminationGroup
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Add Examination Group"
         '
+        'KeyB
+        '
+        Me.KeyB.Location = New System.Drawing.Point(131, 124)
+        Me.KeyB.Name = "KeyB"
+        Me.KeyB.PlaceholderText = "Enter Key"
+        Me.KeyB.Size = New System.Drawing.Size(151, 27)
+        Me.KeyB.TabIndex = 3
+        '
         'TitleB
         '
         Me.TitleB.Location = New System.Drawing.Point(131, 79)
         Me.TitleB.Name = "TitleB"
         Me.TitleB.PlaceholderText = "Enter Title"
         Me.TitleB.Size = New System.Drawing.Size(151, 27)
-        Me.TitleB.TabIndex = 50
+        Me.TitleB.TabIndex = 2
         '
         'StatusP
         '
@@ -143,7 +151,7 @@ Partial Class AddExaminationGroup
         Me.Specification.Name = "Specification"
         Me.Specification.PlaceholderText = "Enter Specification"
         Me.Specification.Size = New System.Drawing.Size(300, 89)
-        Me.Specification.TabIndex = 48
+        Me.Specification.TabIndex = 6
         '
         'Interpretation
         '
@@ -152,23 +160,24 @@ Partial Class AddExaminationGroup
         Me.Interpretation.Name = "Interpretation"
         Me.Interpretation.PlaceholderText = "Enter Interpretation"
         Me.Interpretation.Size = New System.Drawing.Size(300, 89)
-        Me.Interpretation.TabIndex = 47
-        '
-        'Price
-        '
-        Me.Price.FormattingEnabled = True
-        Me.Price.Location = New System.Drawing.Point(131, 473)
-        Me.Price.Name = "Price"
-        Me.Price.Size = New System.Drawing.Size(151, 28)
-        Me.Price.TabIndex = 45
+        Me.Interpretation.TabIndex = 5
         '
         'SampleType
         '
+        Me.SampleType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.SampleType.FormattingEnabled = True
         Me.SampleType.Location = New System.Drawing.Point(131, 428)
         Me.SampleType.Name = "SampleType"
-        Me.SampleType.PlaceholderText = "Enter Sample Type"
-        Me.SampleType.Size = New System.Drawing.Size(151, 27)
-        Me.SampleType.TabIndex = 44
+        Me.SampleType.Size = New System.Drawing.Size(151, 28)
+        Me.SampleType.TabIndex = 7
+        '
+        'Price
+        '
+        Me.Price.Location = New System.Drawing.Point(131, 473)
+        Me.Price.Name = "Price"
+        Me.Price.PlaceholderText = "Enter Price"
+        Me.Price.Size = New System.Drawing.Size(151, 27)
+        Me.Price.TabIndex = 8
         '
         'RankB
         '
@@ -176,23 +185,16 @@ Partial Class AddExaminationGroup
         Me.RankB.Name = "RankB"
         Me.RankB.PlaceholderText = "Enter Rank"
         Me.RankB.Size = New System.Drawing.Size(151, 27)
-        Me.RankB.TabIndex = 39
-        '
-        'KeyB
-        '
-        Me.KeyB.FormattingEnabled = True
-        Me.KeyB.Location = New System.Drawing.Point(131, 124)
-        Me.KeyB.Name = "KeyB"
-        Me.KeyB.Size = New System.Drawing.Size(151, 28)
-        Me.KeyB.TabIndex = 38
+        Me.RankB.TabIndex = 4
         '
         'Department
         '
+        Me.Department.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Department.FormattingEnabled = True
         Me.Department.Location = New System.Drawing.Point(131, 34)
         Me.Department.Name = "Department"
         Me.Department.Size = New System.Drawing.Size(151, 28)
-        Me.Department.TabIndex = 36
+        Me.Department.TabIndex = 1
         '
         'Label11
         '
@@ -334,10 +336,9 @@ Partial Class AddExaminationGroup
     Friend WithEvents FlowLayoutPanel1 As FlowLayoutPanel
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents ToolStripContainer1 As ToolStripContainer
-    Friend WithEvents Price As ComboBox
-    Friend WithEvents SampleType As TextBox
+    Friend WithEvents SampleType As ComboBox
+    Friend WithEvents Price As TextBox
     Friend WithEvents RankB As TextBox
-    Friend WithEvents KeyB As ComboBox
     Friend WithEvents Department As ComboBox
     Friend WithEvents Label11 As Label
     Friend WithEvents Label10 As Label
@@ -352,4 +353,5 @@ Partial Class AddExaminationGroup
     Friend WithEvents Specification As TextBox
     Friend WithEvents Interpretation As TextBox
     Friend WithEvents TitleB As TextBox
+    Friend WithEvents KeyB As TextBox
 End Class
