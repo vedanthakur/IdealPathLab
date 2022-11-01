@@ -329,9 +329,9 @@ Partial Class AddUser
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Location = New System.Drawing.Point(16, 88)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(41, 20)
+        Me.Label3.Size = New System.Drawing.Size(45, 20)
         Me.Label3.TabIndex = 2
-        Me.Label3.Text = "Roll*"
+        Me.Label3.Text = "Role*"
         '
         'PictureBox1
         '

@@ -99,14 +99,14 @@ Partial Class MDIParent1
         Me.BrandMenu = New System.Windows.Forms.ToolStripMenuItem()
         Me.BrandTypeList = New System.Windows.Forms.ToolStripMenuItem()
         Me.BrandTypeCreate = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AppointmentStatusMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AppointmentStatusList = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AppointmentStatusCreate = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PreferTimeMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PreferTimeList = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PreferTimeCreate = New System.Windows.Forms.ToolStripMenuItem()
         Me.CompanyProfileMenu = New System.Windows.Forms.ToolStripMenuItem()
         Me.LogoutMenu = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AppointmentStatusMenu = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PreferTimeMenu = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AppointmentStatusCreate = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AppointmentStatusList = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PreferTimeCreate = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PreferTimeList = New System.Windows.Forms.ToolStripMenuItem()
         Me.StatusStrip.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -359,13 +359,13 @@ Partial Class MDIParent1
         'ListBranchMenu
         '
         Me.ListBranchMenu.Name = "ListBranchMenu"
-        Me.ListBranchMenu.Size = New System.Drawing.Size(224, 26)
+        Me.ListBranchMenu.Size = New System.Drawing.Size(135, 26)
         Me.ListBranchMenu.Text = "&List"
         '
         'CreateBranchMenu
         '
         Me.CreateBranchMenu.Name = "CreateBranchMenu"
-        Me.CreateBranchMenu.Size = New System.Drawing.Size(224, 26)
+        Me.CreateBranchMenu.Size = New System.Drawing.Size(135, 26)
         Me.CreateBranchMenu.Text = "&Create"
         '
         'UserMenu
@@ -378,13 +378,13 @@ Partial Class MDIParent1
         'ListUserMenu
         '
         Me.ListUserMenu.Name = "ListUserMenu"
-        Me.ListUserMenu.Size = New System.Drawing.Size(224, 26)
+        Me.ListUserMenu.Size = New System.Drawing.Size(135, 26)
         Me.ListUserMenu.Text = "&List"
         '
         'CreateUserMenu
         '
         Me.CreateUserMenu.Name = "CreateUserMenu"
-        Me.CreateUserMenu.Size = New System.Drawing.Size(224, 26)
+        Me.CreateUserMenu.Size = New System.Drawing.Size(135, 26)
         Me.CreateUserMenu.Text = "&Create"
         '
         'ParentDataMenu
@@ -404,13 +404,13 @@ Partial Class MDIParent1
         'HRTypeList
         '
         Me.HRTypeList.Name = "HRTypeList"
-        Me.HRTypeList.Size = New System.Drawing.Size(224, 26)
+        Me.HRTypeList.Size = New System.Drawing.Size(135, 26)
         Me.HRTypeList.Text = "&List"
         '
         'HRTypeCreate
         '
         Me.HRTypeCreate.Name = "HRTypeCreate"
-        Me.HRTypeCreate.Size = New System.Drawing.Size(224, 26)
+        Me.HRTypeCreate.Size = New System.Drawing.Size(135, 26)
         Me.HRTypeCreate.Text = "&Create"
         '
         'ReferralTypeMenu
@@ -423,13 +423,13 @@ Partial Class MDIParent1
         'ReferralTypeList
         '
         Me.ReferralTypeList.Name = "ReferralTypeList"
-        Me.ReferralTypeList.Size = New System.Drawing.Size(224, 26)
+        Me.ReferralTypeList.Size = New System.Drawing.Size(135, 26)
         Me.ReferralTypeList.Text = "&List"
         '
         'ReferralTypeCreate
         '
         Me.ReferralTypeCreate.Name = "ReferralTypeCreate"
-        Me.ReferralTypeCreate.Size = New System.Drawing.Size(224, 26)
+        Me.ReferralTypeCreate.Size = New System.Drawing.Size(135, 26)
         Me.ReferralTypeCreate.Text = "&Create"
         '
         'SpecializationTypeMenu
@@ -442,13 +442,13 @@ Partial Class MDIParent1
         'SpecializationTypeList
         '
         Me.SpecializationTypeList.Name = "SpecializationTypeList"
-        Me.SpecializationTypeList.Size = New System.Drawing.Size(224, 26)
+        Me.SpecializationTypeList.Size = New System.Drawing.Size(135, 26)
         Me.SpecializationTypeList.Text = "&List"
         '
         'SpecializationTypeCreate
         '
         Me.SpecializationTypeCreate.Name = "SpecializationTypeCreate"
-        Me.SpecializationTypeCreate.Size = New System.Drawing.Size(224, 26)
+        Me.SpecializationTypeCreate.Size = New System.Drawing.Size(135, 26)
         Me.SpecializationTypeCreate.Text = "&Create"
         '
         'DepartmentTypeMenu
@@ -461,13 +461,13 @@ Partial Class MDIParent1
         'DepartmentTypeList
         '
         Me.DepartmentTypeList.Name = "DepartmentTypeList"
-        Me.DepartmentTypeList.Size = New System.Drawing.Size(224, 26)
+        Me.DepartmentTypeList.Size = New System.Drawing.Size(135, 26)
         Me.DepartmentTypeList.Text = "&List"
         '
         'DepartmentTypeCreate
         '
         Me.DepartmentTypeCreate.Name = "DepartmentTypeCreate"
-        Me.DepartmentTypeCreate.Size = New System.Drawing.Size(224, 26)
+        Me.DepartmentTypeCreate.Size = New System.Drawing.Size(135, 26)
         Me.DepartmentTypeCreate.Text = "&Create"
         '
         'EducationMenu
@@ -480,13 +480,13 @@ Partial Class MDIParent1
         'EducationTypeList
         '
         Me.EducationTypeList.Name = "EducationTypeList"
-        Me.EducationTypeList.Size = New System.Drawing.Size(224, 26)
+        Me.EducationTypeList.Size = New System.Drawing.Size(135, 26)
         Me.EducationTypeList.Text = "&List"
         '
         'EducationTypeCreate
         '
         Me.EducationTypeCreate.Name = "EducationTypeCreate"
-        Me.EducationTypeCreate.Size = New System.Drawing.Size(224, 26)
+        Me.EducationTypeCreate.Size = New System.Drawing.Size(135, 26)
         Me.EducationTypeCreate.Text = "&Create"
         '
         'DefaultValueMenu
@@ -499,13 +499,13 @@ Partial Class MDIParent1
         'DefaultValueTypeList
         '
         Me.DefaultValueTypeList.Name = "DefaultValueTypeList"
-        Me.DefaultValueTypeList.Size = New System.Drawing.Size(224, 26)
+        Me.DefaultValueTypeList.Size = New System.Drawing.Size(135, 26)
         Me.DefaultValueTypeList.Text = "&List"
         '
         'DefaultValueTypeCreate
         '
         Me.DefaultValueTypeCreate.Name = "DefaultValueTypeCreate"
-        Me.DefaultValueTypeCreate.Size = New System.Drawing.Size(224, 26)
+        Me.DefaultValueTypeCreate.Size = New System.Drawing.Size(135, 26)
         Me.DefaultValueTypeCreate.Text = "&Create"
         '
         'PaymentTermMenu
@@ -518,13 +518,13 @@ Partial Class MDIParent1
         'PaymentTermList
         '
         Me.PaymentTermList.Name = "PaymentTermList"
-        Me.PaymentTermList.Size = New System.Drawing.Size(224, 26)
+        Me.PaymentTermList.Size = New System.Drawing.Size(135, 26)
         Me.PaymentTermList.Text = "&List"
         '
         'PaymentTermTypeCreate
         '
         Me.PaymentTermTypeCreate.Name = "PaymentTermTypeCreate"
-        Me.PaymentTermTypeCreate.Size = New System.Drawing.Size(224, 26)
+        Me.PaymentTermTypeCreate.Size = New System.Drawing.Size(135, 26)
         Me.PaymentTermTypeCreate.Text = "&Create"
         '
         'SampleTypeMenu
@@ -537,13 +537,13 @@ Partial Class MDIParent1
         'SampleTypeList
         '
         Me.SampleTypeList.Name = "SampleTypeList"
-        Me.SampleTypeList.Size = New System.Drawing.Size(224, 26)
+        Me.SampleTypeList.Size = New System.Drawing.Size(135, 26)
         Me.SampleTypeList.Text = "&List"
         '
         'SampleTypeCreate
         '
         Me.SampleTypeCreate.Name = "SampleTypeCreate"
-        Me.SampleTypeCreate.Size = New System.Drawing.Size(224, 26)
+        Me.SampleTypeCreate.Size = New System.Drawing.Size(135, 26)
         Me.SampleTypeCreate.Text = "&Create"
         '
         'UnitTypeMenu
@@ -556,13 +556,13 @@ Partial Class MDIParent1
         'UnitTypeList
         '
         Me.UnitTypeList.Name = "UnitTypeList"
-        Me.UnitTypeList.Size = New System.Drawing.Size(224, 26)
+        Me.UnitTypeList.Size = New System.Drawing.Size(135, 26)
         Me.UnitTypeList.Text = "&List"
         '
         'UnitTypeCreate
         '
         Me.UnitTypeCreate.Name = "UnitTypeCreate"
-        Me.UnitTypeCreate.Size = New System.Drawing.Size(224, 26)
+        Me.UnitTypeCreate.Size = New System.Drawing.Size(135, 26)
         Me.UnitTypeCreate.Text = "&Create"
         '
         'BrandMenu
@@ -575,14 +575,52 @@ Partial Class MDIParent1
         'BrandTypeList
         '
         Me.BrandTypeList.Name = "BrandTypeList"
-        Me.BrandTypeList.Size = New System.Drawing.Size(224, 26)
+        Me.BrandTypeList.Size = New System.Drawing.Size(135, 26)
         Me.BrandTypeList.Text = "&List"
         '
         'BrandTypeCreate
         '
         Me.BrandTypeCreate.Name = "BrandTypeCreate"
-        Me.BrandTypeCreate.Size = New System.Drawing.Size(224, 26)
+        Me.BrandTypeCreate.Size = New System.Drawing.Size(135, 26)
         Me.BrandTypeCreate.Text = "&Create"
+        '
+        'AppointmentStatusMenu
+        '
+        Me.AppointmentStatusMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AppointmentStatusList, Me.AppointmentStatusCreate})
+        Me.AppointmentStatusMenu.Name = "AppointmentStatusMenu"
+        Me.AppointmentStatusMenu.Size = New System.Drawing.Size(224, 26)
+        Me.AppointmentStatusMenu.Text = "&Appointment Status"
+        '
+        'AppointmentStatusList
+        '
+        Me.AppointmentStatusList.Name = "AppointmentStatusList"
+        Me.AppointmentStatusList.Size = New System.Drawing.Size(135, 26)
+        Me.AppointmentStatusList.Text = "&List"
+        '
+        'AppointmentStatusCreate
+        '
+        Me.AppointmentStatusCreate.Name = "AppointmentStatusCreate"
+        Me.AppointmentStatusCreate.Size = New System.Drawing.Size(135, 26)
+        Me.AppointmentStatusCreate.Text = "&Create"
+        '
+        'PreferTimeMenu
+        '
+        Me.PreferTimeMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PreferTimeList, Me.PreferTimeCreate})
+        Me.PreferTimeMenu.Name = "PreferTimeMenu"
+        Me.PreferTimeMenu.Size = New System.Drawing.Size(224, 26)
+        Me.PreferTimeMenu.Text = "&Prefer Time"
+        '
+        'PreferTimeList
+        '
+        Me.PreferTimeList.Name = "PreferTimeList"
+        Me.PreferTimeList.Size = New System.Drawing.Size(135, 26)
+        Me.PreferTimeList.Text = "&List"
+        '
+        'PreferTimeCreate
+        '
+        Me.PreferTimeCreate.Name = "PreferTimeCreate"
+        Me.PreferTimeCreate.Size = New System.Drawing.Size(135, 26)
+        Me.PreferTimeCreate.Text = "&Create"
         '
         'CompanyProfileMenu
         '
@@ -595,44 +633,6 @@ Partial Class MDIParent1
         Me.LogoutMenu.Name = "LogoutMenu"
         Me.LogoutMenu.Size = New System.Drawing.Size(74, 24)
         Me.LogoutMenu.Text = "Log &out"
-        '
-        'AppointmentStatusMenu
-        '
-        Me.AppointmentStatusMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AppointmentStatusList, Me.AppointmentStatusCreate})
-        Me.AppointmentStatusMenu.Name = "AppointmentStatusMenu"
-        Me.AppointmentStatusMenu.Size = New System.Drawing.Size(224, 26)
-        Me.AppointmentStatusMenu.Text = "&Appointment Status"
-        '
-        'PreferTimeMenu
-        '
-        Me.PreferTimeMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PreferTimeList, Me.PreferTimeCreate})
-        Me.PreferTimeMenu.Name = "PreferTimeMenu"
-        Me.PreferTimeMenu.Size = New System.Drawing.Size(224, 26)
-        Me.PreferTimeMenu.Text = "&Prefer Time"
-        '
-        'AppointmentStatusCreate
-        '
-        Me.AppointmentStatusCreate.Name = "AppointmentStatusCreate"
-        Me.AppointmentStatusCreate.Size = New System.Drawing.Size(135, 26)
-        Me.AppointmentStatusCreate.Text = "&Create"
-        '
-        'AppointmentStatusList
-        '
-        Me.AppointmentStatusList.Name = "AppointmentStatusList"
-        Me.AppointmentStatusList.Size = New System.Drawing.Size(135, 26)
-        Me.AppointmentStatusList.Text = "&List"
-        '
-        'PreferTimeCreate
-        '
-        Me.PreferTimeCreate.Name = "PreferTimeCreate"
-        Me.PreferTimeCreate.Size = New System.Drawing.Size(224, 26)
-        Me.PreferTimeCreate.Text = "&Create"
-        '
-        'PreferTimeList
-        '
-        Me.PreferTimeList.Name = "PreferTimeList"
-        Me.PreferTimeList.Size = New System.Drawing.Size(224, 26)
-        Me.PreferTimeList.Text = "&List"
         '
         'MDIParent1
         '

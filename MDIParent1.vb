@@ -495,4 +495,8 @@ Public Class MDIParent1
         ListType.Text = "Prefer Time"
         ListType.TableName = "prefer_time"
     End Sub
+
+    Private Sub MDIParent1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
