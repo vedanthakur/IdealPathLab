@@ -26,12 +26,11 @@ Partial Class LoginForm1
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(LoginForm1))
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Cancel = New System.Windows.Forms.Button()
         Me.OK = New System.Windows.Forms.Button()
-        Me.PasswordTextBox = New System.Windows.Forms.TextBox()
         Me.UsernameTextBox = New System.Windows.Forms.TextBox()
         Me.PasswordLabel = New System.Windows.Forms.Label()
         Me.UsernameLabel = New System.Windows.Forms.Label()
+        Me.PasswordTextBox = New System.Windows.Forms.TextBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -40,9 +39,9 @@ Partial Class LoginForm1
         Me.CheckBox1.AutoSize = True
         Me.CheckBox1.Location = New System.Drawing.Point(57, 264)
         Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(129, 24)
+        Me.CheckBox1.Size = New System.Drawing.Size(132, 24)
         Me.CheckBox1.TabIndex = 15
-        Me.CheckBox1.Text = "Remember me"
+        Me.CheckBox1.Text = "&Show Password"
         Me.CheckBox1.UseVisualStyleBackColor = True
         '
         'PictureBox1
@@ -55,31 +54,13 @@ Partial Class LoginForm1
         Me.PictureBox1.TabIndex = 14
         Me.PictureBox1.TabStop = False
         '
-        'Cancel
-        '
-        Me.Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.Cancel.Location = New System.Drawing.Point(171, 297)
-        Me.Cancel.Name = "Cancel"
-        Me.Cancel.Size = New System.Drawing.Size(100, 30)
-        Me.Cancel.TabIndex = 13
-        Me.Cancel.Text = "&Cancel"
-        '
         'OK
         '
         Me.OK.Location = New System.Drawing.Point(53, 297)
         Me.OK.Name = "OK"
-        Me.OK.Size = New System.Drawing.Size(100, 30)
+        Me.OK.Size = New System.Drawing.Size(220, 30)
         Me.OK.TabIndex = 12
         Me.OK.Text = "&Log in"
-        '
-        'PasswordTextBox
-        '
-        Me.PasswordTextBox.Location = New System.Drawing.Point(53, 226)
-        Me.PasswordTextBox.Name = "PasswordTextBox"
-        Me.PasswordTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.PasswordTextBox.PlaceholderText = "Enter password"
-        Me.PasswordTextBox.Size = New System.Drawing.Size(220, 27)
-        Me.PasswordTextBox.TabIndex = 11
         '
         'UsernameTextBox
         '
@@ -107,16 +88,23 @@ Partial Class LoginForm1
         Me.UsernameLabel.Text = "&User name"
         Me.UsernameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
+        'PasswordTextBox
+        '
+        Me.PasswordTextBox.Location = New System.Drawing.Point(53, 231)
+        Me.PasswordTextBox.Name = "PasswordTextBox"
+        Me.PasswordTextBox.PlaceholderText = "Enter Password"
+        Me.PasswordTextBox.Size = New System.Drawing.Size(218, 27)
+        Me.PasswordTextBox.TabIndex = 16
+        '
         'LoginForm1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(336, 353)
+        Me.Controls.Add(Me.PasswordTextBox)
         Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.Cancel)
         Me.Controls.Add(Me.OK)
-        Me.Controls.Add(Me.PasswordTextBox)
         Me.Controls.Add(Me.UsernameTextBox)
         Me.Controls.Add(Me.PasswordLabel)
         Me.Controls.Add(Me.UsernameLabel)
@@ -138,8 +126,8 @@ Partial Class LoginForm1
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Cancel As Button
     Friend WithEvents OK As Button
-    Friend WithEvents PasswordTextBox As TextBox
     Friend WithEvents UsernameTextBox As TextBox
     Friend WithEvents PasswordLabel As Label
     Friend WithEvents UsernameLabel As Label
+    Friend WithEvents PasswordTextBox As TextBox
 End Class
