@@ -12,9 +12,9 @@ Public Class AddAppointment
             con.Open()
             Dim sqlcmd As String
             If SaveToolStripButton.Text = "Save" Then
-                sqlcmd = "INSERT INTO `appointment` values ('" & Name.Text & "','" & Address.Text & "','" & Email.Text & "','" & Phone.Text & "','" & Gender.Text & "','" & DOB.Text & "','" & Department.Text & "','" & Doctor.Text & "','" & AppointmentDate.Text & "','" & PreferredTime.Text & "','" & AppointmentStatus.Text & "','" & Note.Text & "');"
+                sqlcmd = "INSERT INTO `appointment` values ('" & PName.Text & "','" & Address.Text & "','" & Email.Text & "','" & Phone.Text & "','" & Gender.Text & "','" & DOB.Text & "','" & Department.Text & "','" & Doctor.Text & "','" & AppointmentDate.Text & "','" & PreferredTime.Text & "','" & AppointmentStatus.Text & "','" & Note.Text & "');"
             Else
-                sqlcmd = "UPDATE `appointment` SET `name` ='" & Name.Text & "',`address`='" & Address.Text & "',`email`='" & Email.Text & "',`phone`='" & Phone.Text & "',`gender`='" & Gender.Text & "',`dob`='" & DOB.Text & "',`department`='" & Department.Text & "',`doctor`='" & Doctor.Text & "',`appointment_date` ='" & AppointmentDate.Text & "',`preferred_time` ='" & PreferredTime.Text & "',`appointment_status` ='" & AppointmentStatus.Text & "',`note` ='" & Note.Text & "' WHERE `email` = '" & Email.Text & "';"
+                sqlcmd = "UPDATE `appointment` SET `name` ='" & PName.Text & "',`address`='" & Address.Text & "',`email`='" & Email.Text & "',`phone`='" & Phone.Text & "',`gender`='" & Gender.Text & "',`dob`='" & DOB.Text & "',`department`='" & Department.Text & "',`doctor`='" & Doctor.Text & "',`appointment_date` ='" & AppointmentDate.Text & "',`preferred_time` ='" & PreferredTime.Text & "',`appointment_status` ='" & AppointmentStatus.Text & "',`note` ='" & Note.Text & "' WHERE `email` = '" & Email.Text & "';"
             End If
             sql = sqlcmd
             Dim mysc As New MySqlCommand(sql, con)
@@ -47,5 +47,55 @@ Public Class AddAppointment
         If TryCast(parent, System.Windows.Forms.TextBox) IsNot Nothing Then
             TryCast(parent, System.Windows.Forms.TextBox).Text = [String].Empty
         End If
+    End Sub
+
+    Private Sub AddAppointment_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        LoadDoctor()
+        LoadElements("department_type")
+        LoadElements("prefer_time")
+        LoadElements("appointment_status")
+    End Sub
+
+    Sub LoadDoctor()
+        Try
+            Dim sql As String
+            Dim rd As MySqlDataReader
+            sql = "Select `name` from `users` where `role` = 'doctor';"
+            con.Open()
+            Dim com = New MySqlCommand(sql, con)
+            rd = com.ExecuteReader
+            While rd.Read
+                Dim elements = rd.GetString("name")
+                Doctor.Items.Add(elements)
+            End While
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            con.Close()
+        End Try
+    End Sub
+    Sub LoadElements(TableName As String)
+        Try
+            Dim sql As String
+            Dim rd As MySqlDataReader
+            sql = "Select `title` from `" & TableName & "`;"
+            con.Open()
+            Dim com = New MySqlCommand(sql, con)
+            rd = com.ExecuteReader
+            While rd.Read
+                Dim elements = rd.GetString("title")
+                If TableName = "department_type" Then
+                    Department.Items.Add(elements)
+                ElseIf TableName = "prefer_time" Then
+                    PreferredTime.Items.Add(elements)
+                ElseIf TableName = "appointment_status" Then
+                    AppointmentStatus.Items.Add(elements)
+                End If
+            End While
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            con.Close()
+        End Try
     End Sub
 End Class

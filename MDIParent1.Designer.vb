@@ -162,14 +162,14 @@ Partial Class MDIParent1
         'ListAppoinmentMenu
         '
         Me.ListAppoinmentMenu.Name = "ListAppoinmentMenu"
-        Me.ListAppoinmentMenu.Size = New System.Drawing.Size(169, 26)
+        Me.ListAppoinmentMenu.Size = New System.Drawing.Size(224, 26)
         Me.ListAppoinmentMenu.Text = "&List"
         '
         'ParentDataAppoinmentMenu
         '
         Me.ParentDataAppoinmentMenu.Name = "ParentDataAppoinmentMenu"
-        Me.ParentDataAppoinmentMenu.Size = New System.Drawing.Size(169, 26)
-        Me.ParentDataAppoinmentMenu.Text = "&Parent Data"
+        Me.ParentDataAppoinmentMenu.Size = New System.Drawing.Size(224, 26)
+        Me.ParentDataAppoinmentMenu.Text = "&Create"
         '
         'ReferralMenu
         '

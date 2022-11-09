@@ -175,7 +175,7 @@ Partial Class AddLabReport
         Me.GroupBox8.MinimumSize = New System.Drawing.Size(442, 130)
         Me.GroupBox8.Name = "GroupBox8"
         Me.GroupBox8.Size = New System.Drawing.Size(442, 130)
-        Me.GroupBox8.TabIndex = 6
+        Me.GroupBox8.TabIndex = 7
         Me.GroupBox8.TabStop = False
         Me.GroupBox8.Text = "TSH*"
         '
@@ -219,7 +219,7 @@ Partial Class AddLabReport
         Me.GroupBox7.MinimumSize = New System.Drawing.Size(442, 130)
         Me.GroupBox7.Name = "GroupBox7"
         Me.GroupBox7.Size = New System.Drawing.Size(442, 130)
-        Me.GroupBox7.TabIndex = 5
+        Me.GroupBox7.TabIndex = 6
         Me.GroupBox7.TabStop = False
         Me.GroupBox7.Text = "Info"
         '
@@ -392,7 +392,7 @@ Partial Class AddLabReport
         Me.GroupBox9.MinimumSize = New System.Drawing.Size(442, 206)
         Me.GroupBox9.Name = "GroupBox9"
         Me.GroupBox9.Size = New System.Drawing.Size(442, 206)
-        Me.GroupBox9.TabIndex = 8
+        Me.GroupBox9.TabIndex = 5
         Me.GroupBox9.TabStop = False
         Me.GroupBox9.Text = "Report Related Information"
         '
@@ -447,7 +447,7 @@ Partial Class AddLabReport
         Me.GroupBox2.MinimumSize = New System.Drawing.Size(442, 130)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(442, 130)
-        Me.GroupBox2.TabIndex = 7
+        Me.GroupBox2.TabIndex = 8
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Report file"
         '

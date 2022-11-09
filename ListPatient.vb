@@ -13,6 +13,12 @@ Public Class ListPatient
             Dim da As New MySqlDataAdapter(sql, con)
             da.Fill(dt)
             DataGridView1.DataSource = dt
+            Dim CIndex As Integer = 0
+            Dim Names() As String = {"Name", "Gender", "Address", "Mobile", "Date of Birth", "Age", "Referral", "Referral Lab/Hospital", "Nationality", "Email", "Phone", "Marital Status", "Image", "Country", "Passport No.", "Passport Issue", "Passport Expired", "Passport Issued District", "Citizenship No.", "Contact Person", "Contact Person Phone"}
+            For Each CName In Names
+                DataGridView1.Columns(CIndex).HeaderText = CName
+                CIndex += 1
+            Next
             DataGridView1.Refresh()
         Catch ex As Exception
             MsgBox(ex.Message)

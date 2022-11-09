@@ -6,12 +6,17 @@ Public Class ListUser
         Try
             Dim sql As String
             Dim dt As New DataTable
-            sql = "Select `username`, `roll`, `email`, `address`, `mobile`, `branch`, `humanResource`, `showUserWiseData`, `image`, `status` from users"
+            sql = "Select `name`, `role`, `email`, `address`, `mobile`, `branch`, `humanResource`, `showUserWiseData`, `image`, `status` from `users`;"
             con.Open()
             Dim da As New MySqlDataAdapter(sql, con)
-
             da.Fill(dt)
             DataGridView1.DataSource = dt
+            Dim CIndex As Integer = 0
+            Dim Names() As String = {"Name", "Role", "Email", "Address", "Mobile", "Branch", "Human Resource", "Show User Wise Data", "Image", "Status"}
+            For Each CName In Names
+                DataGridView1.Columns(CIndex).HeaderText = CName
+                CIndex += 1
+            Next
             DataGridView1.Refresh()
         Catch ex As Exception
             MsgBox(ex.Message)

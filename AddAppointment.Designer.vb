@@ -38,22 +38,22 @@ Partial Class AddAppointment
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Name = New System.Windows.Forms.TextBox()
+        Me.PName = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Note = New System.Windows.Forms.TextBox()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.AppointmentStatus = New System.Windows.Forms.ComboBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.PreferredTime = New System.Windows.Forms.ComboBox()
+        Me.AppointmentDate = New System.Windows.Forms.DateTimePicker()
+        Me.Doctor = New System.Windows.Forms.ComboBox()
+        Me.Department = New System.Windows.Forms.ComboBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.ToolStripContainer1 = New System.Windows.Forms.ToolStripContainer()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Department = New System.Windows.Forms.ComboBox()
-        Me.Doctor = New System.Windows.Forms.ComboBox()
-        Me.AppointmentDate = New System.Windows.Forms.DateTimePicker()
-        Me.PreferredTime = New System.Windows.Forms.ComboBox()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.AppointmentStatus = New System.Windows.Forms.ComboBox()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.Note = New System.Windows.Forms.TextBox()
         Me.ToolStrip.SuspendLayout()
         Me.FlowLayoutPanel1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
@@ -109,7 +109,7 @@ Partial Class AddAppointment
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Controls.Add(Me.Name)
+        Me.GroupBox1.Controls.Add(Me.PName)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Location = New System.Drawing.Point(3, 3)
         Me.GroupBox1.Name = "GroupBox1"
@@ -138,7 +138,9 @@ Partial Class AddAppointment
         '
         'Gender
         '
+        Me.Gender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Gender.FormattingEnabled = True
+        Me.Gender.Items.AddRange(New Object() {"Male", "Female", "Other"})
         Me.Gender.Location = New System.Drawing.Point(122, 162)
         Me.Gender.Name = "Gender"
         Me.Gender.Size = New System.Drawing.Size(151, 28)
@@ -204,13 +206,13 @@ Partial Class AddAppointment
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Address"
         '
-        'Name
+        'PName
         '
-        Me.Name.Location = New System.Drawing.Point(122, 30)
-        Me.Name.Name = "Name"
-        Me.Name.PlaceholderText = "Enter Patient Name"
-        Me.Name.Size = New System.Drawing.Size(151, 27)
-        Me.Name.TabIndex = 1
+        Me.PName.Location = New System.Drawing.Point(122, 30)
+        Me.PName.Name = "PName"
+        Me.PName.PlaceholderText = "Enter Patient Name"
+        Me.PName.Size = New System.Drawing.Size(151, 27)
+        Me.PName.TabIndex = 1
         '
         'Label1
         '
@@ -241,6 +243,96 @@ Partial Class AddAppointment
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Schedule Information"
+        '
+        'Note
+        '
+        Me.Note.Location = New System.Drawing.Point(65, 195)
+        Me.Note.Multiline = True
+        Me.Note.Name = "Note"
+        Me.Note.PlaceholderText = "Enter Notes"
+        Me.Note.Size = New System.Drawing.Size(274, 90)
+        Me.Note.TabIndex = 11
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Location = New System.Drawing.Point(6, 200)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(42, 20)
+        Me.Label12.TabIndex = 10
+        Me.Label12.Text = "Note"
+        '
+        'AppointmentStatus
+        '
+        Me.AppointmentStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.AppointmentStatus.FormattingEnabled = True
+        Me.AppointmentStatus.Location = New System.Drawing.Point(188, 162)
+        Me.AppointmentStatus.Name = "AppointmentStatus"
+        Me.AppointmentStatus.Size = New System.Drawing.Size(151, 28)
+        Me.AppointmentStatus.TabIndex = 9
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(6, 165)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(141, 20)
+        Me.Label11.TabIndex = 8
+        Me.Label11.Text = "Appointment Status"
+        '
+        'PreferredTime
+        '
+        Me.PreferredTime.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.PreferredTime.FormattingEnabled = True
+        Me.PreferredTime.Location = New System.Drawing.Point(188, 131)
+        Me.PreferredTime.Name = "PreferredTime"
+        Me.PreferredTime.Size = New System.Drawing.Size(151, 28)
+        Me.PreferredTime.TabIndex = 7
+        '
+        'AppointmentDate
+        '
+        Me.AppointmentDate.CustomFormat = "yyyy-MM-dd"
+        Me.AppointmentDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.AppointmentDate.Location = New System.Drawing.Point(188, 95)
+        Me.AppointmentDate.Name = "AppointmentDate"
+        Me.AppointmentDate.Size = New System.Drawing.Size(151, 27)
+        Me.AppointmentDate.TabIndex = 6
+        '
+        'Doctor
+        '
+        Me.Doctor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Doctor.FormattingEnabled = True
+        Me.Doctor.Location = New System.Drawing.Point(188, 63)
+        Me.Doctor.Name = "Doctor"
+        Me.Doctor.Size = New System.Drawing.Size(151, 28)
+        Me.Doctor.TabIndex = 5
+        '
+        'Department
+        '
+        Me.Department.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Department.FormattingEnabled = True
+        Me.Department.Location = New System.Drawing.Point(188, 30)
+        Me.Department.Name = "Department"
+        Me.Department.Size = New System.Drawing.Size(151, 28)
+        Me.Department.TabIndex = 4
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(6, 134)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(107, 20)
+        Me.Label10.TabIndex = 3
+        Me.Label10.Text = "Preferred Time"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(6, 100)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(133, 20)
+        Me.Label9.TabIndex = 2
+        Me.Label9.Text = "Appointment Date"
         '
         'Label7
         '
@@ -282,92 +374,6 @@ Partial Class AddAppointment
         '
         Me.ToolStripContainer1.TopToolStripPanel.Controls.Add(Me.ToolStrip)
         '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(6, 100)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(133, 20)
-        Me.Label9.TabIndex = 2
-        Me.Label9.Text = "Appointment Date"
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(6, 134)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(107, 20)
-        Me.Label10.TabIndex = 3
-        Me.Label10.Text = "Preferred Time"
-        '
-        'Department
-        '
-        Me.Department.FormattingEnabled = True
-        Me.Department.Location = New System.Drawing.Point(188, 30)
-        Me.Department.Name = "Department"
-        Me.Department.Size = New System.Drawing.Size(151, 28)
-        Me.Department.TabIndex = 4
-        '
-        'Doctor
-        '
-        Me.Doctor.FormattingEnabled = True
-        Me.Doctor.Location = New System.Drawing.Point(188, 63)
-        Me.Doctor.Name = "Doctor"
-        Me.Doctor.Size = New System.Drawing.Size(151, 28)
-        Me.Doctor.TabIndex = 5
-        '
-        'AppointmentDate
-        '
-        Me.AppointmentDate.CustomFormat = "yyyy-MM-dd"
-        Me.AppointmentDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.AppointmentDate.Location = New System.Drawing.Point(188, 95)
-        Me.AppointmentDate.Name = "AppointmentDate"
-        Me.AppointmentDate.Size = New System.Drawing.Size(151, 27)
-        Me.AppointmentDate.TabIndex = 6
-        '
-        'PreferredTime
-        '
-        Me.PreferredTime.FormattingEnabled = True
-        Me.PreferredTime.Location = New System.Drawing.Point(188, 131)
-        Me.PreferredTime.Name = "PreferredTime"
-        Me.PreferredTime.Size = New System.Drawing.Size(151, 28)
-        Me.PreferredTime.TabIndex = 7
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(6, 165)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(141, 20)
-        Me.Label11.TabIndex = 8
-        Me.Label11.Text = "Appointment Status"
-        '
-        'AppointmentStatus
-        '
-        Me.AppointmentStatus.FormattingEnabled = True
-        Me.AppointmentStatus.Location = New System.Drawing.Point(188, 162)
-        Me.AppointmentStatus.Name = "AppointmentStatus"
-        Me.AppointmentStatus.Size = New System.Drawing.Size(151, 28)
-        Me.AppointmentStatus.TabIndex = 9
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(6, 200)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(42, 20)
-        Me.Label12.TabIndex = 10
-        Me.Label12.Text = "Note"
-        '
-        'Note
-        '
-        Me.Note.Location = New System.Drawing.Point(65, 195)
-        Me.Note.Multiline = True
-        Me.Note.Name = "Note"
-        Me.Note.PlaceholderText = "Enter Notes"
-        Me.Note.Size = New System.Drawing.Size(274, 90)
-        Me.Note.TabIndex = 11
-        '
         'AddAppointment
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
@@ -407,7 +413,7 @@ Partial Class AddAppointment
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents Name As TextBox
+    Friend WithEvents PName As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents Label7 As Label

@@ -1,5 +1,9 @@
-﻿Imports IdealPathLab.dbconfig
+﻿Imports System.Data.Entity.Core.Metadata.Edm
+Imports System.Windows.Forms.VisualStyles.VisualStyleElement
+Imports IdealPathLab.dbconfig
 Imports MySql.Data.MySqlClient
+Imports Org.BouncyCastle.Math
+
 Public Class ListExaminationGroup
     Private Sub ListExaminationGroup_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         load_grid()
@@ -13,6 +17,12 @@ Public Class ListExaminationGroup
             Dim da As New MySqlDataAdapter(sql, con)
             da.Fill(dt)
             DataGridView1.DataSource = dt
+            Dim CIndex As Integer = 0
+            Dim Names() As String = {"Department", "Title", "Key", "Rank", "Interpretation", "Specification", "Sample Type", "Price", "Status"}
+            For Each CName In Names
+                DataGridView1.Columns(CIndex).HeaderText = CName
+                CIndex += 1
+            Next
             DataGridView1.Refresh()
         Catch ex As Exception
             MsgBox(ex.Message)

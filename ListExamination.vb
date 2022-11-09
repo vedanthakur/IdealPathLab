@@ -9,10 +9,16 @@ Public Class ListExamination
         Try
             Dim sql As String
             Dim dt As New DataTable
-            sql = "Select * from examination"
+            sql = "Select * from `examination`;"
             Dim da As New MySqlDataAdapter(sql, con)
             da.Fill(dt)
             DataGridView1.DataSource = dt
+            Dim CIndex As Integer = 0
+            Dim Names() As String = {"Examination Group", "Examination Sub Group", "Unit", "Title", "Key", "Rank", "Code", "Report", "Default Value", "Sample Type", "Comment", "validation_on_type", "Status"}
+            For Each CName In Names
+                DataGridView1.Columns(CIndex).HeaderText = CName
+                CIndex += 1
+            Next
             DataGridView1.Refresh()
         Catch ex As Exception
             MsgBox(ex.Message)

@@ -115,7 +115,7 @@ Partial Class AddExaminationSubGroup
         Me.Price.Name = "Price"
         Me.Price.PlaceholderText = "Enter Price"
         Me.Price.Size = New System.Drawing.Size(151, 27)
-        Me.Price.TabIndex = 54
+        Me.Price.TabIndex = 7
         '
         'KeyB
         '
@@ -123,7 +123,7 @@ Partial Class AddExaminationSubGroup
         Me.KeyB.Name = "KeyB"
         Me.KeyB.PlaceholderText = "Enter Key"
         Me.KeyB.Size = New System.Drawing.Size(151, 27)
-        Me.KeyB.TabIndex = 53
+        Me.KeyB.TabIndex = 3
         '
         'StatusP
         '
@@ -131,7 +131,7 @@ Partial Class AddExaminationSubGroup
         Me.StatusP.Location = New System.Drawing.Point(216, 350)
         Me.StatusP.Name = "StatusP"
         Me.StatusP.Size = New System.Drawing.Size(78, 24)
-        Me.StatusP.TabIndex = 53
+        Me.StatusP.TabIndex = 8
         Me.StatusP.Text = "Publish"
         Me.StatusP.UseVisualStyleBackColor = True
         '
@@ -141,7 +141,7 @@ Partial Class AddExaminationSubGroup
         Me.TitleB.Name = "TitleB"
         Me.TitleB.PlaceholderText = "Enter Title"
         Me.TitleB.Size = New System.Drawing.Size(151, 27)
-        Me.TitleB.TabIndex = 52
+        Me.TitleB.TabIndex = 2
         '
         'Label11
         '
@@ -156,10 +156,11 @@ Partial Class AddExaminationSubGroup
         '
         Me.SampleType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.SampleType.FormattingEnabled = True
+        Me.SampleType.ItemHeight = 20
         Me.SampleType.Location = New System.Drawing.Point(216, 214)
         Me.SampleType.Name = "SampleType"
         Me.SampleType.Size = New System.Drawing.Size(151, 28)
-        Me.SampleType.TabIndex = 51
+        Me.SampleType.TabIndex = 5
         '
         'Label5
         '
@@ -176,7 +177,7 @@ Partial Class AddExaminationSubGroup
         Me.QRCode.Name = "QRCode"
         Me.QRCode.PlaceholderText = "Enter QR Code"
         Me.QRCode.Size = New System.Drawing.Size(151, 27)
-        Me.QRCode.TabIndex = 50
+        Me.QRCode.TabIndex = 6
         '
         'RankB
         '
@@ -184,7 +185,7 @@ Partial Class AddExaminationSubGroup
         Me.RankB.Name = "RankB"
         Me.RankB.PlaceholderText = "Enter Rank"
         Me.RankB.Size = New System.Drawing.Size(151, 27)
-        Me.RankB.TabIndex = 39
+        Me.RankB.TabIndex = 4
         '
         'ExaminationGroup
         '
@@ -193,7 +194,7 @@ Partial Class AddExaminationSubGroup
         Me.ExaminationGroup.Location = New System.Drawing.Point(216, 34)
         Me.ExaminationGroup.Name = "ExaminationGroup"
         Me.ExaminationGroup.Size = New System.Drawing.Size(151, 28)
-        Me.ExaminationGroup.TabIndex = 36
+        Me.ExaminationGroup.TabIndex = 1
         '
         'Label10
         '

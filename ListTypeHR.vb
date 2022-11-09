@@ -12,6 +12,9 @@ Public Class ListTypeHR
             Dim da As New MySqlDataAdapter(sql, con)
             da.Fill(dt)
             DataGridView1.DataSource = dt
+            DataGridView1.Columns(0).HeaderText = "Title"
+            DataGridView1.Columns(1).HeaderText = "Group"
+            DataGridView1.Columns(2).HeaderText = "Status"
             DataGridView1.Refresh()
         Catch ex As Exception
             MsgBox(ex.Message)

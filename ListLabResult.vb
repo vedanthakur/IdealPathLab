@@ -8,10 +8,16 @@ Public Class ListLabResult
         Try
             Dim sql As String
             Dim dt As New DataTable
-            sql = "Select * from `labreport`"
+            sql = "Select * from `labreport`;"
             Dim da As New MySqlDataAdapter(sql, con)
             da.Fill(dt)
             DataGridView1.DataSource = dt
+            Dim CIndex As Integer = 0
+            Dim Names() As String = {"Name", "Address", "Invoice No", "Doctor", "Lab Technician", "Test Preformed by", "Verified by", "Delivery Status", "Notes", "Reported Date", "Lab No.", "TSH", "Image"}
+            For Each CName In Names
+                DataGridView1.Columns(CIndex).HeaderText = CName
+                CIndex += 1
+            Next
             DataGridView1.Refresh()
         Catch ex As Exception
             MsgBox(ex.Message)

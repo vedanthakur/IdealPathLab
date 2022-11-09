@@ -60,12 +60,12 @@ Public Class AddLabReport
         Try
             Dim sql As String
             Dim rd As MySqlDataReader
-            sql = "Select `username` from `users` where `roll` = '" & Cname & "';"
+            sql = "Select `name` from `users` where `role` = '" & Cname & "';"
             con.Open()
             Dim com = New MySqlCommand(sql, con)
             rd = com.ExecuteReader
             While rd.Read
-                Dim elements = rd.GetString("username")
+                Dim elements = rd.GetString("name")
                 If Cname = "Doctor" Then
                     DoctorB.Items.Add(elements)
                 Else
@@ -83,12 +83,12 @@ Public Class AddLabReport
         Try
             Dim sql As String
             Dim rd As MySqlDataReader
-            sql = "Select `username` from `users`"
+            sql = "Select `name` from `users`"
             con.Open()
             Dim com = New MySqlCommand(sql, con)
             rd = com.ExecuteReader
             While rd.Read
-                Dim elements = rd.GetString("username")
+                Dim elements = rd.GetString("name")
                 TestPerformedBy.Items.Add(elements)
                 VerifiedBy.Items.Add(elements)
             End While

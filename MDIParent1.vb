@@ -91,7 +91,12 @@ Public Class MDIParent1
         Dashboard.Top = 0
         Dashboard.Left = 0
     End Sub
-
+    Private Sub ParentDataAppoinmentMenu_Click(sender As Object, e As EventArgs) Handles ParentDataAppoinmentMenu.Click
+        AddAppointment.MdiParent = Me
+        AddAppointment.Show()
+        AddAppointment.Top = 0
+        AddAppointment.Left = 0
+    End Sub
     Private Sub ToolStripMenuItem18_Click(sender As Object, e As EventArgs) 
         AddReferral.MdiParent = Me
         AddReferral.Show()
@@ -173,6 +178,13 @@ Public Class MDIParent1
         ListUser.Show()
         ListUser.Left = 0
         ListUser.Top = 0
+    End Sub
+
+    Private Sub ListAppoinmentMenu_Click(sender As Object, e As EventArgs) Handles ListAppoinmentMenu.Click
+        ListAppointment.MdiParent = Me
+        ListAppointment.Show()
+        ListAppointment.Left = 0
+        ListAppointment.Top = 0
     End Sub
 
     Private Sub ToolStripMenuItem7_Click(sender As Object, e As EventArgs) Handles ListBranchMenu.Click
@@ -496,7 +508,4 @@ Public Class MDIParent1
         ListType.TableName = "prefer_time"
     End Sub
 
-    Private Sub MDIParent1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
 End Class
