@@ -1,4 +1,6 @@
-﻿Imports IdealPathLab.dbconfig
+﻿Imports System.Numerics
+Imports System.Windows.Forms.VisualStyles.VisualStyleElement
+Imports IdealPathLab.dbconfig
 Imports MySql.Data.MySqlClient
 Public Class ListSampleCollection
     Private Sub ListSampleCollection_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -9,10 +11,16 @@ Public Class ListSampleCollection
         Try
             Dim sql As String
             Dim dt As New DataTable
-            sql = "Select * from sample"
+            sql = "Select * from `sample`;"
             Dim da As New MySqlDataAdapter(sql, con)
             da.Fill(dt)
             DataGridView1.DataSource = dt
+            Dim CIndex As Integer = 0
+            Dim Names() As String = {"Invoice No.", "Patient Name", "Address", "Sample Collected", "Description", "Status", "Collection Date", "Time", "Notes"}
+            For Each CName In Names
+                DataGridView1.Columns(CIndex).HeaderText = CName
+                CIndex += 1
+            Next
             DataGridView1.Refresh()
         Catch ex As Exception
             MsgBox(ex.Message)
