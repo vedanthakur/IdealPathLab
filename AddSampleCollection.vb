@@ -2,6 +2,7 @@
 Imports MySql.Data.MySqlClient
 Imports IdealPathLab.dbconfig
 Imports Google.Protobuf.Reflection.FieldOptions.Types
+Imports System.Data.Entity.Core.Metadata.Edm
 
 Public Class AddSampleCollection
     Private Sub AddSampleCollection_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -10,16 +11,31 @@ Public Class AddSampleCollection
         Else
             Timer1.Enabled = False
         End If
+        LoadElements("patient", "name")
+        LoadElements("sample_type", "title")
+        LoadElements("users", "name")
+
+    End Sub
+
+    Sub LoadElements(TableName As String, Cname As String)
         Try
             Dim sql As String
             Dim rd As MySqlDataReader
-            sql = "Select `name` from patient"
+            sql = "Select `" & Cname & "` from `" & TableName & "`;"
             con.Open()
             Dim com = New MySqlCommand(sql, con)
             rd = com.ExecuteReader
             While rd.Read
-                Dim P_name = rd.GetString("name")
-                PName.Items.Add(P_name)
+                If TableName = "patient" Then
+                    Dim P_name = rd.GetString("name")
+                    PName.Items.Add(P_name)
+                ElseIf TableName = "sample_type" Then
+                    Dim P_name = rd.GetString("title")
+                    PName.Items.Add(P_name)
+                ElseIf TableName = "users" Then
+                    Dim P_name = rd.GetString("name")
+                    PName.Items.Add(P_name)
+                End If
             End While
         Catch ex As Exception
             MsgBox(ex.Message)

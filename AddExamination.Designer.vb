@@ -35,7 +35,6 @@ Partial Class AddExamination
         Me.FlowLayoutPanel2 = New System.Windows.Forms.FlowLayoutPanel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.StatusP = New System.Windows.Forms.CheckBox()
-        Me.ValidationonType = New System.Windows.Forms.ComboBox()
         Me.Comment = New System.Windows.Forms.TextBox()
         Me.Price = New System.Windows.Forms.TextBox()
         Me.SampleType = New System.Windows.Forms.ComboBox()
@@ -62,6 +61,7 @@ Partial Class AddExamination
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.ValidationOnType = New System.Windows.Forms.TextBox()
         Me.ToolStrip.SuspendLayout()
         Me.ToolStripContainer1.ContentPanel.SuspendLayout()
         Me.ToolStripContainer1.TopToolStripPanel.SuspendLayout()
@@ -113,7 +113,7 @@ Partial Class AddExamination
         Me.ToolStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SaveToolStripButton, Me.ToolStripSeparator1})
         Me.ToolStrip.Location = New System.Drawing.Point(4, 0)
         Me.ToolStrip.Name = "ToolStrip"
-        Me.ToolStrip.Size = New System.Drawing.Size(83, 27)
+        Me.ToolStrip.Size = New System.Drawing.Size(122, 27)
         Me.ToolStrip.TabIndex = 7
         Me.ToolStrip.Text = "ToolStrip"
         '
@@ -165,8 +165,8 @@ Partial Class AddExamination
         '
         Me.GroupBox1.BackgroundImage = Global.IdealPathLab.My.Resources.Resources.bg_blur
         Me.GroupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.GroupBox1.Controls.Add(Me.ValidationOnType)
         Me.GroupBox1.Controls.Add(Me.StatusP)
-        Me.GroupBox1.Controls.Add(Me.ValidationonType)
         Me.GroupBox1.Controls.Add(Me.Comment)
         Me.GroupBox1.Controls.Add(Me.Price)
         Me.GroupBox1.Controls.Add(Me.SampleType)
@@ -210,14 +210,6 @@ Partial Class AddExamination
         Me.StatusP.TabIndex = 27
         Me.StatusP.Text = "Publish"
         Me.StatusP.UseVisualStyleBackColor = False
-        '
-        'ValidationonType
-        '
-        Me.ValidationonType.FormattingEnabled = True
-        Me.ValidationonType.Location = New System.Drawing.Point(189, 630)
-        Me.ValidationonType.Name = "ValidationonType"
-        Me.ValidationonType.Size = New System.Drawing.Size(151, 28)
-        Me.ValidationonType.TabIndex = 26
         '
         'Comment
         '
@@ -460,6 +452,14 @@ Partial Class AddExamination
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Examination Group"
         '
+        'ValidationOnType
+        '
+        Me.ValidationOnType.Location = New System.Drawing.Point(189, 630)
+        Me.ValidationOnType.Name = "ValidationOnType"
+        Me.ValidationOnType.PlaceholderText = "Enter Validation"
+        Me.ValidationOnType.Size = New System.Drawing.Size(151, 27)
+        Me.ValidationOnType.TabIndex = 26
+        '
         'AddExamination
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
@@ -494,7 +494,6 @@ Partial Class AddExamination
     Friend WithEvents ToolStripContainer1 As ToolStripContainer
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents StatusP As CheckBox
-    Friend WithEvents ValidationonType As ComboBox
     Friend WithEvents Comment As TextBox
     Friend WithEvents Price As TextBox
     Friend WithEvents SampleType As ComboBox
@@ -522,4 +521,5 @@ Partial Class AddExamination
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents FlowLayoutPanel2 As FlowLayoutPanel
+    Friend WithEvents ValidationOnType As TextBox
 End Class

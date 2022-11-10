@@ -130,12 +130,12 @@ Partial Class AddSampleCollection
         '
         'CollectedBy
         '
+        Me.CollectedBy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.CollectedBy.FormattingEnabled = True
         Me.CollectedBy.Location = New System.Drawing.Point(187, 170)
         Me.CollectedBy.Name = "CollectedBy"
         Me.CollectedBy.Size = New System.Drawing.Size(151, 28)
         Me.CollectedBy.TabIndex = 3
-        Me.CollectedBy.Text = "Select"
         '
         'PName
         '
@@ -153,7 +153,6 @@ Partial Class AddSampleCollection
         Me.InvoiceNo.Name = "InvoiceNo"
         Me.InvoiceNo.Size = New System.Drawing.Size(151, 28)
         Me.InvoiceNo.TabIndex = 0
-        Me.InvoiceNo.Text = "Select"
         '
         'Label1
         '
@@ -264,21 +263,22 @@ Partial Class AddSampleCollection
         '
         'Status
         '
+        Me.Status.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Status.FormattingEnabled = True
+        Me.Status.Items.AddRange(New Object() {"Collected", "Not collected", "Transferred"})
         Me.Status.Location = New System.Drawing.Point(187, 82)
         Me.Status.Name = "Status"
         Me.Status.Size = New System.Drawing.Size(151, 28)
         Me.Status.TabIndex = 5
-        Me.Status.Text = "Select"
         '
         'Description
         '
+        Me.Description.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Description.FormattingEnabled = True
         Me.Description.Location = New System.Drawing.Point(187, 33)
         Me.Description.Name = "Description"
         Me.Description.Size = New System.Drawing.Size(151, 28)
         Me.Description.TabIndex = 4
-        Me.Description.Text = "Select"
         '
         'Label7
         '

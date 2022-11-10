@@ -12,9 +12,9 @@ Public Class AddExamination
             con.Open()
             Dim sqlcmd As String
             If SaveToolStripButton.Text = "Save" Then
-                sqlcmd = "INSERT INTO `examination` values ('" & ExaminationGroup.Text & "','" & ExaminationSubGroup.Text & "','" & Unit.Text & "','" & TitleB.Text & "','" & KeyB.Text & "','" & Rank.Text & "','" & CodeB.Text & "','" & ReportB.Text & "','" & DefaultValue.Text & "','" & SampleType.Text & "','" & Price.Text & "','" & Comment.Text & "','" & ValidationonType.Text & "','" & StatusP.Checked.ToString & "');"
+                sqlcmd = "INSERT INTO `examination` values ('" & ExaminationGroup.Text & "','" & ExaminationSubGroup.Text & "','" & Unit.Text & "','" & TitleB.Text & "','" & KeyB.Text & "','" & Rank.Text & "','" & CodeB.Text & "','" & ReportB.Text & "','" & DefaultValue.Text & "','" & SampleType.Text & "','" & Price.Text & "','" & Comment.Text & "','" & ValidationOnType.Text & "','" & StatusP.Checked.ToString & "');"
             Else
-                sqlcmd = "UPDATE `examination` SET `examination_group` ='" & ExaminationGroup.Text & "',`examination_sub_group`='" & ExaminationSubGroup.Text & "',`unit`='" & Unit.Text & "',`title`='" & TitleB.Text & "',`key_`='" & KeyB.Text & "',`rank`='" & Rank.Text & "',`code`='" & CodeB.Text & "',`report`='" & ReportB.Text & "',`default_value` ='" & DefaultValue.Text & "',`sample_type` ='" & SampleType.Text & "',`price` ='" & Price.Text & "',`comment` ='" & Comment.Text & "',`validation_on_type` ='" & ValidationonType.Text & "',`status` ='" & StatusP.Checked.ToString & "' WHERE `title` = '" & TitleB.Text & "';"
+                sqlcmd = "UPDATE `examination` SET `examination_group` ='" & ExaminationGroup.Text & "',`examination_sub_group`='" & ExaminationSubGroup.Text & "',`unit`='" & Unit.Text & "',`title`='" & TitleB.Text & "',`key_`='" & KeyB.Text & "',`rank`='" & Rank.Text & "',`code`='" & CodeB.Text & "',`report`='" & ReportB.Text & "',`default_value` ='" & DefaultValue.Text & "',`sample_type` ='" & SampleType.Text & "',`price` ='" & Price.Text & "',`comment` ='" & Comment.Text & "',`validation_on_type` ='" & ValidationOnType.Text & "',`status` ='" & StatusP.Checked.ToString & "' WHERE `title` = '" & TitleB.Text & "';"
             End If
             sql = sqlcmd
             Dim mysc As New MySqlCommand(sql, con)
