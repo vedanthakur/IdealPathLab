@@ -29,7 +29,7 @@ Public Class AddUser
             If SaveToolStripButton.Text = "Save" Then
                 sqlcmd = "INSERT INTO users values ('" & nameL.Text & "', '" & roll.Text & "','" & email.Text & "','" & address.Text & "','" & mobile.Text & "','" & password.Text & "','" & branch.Text & "','" & humanResource.Text & "', '" & userB.Enabled.ToString & "', @img , '" & status.Enabled.ToString & "');"
             Else
-                sqlcmd = "UPDATE `users` SET `username`='" & nameL.Text & "',`roll`='" & roll.Text & "',`email`='" & email.Text & "',`address`='" & address.Text & "',`mobile`=" & mobile.Text & ",`password`='" & password.Text & "',`branch`='" & branch.Text & "',`humanResource`='" & humanResource.Text & "',`showUserWiseData`='" & userB.Checked.ToString & "',`image`= @img,`status`='" & status.Checked.ToString & "' WHERE email = '" & email.Text & "';"
+                sqlcmd = "UPDATE `users` SET `user`='" & nameL.Text & "',`roll`='" & roll.Text & "',`email`='" & email.Text & "',`address`='" & address.Text & "',`mobile`=" & mobile.Text & ",`password`='" & password.Text & "',`branch`='" & branch.Text & "',`humanResource`='" & humanResource.Text & "',`showUserWiseData`='" & userB.Checked.ToString & "',`image`= @img,`status`='" & status.Checked.ToString & "' WHERE email = '" & email.Text & "';"
             End If
             sql = sqlcmd
             Dim mysc As New MySqlCommand(sql, con)
@@ -53,6 +53,7 @@ Public Class AddUser
                     MessageBox.Show("No record has been updated!", "Alert for Update User", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 End If
             End If
+            con.Close()
         Catch ex As Exception
             MsgBox(ex.Message)
         Finally
@@ -96,8 +97,8 @@ Public Class AddUser
                 Else
                     humanResource.Items.Add(elements)
                 End If
-
             End While
+            con.Close()
         Catch ex As Exception
             MsgBox(ex.Message)
         Finally
@@ -151,6 +152,7 @@ Public Class AddUser
                     PictureBox1.SizeMode = PictureBoxSizeMode.Zoom
                 End If
             End If
+            con.Close()
         Catch ex As Exception
             MsgBox(ex.Message)
         Finally

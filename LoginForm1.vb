@@ -14,20 +14,12 @@ Public Class LoginForm1
     End Sub
 
     Private Sub OK_Click_1(sender As Object, e As EventArgs) Handles OK.Click
-        Dim connection As New MySqlConnection("datasource=localhost;port=3306;username=root;password=;database=ipl")
-        Dim command As New MySqlCommand("SELECT `username`, `password` FROM `users` WHERE `username` = @username AND `password` = @password", connection)
-        command.Parameters.Add("@username", MySqlDbType.VarChar).Value = UsernameTextBox.Text
-        command.Parameters.Add("@password", MySqlDbType.VarChar).Value = PasswordTextBox.Text
-
+        Dim command As New MySqlCommand("SELECT `email`, `password` FROM `users` WHERE `email` = '" & UsernameTextBox.Text & "' AND `password` = '" & PasswordTextBox.Text & "'", con)
         Dim adapter As New MySqlDataAdapter(command)
         Dim table As New DataTable()
-
         adapter.Fill(table)
-
         If table.Rows.Count = 0 Then
-
             MessageBox.Show("Invalid Username Or Password")
-
         Else
             MDIParent1.Show()
             MDIParent1.welcomeName.Text = UsernameTextBox.Text
@@ -72,4 +64,5 @@ Public Class LoginForm1
             End If
         End If
     End Sub
+
 End Class

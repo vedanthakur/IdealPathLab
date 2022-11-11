@@ -23,6 +23,7 @@ Public Class OnePatient
                 PictureBox1.Image = Image.FromStream(ms)
                 PictureBox1.SizeMode = PictureBoxSizeMode.Zoom
             End If
+            con.Close()
         Catch ex As Exception
             NoImage.Visible = True
         Finally

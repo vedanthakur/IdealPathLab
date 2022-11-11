@@ -18,6 +18,7 @@ Public Class ListUser
                 CIndex += 1
             Next
             DataGridView1.Refresh()
+            con.Close()
         Catch ex As Exception
             MsgBox(ex.Message)
         Finally
@@ -26,7 +27,6 @@ Public Class ListUser
     End Sub
     Private Sub DataGridView1_CellContentClick_1(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
         UserProfile.MdiParent = MDIParent1
-
         UserProfile.Left = 0
         UserProfile.Top = 0
         UserProfile.UName.Text = DataGridView1.CurrentRow.Cells(0).Value.ToString

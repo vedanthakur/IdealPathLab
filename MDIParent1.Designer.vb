@@ -181,13 +181,13 @@ Partial Class MDIParent1
         'ListReferralMenu
         '
         Me.ListReferralMenu.Name = "ListReferralMenu"
-        Me.ListReferralMenu.Size = New System.Drawing.Size(135, 26)
+        Me.ListReferralMenu.Size = New System.Drawing.Size(224, 26)
         Me.ListReferralMenu.Text = "&List"
         '
         'CreateReferralMenu
         '
         Me.CreateReferralMenu.Name = "CreateReferralMenu"
-        Me.CreateReferralMenu.Size = New System.Drawing.Size(135, 26)
+        Me.CreateReferralMenu.Size = New System.Drawing.Size(224, 26)
         Me.CreateReferralMenu.Text = "&Create"
         '
         'PatientMenu
