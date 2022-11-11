@@ -36,7 +36,7 @@ Partial Class AddUser
         Me.branch = New System.Windows.Forms.ComboBox()
         Me.password = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.roll = New System.Windows.Forms.ComboBox()
+        Me.role = New System.Windows.Forms.ComboBox()
         Me.imgUpload = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -88,7 +88,7 @@ Partial Class AddUser
         Me.GroupBox1.Controls.Add(Me.branch)
         Me.GroupBox1.Controls.Add(Me.password)
         Me.GroupBox1.Controls.Add(Me.Label8)
-        Me.GroupBox1.Controls.Add(Me.roll)
+        Me.GroupBox1.Controls.Add(Me.role)
         Me.GroupBox1.Controls.Add(Me.imgUpload)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.Label7)
@@ -213,14 +213,14 @@ Partial Class AddUser
         Me.Label8.TabIndex = 35
         Me.Label8.Text = "Password*"
         '
-        'roll
+        'role
         '
-        Me.roll.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.roll.Items.AddRange(New Object() {"Doctor", "Lab Technician", "Human Resource", "Account"})
-        Me.roll.Location = New System.Drawing.Point(144, 81)
-        Me.roll.Name = "roll"
-        Me.roll.Size = New System.Drawing.Size(152, 28)
-        Me.roll.TabIndex = 1
+        Me.role.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.role.Items.AddRange(New Object() {"Doctor", "Lab Technician", "Human Resource", "Account"})
+        Me.role.Location = New System.Drawing.Point(144, 81)
+        Me.role.Name = "role"
+        Me.role.Size = New System.Drawing.Size(152, 28)
+        Me.role.TabIndex = 1
         '
         'imgUpload
         '
@@ -445,4 +445,5 @@ Partial Class AddUser
     Friend WithEvents ImageSizeLabel As Label
     Public WithEvents Timer1 As Timer
     Friend WithEvents ToolStripContainer1 As ToolStripContainer
+    Friend WithEvents role As ComboBox
 End Class

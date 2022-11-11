@@ -25,13 +25,11 @@ Public Class AddUser
             Dim sql As String
             Dim i As Integer
             con.Open()
-            Dim sqlcmd As String
             If SaveToolStripButton.Text = "Save" Then
-                sqlcmd = "INSERT INTO users values ('" & nameL.Text & "', '" & roll.Text & "','" & email.Text & "','" & address.Text & "','" & mobile.Text & "','" & password.Text & "','" & branch.Text & "','" & humanResource.Text & "', '" & userB.Enabled.ToString & "', @img , '" & status.Enabled.ToString & "');"
+                sql = "INSERT INTO users values ('" & nameL.Text & "', '" & role.Text & "','" & email.Text & "','" & address.Text & "','" & mobile.Text & "','" & password.Text & "','" & branch.Text & "','" & humanResource.Text & "', '" & userB.Enabled.ToString & "', @img , '" & status.Enabled.ToString & "');"
             Else
-                sqlcmd = "UPDATE `users` SET `user`='" & nameL.Text & "',`roll`='" & roll.Text & "',`email`='" & email.Text & "',`address`='" & address.Text & "',`mobile`=" & mobile.Text & ",`password`='" & password.Text & "',`branch`='" & branch.Text & "',`humanResource`='" & humanResource.Text & "',`showUserWiseData`='" & userB.Checked.ToString & "',`image`= @img,`status`='" & status.Checked.ToString & "' WHERE email = '" & email.Text & "';"
+                sql = "UPDATE `users` SET `name`='" & nameL.Text & "',`role`='" & role.Text & "',`email`='" & email.Text & "',`address`='" & address.Text & "',`mobile`=" & mobile.Text & ",`password`='" & password.Text & "',`branch`='" & branch.Text & "',`humanResource`='" & humanResource.Text & "',`showUserWiseData`='" & userB.Checked.ToString & "',`image`= @img,`status`='" & status.Checked.ToString & "' WHERE email = '" & email.Text & "';"
             End If
-            sql = sqlcmd
             Dim mysc As New MySqlCommand(sql, con)
             If SaveToolStripButton.Text = "Update" Then
                 ImageFunction()
@@ -80,6 +78,11 @@ Public Class AddUser
     Private Sub AddUser_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         LoadElements("hr_type", "title")
         LoadElements("branch", "branch_name")
+        If SaveToolStripButton.Text = "Save" Then
+            Timer1.Enabled = False
+        Else
+            Timer1.Enabled = True
+        End If
     End Sub
 
     Sub LoadElements(TableName As String, Cname As String)
@@ -129,14 +132,14 @@ Public Class AddUser
         Try
             Dim sql As String
             Dim rd As MySqlDataReader
-            sql = "Select * from users where email = '" & emailID & "';"
+            sql = "Select * from `users` where `email` = '" & emailID & "';"
             con.Open()
             Dim com = New MySqlCommand(sql, con)
             rd = com.ExecuteReader
             rd.Read()
             If rd.HasRows() Then
-                nameL.Text = rd.GetString("username")
-                roll.Text = rd.GetString("roll")
+                nameL.Text = rd.GetString("name")
+                role.Text = rd.GetString("role")
                 address.Text = rd.GetString("address")
                 mobile.Text = rd.GetString("mobile")
                 password.Text = rd.GetString("password")

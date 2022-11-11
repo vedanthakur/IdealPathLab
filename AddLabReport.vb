@@ -4,6 +4,10 @@ Imports System.IO
 Imports System.Net.Mime.MediaTypeNames
 Imports Org.BouncyCastle.Crypto
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement.TreeView
+Imports Org.BouncyCastle.Math.EC.Custom
+Imports System.Diagnostics.Metrics
+Imports System.Reflection
+Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 
 Public Class AddLabReport
     Public Doctor, LabTechnician, TestPerformed, Verified As String
@@ -111,25 +115,30 @@ Public Class AddLabReport
         Try
             Dim sql As String
             Dim i As Integer
-
-            Dim memstr As New MemoryStream()
-            PictureBox1.Image.Save(memstr, Imaging.ImageFormat.Jpeg)
-            arrimage = memstr.GetBuffer()
-            Dim filesize As UInt32
-            filesize = memstr.Length
-            memstr.Close()
             con.Open()
             CheckBoxSelectedItems()
-            sql = "INSERT INTO `labreport` values ('" & PName.Text & "', '" & Address.Text & "','" & DateTimePicker1.Text & "','" & Doctor & "','" & LabTechnician & "','" & TestPerformed & "','" & Verified & "','" & Delivered.Checked.ToString & "','" & Notes.Text & "','" & ReportedDate.Text & "','" & LabNo.Text & "','" & TSH.Text & "', @img );"
+            If SaveToolStripButton.Text = "Save" Then
+                sql = "INSERT INTO `labreport` values ('" & PName.Text & "', '" & Address.Text & "','" & DateTimePicker1.Text & "','" & Doctor & "','" & LabTechnician & "','" & TestPerformed & "','" & Verified & "','" & Delivered.Checked.ToString & "','" & Notes.Text & "','" & ReportedDate.Text & "','" & LabNo.Text & "','" & TSH.Text & "', @img );"
+            Else
+                sql = "UPDATE `labreport` SET `name`='" & PName.Text & "',`address`='" & Address.Text & "',`doctor`='" & Doctor & "',`lab_technician`='" & LabTechnician & "',`test_preformed_by`='" & TestPerformed & "',`verified_by`='" & Verified & "',`delivery_status`='" & Delivered.Checked.ToString & "',`notes`='" & Notes.Text & "',`reported_date`='" & ReportedDate.Text & "',`lab_no`='" & LabNo.Text & "',`tsh`='" & TSH.Text & "', @img  WHERE `invoice_no` = '" & DateTimePicker1.Text & "';"
+            End If
             Dim mysc As New MySqlCommand(sql, con)
+            ImageFunction()
             mysc.Parameters.AddWithValue("@img", arrimage)
             i = mysc.ExecuteNonQuery()
-
             If i > 0 Then
-                MessageBox.Show("New record has been inserted successfully!", "Alert for Add Lab Report", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                ClearTextBox(Me)
+                If SaveToolStripButton.Text = "Save" Then
+                    MessageBox.Show("New record has been inserted successfully!", "Alert for Add Lab Report", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                    ClearTextBox(Me)
+                Else
+                    MessageBox.Show("Record has been updated successfully!", "Alert for Update Lab Report", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                End If
             Else
-                MessageBox.Show("No record has been inserted!", "Alert for Add Lab Report", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                If SaveToolStripButton.Text = "Save" Then
+                    MessageBox.Show("No record has been inserted!", "Alert for Add Lab Report", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                Else
+                    MessageBox.Show("Record has not updated!", "Alert for Update Lab Report", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                End If
             End If
         Catch ex As Exception
             MsgBox(ex.Message)
@@ -137,7 +146,6 @@ Public Class AddLabReport
             con.Close()
         End Try
     End Sub
-
     Public Sub ClearTextBox(parent As Control)
         For Each child As Control In parent.Controls
             ClearTextBox(child)
@@ -145,5 +153,20 @@ Public Class AddLabReport
         If TryCast(parent, System.Windows.Forms.TextBox) IsNot Nothing Then
             TryCast(parent, System.Windows.Forms.TextBox).Text = [String].Empty
         End If
+    End Sub
+
+    Private Sub ImageFunction()
+        Dim memstr As New MemoryStream()
+        PictureBox1.Image.Save(memstr, Imaging.ImageFormat.Jpeg)
+        arrimage = memstr.GetBuffer()
+        Dim filesize As UInt32
+        filesize = memstr.Length
+        If filesize > 500000 Then
+            ImageSizeLabel.ForeColor = Color.DarkRed
+            ImageSizeLabel.Text = "Image size should be less than 500 KB"
+        Else
+            ImageSizeLabel.Text = " "
+        End If
+        memstr.Close()
     End Sub
 End Class

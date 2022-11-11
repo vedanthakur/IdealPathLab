@@ -40,13 +40,12 @@ Public Class UserProfile
         AddUser.MdiParent = MDIParent1
         AddUser.Left = 0
         AddUser.Top = 0
+        AddUser.SaveToolStripButton.Text = "Update"
         AddUser.Show()
         AddUser.Text = "Edit User"
-        AddUser.SaveToolStripButton.Text = "Update"
         AddUser.emailID = emailID
         AddUser.email.Text = emailID
         AddUser.email.Enabled = False
-        AddUser.Timer1.Enabled = True
     End Sub
 
     Private Sub userWD_CheckedChanged(sender As Object, e As EventArgs) Handles userWD.Click

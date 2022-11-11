@@ -62,6 +62,7 @@ Partial Class AddLabReport
         Me.ToolStrip = New System.Windows.Forms.ToolStrip()
         Me.SaveToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripContainer1 = New System.Windows.Forms.ToolStripContainer()
+        Me.ImageSizeLabel = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox8.SuspendLayout()
         Me.GroupBox7.SuspendLayout()
@@ -439,6 +440,7 @@ Partial Class AddLabReport
         '
         Me.GroupBox2.BackgroundImage = Global.IdealPathLab.My.Resources.Resources.bg_blur
         Me.GroupBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.GroupBox2.Controls.Add(Me.ImageSizeLabel)
         Me.GroupBox2.Controls.Add(Me.Label7)
         Me.GroupBox2.Controls.Add(Me.Button2)
         Me.GroupBox2.Controls.Add(Me.PictureBox1)
@@ -534,6 +536,17 @@ Partial Class AddLabReport
         '
         Me.ToolStripContainer1.TopToolStripPanel.Controls.Add(Me.ToolStrip)
         '
+        'ImageSizeLabel
+        '
+        Me.ImageSizeLabel.AutoSize = True
+        Me.ImageSizeLabel.BackColor = System.Drawing.Color.Transparent
+        Me.ImageSizeLabel.Font = New System.Drawing.Font("Segoe UI", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.ImageSizeLabel.Location = New System.Drawing.Point(100, 94)
+        Me.ImageSizeLabel.Name = "ImageSizeLabel"
+        Me.ImageSizeLabel.Size = New System.Drawing.Size(204, 15)
+        Me.ImageSizeLabel.TabIndex = 43
+        Me.ImageSizeLabel.Text = "Image size should be less than 500 KB"
+        '
         'AddLabReport
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
@@ -613,4 +626,5 @@ Partial Class AddLabReport
     Friend WithEvents SaveToolStripButton As ToolStripButton
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents ToolStripContainer1 As ToolStripContainer
+    Friend WithEvents ImageSizeLabel As Label
 End Class

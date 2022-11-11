@@ -14,13 +14,17 @@ Public Class AddSampleCollection
         LoadElements("patient", "name")
         LoadElements("sample_type", "title")
         LoadElements("users", "name")
-
     End Sub
 
     Sub LoadElements(TableName As String, Cname As String)
         Try
             Dim sql As String
             Dim rd As MySqlDataReader
+            If TableName = "invoice" Then
+                sql = "Select `" & Cname & "` from `" & TableName & "` where `name` = '" & PName.Text & "';"
+            Else
+                sql = "Select `" & Cname & "` from `" & TableName & "`;"
+            End If
             sql = "Select `" & Cname & "` from `" & TableName & "`;"
             con.Open()
             Dim com = New MySqlCommand(sql, con)
@@ -31,10 +35,13 @@ Public Class AddSampleCollection
                     PName.Items.Add(P_name)
                 ElseIf TableName = "sample_type" Then
                     Dim P_name = rd.GetString("title")
-                    PName.Items.Add(P_name)
+                    Description.Items.Add(P_name)
                 ElseIf TableName = "users" Then
                     Dim P_name = rd.GetString("name")
-                    PName.Items.Add(P_name)
+                    CollectedBy.Items.Add(P_name)
+                ElseIf TableName = "invoice" Then
+                    Dim P_name = rd.GetString("invoice_no")
+                    InvoiceNo.Items.Add(P_name)
                 End If
             End While
         Catch ex As Exception
@@ -65,7 +72,7 @@ Public Class AddSampleCollection
             con.Open()
             Dim sqlcmd As String
             If SaveToolStripButton.Text = "Save" Then
-                sqlcmd = "INSERT INTO sample values ('" & InvoiceNo.Text & "','" & PName.Text & "','" & Address.Text & "','" & CollectedBy.Text & "','" & Description.Text & "','" & Status.Text & "','" & CollectionDate.Text & "','" & CTime.Text & "','" & Notes.Text & "');"
+                sqlcmd = "INSERT INTO `sample` values ('" & InvoiceNo.Text & "','" & PName.Text & "','" & Address.Text & "','" & CollectedBy.Text & "','" & Description.Text & "','" & Status.Text & "','" & CollectionDate.Text & "','" & CTime.Text & "','" & Notes.Text & "');"
             Else
                 sqlcmd = "UPDATE `sample` SET `pname`='" & PName.Text & "',`address`='" & Address.Text & "',`samplecollected`='" & CollectedBy.Text & "',`description`='" & Description.Text & "',`status`='" & Status.Text & "',`collection_date`='" & CollectionDate.Text & "',`time` ='" & CTime.Text & "',`notes` ='" & Notes.Text & "' WHERE `invoice_no` = '" & InvoiceNo.Text & "';"
             End If
@@ -114,7 +121,7 @@ Public Class AddSampleCollection
         Try
             Dim sql As String
             Dim rd As MySqlDataReader
-            sql = "Select `address` from patient where name='" & PName.Text & "'"
+            sql = "Select `address` from `patient` where name='" & PName.Text & "'"
             con.Open()
             Dim com = New MySqlCommand(sql, con)
             rd = com.ExecuteReader
@@ -127,5 +134,7 @@ Public Class AddSampleCollection
         Finally
             con.Close()
         End Try
+        LoadElements("invoice", "invoice_no")
     End Sub
+
 End Class

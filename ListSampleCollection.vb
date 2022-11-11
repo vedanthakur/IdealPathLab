@@ -31,6 +31,7 @@ Public Class ListSampleCollection
 
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
         OneSampleCollection.MdiParent = MDIParent1
+        OneSampleCollection.Show()
         OneSampleCollection.Left = 0
         OneSampleCollection.Top = 0
         OneSampleCollection.InvoiceNo.Text = DataGridView1.CurrentRow.Cells(0).Value.ToString
@@ -42,6 +43,5 @@ Public Class ListSampleCollection
         OneSampleCollection.CollectionDate.Text = DataGridView1.CurrentRow.Cells(6).Value.ToString
         OneSampleCollection.CTime.Text = DataGridView1.CurrentRow.Cells(7).Value.ToString
         OneSampleCollection.Notes.Text = DataGridView1.CurrentRow.Cells(8).Value.ToString
-        OneSampleCollection.Show()
     End Sub
 End Class
