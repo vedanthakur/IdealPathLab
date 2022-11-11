@@ -40,7 +40,7 @@ Partial Class LoginForm1
         Me.CheckBox1.Location = New System.Drawing.Point(57, 264)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(132, 24)
-        Me.CheckBox1.TabIndex = 15
+        Me.CheckBox1.TabIndex = 2
         Me.CheckBox1.Text = "&Show Password"
         Me.CheckBox1.UseVisualStyleBackColor = True
         '
@@ -58,17 +58,17 @@ Partial Class LoginForm1
         '
         Me.OK.Location = New System.Drawing.Point(53, 297)
         Me.OK.Name = "OK"
-        Me.OK.Size = New System.Drawing.Size(220, 30)
-        Me.OK.TabIndex = 12
+        Me.OK.Size = New System.Drawing.Size(220, 33)
+        Me.OK.TabIndex = 3
         Me.OK.Text = "&Log in"
         '
         'UsernameTextBox
         '
         Me.UsernameTextBox.Location = New System.Drawing.Point(53, 169)
         Me.UsernameTextBox.Name = "UsernameTextBox"
-        Me.UsernameTextBox.PlaceholderText = "Enter username"
+        Me.UsernameTextBox.PlaceholderText = "Enter email"
         Me.UsernameTextBox.Size = New System.Drawing.Size(220, 27)
-        Me.UsernameTextBox.TabIndex = 9
+        Me.UsernameTextBox.TabIndex = 0
         '
         'PasswordLabel
         '
@@ -85,7 +85,7 @@ Partial Class LoginForm1
         Me.UsernameLabel.Name = "UsernameLabel"
         Me.UsernameLabel.Size = New System.Drawing.Size(220, 23)
         Me.UsernameLabel.TabIndex = 8
-        Me.UsernameLabel.Text = "&User name"
+        Me.UsernameLabel.Text = "&Email"
         Me.UsernameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'PasswordTextBox
@@ -94,7 +94,7 @@ Partial Class LoginForm1
         Me.PasswordTextBox.Name = "PasswordTextBox"
         Me.PasswordTextBox.PlaceholderText = "Enter Password"
         Me.PasswordTextBox.Size = New System.Drawing.Size(218, 27)
-        Me.PasswordTextBox.TabIndex = 16
+        Me.PasswordTextBox.TabIndex = 1
         '
         'LoginForm1
         '

@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
-    <StartupObject>IdealPathLab.MDIParent1</StartupObject>
+    <StartupObject>IdealPathLab.My.MyApplication</StartupObject>
     <UseWindowsForms>true</UseWindowsForms>
     <MyType>WindowsForms</MyType>
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>

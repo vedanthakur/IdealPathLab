@@ -1,3 +1,4 @@
+Imports System.Threading
 Imports MySql.Data.MySqlClient
 Public Class LoginForm1
 
@@ -21,16 +22,22 @@ Public Class LoginForm1
         If table.Rows.Count = 0 Then
             MessageBox.Show("Invalid Username Or Password")
         Else
+            con.Close()
             MDIParent1.Show()
+            MDIParent1.Timer1.Enabled = True
             MDIParent1.welcomeName.Text = UsernameTextBox.Text
+            ClearTextBox(Me)
             Me.Hide()
         End If
-
-
     End Sub
 
-    Private Sub Cancel_Click_1(sender As Object, e As EventArgs)
-
+    Public Sub ClearTextBox(parent As Control)
+        For Each child As Control In parent.Controls
+            ClearTextBox(child)
+        Next
+        If TryCast(parent, System.Windows.Forms.TextBox) IsNot Nothing Then
+            TryCast(parent, System.Windows.Forms.TextBox).Text = [String].Empty
+        End If
     End Sub
 
     Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.Click

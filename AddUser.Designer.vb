@@ -216,7 +216,7 @@ Partial Class AddUser
         'role
         '
         Me.role.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.role.Items.AddRange(New Object() {"Doctor", "Lab Technician", "Human Resource", "Account"})
+        Me.role.Items.AddRange(New Object() {"Doctor", "Lab Technician", "Human Resource", "Director", "Account"})
         Me.role.Location = New System.Drawing.Point(144, 81)
         Me.role.Name = "role"
         Me.role.Size = New System.Drawing.Size(152, 28)

@@ -1,6 +1,42 @@
 ﻿Imports System.Windows.Forms
+Imports MySql.Data.MySqlClient
 
 Public Class MDIParent1
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        UserAcessDefination()
+    End Sub
+    Sub UserAcessDefination()
+        Try
+            Dim sql As String
+            Dim rd As MySqlDataReader
+            sql = "Select `role` from `users` where `email` = '" & welcomeName.Text & "';"
+            con.Open()
+            Dim com = New MySqlCommand(sql, con)
+            rd = com.ExecuteReader
+            While rd.Read
+                Dim Element = rd.GetString("role")
+                If Element = "Account" Then
+                    MenuStrip1.Visible = False
+                    TechniciationMenuStrip2.Visible = False
+                    AccountMenuStrip3.Visible = True
+                ElseIf Element = "Lab Technician" Then
+                    MenuStrip1.Visible = False
+                    TechniciationMenuStrip2.Visible = True
+                    AccountMenuStrip3.Visible = False
+                ElseIf Element = "Director" Or Element = "Doctor" Then
+                    MenuStrip1.Visible = True
+                    TechniciationMenuStrip2.Visible = False
+                    AccountMenuStrip3.Visible = False
+                End If
+            End While
+            con.Close()
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            con.Close()
+        End Try
+        Timer1.Enabled = False
+    End Sub
 
     Private Sub ShowNewForm(ByVal sender As Object, ByVal e As EventArgs)
         ' Create a new instance of the child form.
@@ -97,7 +133,7 @@ Public Class MDIParent1
         AddAppointment.Top = 0
         AddAppointment.Left = 0
     End Sub
-    Private Sub ToolStripMenuItem18_Click(sender As Object, e As EventArgs) 
+    Private Sub ToolStripMenuItem18_Click(sender As Object, e As EventArgs)
         AddReferral.MdiParent = Me
         AddReferral.Show()
         AddReferral.Top = 0
@@ -508,4 +544,41 @@ Public Class MDIParent1
         ListType.TableName = "prefer_time"
     End Sub
 
+    Private Sub ToolStripMenuItem5_Click_1(sender As Object, e As EventArgs) Handles ToolStripMenuItem5.Click
+        Me.Hide()
+        LoginForm1.Show()
+    End Sub
+
+    Private Sub ToolStripMenuItem4_Click_1(sender As Object, e As EventArgs) Handles ToolStripMenuItem4.Click
+        AddSampleCollection.MdiParent = Me
+        AddSampleCollection.Show()
+        AddSampleCollection.Left = 0
+        AddSampleCollection.Top = 0
+    End Sub
+
+    Private Sub ToolStripMenuItem3_Click_1(sender As Object, e As EventArgs) Handles ToolStripMenuItem3.Click
+        ListSampleCollection.MdiParent = Me
+        ListSampleCollection.Show()
+        ListSampleCollection.Left = 0
+        ListSampleCollection.Top = 0
+    End Sub
+
+    Private Sub ToolStripMenuItem8_Click_3(sender As Object, e As EventArgs) Handles ToolStripMenuItem8.Click
+        AddPatient.MdiParent = Me
+        AddPatient.Show()
+        AddPatient.Left = 0
+        AddPatient.Top = 0
+    End Sub
+
+    Private Sub ToolStripMenuItem10_Click_1(sender As Object, e As EventArgs) Handles ToolStripMenuItem10.Click
+        AddInvoice.MdiParent = Me
+        AddInvoice.Show()
+        AddInvoice.Left = 0
+        AddInvoice.Top = 0
+    End Sub
+
+    Private Sub ToolStripMenuItem9_Click_1(sender As Object, e As EventArgs) Handles ToolStripMenuItem9.Click
+        Me.Hide()
+        LoginForm1.Show()
+    End Sub
 End Class
