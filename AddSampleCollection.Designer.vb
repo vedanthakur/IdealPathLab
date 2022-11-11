@@ -148,6 +148,7 @@ Partial Class AddSampleCollection
         '
         'InvoiceNo
         '
+        Me.InvoiceNo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.InvoiceNo.FormattingEnabled = True
         Me.InvoiceNo.Location = New System.Drawing.Point(187, 33)
         Me.InvoiceNo.Name = "InvoiceNo"
