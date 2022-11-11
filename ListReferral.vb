@@ -14,7 +14,7 @@ Public Class ListReferral
             da.Fill(dt)
             DataGridView1.DataSource = dt
             Dim CIndex As Integer = 0
-            Dim Names() As String = {"Address", "Phone", "Email", "Benifit", "Discount", "Status", "Name", "Contact Person"}
+            Dim Names() As String = {"Address", "Phone", "Email", "Benifit", "Discount", "Status", "Type", "Name", "Contact Person"}
             For Each CName In Names
                 DataGridView1.Columns(CIndex).HeaderText = CName
                 CIndex += 1
@@ -29,6 +29,7 @@ Public Class ListReferral
 
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
         AddReferral.MdiParent = MDIParent1
+        AddReferral.Show()
         AddReferral.Left = 0
         AddReferral.Top = 0
         AddReferral.Text = "Update Referral"
@@ -43,6 +44,6 @@ Public Class ListReferral
         AddReferral.ReferralType.Text = DataGridView1.CurrentRow.Cells(6).Value.ToString
         AddReferral.ReferralName.Text = DataGridView1.CurrentRow.Cells(7).Value.ToString
         AddReferral.RContactPerson.Text = DataGridView1.CurrentRow.Cells(8).Value.ToString
-        AddReferral.Show()
+
     End Sub
 End Class

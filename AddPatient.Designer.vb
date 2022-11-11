@@ -159,21 +159,21 @@ Partial Class AddPatient
         '
         'RLab
         '
+        Me.RLab.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.RLab.FormattingEnabled = True
         Me.RLab.Location = New System.Drawing.Point(278, 341)
         Me.RLab.Name = "RLab"
         Me.RLab.Size = New System.Drawing.Size(151, 28)
         Me.RLab.TabIndex = 35
-        Me.RLab.Text = "Select"
         '
         'Referral
         '
+        Me.Referral.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Referral.FormattingEnabled = True
         Me.Referral.Location = New System.Drawing.Point(278, 297)
         Me.Referral.Name = "Referral"
         Me.Referral.Size = New System.Drawing.Size(151, 28)
         Me.Referral.TabIndex = 34
-        Me.Referral.Text = "Select"
         '
         'Age
         '

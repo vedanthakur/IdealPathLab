@@ -7,6 +7,7 @@ Imports Microsoft.VisualBasic.ApplicationServices
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement.TreeView
 Imports Google.Protobuf.Reflection.FieldOptions.Types
+Imports System.Data.Entity.Core.Metadata.Edm
 
 Public Class AddPatient
     Dim imgpath As String
@@ -197,5 +198,28 @@ Public Class AddPatient
         End If
     End Sub
 
+    Private Sub AddPatient_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        LoadElements("referral")
+    End Sub
 
+    Sub LoadElements(TableName As String)
+        Try
+            Dim sql As String
+            Dim rd As MySqlDataReader
+            sql = "Select `contactperson`, `name` from `" & TableName & "`"
+            con.Open()
+            Dim com = New MySqlCommand(sql, con)
+            rd = com.ExecuteReader
+            While rd.Read
+                Dim Elements = rd.GetString("contactperson")
+                Referral.Items.Add(Elements)
+                Dim Elements2 = rd.GetString("name")
+                RLab.Items.Add(Elements2)
+            End While
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            con.Close()
+        End Try
+    End Sub
 End Class
